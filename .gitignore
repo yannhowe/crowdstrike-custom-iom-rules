@@ -1,0 +1,67 @@
+# Environment variables
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Generated files
+*.json
+exported-rules/
+created-rule-*.json
+test-results-*.json
+rule-details.json
+resource-ids.json
+sample-resource-details.json
+deleted-rules-result.json
+updated-rule-*.json
+bulk-creation-summary-*.json
+deployment-summary-*.json
+custom-rules-list.json
+schema-*.json
+
+# Logs
+*.log
