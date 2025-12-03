@@ -51,6 +51,7 @@ Thumbs.db
 # Generated files
 *.json
 exported-rules/
+exported-custom-rules/
 created-rule-*.json
 test-results-*.json
 rule-details.json
@@ -62,6 +63,8 @@ bulk-creation-summary-*.json
 deployment-summary-*.json
 custom-rules-list.json
 schema-*.json
+resource-support
+
 
 # Logs
 *.log

@@ -1,247 +1,244 @@
 # CrowdStrike Custom IOM Rules Toolkit
 
-A comprehensive Python toolkit for creating, managing, and deploying CrowdStrike custom Indicator of Misconfiguration (IOM) rules using YAML configuration files and Rego policy language.
-
-## 🎯 What This Project Does
-
-This toolkit allows you to:
-- **Create custom security rules** for cloud resources (AWS, Azure, GCP, OCI)
-- **Manage rules at scale** with bulk operations and automatic pagination
-- **Use YAML configuration** instead of complex API calls
-- **Test rules** before deployment with real cloud resources
-- **Export existing rules** from your CrowdStrike environment
-- **Deploy rules** across multiple environments (staging/production)
+Manage CrowdStrike custom Indicator of Misconfiguration (IOM) rules as code using YAML files and Rego policy language. Export, edit, validate, and deploy rules at scale with version control.
 
 ## 🚀 Quick Start
 
-### 1. Setup
-
 ```bash
-# Clone the repository
+# Setup
 git clone <your-repo-url>
 cd crowdstrike-custom-iom-rules
-
-# Install dependencies
 pip install -r requirements.txt
-
-# Configure your API credentials
 cp .env.sample .env
 # Edit .env with your CrowdStrike API credentials
-```
 
-### 2. Your First Rule
-
-```bash
-# Validate the sample rule
+# Test with sample rule
 python rule-manager.py validate --config rules/simple-test-rule.yaml
-
-# Create the rule in CrowdStrike
 python rule-manager.py create --config rules/simple-test-rule.yaml
 ```
 
-### 3. Verify It Worked
+## 🔄 Rules as Code Workflow
 
+### 1. Export Custom Rules
 ```bash
-# List your custom rules
-python rule-manager.py list --limit 10
+# Download all your custom rules (excludes CrowdStrike-managed rules)
+python rule-manager.py export-all \
+  --filter 'rule_origin:!"Default"' \
+  --output-dir my-rules \
+  --limit 5000
 ```
 
-## 📋 What's Included
-
-### Core Tool
-- **`rule-manager.py`** - Complete rule management CLI (1685+ lines of Python)
-
-### Sample Rules
-- **`rules/simple-test-rule.yaml`** - Basic EC2 state validation rule
-- **`rules/example-ec2-security-rule.yaml`** - Advanced security compliance rule
-
-### Configuration
-- **`.env.sample`** - Template for API credentials
-- **`requirements.txt`** - Python dependencies
-- **`.gitignore`** - Protects sensitive files
-
-## 🔧 Key Features
-
-### Rule Management
+### 2. Validate Rules
 ```bash
-# Create a single rule
-python rule-manager.py create --config rules/my-rule.yaml
+# Validate all rules in directory
+python rule-manager.py validate-all --rules-dir my-rules --continue-on-error
 
-# Create all rules in a directory
-python rule-manager.py create-all --rules-dir rules
-
-# Update existing rules
-python rule-manager.py update --rule-id UUID --severity 2
-
-# Delete rules
-python rule-manager.py delete --rule-ids UUID1 UUID2
+# Validate single rule
+python rule-manager.py validate --config my-rules/my-rule.yaml
 ```
 
-### Testing & Validation
+### 3. Deploy Rules
 ```bash
-# Validate YAML syntax and Rego logic
-python rule-manager.py validate --config rules/my-rule.yaml
-
-# Test against real cloud resources
-python rule-manager.py test --config rules/my-rule.yaml
-
-# Get resource IDs for testing
-python rule-manager.py get-resource-ids --provider aws --resource-type "EC2::Instance"
+# Deploy all rules (creates new, updates existing)
+python rule-manager.py deploy-all \
+  --rules-dir my-rules \
+  --continue-on-error
 ```
+
+## 📋 What You Can Do
+
+| Operation | Command | Description |
+|-----------|---------|-------------|
+| **Export** | `export-all --filter 'rule_origin:!"Default"'` | Download custom rules as YAML |
+| **Validate** | `validate-all --rules-dir my-rules` | Check all YAML files for errors |
+| **Deploy** | `deploy-all --rules-dir my-rules` | Upload/update all rules |
+| **Test** | `test --config my-rule.yaml` | Test rule against real resources |
+| **Schema** | `schema --config my-rule.yaml` | Get input schema for resource type |
+| **Resources** | `get-resource-ids --provider aws --resource-type "EC2::Instance"` | Get real resource IDs for testing |
+| **Filter** | `export-all --filter 'rule_provider:"AWS"'` | Export by platform/severity |
+
+## 🔧 Sample Commands
 
 ### Bulk Operations
 ```bash
-# Export all existing rules to YAML files
-python rule-manager.py export-all --output-dir exported-rules --limit 1000
+# Export only AWS custom rules
+python rule-manager.py export-all \
+  --filter 'rule_origin:!"Default"+rule_provider:"AWS"' \
+  --output-dir aws-rules
 
-# Deploy all rules (create new, update existing)
-python rule-manager.py deploy-all --rules-dir rules --continue-on-error
+# Export high-severity rules only
+python rule-manager.py export-all \
+  --filter 'rule_origin:!"Default"+rule_severity:1' \
+  --output-dir critical-rules
+
+# Validate and deploy with error handling
+python rule-manager.py validate-all --rules-dir my-rules --continue-on-error
+python rule-manager.py deploy-all --rules-dir my-rules --continue-on-error
+```
+
+### Individual Operations
+```bash
+# Single rule workflow
+python rule-manager.py validate --config my-rules/ec2-security.yaml
+python rule-manager.py test --config my-rules/ec2-security.yaml
+python rule-manager.py create --config my-rules/ec2-security.yaml
+
+# Get test resources
+python rule-manager.py get-resource-ids --provider aws --resource-type "EC2::Instance"
+
+# Get input schema for resource type
+python rule-manager.py schema --config my-rules/ec2-security.yaml
+```
+
+### Management Operations
+```bash
+# List custom rules only
+python rule-manager.py list --filter 'rule_origin:!"Default"' --limit 50
+
+# Update rule properties
+python rule-manager.py update --rule-id UUID --severity 2 --description "Updated rule"
+
+# Delete rules
+python rule-manager.py delete --rule-ids UUID1 UUID2 --confirm
 ```
 
 ## 📝 Rule Format
 
-Rules are defined in simple YAML files:
-
+**Required Fields Only** (sent to CrowdStrike API):
 ```yaml
 rule:
-  name: "My-Security-Rule"
+  # Required basic information
+  name: "EC2-Security-Check"
   description: "Ensures EC2 instances meet security requirements"
   resource_type: "AWS::EC2::Instance"
   platform: "AWS"
   provider: "AWS"
-  severity: 1  # 0=critical, 1=high, 2=medium, 3=informational
   
+  # Required classification (defaults shown)
+  domain: "CSPM"      # Always CSPM for custom rules
+  subdomain: "IOM"    # Always IOM for custom rules
+  severity: 1         # 0=critical, 1=high, 2=medium, 3=informational
+  
+  # Required Rego logic
   logic: |
     package crowdstrike
-    
     default result = "fail"
     
-    # Rule passes if instance is running
     result = "pass" if {
         input.resource.state == "running"
+        input.resource.tags.Environment
     }
     
-    # Violation message for failed checks
     violation contains {"msg": msg} if {
         not input.resource.state == "running"
-        msg := "EC2 instance must be in running state"
+        msg := "EC2 instance must be running"
     }
+  
+  # Optional but recommended
+  alert_info: "Brief description of what this rule checks"
+  remediation: "Steps to fix violations"
+
+# Optional sections (not sent to API, used by rule-manager.py)
+testing:
+  sample_resource_ids:
+    - "i-1234567890abcdef0"
+
+metadata:
+  version: "1.0"
+  author: "security-team"
 ```
 
-## 🔒 Security & Credentials
+## 🔒 Setup
 
-### API Credentials Required
-You need CrowdStrike API credentials with these scopes:
-- `Cloud-Policies:READ`
-- `Cloud-Policies:WRITE`
-- `Cloud-Security-Assets:READ`
+### API Credentials
+Required scopes: `cloud-security-policies:read`, `cloud-security-policies:write`, `cloud-security-assets:read`
 
-### Secure Configuration
 ```bash
-# Copy the sample file
-cp .env.sample .env
-
-# Edit with your actual credentials
-FALCON_CLIENT_ID=your-actual-client-id
-FALCON_CLIENT_SECRET=your-actual-client-secret
+# .env file
+FALCON_CLIENT_ID=your-client-id
+FALCON_CLIENT_SECRET=your-client-secret
 FALCON_BASE_URL=https://api.crowdstrike.com
 ```
 
-**⚠️ Important:** Never commit your `.env` file. It's already in `.gitignore`.
+### Supported Platforms
+- **AWS**: EC2, S3, RDS, IAM, Lambda
+- **Azure**: VMs, Storage, SQL
+- **GCP**: Compute, Storage, SQL
+- **OCI**: Compute, Storage
 
-## 🌐 Supported Platforms
+## 🔧 Schema and Resource Discovery
 
-| Platform | Resource Types | Example |
-|----------|----------------|---------|
-| **AWS** | EC2, S3, RDS, IAM, Lambda | `AWS::EC2::Instance` |
-| **Azure** | VMs, Storage, SQL | `Azure::Compute::VirtualMachine` |
-| **GCP** | Compute, Storage, SQL | `GCP::Compute::Instance` |
-| **OCI** | Compute, Storage | `OCI::Compute::Instance` |
+### Get Input Schema for Resource Types
 
-## 📊 Enterprise Features
+Get the exact field structure that CrowdStrike provides for any resource type:
 
-### Automatic Pagination
-Handles large environments with thousands of rules:
 ```bash
-# Export up to 5000 rules automatically
-python rule-manager.py export-all --limit 5000
+# Get schema for resource type specified in YAML config
+python rule-manager.py schema --config my-rules/ec2-security.yaml
 ```
 
-### Bulk Deployment
-Deploy multiple rules with error handling:
-```bash
-# Continue processing even if some rules fail
-python rule-manager.py deploy-all --continue-on-error
+**Output files:**
+- `schema-ec2-instance.json` - Individual resource schema with exact field structure
+
+### Using Schema Files for Rule Development
+
+The generated schema files contain the **exact field structure** that CrowdStrike provides:
+
+**Available in Rego rules:**
+```rego
+# Access any field from the schema
+resource.configuration.properties.enableNonSslPort
+resource.configuration.properties.minimumTlsVersion
+resource.configuration.properties.sku.name
+resource.configuration.tags.Environment
 ```
 
-### Environment Management
-```bash
-# Deploy to staging first
-python rule-manager.py create --config rules/my-rule.yaml --environment staging
+**Sample Claude Prompt for Rule Development:**
+```
+I need help writing a CrowdStrike custom IOM rule using Rego for [RESOURCE_TYPE].
 
-# Then promote to production
-python rule-manager.py create --config rules/my-rule.yaml --environment production
+Resource Schema: [paste schema from schema-*.json]
+
+Security Requirements: [your requirements]
+
+Please provide complete YAML configuration with Rego logic.
 ```
 
-## 🛠️ Command Reference
+## 🔧 Troubleshooting
 
-| Command | Purpose | Example |
-|---------|---------|---------|
-| `validate` | Check YAML and Rego syntax | `python rule-manager.py validate --config rules/my-rule.yaml` |
-| `create` | Create a new rule | `python rule-manager.py create --config rules/my-rule.yaml` |
-| `list` | Show existing rules | `python rule-manager.py list --limit 50` |
-| `update` | Modify existing rule | `python rule-manager.py update --rule-id UUID --severity 2` |
-| `delete` | Remove rules | `python rule-manager.py delete --rule-ids UUID` |
-| `test` | Test rule logic | `python rule-manager.py test --config rules/my-rule.yaml` |
-| `export-all` | Export to YAML files | `python rule-manager.py export-all --output-dir backup` |
-| `deploy-all` | Bulk create/update | `python rule-manager.py deploy-all --rules-dir rules` |
+**Export includes CrowdStrike rules**: Use `--filter 'rule_origin:!"Default"'`
+**Validation fails**: Check Rego logic starts with `package crowdstrike`
+**No test resources**: Use `get-resource-ids` to find valid resource IDs
+**Authentication fails**: Verify API credentials and scopes in `.env`
+**Schema retrieval fails**: Ensure the resource type is supported by CrowdStrike
+**Rule creation fails**: Verify all required fields are present in YAML configuration
+**Bulk operations fail**: Use `--continue-on-error` flag to process remaining rules
 
-## 🐛 Troubleshooting
+## 📚 Resources
 
-### Common Issues
+- **Examples**: [`rules/`](rules/) directory
+- **CrowdStrike API**: [Documentation](https://falcon.crowdstrike.com/documentation)
+- **Rego Language**: [OPA Docs](https://www.openpolicyagent.org/docs/latest/policy-language/)
 
-**"Authentication failed"**
-- Check your `.env` file has correct credentials
-- Verify API scopes in CrowdStrike console
+## 📁 Project Structure
 
-**"Rule validation failed"**
-- Run `validate` command first to check syntax
-- Ensure Rego logic starts with `package crowdstrike`
-
-**"No resources found for testing"**
-- Use `get-resource-ids` to find valid resource IDs
-- Add resource IDs to your YAML file's `testing` section
-
-### Getting Help
-```bash
-# Show all available commands
-python rule-manager.py --help
-
-# Get help for specific command
-python rule-manager.py create --help
 ```
-
-## 📚 Learn More
-
-- **Rule Examples**: Check the [`rules/`](rules/) directory for sample configurations
-- **CrowdStrike Docs**: [Official API Documentation](https://falcon.crowdstrike.com/documentation)
-- **Rego Language**: [Open Policy Agent Documentation](https://www.openpolicyagent.org/docs/latest/policy-language/)
-
-## 🤝 Contributing
-
-1. Fork this repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Test your changes thoroughly
-4. Commit your changes (`git commit -m 'Add amazing feature'`)
-5. Push to the branch (`git push origin feature/amazing-feature`)
-6. Open a Pull Request
-
-## 📄 License
-
-This project is provided as-is for educational and operational purposes. Ensure compliance with your organization's security policies and CrowdStrike's terms of service.
+crowdstrike-custom-iom-rules/
+├── rule-manager.py              # Main rule CRUD toolkit
+├── get_schemas.py               # Schema generation and resource type testing
+├── requirements.txt             # Python dependencies
+├── .env.sample                  # API credentials template
+├── rules/                       # Rule templates and examples
+├── exported-custom-rules/       # Exported rules from CrowdStrike
+├── resource-support/           # Resource type support documentation
+│   ├── all-resource-types-azure.txt
+│   ├── all-resource-types-gcp.txt
+│   ├── resource-type-support-aws.md
+│   ├── resource-type-support-azure.md
+│   ├── resource-type-support-gcp.md
+│   └── schema-*.json           # Individual resource schemas
+└── schemas/                    # Generated schemas from discovery
+```
 
 ---
-
-**Need help?** Open an issue or check the troubleshooting section above.
-
-**Version:** 1.0 | **Last Updated:** 2025-11-21
+**Version:** 2.1 | Focused rule management toolkit for CRUD operations on CrowdStrike custom IOM rules. Schema functionality moved to separate get_schemas.py module.

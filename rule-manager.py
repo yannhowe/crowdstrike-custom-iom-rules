@@ -11,7 +11,13 @@ import json
 import sys
 import yaml
 import os
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from falconpy import APIHarnessV2
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 
 def print_json(data):
@@ -112,12 +118,13 @@ def get_input_schema(falcon, cloud_provider, resource_type, domain="CSPM", subdo
         "domain": domain,
         "subdomain": subdomain,
         "cloud_provider": cloud_provider,
-        "resource_type": resource_type
+        "resource_type": resource_type  # Don't URL encode - API expects original format
     }
     
     response = falcon.command(
         override="GET,/cloud-policies/combined/rules/input-schema/v1",
-        parameters=params
+        parameters=params,
+        headers={"Content-Type": "application/json"}  # Explicit content type
     )
     
     if print_response(response):
@@ -654,6 +661,149 @@ def validate_rule_from_yaml(config_file):
     print("\n✅ All validations passed! Rule is ready for deployment.")
 
 
+def validate_all_rules_command(rules_dir="rules", continue_on_error=False):
+    """
+    Validate all rules from YAML files in the specified directory.
+    
+    Args:
+        rules_dir: Directory containing YAML rule files
+        continue_on_error: Continue validating other rules if one fails
+    """
+    print("✅ Validating All Rules from Directory")
+    print("=" * 60)
+    
+    if not os.path.exists(rules_dir):
+        print(f"❌ Rules directory '{rules_dir}' not found")
+        sys.exit(1)
+    
+    # Find all YAML files in the directory
+    yaml_files = []
+    for file in os.listdir(rules_dir):
+        if file.endswith(('.yaml', '.yml')) and not file.startswith('.'):
+            yaml_files.append(os.path.join(rules_dir, file))
+    
+    if not yaml_files:
+        print(f"❌ No YAML files found in '{rules_dir}' directory")
+        sys.exit(1)
+    
+    print(f"📋 Found {len(yaml_files)} YAML rule file(s):")
+    for i, file in enumerate(yaml_files, 1):
+        print(f"   {i}. {file}")
+    
+    print(f"\n🔄 Continue on error: {'Yes' if continue_on_error else 'No'}")
+    print()
+    
+    # Track results
+    valid_rules = []
+    invalid_rules = []
+    
+    # Process each YAML file
+    for yaml_file in yaml_files:
+        print(f"✅ Validating: {yaml_file}")
+        print("-" * 40)
+        
+        try:
+            # Load and validate configuration
+            config = load_yaml_config(yaml_file)
+            
+            # Validate YAML structure
+            print("📋 Configuration Structure Validation:")
+            if not validate_yaml_config(config):
+                if continue_on_error:
+                    print(f"⚠️  Configuration validation failed for {yaml_file}")
+                    invalid_rules.append({"file": yaml_file, "error": "Configuration validation failed"})
+                    print()
+                    continue
+                else:
+                    print(f"❌ Stopping due to configuration validation errors in {yaml_file}")
+                    sys.exit(1)
+            else:
+                print("✅ Configuration structure is valid")
+            
+            rule = config['rule']
+            
+            # Validate Rego logic
+            print("\n🔍 Rego Logic Validation:")
+            if not validate_rego_syntax(rule['logic']):
+                if continue_on_error:
+                    print(f"⚠️  Rego validation failed for {yaml_file}")
+                    invalid_rules.append({"file": yaml_file, "error": "Rego validation failed"})
+                    print()
+                    continue
+                else:
+                    print(f"❌ Stopping due to Rego validation errors in {yaml_file}")
+                    sys.exit(1)
+            else:
+                print("✅ Rego logic validation passed")
+            
+            # Display rule summary
+            print("\n📊 Rule Summary:")
+            print(f"   Name: {rule['name']}")
+            print(f"   Description: {rule['description']}")
+            print(f"   Resource Type: {rule['resource_type']}")
+            print(f"   Platform: {rule['platform']}")
+            print(f"   Severity: {rule.get('severity', 1)}")
+            print(f"   Logic Length: {len(rule['logic'])} characters")
+            
+            if 'testing' in config:
+                testing = config['testing']
+                if 'sample_resource_ids' in testing:
+                    print(f"   Test Resources: {len(testing['sample_resource_ids'])} configured")
+            
+            if 'metadata' in config:
+                metadata = config['metadata']
+                print(f"   Version: {metadata.get('version', 'N/A')}")
+                print(f"   Author: {metadata.get('author', 'N/A')}")
+            
+            print("✅ All validations passed!")
+            valid_rules.append({"file": yaml_file, "name": rule['name']})
+        
+        except Exception as e:
+            error_msg = str(e)
+            if continue_on_error:
+                print(f"⚠️  Error validating {yaml_file}: {error_msg}")
+                invalid_rules.append({"file": yaml_file, "error": error_msg})
+            else:
+                print(f"❌ Error validating {yaml_file}: {error_msg}")
+                sys.exit(1)
+        
+        print()  # Add spacing between files
+    
+    # Summary
+    print("=" * 60)
+    print("📊 VALIDATION SUMMARY")
+    print("=" * 60)
+    
+    print(f"✅ Valid rules: {len(valid_rules)} rule(s)")
+    for rule in valid_rules:
+        print(f"   • {rule['name']} from {rule['file']}")
+    
+    if invalid_rules:
+        print(f"\n❌ Invalid rules: {len(invalid_rules)} rule(s)")
+        for rule in invalid_rules:
+            print(f"   • {rule['file']} - {rule['error']}")
+    
+    # Save summary to file
+    summary = {
+        "total_files": len(yaml_files),
+        "valid": len(valid_rules),
+        "invalid": len(invalid_rules),
+        "valid_rules": valid_rules,
+        "invalid_rules": invalid_rules,
+        "timestamp": "2025-12-03T05:57:00Z"
+    }
+    
+    output_file = "validation-summary.json"
+    save_to_file(summary, output_file)
+    
+    if invalid_rules and not continue_on_error:
+        sys.exit(1)
+    elif invalid_rules:
+        print(f"\n⚠️  Completed with {len(invalid_rules)} validation failures")
+    else:
+        print(f"\n🎉 All {len(valid_rules)} rules are valid and ready for deployment!")
+
+
 def list_rules_from_yaml(filter_query=None, limit=100):
     """
     List existing custom rules.
@@ -724,7 +874,6 @@ def get_schema_from_yaml(config_file):
     else:
         print("❌ Failed to retrieve schema")
         sys.exit(1)
-
 
 def get_resource_ids_command(provider=None, resource_type=None, filter_query=None, limit=10):
     """
@@ -1123,7 +1272,7 @@ def deploy_all_rules_command(rules_dir="rules", environment="production", contin
     
     # Get existing rules to check for duplicates
     print("🔍 Checking existing rules...")
-    existing_rules = get_custom_rules(falcon, limit=5000)  # Get more rules to check against
+    existing_rules = get_all_custom_rules_paginated(falcon, max_rules=5000)  # Use pagination to get more rules
     existing_rule_names = {}
     
     if existing_rules:
@@ -1546,6 +1695,15 @@ Examples:
 
   # Delete rule
   python3 rule-manager.py delete --rule-ids 7c4f9a81-3c50-47c7-83a2-c89459ad833f --confirm
+
+  # Validate all rules in directory
+  python3 rule-manager.py validate-all --rules-dir my-rules --continue-on-error
+
+  # Deploy all rules (create new or update existing)
+  python3 rule-manager.py deploy-all --rules-dir my-rules --continue-on-error
+
+  # Export all custom rules to YAML files
+  python3 rule-manager.py export-all --filter 'rule_origin:!"Default"' --output-dir exported-rules
         """
     )
     
@@ -1615,6 +1773,12 @@ Examples:
                                  help="Target environment (default: production)")
     parser_deploy_all.add_argument("--continue-on-error", action="store_true", help="Continue processing other rules if one fails")
     
+    # Validate all rules command
+    parser_validate_all = subparsers.add_parser("validate-all", help="Validate all rules from YAML files in directory")
+    parser_validate_all.add_argument("--rules-dir", default="rules", help="Directory containing YAML rule files (default: rules)")
+    parser_validate_all.add_argument("--continue-on-error", action="store_true", help="Continue validating other rules if one fails")
+    
+    
     # Export all rules command
     parser_export_all = subparsers.add_parser("export-all", help="Export all existing rules to YAML files")
     parser_export_all.add_argument("--output-dir", default="exported-rules", help="Directory to save YAML files (default: exported-rules)")
@@ -1667,6 +1831,10 @@ Examples:
         
         elif args.command == "deploy-all":
             deploy_all_rules_command(args.rules_dir, args.environment, args.continue_on_error)
+        
+        elif args.command == "validate-all":
+            validate_all_rules_command(args.rules_dir, args.continue_on_error)
+        
         
         elif args.command == "export-all":
             export_all_rules_command(args.output_dir, args.filter, args.limit)
