@@ -1,0 +1,81 @@
+[
+  {
+    "AWS::EC2::NetworkInsightsAccessScopeAnalysis": {
+      "configuration": {
+        "analyzedEniCount": "integer",
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "endDate": "string",
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "findingsFound": "string",
+        "firewallStatus": "object",
+        "labels": "object",
+        "methodSettings": "object",
+        "networkInsightsAccessScopeAnalysisArn": "string",
+        "networkInsightsAccessScopeAnalysisId": "string",
+        "networkInsightsAccessScopeId": "string",
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "startDate": "string",
+        "status": "string",
+        "statusMessage": "string",
+        "tags": "object",
+        "variables": "object",
+        "warningMessage": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

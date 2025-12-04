@@ -1,0 +1,96 @@
+[
+  {
+    "AWS::GlobalAccelerator::Accelerator": {
+      "configuration": {
+        "acceleratorArn": "string",
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "createdTime": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "dnsName": "string",
+        "dualStackDnsName": "string",
+        "enabled": "boolean",
+        "environment": {
+          "variables": "object"
+        },
+        "events": {
+          "message": "string",
+          "timestamp": "string"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "ipAddressType": "string",
+        "ipSets": {
+          "ipAddressFamily": "string",
+          "ipAddresses": "string",
+          "ipFamily": "string"
+        },
+        "labels": "object",
+        "lastModifiedTime": "string",
+        "methodSettings": "object",
+        "name": "string",
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "status": "string",
+        "tags": "object",
+        "variables": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "accelerator_attributes": {
+          "acceleratorAttributes": {
+            "flowLogsEnabled": "boolean",
+            "flowLogsS3Bucket": "string",
+            "flowLogsS3Prefix": "string"
+          }
+        },
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

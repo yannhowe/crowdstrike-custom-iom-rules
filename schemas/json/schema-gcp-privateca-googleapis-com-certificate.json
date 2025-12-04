@@ -1,0 +1,191 @@
+[
+  {
+    "privateca.googleapis.com/Certificate": {
+      "configuration": {
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificateDescription": {
+          "aiaIssuingCertificateUrls": "string",
+          "authorityKeyId": {
+            "keyId": "string"
+          },
+          "certFingerprint": {
+            "sha256Hash": "string"
+          },
+          "crlDistributionPoints": "string",
+          "publicKey": {
+            "key": "string"
+          },
+          "subjectDescription": {
+            "hexSerialNumber": "string",
+            "lifetime": "string",
+            "notAfterTime": "string",
+            "notBeforeTime": "string",
+            "subject": {
+              "commonName": "string",
+              "countryCode": "string",
+              "locality": "string",
+              "organization": "string",
+              "organizationalUnit": "string",
+              "province": "string"
+            },
+            "subjectAltName": {
+              "dnsNames": "string",
+              "ipAddresses": "string",
+              "uris": "string"
+            }
+          },
+          "subjectKeyId": {
+            "keyId": "string"
+          },
+          "x509Description": {
+            "additionalExtensions": {
+              "objectId": {
+                "objectIdPath": "integer"
+              },
+              "value": "string"
+            },
+            "aiaOcspServers": "string",
+            "caOptions": {
+              "isCa": "boolean",
+              "maxIssuerPathLength": "integer"
+            },
+            "keyUsage": {
+              "baseKeyUsage": {
+                "certSign": "boolean",
+                "contentCommitment": "boolean",
+                "crlSign": "boolean",
+                "dataEncipherment": "boolean",
+                "decipherOnly": "boolean",
+                "digitalSignature": "boolean",
+                "keyAgreement": "boolean",
+                "keyEncipherment": "boolean"
+              },
+              "extendedKeyUsage": {
+                "clientAuth": "boolean",
+                "codeSigning": "boolean",
+                "emailProtection": "boolean",
+                "serverAuth": "boolean",
+                "timeStamping": "boolean"
+              }
+            },
+            "nameConstraints": {
+              "critical": "boolean",
+              "permittedDnsNames": "string"
+            },
+            "policyIds": {
+              "objectIdPath": "integer"
+            }
+          }
+        },
+        "certificatePem": "string",
+        "certificateTemplate": "string",
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "publicKey": {
+            "format": "string",
+            "key": "string"
+          },
+          "softwareConfig": {
+            "properties": "object"
+          },
+          "subjectConfig": {
+            "subject": {
+              "commonName": "string",
+              "countryCode": "string",
+              "locality": "string",
+              "organization": "string",
+              "organizationalUnit": "string",
+              "province": "string"
+            },
+            "subjectAltName": {
+              "dnsNames": "string",
+              "ipAddresses": "string",
+              "uris": "string"
+            }
+          },
+          "x509Config": {
+            "caOptions": {
+              "isCa": "boolean",
+              "maxIssuerPathLength": "integer"
+            },
+            "keyUsage": {
+              "baseKeyUsage": {
+                "certSign": "boolean",
+                "crlSign": "boolean",
+                "digitalSignature": "boolean",
+                "keyEncipherment": "boolean"
+              },
+              "extendedKeyUsage": {
+                "clientAuth": "boolean",
+                "serverAuth": "boolean"
+              }
+            }
+          }
+        },
+        "createTime": "string",
+        "deployment": {
+          "files": "object"
+        },
+        "envVariables": "object",
+        "issuerCertificateAuthority": "string",
+        "labelExtractors": "object",
+        "labels": "object",
+        "lifetime": "string",
+        "maintenancePolicy": "object",
+        "metadata": {
+          "annotations": "object"
+        },
+        "name": "string",
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "pemCertificate": "string",
+        "pemCertificateChain": "string",
+        "pemCsr": "string",
+        "resourceLabels": "object",
+        "revocationDetails": {
+          "revocationState": "string",
+          "revocationTime": "string"
+        },
+        "schema": "object",
+        "selectors": "object",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "subjectMode": "string",
+        "updateTime": "string",
+        "view": {
+          "query": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": "object",
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

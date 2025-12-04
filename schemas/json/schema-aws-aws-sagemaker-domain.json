@@ -1,0 +1,328 @@
+[
+  {
+    "AWS::SageMaker::Domain": {
+      "configuration": {
+        "appNetworkAccessType": "string",
+        "appSecurityGroupManagement": "string",
+        "authMode": "string",
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "creationTime": "string",
+        "defaultSpaceSettings": {
+          "customFileSystemConfigs": {
+            "efsFileSystemConfig": {
+              "fileSystemId": "string",
+              "fileSystemPath": "string"
+            }
+          },
+          "customPosixUserConfig": {
+            "gid": "integer",
+            "uid": "integer"
+          },
+          "executionRole": "string",
+          "jupyterLabAppSettings": {
+            "codeRepositories": {
+              "repositoryUrl": "string"
+            },
+            "customImages": {
+              "appImageConfigName": "string",
+              "imageName": "string",
+              "imageVersionNumber": "integer"
+            },
+            "defaultResourceSpec": {
+              "instanceType": "string",
+              "lifecycleConfigArn": "string",
+              "sageMakerImageArn": "string"
+            },
+            "lifecycleConfigArns": "string"
+          },
+          "jupyterServerAppSettings": {
+            "defaultResourceSpec": {
+              "instanceType": "string",
+              "lifecycleConfigArn": "string",
+              "sageMakerImageArn": "string"
+            },
+            "lifecycleConfigArns": "string"
+          },
+          "kernelGatewayAppSettings": {
+            "customImages": {
+              "appImageConfigName": "string",
+              "imageName": "string",
+              "imageVersionNumber": "integer"
+            },
+            "defaultResourceSpec": {
+              "instanceType": "string",
+              "lifecycleConfigArn": "string",
+              "sageMakerImageArn": "string"
+            },
+            "lifecycleConfigArns": "string"
+          },
+          "securityGroups": "string",
+          "spaceStorageSettings": {
+            "defaultEbsStorageSettings": {
+              "defaultEbsVolumeSizeInGb": "integer",
+              "maximumEbsVolumeSizeInGb": "integer"
+            }
+          }
+        },
+        "defaultUserSettings": {
+          "canvasAppSettings": {
+            "directDeploySettings": {
+              "status": "string"
+            },
+            "generativeAiSettings": {
+              "amazonBedrockRoleArn": "string"
+            },
+            "identityProviderOAuthSettings": {
+              "dataSourceName": "string",
+              "secretArn": "string",
+              "status": "string"
+            },
+            "kendraSettings": {
+              "status": "string"
+            },
+            "modelRegisterSettings": {
+              "status": "string"
+            },
+            "timeSeriesForecastingSettings": {
+              "amazonForecastRoleArn": "string",
+              "status": "string"
+            },
+            "workspaceSettings": {
+              "s3ArtifactPath": "string",
+              "s3KmsKeyId": "string"
+            }
+          },
+          "codeEditorAppSettings": {
+            "customImages": {
+              "appImageConfigName": "string",
+              "imageName": "string",
+              "imageVersionNumber": "integer"
+            },
+            "defaultResourceSpec": {
+              "instanceType": "string",
+              "lifecycleConfigArn": "string",
+              "sageMakerImageArn": "string"
+            },
+            "lifecycleConfigArns": "string"
+          },
+          "customFileSystemConfigs": {
+            "efsFileSystemConfig": {
+              "fileSystemId": "string",
+              "fileSystemPath": "string"
+            }
+          },
+          "customPosixUserConfig": {
+            "gid": "integer",
+            "uid": "integer"
+          },
+          "defaultLandingUri": "string",
+          "executionRole": "string",
+          "jupyterLabAppSettings": {
+            "codeRepositories": {
+              "repositoryUrl": "string"
+            },
+            "customImages": {
+              "appImageConfigName": "string",
+              "imageName": "string",
+              "imageVersionNumber": "integer"
+            },
+            "defaultResourceSpec": {
+              "instanceType": "string",
+              "lifecycleConfigArn": "string",
+              "sageMakerImageArn": "string",
+              "sageMakerImageVersionAlias": "string",
+              "sageMakerImageVersionArn": "string"
+            },
+            "lifecycleConfigArns": "string"
+          },
+          "jupyterServerAppSettings": {
+            "codeRepositories": {
+              "repositoryUrl": "string"
+            },
+            "defaultResourceSpec": {
+              "instanceType": "string",
+              "lifecycleConfigArn": "string",
+              "sageMakerImageArn": "string"
+            },
+            "lifecycleConfigArns": "string"
+          },
+          "kernelGatewayAppSettings": {
+            "customImages": {
+              "appImageConfigName": "string",
+              "imageName": "string",
+              "imageVersionNumber": "integer"
+            },
+            "defaultResourceSpec": {
+              "instanceType": "string",
+              "lifecycleConfigArn": "string",
+              "sageMakerImageArn": "string",
+              "sageMakerImageVersionArn": "string"
+            },
+            "lifecycleConfigArns": "string"
+          },
+          "rSessionAppSettings": {
+            "customImages": {
+              "appImageConfigName": "string",
+              "imageName": "string",
+              "imageVersionNumber": "integer"
+            },
+            "defaultResourceSpec": {
+              "instanceType": "string",
+              "sageMakerImageArn": "string"
+            }
+          },
+          "rStudioServerProAppSettings": {
+            "accessStatus": "string",
+            "userGroup": "string"
+          },
+          "securityGroups": "string",
+          "sharingSettings": {
+            "notebookOutputOption": "string",
+            "s3KmsKeyId": "string",
+            "s3OutputPath": "string"
+          },
+          "spaceStorageSettings": {
+            "defaultEbsStorageSettings": {
+              "defaultEbsVolumeSizeInGb": "integer",
+              "maximumEbsVolumeSizeInGb": "integer"
+            }
+          },
+          "studioWebPortal": "string",
+          "studioWebPortalSettings": {
+            "hiddenAppTypes": "string",
+            "hiddenMlTools": "string"
+          },
+          "tensorBoardAppSettings": {
+            "defaultResourceSpec": {
+              "instanceType": "string"
+            }
+          }
+        },
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "domainArn": "string",
+        "domainId": "string",
+        "domainName": "string",
+        "domainSettings": {
+          "amazonQSettings": {
+            "qProfileArn": "string",
+            "status": "string"
+          },
+          "dockerSettings": {
+            "enableDockerAccess": "string",
+            "vpcOnlyTrustedAccounts": "string"
+          },
+          "executionRoleIdentityConfig": "string",
+          "rStudioServerProDomainSettings": {
+            "defaultResourceSpec": {
+              "instanceType": "string",
+              "sageMakerImageArn": "string"
+            },
+            "domainExecutionRoleArn": "string",
+            "rStudioConnectUrl": "string"
+          },
+          "securityGroupIds": "string"
+        },
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "failureReason": "string",
+        "firewallStatus": "object",
+        "homeEfsFileSystemId": "string",
+        "kmsKeyId": "string",
+        "labels": "object",
+        "lastModifiedTime": "string",
+        "methodSettings": "object",
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "securityGroupIdForDomainBoundary": "string",
+        "selectors": {
+          "labels": "object"
+        },
+        "singleSignOnApplicationArn": "string",
+        "singleSignOnManagedApplicationInstanceId": "string",
+        "status": "string",
+        "subnetIds": "string",
+        "tags": "object",
+        "url": "string",
+        "variables": "object",
+        "vpcId": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "efs_file_systems": {
+          "creationTime": "string",
+          "creationToken": "string",
+          "encrypted": "boolean",
+          "fileSystemArn": "string",
+          "fileSystemId": "string",
+          "fileSystemProtection": {
+            "replicationOverwriteProtection": "string"
+          },
+          "kmsKeyId": "string",
+          "lifeCycleState": "string",
+          "name": "string",
+          "numberOfMountTargets": "integer",
+          "ownerId": "string",
+          "performanceMode": "string",
+          "sizeInBytes": {
+            "timestamp": "string",
+            "value": "integer",
+            "valueInArchive": "integer",
+            "valueInIA": "integer",
+            "valueInStandard": "integer"
+          },
+          "tags": {
+            "key": "string",
+            "value": "string"
+          },
+          "throughputMode": "string"
+        },
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

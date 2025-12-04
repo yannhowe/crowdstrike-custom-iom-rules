@@ -1,0 +1,110 @@
+[
+  {
+    "AWS::AutoScaling::LaunchConfiguration": {
+      "configuration": {
+        "associatePublicIpAddress": "boolean",
+        "blockDeviceMappings": {
+          "deviceName": "string",
+          "ebs": {
+            "deleteOnTermination": "boolean",
+            "encrypted": "boolean",
+            "iops": "integer",
+            "snapshotId": "string",
+            "throughput": "integer",
+            "volumeSize": "integer",
+            "volumeType": "string"
+          },
+          "noDevice": "boolean",
+          "virtualName": "string"
+        },
+        "certificatePem": "string",
+        "classicLinkVPCId": "string",
+        "classicLinkVPCSecurityGroups": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "createdTime": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "ebsOptimized": "boolean",
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "iamInstanceProfile": "string",
+        "imageId": "string",
+        "instanceMonitoring": {
+          "enabled": "boolean"
+        },
+        "instanceType": "string",
+        "kernelId": "string",
+        "keyName": "string",
+        "labels": "object",
+        "launchConfigurationARN": "string",
+        "launchConfigurationName": "string",
+        "metadataOptions": {
+          "httpEndpoint": "string",
+          "httpPutResponseHopLimit": "integer",
+          "httpTokens": "string"
+        },
+        "methodSettings": "object",
+        "placementTenancy": "string",
+        "policy": "object",
+        "ramdiskId": "string",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "securityGroups": "string",
+        "selectors": {
+          "labels": "object"
+        },
+        "spotPrice": "string",
+        "tags": "object",
+        "userData": "string",
+        "variables": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

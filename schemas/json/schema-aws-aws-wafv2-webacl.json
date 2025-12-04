@@ -1,0 +1,258 @@
+[
+  {
+    "AWS::WAFv2::WebACL": {
+      "configuration": {
+        "arn": "string",
+        "associationConfig": {
+          "requestBody": {
+            "API_GATEWAY": {
+              "defaultSizeInspectionLimit": "string"
+            },
+            "CLOUDFRONT": {
+              "defaultSizeInspectionLimit": "string"
+            },
+            "COGNITO_USER_POOL": {
+              "defaultSizeInspectionLimit": "string"
+            }
+          }
+        },
+        "capacity": "integer",
+        "captchaConfig": {
+          "immunityTimeProperty": {
+            "immunityTime": "integer"
+          }
+        },
+        "certificatePem": "string",
+        "challengeConfig": {
+          "immunityTimeProperty": {
+            "immunityTime": "integer"
+          }
+        },
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "customResponseBodies": "object",
+        "defaultAction": {
+          "allow": {
+            "customRequestHandling": {
+              "insertHeaders": {
+                "name": "string",
+                "value": "string"
+              }
+            }
+          },
+          "block": {
+            "customResponse": {
+              "customResponseBodyKey": "string",
+              "responseCode": "integer",
+              "responseHeaders": {
+                "name": "string",
+                "value": "string"
+              }
+            }
+          }
+        },
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "description": "string",
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "id": "string",
+        "labelNamespace": "string",
+        "labels": "object",
+        "managedByFirewallManager": "boolean",
+        "methodSettings": "object",
+        "name": "string",
+        "policy": "object",
+        "postProcessFirewallManagerRuleGroups": {
+          "firewallManagerStatement": {
+            "managedRuleGroupStatement": {
+              "excludedRules": {
+                "name": "string"
+              },
+              "managedRuleGroupConfigs": {
+                "awsManagedRulesBotControlRuleSet": {
+                  "inspectionLevel": "string"
+                }
+              },
+              "name": "string",
+              "ruleActionOverrides": {
+                "actionToUse": {
+                  "allow": "object",
+                  "block": "object",
+                  "count": "object"
+                },
+                "name": "string"
+              },
+              "vendorName": "string",
+              "version": "string"
+            },
+            "ruleGroupReferenceStatement": {
+              "arn": "string",
+              "excludedRules": {
+                "name": "string"
+              }
+            }
+          },
+          "name": "string",
+          "overrideAction": {
+            "count": "object",
+            "none": "object"
+          },
+          "priority": "integer",
+          "visibilityConfig": {
+            "cloudWatchMetricsEnabled": "boolean",
+            "metricName": "string",
+            "sampledRequestsEnabled": "boolean"
+          }
+        },
+        "preProcessFirewallManagerRuleGroups": {
+          "firewallManagerStatement": {
+            "managedRuleGroupStatement": {
+              "excludedRules": {
+                "name": "string"
+              },
+              "managedRuleGroupConfigs": {
+                "awsManagedRulesBotControlRuleSet": {
+                  "enableMachineLearning": "boolean",
+                  "inspectionLevel": "string"
+                }
+              },
+              "name": "string",
+              "ruleActionOverrides": {
+                "actionToUse": {
+                  "allow": "object",
+                  "block": "object",
+                  "count": "object"
+                },
+                "name": "string"
+              },
+              "vendorName": "string",
+              "version": "string"
+            },
+            "ruleGroupReferenceStatement": {
+              "arn": "string",
+              "excludedRules": {
+                "name": "string"
+              },
+              "ruleActionOverrides": {
+                "actionToUse": {
+                  "count": "object"
+                },
+                "name": "string"
+              }
+            }
+          },
+          "name": "string",
+          "overrideAction": {
+            "count": "object",
+            "none": "object"
+          },
+          "priority": "integer",
+          "visibilityConfig": {
+            "cloudWatchMetricsEnabled": "boolean",
+            "metricName": "string",
+            "sampledRequestsEnabled": "boolean"
+          }
+        },
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "tags": "object",
+        "tokenDomains": "string",
+        "variables": "object",
+        "visibilityConfig": {
+          "cloudWatchMetricsEnabled": "boolean",
+          "metricName": "string",
+          "sampledRequestsEnabled": "boolean"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "logging_configuration": {
+          "loggingConfiguration": {
+            "logDestinationConfigs": "string",
+            "logScope": "string",
+            "logType": "string",
+            "loggingFilter": {
+              "defaultBehavior": "string",
+              "filters": {
+                "behavior": "string",
+                "conditions": {
+                  "actionCondition": {
+                    "action": "string"
+                  },
+                  "labelNameCondition": {
+                    "labelName": "string"
+                  }
+                },
+                "requirement": "string"
+              }
+            },
+            "managedByFirewallManager": "boolean",
+            "redactedFields": {
+              "jsonBody": {
+                "invalidFallbackBehavior": "string",
+                "matchPattern": {
+                  "includedPaths": "string"
+                },
+                "matchScope": "string"
+              },
+              "method": "object",
+              "queryString": "object",
+              "singleHeader": {
+                "name": "string"
+              },
+              "uriPath": "object"
+            },
+            "resourceArn": "string"
+          }
+        },
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "AWS::ImageBuilder::ImagePipeline": {
+      "configuration": {
+        "arn": "string",
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "containerRecipeArn": "string",
+        "dateCreated": "string",
+        "dateLastRun": "string",
+        "dateNextRun": "string",
+        "dateUpdated": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "description": "string",
+        "distributionConfigurationArn": "string",
+        "enhancedImageMetadataEnabled": "boolean",
+        "environment": {
+          "variables": "object"
+        },
+        "executionRole": "string",
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "imageRecipeArn": "string",
+        "imageScanningConfiguration": {
+          "imageScanningEnabled": "boolean"
+        },
+        "imageTestsConfiguration": {
+          "imageTestsEnabled": "boolean",
+          "timeoutMinutes": "integer"
+        },
+        "infrastructureConfigurationArn": "string",
+        "labels": "object",
+        "methodSettings": "object",
+        "name": "string",
+        "platform": "string",
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "schedule": {
+          "pipelineExecutionStartCondition": "string",
+          "scheduleExpression": "string",
+          "timezone": "string"
+        },
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "status": "string",
+        "tags": "object",
+        "variables": "object",
+        "workflows": {
+          "parallelGroup": "string",
+          "workflowArn": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

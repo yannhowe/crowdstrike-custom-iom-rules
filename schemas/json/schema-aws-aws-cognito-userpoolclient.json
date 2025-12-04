@@ -1,0 +1,155 @@
+[
+  {
+    "AWS::Cognito::UserPoolClient": {
+      "configuration": {
+        "accessTokenValidity": "integer",
+        "allowedOAuthFlows": "string",
+        "allowedOAuthFlowsUserPoolClient": "boolean",
+        "allowedOAuthScopes": "string",
+        "analyticsConfiguration": {
+          "applicationArn": "string",
+          "applicationId": "string",
+          "externalId": "string",
+          "roleArn": "string",
+          "userDataShared": "boolean"
+        },
+        "authSessionValidity": "integer",
+        "callbackURLs": "string",
+        "certificatePem": "string",
+        "clientId": "string",
+        "clientName": "string",
+        "clientSecret": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "creationDate": "string",
+        "defaultRedirectURI": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "enablePropagateAdditionalUserContextData": "boolean",
+        "enableTokenRevocation": "boolean",
+        "environment": {
+          "variables": "object"
+        },
+        "explicitAuthFlows": "string",
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "idTokenValidity": "integer",
+        "labels": "object",
+        "lastModifiedDate": "string",
+        "logoutURLs": "string",
+        "methodSettings": "object",
+        "policy": "object",
+        "preventUserExistenceErrors": "string",
+        "readAttributes": "string",
+        "refreshTokenValidity": "integer",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "supportedIdentityProviders": "string",
+        "tags": "object",
+        "tokenValidityUnits": {
+          "accessToken": "string",
+          "idToken": "string",
+          "refreshToken": "string"
+        },
+        "userPoolId": "string",
+        "variables": "object",
+        "writeAttributes": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "riskConfiguration": {
+          "accountTakeoverRiskConfiguration": {
+            "actions": {
+              "highAction": {
+                "eventAction": "string",
+                "notify": "boolean"
+              },
+              "lowAction": {
+                "eventAction": "string",
+                "notify": "boolean"
+              },
+              "mediumAction": {
+                "eventAction": "string",
+                "notify": "boolean"
+              }
+            },
+            "notifyConfiguration": {
+              "blockEmail": {
+                "htmlBody": "string",
+                "subject": "string",
+                "textBody": "string"
+              },
+              "from": "string",
+              "mfaEmail": {
+                "htmlBody": "string",
+                "subject": "string",
+                "textBody": "string"
+              },
+              "noActionEmail": {
+                "htmlBody": "string",
+                "subject": "string",
+                "textBody": "string"
+              },
+              "sourceArn": "string"
+            }
+          },
+          "clientId": "string",
+          "compromisedCredentialsRiskConfiguration": {
+            "actions": {
+              "eventAction": "string"
+            },
+            "eventFilter": "string"
+          },
+          "riskExceptionConfiguration": {
+            "blockedIPRangeList": "string",
+            "skippedIPRangeList": "string"
+          },
+          "userPoolId": "string"
+        },
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

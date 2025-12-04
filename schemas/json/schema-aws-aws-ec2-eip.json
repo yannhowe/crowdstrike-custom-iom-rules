@@ -1,0 +1,81 @@
+[
+  {
+    "AWS::EC2::EIP": {
+      "configuration": {
+        "allocationId": "string",
+        "associationId": "string",
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "domain": "string",
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "instanceId": "string",
+        "labels": "object",
+        "methodSettings": "object",
+        "networkBorderGroup": "string",
+        "networkInterfaceId": "string",
+        "networkInterfaceOwnerId": "string",
+        "policy": "object",
+        "privateIpAddress": "string",
+        "publicIp": "string",
+        "publicIpv4Pool": "string",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "tags": "object",
+        "variables": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

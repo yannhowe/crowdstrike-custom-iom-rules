@@ -1,0 +1,178 @@
+[
+  {
+    "Microsoft.Sql/servers/databases": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "id": "string",
+        "identity": {
+          "type": "string",
+          "userAssignedIdentities": "object"
+        },
+        "kind": "string",
+        "location": "string",
+        "managedBy": "string",
+        "name": "string",
+        "properties": {
+          "agentPoolProfiles": "object",
+          "autoPauseDelay": "integer",
+          "catalogCollation": "string",
+          "collation": "string",
+          "creationDate": "string",
+          "currentBackupStorageRedundancy": "string",
+          "currentServiceObjectiveName": "string",
+          "currentSku": {
+            "capacity": "integer",
+            "family": "string",
+            "name": "string",
+            "tier": "string"
+          },
+          "databaseId": "string",
+          "defaultSecondaryLocation": "string",
+          "definition": {
+            "actions": "object"
+          },
+          "earliestRestoreDate": "string",
+          "elasticPoolId": "string",
+          "failoverGroupId": "string",
+          "highAvailabilityReplicaCount": "integer",
+          "isLedgerOn": "boolean",
+          "licenseType": "string",
+          "maintenanceConfigurationId": "string",
+          "managedNetwork": "object",
+          "maxLogSizeBytes": "integer",
+          "maxSizeBytes": "integer",
+          "minCapacity": "integer",
+          "osProfile": "object",
+          "pausedDate": "string",
+          "readScale": "string",
+          "requestedBackupStorageRedundancy": "string",
+          "requestedServiceObjectiveName": "string",
+          "resumedDate": "string",
+          "secondaryType": "string",
+          "status": "string",
+          "storageProfile": "object",
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          },
+          "zoneRedundant": "boolean"
+        },
+        "resources": "object",
+        "sku": {
+          "capacity": "integer",
+          "family": "string",
+          "name": "string",
+          "tier": "string"
+        },
+        "tags": "object",
+        "type": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "advancedThreatProtection": {
+          "id": "string",
+          "name": "string",
+          "properties": {
+            "creationTime": "string",
+            "state": "string"
+          },
+          "type": "string"
+        },
+        "appSettings": "object",
+        "auditingPolicies": {
+          "id": "string",
+          "name": "string",
+          "properties": {
+            "auditActionsAndGroups": "string",
+            "isAzureMonitorTargetEnabled": "boolean",
+            "isManagedIdentityInUse": "boolean",
+            "isStorageSecondaryKeyInUse": "boolean",
+            "queueDelayMs": "integer",
+            "retentionDays": "integer",
+            "state": "string",
+            "storageAccountSubscriptionId": "string",
+            "storageEndpoint": "string"
+          },
+          "type": "string"
+        },
+        "configurations": "object",
+        "diagnosticSettings": {
+          "id": "string",
+          "name": "string",
+          "properties": {
+            "eventHubAuthorizationRuleId": "string",
+            "eventHubName": "string",
+            "logs": {
+              "category": "string",
+              "categoryGroup": "string",
+              "enabled": "boolean",
+              "retentionPolicy": {
+                "days": "integer",
+                "enabled": "boolean"
+              }
+            },
+            "marketplacePartnerId": "string",
+            "metrics": {
+              "category": "string",
+              "enabled": "boolean",
+              "retentionPolicy": {
+                "days": "integer",
+                "enabled": "boolean"
+              }
+            },
+            "storageAccountId": "string",
+            "workspaceId": "string"
+          },
+          "type": "string"
+        },
+        "securityAlertPolicies": {
+          "id": "string",
+          "name": "string",
+          "properties": {
+            "creationTime": "string",
+            "disabledAlerts": "string",
+            "emailAccountAdmins": "boolean",
+            "emailAddresses": "string",
+            "retentionDays": "integer",
+            "state": "string",
+            "storageAccountAccessKey": "string",
+            "storageEndpoint": "string"
+          },
+          "type": "string"
+        },
+        "transparentDataEncryption": {
+          "id": "string",
+          "name": "string",
+          "properties": {
+            "state": "string"
+          },
+          "type": "string"
+        }
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

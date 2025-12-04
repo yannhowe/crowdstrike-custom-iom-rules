@@ -1,0 +1,66 @@
+[
+  {
+    "Microsoft.Resources/subscriptions": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "id": "string",
+        "identity": {
+          "userAssignedIdentities": "object"
+        },
+        "name": "string",
+        "properties": {
+          "agentPoolProfiles": "object",
+          "definition": {
+            "actions": "object"
+          },
+          "id": "string",
+          "managedNetwork": "object",
+          "osProfile": "object",
+          "state": "string",
+          "storageProfile": "object",
+          "subscriptionPolicies": {
+            "locationPlacementId": "string",
+            "quotaId": "string",
+            "spendingLimit": "string"
+          },
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          }
+        },
+        "resources": "object",
+        "subscriptionId": "string",
+        "tags": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "configurations": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

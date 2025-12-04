@@ -1,0 +1,78 @@
+[
+  {
+    "firebase.googleapis.com/FirebaseProject": {
+      "configuration": {
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "deployment": {
+          "files": "object"
+        },
+        "displayName": "string",
+        "envVariables": "object",
+        "etag": "string",
+        "labelExtractors": "object",
+        "labels": "object",
+        "maintenancePolicy": "object",
+        "metadata": {
+          "annotations": "object"
+        },
+        "name": "string",
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "projectId": "string",
+        "projectNumber": "string",
+        "resourceLabels": "object",
+        "resources": {
+          "hostingSite": "string",
+          "locationId": "string",
+          "realtimeDatabaseInstance": "string",
+          "storageBucket": "string"
+        },
+        "schema": "object",
+        "selectors": "object",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "state": "string",
+        "view": {
+          "query": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": "object",
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

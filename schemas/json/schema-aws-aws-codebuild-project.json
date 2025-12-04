@@ -1,0 +1,227 @@
+[
+  {
+    "AWS::CodeBuild::Project": {
+      "configuration": {
+        "arn": "string",
+        "artifacts": {
+          "artifactIdentifier": "string",
+          "bucketOwnerAccess": "string",
+          "encryptionDisabled": "boolean",
+          "location": "string",
+          "name": "string",
+          "namespaceType": "string",
+          "overrideArtifactName": "boolean",
+          "packaging": "string",
+          "path": "string",
+          "type": "string"
+        },
+        "badge": {
+          "badgeEnabled": "boolean",
+          "badgeRequestUrl": "string"
+        },
+        "buildBatchConfig": {
+          "batchReportMode": "string",
+          "combineArtifacts": "boolean",
+          "restrictions": {
+            "computeTypesAllowed": "string",
+            "maximumBuildsAllowed": "integer"
+          },
+          "serviceRole": "string",
+          "timeoutInMins": "integer"
+        },
+        "cache": {
+          "location": "string",
+          "modes": "string",
+          "type": "string"
+        },
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "concurrentBuildLimit": "integer",
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "created": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "description": "string",
+        "encryptionKey": "string",
+        "environment": {
+          "certificate": "string",
+          "computeType": "string",
+          "environmentVariables": {
+            "name": "string",
+            "type": "string",
+            "value": "string"
+          },
+          "fleet": {
+            "fleetArn": "string"
+          },
+          "image": "string",
+          "imagePullCredentialsType": "string",
+          "privilegedMode": "boolean",
+          "registryCredential": {
+            "credential": "string",
+            "credentialProvider": "string"
+          },
+          "type": "string",
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "fileSystemLocations": {
+          "identifier": "string",
+          "location": "string",
+          "mountOptions": "string",
+          "mountPoint": "string",
+          "type": "string"
+        },
+        "firewallStatus": "object",
+        "labels": "object",
+        "lastModified": "string",
+        "logsConfig": {
+          "cloudWatchLogs": {
+            "groupName": "string",
+            "status": "string",
+            "streamName": "string"
+          },
+          "s3Logs": {
+            "bucketOwnerAccess": "string",
+            "encryptionDisabled": "boolean",
+            "location": "string",
+            "status": "string"
+          }
+        },
+        "methodSettings": "object",
+        "name": "string",
+        "policy": "object",
+        "projectVisibility": "string",
+        "publicProjectAlias": "string",
+        "queuedTimeoutInMinutes": "integer",
+        "resourceAccessRole": "string",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secondaryArtifacts": {
+          "artifactIdentifier": "string",
+          "encryptionDisabled": "boolean",
+          "location": "string",
+          "name": "string",
+          "namespaceType": "string",
+          "overrideArtifactName": "boolean",
+          "packaging": "string",
+          "path": "string",
+          "type": "string"
+        },
+        "secondarySourceVersions": {
+          "sourceIdentifier": "string",
+          "sourceVersion": "string"
+        },
+        "secondarySources": {
+          "auth": {
+            "resource": "string",
+            "type": "string"
+          },
+          "buildspec": "string",
+          "gitCloneDepth": "integer",
+          "gitSubmodulesConfig": {
+            "fetchSubmodules": "boolean"
+          },
+          "insecureSsl": "boolean",
+          "location": "string",
+          "reportBuildStatus": "boolean",
+          "sourceIdentifier": "string",
+          "type": "string"
+        },
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "serviceRole": "string",
+        "source": {
+          "auth": {
+            "resource": "string",
+            "type": "string"
+          },
+          "buildStatusConfig": {
+            "context": "string",
+            "targetUrl": "string"
+          },
+          "buildspec": "string",
+          "gitCloneDepth": "integer",
+          "gitSubmodulesConfig": {
+            "fetchSubmodules": "boolean"
+          },
+          "insecureSsl": "boolean",
+          "location": "string",
+          "reportBuildStatus": "boolean",
+          "sourceIdentifier": "string",
+          "type": "string"
+        },
+        "sourceVersion": "string",
+        "tags": "object",
+        "timeoutInMinutes": "integer",
+        "variables": "object",
+        "vpcConfig": {
+          "securityGroupIds": "string",
+          "subnets": "string",
+          "vpcId": "string"
+        },
+        "webhook": {
+          "branchFilter": "string",
+          "buildType": "string",
+          "filterGroups": {
+            "excludeMatchedPattern": "boolean",
+            "pattern": "string",
+            "type": "string"
+          },
+          "manualCreation": "boolean",
+          "payloadUrl": "string",
+          "scopeConfiguration": {
+            "domain": "string",
+            "name": "string",
+            "scope": "string"
+          },
+          "url": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

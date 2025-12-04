@@ -1,0 +1,105 @@
+[
+  {
+    "AWS::Detective::Graph": {
+      "configuration": {
+        "arn": "string",
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "createdTime": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "labels": "object",
+        "methodSettings": "object",
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "tags": "object",
+        "variables": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "datasourcePackages": {
+          "ASFF_SECURITYHUB_FINDING": {
+            "datasourcePackageIngestState": "string",
+            "lastIngestStateChange": {
+              "STARTED": {
+                "timestamp": "string"
+              },
+              "STOPPED": {
+                "timestamp": "string"
+              }
+            }
+          },
+          "DETECTIVE_CORE": {
+            "datasourcePackageIngestState": "string",
+            "lastIngestStateChange": {
+              "STARTED": {
+                "timestamp": "string"
+              }
+            }
+          },
+          "EKS_AUDIT": {
+            "datasourcePackageIngestState": "string",
+            "lastIngestStateChange": {
+              "STARTED": {
+                "timestamp": "string"
+              },
+              "STOPPED": {
+                "timestamp": "string"
+              }
+            }
+          }
+        },
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

@@ -1,0 +1,111 @@
+[
+  {
+    "apigee.googleapis.com/Organization": {
+      "configuration": {
+        "analyticsRegion": "string",
+        "authorizedNetwork": "string",
+        "billingType": "string",
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "createdAt": "string",
+        "deployment": {
+          "files": "object"
+        },
+        "description": "string",
+        "displayName": "string",
+        "envVariables": "object",
+        "environments": "string",
+        "labelExtractors": "object",
+        "labels": "object",
+        "lastModifiedAt": "string",
+        "maintenancePolicy": "object",
+        "metadata": {
+          "annotations": "object"
+        },
+        "name": "string",
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "projectId": "string",
+        "properties": {
+          "property": {
+            "name": "string",
+            "value": "string"
+          }
+        },
+        "resourceLabels": "object",
+        "runtimeDatabaseEncryptionKeyName": "string",
+        "runtimeType": "string",
+        "schema": "object",
+        "selectors": "object",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "state": "string",
+        "subscriptionPlan": "string",
+        "subscriptionType": "string",
+        "view": {
+          "query": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "apiproducts": {
+          "name": "string"
+        },
+        "instances": {
+          "accessLoggingConfig": {
+            "enabled": "boolean"
+          },
+          "consumerAcceptList": "string",
+          "createdAt": "string",
+          "description": "string",
+          "diskEncryptionKeyName": "string",
+          "displayName": "string",
+          "host": "string",
+          "ipRange": "string",
+          "lastModifiedAt": "string",
+          "location": "string",
+          "name": "string",
+          "peeringCidrRange": "string",
+          "port": "string",
+          "runtimeVersion": "string",
+          "serviceAttachment": "string",
+          "state": "string"
+        }
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

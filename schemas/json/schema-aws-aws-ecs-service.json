@@ -1,0 +1,248 @@
+[
+  {
+    "AWS::ECS::Service": {
+      "configuration": {
+        "capacityProviderStrategy": {
+          "base": "integer",
+          "capacityProvider": "string",
+          "weight": "integer"
+        },
+        "certificatePem": "string",
+        "clusterArn": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "createdAt": "string",
+        "createdBy": "string",
+        "deploymentConfiguration": {
+          "alarms": {
+            "alarmNames": "string",
+            "enable": "boolean",
+            "rollback": "boolean"
+          },
+          "deploymentCircuitBreaker": {
+            "enable": "boolean",
+            "rollback": "boolean"
+          },
+          "maximumPercent": "integer",
+          "minimumHealthyPercent": "integer"
+        },
+        "deploymentController": {
+          "type": "string"
+        },
+        "deployments": {
+          "capacityProviderStrategy": {
+            "base": "integer",
+            "capacityProvider": "string",
+            "weight": "integer"
+          },
+          "createdAt": "string",
+          "desiredCount": "integer",
+          "failedTasks": "integer",
+          "fargateEphemeralStorage": {
+            "kmsKeyId": "string"
+          },
+          "id": "string",
+          "launchType": "string",
+          "networkConfiguration": {
+            "awsvpcConfiguration": {
+              "assignPublicIp": "string",
+              "securityGroups": "string",
+              "subnets": "string"
+            }
+          },
+          "pendingCount": "integer",
+          "platformFamily": "string",
+          "platformVersion": "string",
+          "rolloutState": "string",
+          "rolloutStateReason": "string",
+          "runningCount": "integer",
+          "serviceConnectConfiguration": "object",
+          "serviceConnectResources": {
+            "discoveryArn": "string",
+            "discoveryName": "string"
+          },
+          "status": "string",
+          "taskDefinition": "string",
+          "updatedAt": "string",
+          "volumeConfigurations": {
+            "managedEBSVolume": {
+              "encrypted": "boolean",
+              "filesystemType": "string",
+              "iops": "integer",
+              "kmsKeyId": "string",
+              "roleArn": "string",
+              "sizeInGiB": "integer",
+              "snapshotId": "string",
+              "tagSpecifications": {
+                "propagateTags": "string",
+                "resourceType": "string",
+                "tags": {
+                  "key": "string",
+                  "value": "string"
+                }
+              },
+              "throughput": "integer",
+              "volumeType": "string"
+            },
+            "name": "string"
+          }
+        },
+        "desiredCount": "integer",
+        "enableECSManagedTags": "boolean",
+        "enableExecuteCommand": "boolean",
+        "environment": {
+          "variables": "object"
+        },
+        "events": {
+          "createdAt": "string",
+          "id": "string",
+          "message": "string"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "healthCheckGracePeriodSeconds": "integer",
+        "labels": "object",
+        "launchType": "string",
+        "loadBalancers": {
+          "containerName": "string",
+          "containerPort": "integer",
+          "loadBalancerName": "string",
+          "targetGroupArn": "string"
+        },
+        "methodSettings": "object",
+        "networkConfiguration": {
+          "awsvpcConfiguration": {
+            "assignPublicIp": "string",
+            "securityGroups": "string",
+            "subnets": "string"
+          }
+        },
+        "pendingCount": "integer",
+        "placementConstraints": {
+          "expression": "string",
+          "type": "string"
+        },
+        "placementStrategy": {
+          "field": "string",
+          "type": "string"
+        },
+        "platformFamily": "string",
+        "platformVersion": "string",
+        "policy": "object",
+        "propagateTags": "string",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "roleArn": "string",
+        "rules": "object",
+        "runningCount": "integer",
+        "schedulingStrategy": "string",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "serviceArn": "string",
+        "serviceName": "string",
+        "serviceRegistries": {
+          "containerName": "string",
+          "containerPort": "integer",
+          "port": "integer",
+          "registryArn": "string"
+        },
+        "status": "string",
+        "tags": "object",
+        "taskDefinition": "string",
+        "taskSets": {
+          "capacityProviderStrategy": {
+            "base": "integer",
+            "capacityProvider": "string",
+            "weight": "integer"
+          },
+          "clusterArn": "string",
+          "computedDesiredCount": "integer",
+          "createdAt": "string",
+          "externalId": "string",
+          "fargateEphemeralStorage": {
+            "kmsKeyId": "string"
+          },
+          "id": "string",
+          "launchType": "string",
+          "loadBalancers": {
+            "containerName": "string",
+            "containerPort": "integer",
+            "targetGroupArn": "string"
+          },
+          "networkConfiguration": {
+            "awsvpcConfiguration": {
+              "assignPublicIp": "string",
+              "securityGroups": "string",
+              "subnets": "string"
+            }
+          },
+          "pendingCount": "integer",
+          "platformFamily": "string",
+          "platformVersion": "string",
+          "runningCount": "integer",
+          "scale": {
+            "unit": "string",
+            "value": "integer"
+          },
+          "serviceArn": "string",
+          "serviceRegistries": {
+            "containerName": "string",
+            "containerPort": "integer",
+            "port": "integer",
+            "registryArn": "string"
+          },
+          "stabilityStatus": "string",
+          "stabilityStatusAt": "string",
+          "startedBy": "string",
+          "status": "string",
+          "taskDefinition": "string",
+          "taskSetArn": "string",
+          "updatedAt": "string"
+        },
+        "variables": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

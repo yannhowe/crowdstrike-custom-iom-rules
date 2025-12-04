@@ -1,0 +1,318 @@
+[
+  {
+    "AWS::EC2::Instance": {
+      "configuration": {
+        "amiLaunchIndex": "integer",
+        "architecture": "string",
+        "blockDeviceMappings": {
+          "deviceName": "string",
+          "ebs": {
+            "associatedResource": "string",
+            "attachTime": "string",
+            "deleteOnTermination": "boolean",
+            "status": "string",
+            "volumeId": "string"
+          }
+        },
+        "bootMode": "string",
+        "capacityReservationId": "string",
+        "capacityReservationSpecification": {
+          "capacityReservationPreference": "string",
+          "capacityReservationTarget": {
+            "capacityReservationId": "string",
+            "capacityReservationResourceGroupArn": "string"
+          }
+        },
+        "certificatePem": "string",
+        "clientToken": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "cpuOptions": {
+          "amdSevSnp": "string",
+          "coreCount": "integer",
+          "threadsPerCore": "integer"
+        },
+        "currentInstanceBootMode": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "ebsOptimized": "boolean",
+        "elasticGpuAssociations": {
+          "elasticGpuAssociationId": "string",
+          "elasticGpuAssociationState": "string",
+          "elasticGpuAssociationTime": "string",
+          "elasticGpuId": "string"
+        },
+        "elasticInferenceAcceleratorAssociations": {
+          "elasticInferenceAcceleratorArn": "string",
+          "elasticInferenceAcceleratorAssociationId": "string",
+          "elasticInferenceAcceleratorAssociationState": "string",
+          "elasticInferenceAcceleratorAssociationTime": "string"
+        },
+        "enaSupport": "boolean",
+        "enclaveOptions": {
+          "enabled": "boolean"
+        },
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "hibernationOptions": {
+          "configured": "boolean"
+        },
+        "hypervisor": "string",
+        "iamInstanceProfile": {
+          "arn": "string",
+          "id": "string"
+        },
+        "imageId": "string",
+        "instanceId": "string",
+        "instanceLifecycle": "string",
+        "instanceType": "string",
+        "ipv6Address": "string",
+        "kernelId": "string",
+        "keyName": "string",
+        "labels": "object",
+        "launchTime": "string",
+        "maintenanceOptions": {
+          "autoRecovery": "string"
+        },
+        "metadataOptions": {
+          "httpEndpoint": "string",
+          "httpProtocolIpv6": "string",
+          "httpPutResponseHopLimit": "integer",
+          "httpTokens": "string",
+          "instanceMetadataTags": "string",
+          "state": "string"
+        },
+        "methodSettings": "object",
+        "monitoring": {
+          "state": "string"
+        },
+        "networkInterfaces": {
+          "association": {
+            "carrierIp": "string",
+            "customerOwnedIp": "string",
+            "ipOwnerId": "string",
+            "publicDnsName": "string",
+            "publicIp": "string"
+          },
+          "attachment": {
+            "attachTime": "string",
+            "attachmentId": "string",
+            "deleteOnTermination": "boolean",
+            "deviceIndex": "integer",
+            "enaSrdSpecification": {
+              "enaSrdEnabled": "boolean",
+              "enaSrdUdpSpecification": {
+                "enaSrdUdpEnabled": "boolean"
+              }
+            },
+            "networkCardIndex": "integer",
+            "status": "string"
+          },
+          "connectionTrackingConfiguration": {
+            "tcpEstablishedTimeout": "integer",
+            "udpStreamTimeout": "integer",
+            "udpTimeout": "integer"
+          },
+          "description": "string",
+          "groups": {
+            "groupId": "string",
+            "groupName": "string"
+          },
+          "interfaceType": "string",
+          "ipv4Prefixes": {
+            "ipv4Prefix": "string"
+          },
+          "ipv6Addresses": {
+            "ipv6Address": "string",
+            "isPrimaryIpv6": "boolean"
+          },
+          "ipv6Prefixes": {
+            "ipv6Prefix": "string"
+          },
+          "macAddress": "string",
+          "networkInterfaceId": "string",
+          "ownerId": "string",
+          "privateDnsName": "string",
+          "privateIpAddress": "string",
+          "privateIpAddresses": {
+            "association": {
+              "carrierIp": "string",
+              "customerOwnedIp": "string",
+              "ipOwnerId": "string",
+              "publicDnsName": "string",
+              "publicIp": "string"
+            },
+            "primary": "boolean",
+            "privateDnsName": "string",
+            "privateIpAddress": "string"
+          },
+          "sourceDestCheck": "boolean",
+          "status": "string",
+          "subnetId": "string",
+          "vpcId": "string"
+        },
+        "outpostArn": "string",
+        "placement": {
+          "affinity": "string",
+          "availabilityZone": "string",
+          "groupId": "string",
+          "groupName": "string",
+          "hostId": "string",
+          "hostResourceGroupArn": "string",
+          "partitionNumber": "integer",
+          "tenancy": "string"
+        },
+        "platform": "string",
+        "platformDetails": "string",
+        "policy": "object",
+        "privateDnsName": "string",
+        "privateDnsNameOptions": {
+          "enableResourceNameDnsAAAARecord": "boolean",
+          "enableResourceNameDnsARecord": "boolean",
+          "hostnameType": "string"
+        },
+        "privateIpAddress": "string",
+        "productCodes": {
+          "productCodeId": "string",
+          "productCodeType": "string"
+        },
+        "publicDnsName": "string",
+        "publicIpAddress": "string",
+        "ramdiskId": "string",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rootDeviceName": "string",
+        "rootDeviceType": "string",
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "securityGroups": {
+          "groupId": "string",
+          "groupName": "string"
+        },
+        "selectors": {
+          "labels": "object"
+        },
+        "sourceDestCheck": "boolean",
+        "spotInstanceRequestId": "string",
+        "state": {
+          "code": "integer",
+          "name": "string"
+        },
+        "stateReason": {
+          "code": "string",
+          "message": "string"
+        },
+        "stateTransitionReason": "string",
+        "subnetId": "string",
+        "tags": "object",
+        "tpmSupport": "string",
+        "usageOperation": "string",
+        "usageOperationUpdateTime": "string",
+        "variables": "object",
+        "virtualizationType": "string",
+        "vpcId": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": {
+          "complianceType": "string",
+          "details": {
+            "Classification": "string",
+            "DetailedText": "string",
+            "DocumentName": "string",
+            "DocumentVersion": "string",
+            "InstallOverrideList": "string",
+            "InstalledTime": "string",
+            "PatchBaselineId": "string",
+            "PatchGroup": "string",
+            "PatchSeverity": "string",
+            "PatchState": "string"
+          },
+          "executionSummary": {
+            "executionId": "string",
+            "executionTime": "string",
+            "executionType": "string"
+          },
+          "id": "string",
+          "resourceId": "string",
+          "resourceType": "string",
+          "severity": "string",
+          "status": "string",
+          "title": "string"
+        },
+        "instance_status": {
+          "availabilityZone": "string",
+          "events": {
+            "code": "string",
+            "description": "string",
+            "instanceEventId": "string",
+            "notAfter": "string",
+            "notBefore": "string",
+            "notBeforeDeadline": "string"
+          },
+          "instanceId": "string",
+          "instanceState": {
+            "code": "integer",
+            "name": "string"
+          },
+          "instanceStatus": {
+            "details": {
+              "impairedSince": "string",
+              "name": "string",
+              "status": "string"
+            },
+            "status": "string"
+          },
+          "outpostArn": "string",
+          "systemStatus": {
+            "details": {
+              "impairedSince": "string",
+              "name": "string",
+              "status": "string"
+            },
+            "status": "string"
+          }
+        },
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

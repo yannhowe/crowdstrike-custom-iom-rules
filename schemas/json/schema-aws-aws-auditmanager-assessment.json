@@ -1,0 +1,156 @@
+[
+  {
+    "AWS::AuditManager::Assessment": {
+      "configuration": {
+        "arn": "string",
+        "awsAccount": {
+          "id": "string"
+        },
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "framework": {
+          "controlSets": {
+            "controls": {
+              "assessmentReportEvidenceCount": "integer",
+              "comments": {
+                "authorName": "string",
+                "commentBody": "string",
+                "postedDate": "string"
+              },
+              "description": "string",
+              "evidenceCount": "integer",
+              "evidenceSources": "string",
+              "id": "string",
+              "name": "string",
+              "status": "string"
+            },
+            "delegations": {
+              "controlSetId": "string",
+              "createdBy": "string",
+              "creationTime": "string",
+              "id": "string",
+              "lastUpdated": "string",
+              "roleArn": "string",
+              "roleType": "string",
+              "status": "string"
+            },
+            "description": "string",
+            "id": "string",
+            "manualEvidenceCount": "integer",
+            "roles": {
+              "roleArn": "string",
+              "roleType": "string"
+            },
+            "status": "string",
+            "systemEvidenceCount": "integer"
+          },
+          "id": "string",
+          "metadata": {
+            "complianceType": "string",
+            "description": "string",
+            "logo": "string",
+            "name": "string"
+          }
+        },
+        "labels": "object",
+        "metadata": {
+          "assessmentReportsDestination": {
+            "destination": "string",
+            "destinationType": "string"
+          },
+          "complianceType": "string",
+          "creationTime": "string",
+          "delegations": {
+            "controlSetId": "string",
+            "createdBy": "string",
+            "creationTime": "string",
+            "id": "string",
+            "lastUpdated": "string",
+            "roleArn": "string",
+            "roleType": "string",
+            "status": "string"
+          },
+          "description": "string",
+          "id": "string",
+          "lastUpdated": "string",
+          "name": "string",
+          "roles": {
+            "roleArn": "string",
+            "roleType": "string"
+          },
+          "scope": {
+            "awsAccounts": {
+              "emailAddress": "string",
+              "id": "string",
+              "name": "string"
+            },
+            "awsServices": {
+              "serviceName": "string"
+            }
+          },
+          "status": "string"
+        },
+        "methodSettings": "object",
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "tags": "object",
+        "variables": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

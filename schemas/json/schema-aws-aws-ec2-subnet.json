@@ -1,0 +1,100 @@
+[
+  {
+    "AWS::EC2::Subnet": {
+      "configuration": {
+        "assignIpv6AddressOnCreation": "boolean",
+        "availabilityZone": "string",
+        "availabilityZoneId": "string",
+        "certificatePem": "string",
+        "cidrBlock": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "customerOwnedIpv4Pool": "string",
+        "defaultForAz": "boolean",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "enableDns64": "boolean",
+        "enableLniAtDeviceIndex": "integer",
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "ipv6CidrBlockAssociationSet": {
+          "associationId": "string",
+          "ipv6CidrBlock": "string",
+          "ipv6CidrBlockState": {
+            "state": "string"
+          }
+        },
+        "ipv6Native": "boolean",
+        "labels": "object",
+        "mapCustomerOwnedIpOnLaunch": "boolean",
+        "mapPublicIpOnLaunch": "boolean",
+        "methodSettings": "object",
+        "outpostArn": "string",
+        "ownerId": "string",
+        "policy": "object",
+        "privateDnsNameOptionsOnLaunch": {
+          "enableResourceNameDnsAAAARecord": "boolean",
+          "enableResourceNameDnsARecord": "boolean",
+          "hostnameType": "string"
+        },
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "state": "string",
+        "subnetArn": "string",
+        "subnetId": "string",
+        "tags": "object",
+        "variables": "object",
+        "vpcId": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

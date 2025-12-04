@@ -1,0 +1,90 @@
+[
+  {
+    "compute.googleapis.com/FirewallPolicy": {
+      "configuration": {
+        "associations": {
+          "attachmentTarget": "string",
+          "name": "string"
+        },
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "creationTimestamp": "string",
+        "deployment": {
+          "files": "object"
+        },
+        "description": "string",
+        "envVariables": "object",
+        "fingerprint": "string",
+        "id": "string",
+        "labelExtractors": "object",
+        "labels": "object",
+        "maintenancePolicy": "object",
+        "metadata": {
+          "annotations": "object"
+        },
+        "name": "string",
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "resourceLabels": "object",
+        "ruleTupleCount": "integer",
+        "rules": {
+          "action": "string",
+          "description": "string",
+          "direction": "string",
+          "enableLogging": "boolean",
+          "match": {
+            "destIpRanges": "string",
+            "destThreatIntelligences": "string",
+            "layer4Configs": {
+              "ipProtocol": "string"
+            },
+            "srcIpRanges": "string",
+            "srcRegionCodes": "string",
+            "srcThreatIntelligences": "string"
+          },
+          "priority": "integer",
+          "ruleTupleCount": "integer"
+        },
+        "schema": "object",
+        "selectors": "object",
+        "selfLink": "string",
+        "selfLinkWithId": "string",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "view": {
+          "query": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "supplementaryConfiguration": "object"
+    }
+  }
+]

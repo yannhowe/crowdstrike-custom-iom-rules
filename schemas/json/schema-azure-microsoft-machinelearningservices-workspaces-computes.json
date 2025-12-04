@@ -1,0 +1,348 @@
+[
+  {
+    "Microsoft.MachineLearningServices/workspaces/computes": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "id": "string",
+        "identity": {
+          "principalId": "string",
+          "tenantId": "string",
+          "type": "string",
+          "userAssignedIdentities": "object"
+        },
+        "location": "string",
+        "name": "string",
+        "properties": {
+          "agentPoolProfiles": "object",
+          "computeLocation": "string",
+          "computeType": "string",
+          "createdOn": "string",
+          "definition": {
+            "actions": "object"
+          },
+          "description": "string",
+          "disableLocalAuth": "boolean",
+          "isAttachedCompute": "boolean",
+          "managedNetwork": "object",
+          "modifiedOn": "string",
+          "osProfile": "object",
+          "properties": {
+            "address": "string",
+            "agentCount": "integer",
+            "agentVmSize": "string",
+            "aksNetworkingConfiguration": {
+              "dnsServiceIP": "string",
+              "dockerBridgeCidr": "string",
+              "serviceCidr": "string",
+              "subnetId": "string"
+            },
+            "allocationState": "string",
+            "allocationStateTransitionTime": "string",
+            "applicationSharingPolicy": "string",
+            "applications": {
+              "displayName": "string",
+              "endpointUri": "string"
+            },
+            "autoPauseProperties": {
+              "delayInMinutes": "integer",
+              "enabled": "boolean"
+            },
+            "autoScaleProperties": {
+              "enabled": "boolean",
+              "maxNodeCount": "integer",
+              "minNodeCount": "integer"
+            },
+            "clusterFqdn": "string",
+            "clusterPurpose": "string",
+            "computeInstanceAuthorizationType": "string",
+            "connectivityEndpoints": {
+              "privateIpAddress": "string",
+              "publicIpAddress": "string"
+            },
+            "createdBy": {
+              "userId": "string",
+              "userOrgId": "string"
+            },
+            "currentNodeCount": "integer",
+            "customServices": {
+              "docker": {
+                "privileged": "boolean"
+              },
+              "endpoints": {
+                "name": "string",
+                "protocol": "string",
+                "published": "integer",
+                "target": "integer"
+              },
+              "environmentVariables": {
+                "APPSETTING_WEBSITE_SITE_NAME": {
+                  "type": "string",
+                  "value": "string"
+                },
+                "AZUREAI_CI_CUSTOM_APP": {
+                  "type": "string",
+                  "value": "string"
+                },
+                "AZURE_ACTIVE_DIRECTORY": {
+                  "type": "string",
+                  "value": "string"
+                },
+                "AZURE_CLIENT_ID": {
+                  "type": "string",
+                  "value": "string"
+                },
+                "AZURE_RESOURCE_MANAGER": {
+                  "type": "string",
+                  "value": "string"
+                },
+                "IPYTHONDIR": {
+                  "type": "string",
+                  "value": "string"
+                },
+                "JUPYTER_RUNTIME_DIR": {
+                  "type": "string",
+                  "value": "string"
+                },
+                "PRT_CONFIG_OVERRIDE": {
+                  "type": "string",
+                  "value": "string"
+                },
+                "foo": {
+                  "type": "string",
+                  "value": "string"
+                },
+                "haha": {
+                  "type": "string",
+                  "value": "string"
+                }
+              },
+              "image": {
+                "reference": "string",
+                "type": "string",
+                "version": "string"
+              },
+              "kernel": {
+                "argv": "string",
+                "displayName": "string",
+                "language": "string"
+              },
+              "name": "string",
+              "type": "string",
+              "volumes": {
+                "bind": {
+                  "propagation": "string"
+                },
+                "source": "string",
+                "target": "string",
+                "type": "string"
+              }
+            },
+            "dataDisks": {
+              "diskSizeGB": "integer",
+              "lun": "integer",
+              "storageAccountType": "string"
+            },
+            "defaultInstanceType": "string",
+            "enableNodePublicIp": "boolean",
+            "errors": {
+              "error": {
+                "code": "string",
+                "details": {
+                  "code": "string",
+                  "message": "string"
+                },
+                "message": "string"
+              }
+            },
+            "extensionInstanceReleaseTrain": "string",
+            "extensionPrincipalId": "string",
+            "instanceTypes": {
+              "defaultinstancetype": {
+                "resources": {
+                  "limits": {
+                    "cpu": "string",
+                    "memory": "string"
+                  },
+                  "requests": {
+                    "cpu": "string",
+                    "memory": "string"
+                  }
+                }
+              }
+            },
+            "isolatedNetwork": "boolean",
+            "lastOperation": {
+              "operationName": "string",
+              "operationStatus": "string",
+              "operationTime": "string",
+              "operationTrigger": "string"
+            },
+            "loadBalancerType": "string",
+            "namespace": "string",
+            "nodeCount": "integer",
+            "nodeSize": "string",
+            "nodeSizeFamily": "string",
+            "nodeStateCounts": {
+              "idleNodeCount": "integer",
+              "leavingNodeCount": "integer",
+              "preemptedNodeCount": "integer",
+              "preparingNodeCount": "integer",
+              "runningNodeCount": "integer",
+              "unusableNodeCount": "integer"
+            },
+            "osImageMetadata": {
+              "currentImageVersion": "string",
+              "isLatestOsImageVersion": "boolean",
+              "latestImageVersion": "string"
+            },
+            "osType": "string",
+            "personalComputeInstanceSettings": {
+              "assignedUser": {
+                "objectId": "string",
+                "tenantId": "string"
+              }
+            },
+            "poolName": "string",
+            "propertyBag": "object",
+            "remoteLoginPortPublicAccess": "string",
+            "resourceGroup": "string",
+            "scaleSettings": {
+              "maxNodeCount": "integer",
+              "minNodeCount": "integer",
+              "nodeIdleTimeBeforeScaleDown": "string"
+            },
+            "schedules": {
+              "computeStartStop": {
+                "action": "string",
+                "cron": {
+                  "expression": "string",
+                  "startTime": "string",
+                  "timeZone": "string"
+                },
+                "id": "string",
+                "provisioningStatus": "string",
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "schedule": {
+                    "hours": "integer",
+                    "minutes": "integer",
+                    "weekDays": "string"
+                  },
+                  "startTime": "string",
+                  "timeZone": "string"
+                },
+                "status": "string",
+                "triggerType": "string"
+              }
+            },
+            "setupScripts": {
+              "scripts": {
+                "creationScript": {
+                  "scriptArguments": "string",
+                  "scriptData": "string",
+                  "scriptSource": "string",
+                  "timeout": "string"
+                },
+                "startupScript": {
+                  "scriptArguments": "string",
+                  "scriptData": "string",
+                  "scriptSource": "string",
+                  "timeout": "string"
+                }
+              }
+            },
+            "sparkVersion": "string",
+            "sshPort": "integer",
+            "sshSettings": {
+              "adminPublicKey": "string",
+              "adminUserName": "string",
+              "sshPort": "integer",
+              "sshPublicAccess": "string"
+            },
+            "sslConfiguration": {
+              "cert": "string",
+              "cname": "string",
+              "key": "string",
+              "leafDomainLabel": "string",
+              "overwriteExistingDomain": "boolean",
+              "status": "string"
+            },
+            "state": "string",
+            "subnet": {
+              "id": "string"
+            },
+            "subscriptionId": "string",
+            "systemServices": {
+              "publicIpAddress": "string",
+              "systemServiceType": "string",
+              "version": "string"
+            },
+            "targetNodeCount": "integer",
+            "userAccountCredentials": {
+              "adminUserName": "string",
+              "adminUserSshPublicKey": "string"
+            },
+            "versions": {
+              "runtime": "string"
+            },
+            "virtualMachineSize": "string",
+            "vmPriority": "string",
+            "vmSize": "string",
+            "workspaceName": "string",
+            "workspaceUrl": "string"
+          },
+          "provisioningErrors": {
+            "error": {
+              "code": "string",
+              "details": {
+                "code": "string",
+                "message": "string"
+              },
+              "message": "string"
+            }
+          },
+          "provisioningState": "string",
+          "resourceId": "string",
+          "storageProfile": "object",
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          }
+        },
+        "resources": "object",
+        "tags": "object",
+        "type": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "configurations": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

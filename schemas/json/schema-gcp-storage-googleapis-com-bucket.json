@@ -1,0 +1,175 @@
+[
+  {
+    "storage.googleapis.com/Bucket": {
+      "configuration": {
+        "autoclass": {
+          "enabled": "boolean",
+          "terminalStorageClass": "string",
+          "terminalStorageClassUpdateTime": "string",
+          "toggleTime": "string"
+        },
+        "billing": {
+          "requesterPays": "boolean"
+        },
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "cors": {
+          "maxAgeSeconds": "integer",
+          "method": "string",
+          "origin": "string",
+          "responseHeader": "string"
+        },
+        "customPlacementConfig": {
+          "dataLocations": "string"
+        },
+        "defaultEventBasedHold": "boolean",
+        "deployment": {
+          "files": "object"
+        },
+        "encryption": {
+          "customerManagedEncryptionEnforcementConfig": "object",
+          "customerSuppliedEncryptionEnforcementConfig": "object",
+          "defaultKmsKeyName": "string",
+          "googleManagedEncryptionEnforcementConfig": "object"
+        },
+        "envVariables": "object",
+        "etag": "string",
+        "hierarchicalNamespace": {
+          "enabled": "boolean"
+        },
+        "iamConfiguration": {
+          "bucketPolicyOnly": {
+            "enabled": "boolean",
+            "lockedTime": "string"
+          },
+          "publicAccessPrevention": "string",
+          "uniformBucketLevelAccess": {
+            "enabled": "boolean",
+            "lockedTime": "string"
+          }
+        },
+        "id": "string",
+        "ipFilter": {
+          "mode": "string",
+          "publicNetworkSource": {
+            "allowedIpCidrRanges": "string"
+          },
+          "vpcNetworkSources": {
+            "allowedIpCidrRanges": "string",
+            "network": "string"
+          }
+        },
+        "kind": "string",
+        "labelExtractors": "object",
+        "labels": "object",
+        "lifecycle": {
+          "rule": {
+            "action": {
+              "storageClass": "string",
+              "type": "string"
+            },
+            "condition": {
+              "age": "integer",
+              "createdBefore": "string",
+              "customTimeBefore": "string",
+              "daysSinceCustomTime": "integer",
+              "daysSinceNoncurrentTime": "integer",
+              "isLive": "boolean",
+              "matchesPattern": "string",
+              "matchesPrefix": "string",
+              "matchesStorageClass": "string",
+              "matchesSuffix": "string",
+              "noncurrentTimeBefore": "string",
+              "numNewerVersions": "integer"
+            }
+          }
+        },
+        "location": "string",
+        "locationType": "string",
+        "logging": {
+          "logBucket": "string",
+          "logObjectPrefix": "string"
+        },
+        "maintenancePolicy": "object",
+        "metadata": {
+          "annotations": "object"
+        },
+        "metageneration": "integer",
+        "name": "string",
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "objectRetention": {
+          "mode": "string"
+        },
+        "owner": "object",
+        "projectNumber": "integer",
+        "resourceLabels": "object",
+        "retentionPolicy": {
+          "effectiveTime": "string",
+          "isLocked": "boolean",
+          "retentionPeriod": "string"
+        },
+        "rpo": "string",
+        "satisfiesPZS": "boolean",
+        "schema": "object",
+        "selectors": "object",
+        "selfLink": "string",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "softDeletePolicy": {
+          "effectiveTime": "string",
+          "retentionDurationSeconds": "string"
+        },
+        "storageClass": "string",
+        "timeCreated": "string",
+        "updated": "string",
+        "versioning": {
+          "enabled": "boolean"
+        },
+        "view": {
+          "query": "string"
+        },
+        "website": {
+          "mainPageSuffix": "string",
+          "notFoundPage": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": "object",
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

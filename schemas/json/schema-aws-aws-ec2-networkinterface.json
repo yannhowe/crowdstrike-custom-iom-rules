@@ -1,0 +1,147 @@
+[
+  {
+    "AWS::EC2::NetworkInterface": {
+      "configuration": {
+        "association": {
+          "allocationId": "string",
+          "associationId": "string",
+          "carrierIp": "string",
+          "customerOwnedIp": "string",
+          "ipOwnerId": "string",
+          "publicDnsName": "string",
+          "publicIp": "string"
+        },
+        "attachment": {
+          "attachTime": "string",
+          "attachmentId": "string",
+          "deleteOnTermination": "boolean",
+          "deviceIndex": "integer",
+          "enaSrdSpecification": {
+            "enaSrdEnabled": "boolean",
+            "enaSrdUdpSpecification": {
+              "enaSrdUdpEnabled": "boolean"
+            }
+          },
+          "instanceId": "string",
+          "instanceOwnerId": "string",
+          "networkCardIndex": "integer",
+          "status": "string"
+        },
+        "availabilityZone": "string",
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "connectionTrackingConfiguration": {
+          "tcpEstablishedTimeout": "integer",
+          "udpStreamTimeout": "integer",
+          "udpTimeout": "integer"
+        },
+        "containerDefinitions": "object",
+        "denyAllIgwTraffic": "boolean",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "description": "string",
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "groups": {
+          "groupId": "string",
+          "groupName": "string"
+        },
+        "interfaceType": "string",
+        "ipv4Prefixes": {
+          "ipv4Prefix": "string"
+        },
+        "ipv6Address": "string",
+        "ipv6Addresses": {
+          "ipv6Address": "string",
+          "isPrimaryIpv6": "boolean"
+        },
+        "ipv6Native": "boolean",
+        "ipv6Prefixes": {
+          "ipv6Prefix": "string"
+        },
+        "labels": "object",
+        "macAddress": "string",
+        "methodSettings": "object",
+        "networkInterfaceId": "string",
+        "outpostArn": "string",
+        "ownerId": "string",
+        "policy": "object",
+        "privateDnsName": "string",
+        "privateIpAddress": "string",
+        "privateIpAddresses": {
+          "association": {
+            "allocationId": "string",
+            "associationId": "string",
+            "carrierIp": "string",
+            "customerOwnedIp": "string",
+            "ipOwnerId": "string",
+            "publicDnsName": "string",
+            "publicIp": "string"
+          },
+          "primary": "boolean",
+          "privateDnsName": "string",
+          "privateIpAddress": "string"
+        },
+        "requesterId": "string",
+        "requesterManaged": "boolean",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "sourceDestCheck": "boolean",
+        "status": "string",
+        "subnetId": "string",
+        "tags": "object",
+        "variables": "object",
+        "vpcId": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

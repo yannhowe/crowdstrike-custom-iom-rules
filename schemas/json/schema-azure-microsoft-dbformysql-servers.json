@@ -1,0 +1,92 @@
+[
+  {
+    "Microsoft.DBforMySQL/servers": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "id": "string",
+        "identity": {
+          "userAssignedIdentities": "object"
+        },
+        "location": "string",
+        "name": "string",
+        "properties": {
+          "administratorLogin": "string",
+          "agentPoolProfiles": "object",
+          "byokEnforcement": "string",
+          "definition": {
+            "actions": "object"
+          },
+          "earliestRestoreDate": "string",
+          "fullyQualifiedDomainName": "string",
+          "infrastructureEncryption": "string",
+          "managedNetwork": "object",
+          "minimalTlsVersion": "string",
+          "osProfile": "object",
+          "privateEndpointConnections": {
+            "id": "string",
+            "properties": {
+              "privateEndpoint": {
+                "id": "string"
+              },
+              "privateLinkServiceConnectionState": {
+                "actionsRequired": "string",
+                "description": "string",
+                "status": "string"
+              },
+              "provisioningState": "string"
+            }
+          },
+          "publicNetworkAccess": "string",
+          "replicaCapacity": "integer",
+          "replicationRole": "string",
+          "sslEnforcement": "string",
+          "storageProfile": "object",
+          "userVisibleState": "string",
+          "version": "string",
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          }
+        },
+        "resources": "object",
+        "sku": {
+          "capacity": "integer",
+          "family": "string",
+          "name": "string",
+          "tier": "string"
+        },
+        "tags": "object",
+        "type": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "configurations": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

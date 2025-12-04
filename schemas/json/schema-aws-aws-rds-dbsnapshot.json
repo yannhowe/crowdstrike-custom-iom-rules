@@ -1,0 +1,111 @@
+[
+  {
+    "AWS::RDS::DBSnapshot": {
+      "configuration": {
+        "allocatedStorage": "integer",
+        "availabilityZone": "string",
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "dbInstanceIdentifier": "string",
+        "dbSnapshotArn": "string",
+        "dbSnapshotIdentifier": "string",
+        "dbiResourceId": "string",
+        "dedicatedLogVolume": "boolean",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "encrypted": "boolean",
+        "engine": "string",
+        "engineVersion": "string",
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "iamDatabaseAuthenticationEnabled": "boolean",
+        "instanceCreateTime": "string",
+        "iops": "integer",
+        "kmsKeyId": "string",
+        "labels": "object",
+        "licenseModel": "string",
+        "masterUsername": "string",
+        "methodSettings": "object",
+        "multiTenant": "boolean",
+        "optionGroupName": "string",
+        "originalSnapshotCreateTime": "string",
+        "percentProgress": "integer",
+        "policy": "object",
+        "port": "integer",
+        "processorFeatures": {
+          "name": "string",
+          "value": "string"
+        },
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "snapshotCreateTime": "string",
+        "snapshotDatabaseTime": "string",
+        "snapshotTarget": "string",
+        "snapshotType": "string",
+        "sourceDBSnapshotIdentifier": "string",
+        "sourceRegion": "string",
+        "status": "string",
+        "storageThroughput": "integer",
+        "storageType": "string",
+        "tags": "object",
+        "timezone": "string",
+        "variables": "object",
+        "vpcId": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "attributes": {
+          "attributeName": "string",
+          "attributeValues": "string"
+        },
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

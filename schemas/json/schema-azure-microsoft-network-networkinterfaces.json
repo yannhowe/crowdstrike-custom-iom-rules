@@ -1,0 +1,155 @@
+[
+  {
+    "Microsoft.Network/networkInterfaces": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "extendedLocation": {
+          "name": "string",
+          "type": "string"
+        },
+        "id": "string",
+        "identity": {
+          "userAssignedIdentities": "object"
+        },
+        "location": "string",
+        "name": "string",
+        "properties": {
+          "agentPoolProfiles": "object",
+          "auxiliaryMode": "string",
+          "definition": {
+            "actions": "object"
+          },
+          "dnsSettings": {
+            "appliedDnsServers": "string",
+            "dnsServers": "string",
+            "internalDnsNameLabel": "string",
+            "internalDomainNameSuffix": "string",
+            "internalFqdn": "string"
+          },
+          "dscpConfiguration": {
+            "id": "string"
+          },
+          "enableAcceleratedNetworking": "boolean",
+          "enableIPForwarding": "boolean",
+          "hostedWorkloads": "string",
+          "ipConfigurations": {
+            "etag": "string",
+            "id": "string",
+            "name": "string",
+            "properties": {
+              "applicationGatewayBackendAddressPools": {
+                "id": "string"
+              },
+              "applicationSecurityGroups": {
+                "id": "string"
+              },
+              "gatewayLoadBalancer": {
+                "id": "string"
+              },
+              "loadBalancerBackendAddressPools": {
+                "id": "string"
+              },
+              "loadBalancerInboundNatRules": {
+                "id": "string"
+              },
+              "primary": "boolean",
+              "privateIPAddress": "string",
+              "privateIPAddressVersion": "string",
+              "privateIPAllocationMethod": "string",
+              "privateLinkConnectionProperties": {
+                "fqdns": "string",
+                "groupId": "string",
+                "requiredMemberName": "string"
+              },
+              "provisioningState": "string",
+              "publicIPAddress": {
+                "id": "string",
+                "properties": {
+                  "deleteOption": "string"
+                }
+              },
+              "subnet": {
+                "id": "string"
+              },
+              "virtualNetworkTaps": {
+                "id": "string"
+              }
+            },
+            "type": "string"
+          },
+          "macAddress": "string",
+          "managedNetwork": "object",
+          "migrationPhase": "string",
+          "networkSecurityGroup": {
+            "id": "string"
+          },
+          "nicType": "string",
+          "osProfile": "object",
+          "primary": "boolean",
+          "privateEndpoint": {
+            "id": "string"
+          },
+          "privateLinkService": {
+            "id": "string"
+          },
+          "provisioningState": "string",
+          "resourceGuid": "string",
+          "storageProfile": "object",
+          "tapConfigurations": {
+            "etag": "string",
+            "id": "string",
+            "name": "string",
+            "properties": {
+              "provisioningState": "string",
+              "virtualNetworkTap": {
+                "id": "string"
+              }
+            },
+            "type": "string"
+          },
+          "virtualMachine": {
+            "id": "string"
+          },
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          },
+          "vnetEncryptionSupported": "boolean",
+          "workloadType": "string"
+        },
+        "resources": "object",
+        "tags": "object",
+        "type": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "configurations": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

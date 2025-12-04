@@ -1,0 +1,149 @@
+[
+  {
+    "Microsoft.RecoveryServices/vaults": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "id": "string",
+        "identity": {
+          "principalId": "string",
+          "tenantId": "string",
+          "type": "string",
+          "userAssignedIdentities": "object"
+        },
+        "location": "string",
+        "name": "string",
+        "properties": {
+          "agentPoolProfiles": "object",
+          "backupStorageVersion": "string",
+          "bcdrSecurityLevel": "string",
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "encryption": {
+            "infrastructureEncryption": "string",
+            "kekIdentity": {
+              "useSystemAssignedIdentity": "boolean",
+              "userAssignedIdentity": "string"
+            },
+            "keyVaultProperties": {
+              "keyUri": "string"
+            }
+          },
+          "managedNetwork": "object",
+          "metadata": "object",
+          "monitoringSettings": {
+            "azureMonitorAlertSettings": {
+              "alertsForAllFailoverIssues": "string",
+              "alertsForAllJobFailures": "string",
+              "alertsForAllReplicationIssues": "string"
+            },
+            "classicAlertSettings": {
+              "alertsForCriticalOperations": "string",
+              "emailNotificationsForSiteRecovery": "string"
+            }
+          },
+          "moveDetails": {
+            "completionTimeUtc": "string",
+            "operationId": "string",
+            "sourceResourceId": "string",
+            "startTimeUtc": "string",
+            "targetResourceId": "string"
+          },
+          "moveState": "string",
+          "osProfile": "object",
+          "parameters": "object",
+          "policyRule": "object",
+          "privateEndpointConnections": {
+            "id": "string",
+            "location": "string",
+            "name": "string",
+            "properties": {
+              "groupIds": "string",
+              "privateEndpoint": {
+                "id": "string"
+              },
+              "privateLinkServiceConnectionState": {
+                "actionsRequired": "string",
+                "description": "string",
+                "status": "string"
+              },
+              "provisioningState": "string"
+            },
+            "type": "string"
+          },
+          "privateEndpointStateForBackup": "string",
+          "privateEndpointStateForSiteRecovery": "string",
+          "provisioningState": "string",
+          "publicNetworkAccess": "string",
+          "redundancySettings": {
+            "crossRegionRestore": "string",
+            "standardTierStorageRedundancy": "string"
+          },
+          "restoreSettings": {
+            "crossSubscriptionRestoreSettings": {
+              "crossSubscriptionRestoreState": "string"
+            }
+          },
+          "secureScore": "string",
+          "securitySettings": {
+            "immutabilitySettings": {
+              "state": "string"
+            },
+            "multiUserAuthorization": "string",
+            "softDeleteSettings": {
+              "enhancedSecurityState": "string",
+              "softDeleteRetentionPeriodInDays": "integer",
+              "softDeleteState": "string"
+            },
+            "sourceScanConfiguration": {
+              "state": "string"
+            }
+          },
+          "storageProfile": "object",
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          }
+        },
+        "resources": "object",
+        "sku": {
+          "name": "string",
+          "tier": "string"
+        },
+        "tags": "object",
+        "type": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "configurations": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

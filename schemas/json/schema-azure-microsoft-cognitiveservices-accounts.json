@@ -1,0 +1,255 @@
+[
+  {
+    "Microsoft.CognitiveServices/accounts": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "id": "string",
+        "identity": {
+          "principalId": "string",
+          "tenantId": "string",
+          "type": "string",
+          "userAssignedIdentities": "object"
+        },
+        "kind": "string",
+        "location": "string",
+        "name": "string",
+        "properties": {
+          "abusePenalty": {
+            "action": "string",
+            "rateLimitPercentage": "integer"
+          },
+          "agentPoolProfiles": "object",
+          "allowedFqdnList": "string",
+          "apiProperties": {
+            "TA4HResourceId": "string",
+            "azureOpenAIAccountId": "string",
+            "publicNetworkAccess": "string",
+            "qnaAzureSearchEndpointId": "string",
+            "qnaRuntimeEndpoint": "string",
+            "statisticsEnabled": "boolean"
+          },
+          "callRateLimit": {
+            "rules": {
+              "count": "integer",
+              "dynamicThrottlingEnabled": "boolean",
+              "key": "string",
+              "matchPatterns": {
+                "method": "string",
+                "path": "string"
+              },
+              "minCount": "integer",
+              "renewalPeriod": "integer"
+            }
+          },
+          "capabilities": {
+            "name": "string",
+            "value": "string"
+          },
+          "customSubDomainName": "string",
+          "dateCreated": "string",
+          "definition": {
+            "actions": "object"
+          },
+          "disableLocalAuth": "boolean",
+          "dynamicThrottlingEnabled": "boolean",
+          "encryption": {
+            "keySource": "string",
+            "keyVaultProperties": {
+              "identityClientId": "string",
+              "keyName": "string",
+              "keyVaultUri": "string",
+              "keyVersion": "string"
+            }
+          },
+          "endpoint": "string",
+          "endpoints": {
+            "AI Foundry API": "string",
+            "AnomalyDetector": "string",
+            "Azure AI Model Inference API": "string",
+            "Azure AI Projects API": "string",
+            "Azure OpenAI Legacy API - Latest moniker": "string",
+            "Cohere AI API": "string",
+            "Computer Vision": "string",
+            "Container": "string",
+            "Content Moderator": "string",
+            "Content Safety": "string",
+            "Content Understanding": "string",
+            "Conversational Language Understanding Authoring": "string",
+            "ConversationalLURuntime": "string",
+            "Custom Question Answering": "string",
+            "Custom Question Answering Authoring": "string",
+            "Custom Text Authoring": "string",
+            "CustomTranslator": "string",
+            "Custom_Vision_Prediction": "string",
+            "Custom_Vision_Prediction_3": {
+              "0": "string"
+            },
+            "Custom_Vision_Training": "string",
+            "Custom_Vision_Training_3": {
+              "1": "string"
+            },
+            "DocumentTranslation": "string",
+            "Face": "string",
+            "FormRecognizer": "string",
+            "Health Insights API": "string",
+            "ImmersiveReader": "string",
+            "LUIS": "string",
+            "Language": "string",
+            "Language Remote MCP Server": "string",
+            "Metrics Advisor": "string",
+            "Microsoft Azure Multimodal Intelligence": "string",
+            "Mistral AI API": "string",
+            "OpenAI Dall-E API": "string",
+            "OpenAI Language Model Instance API": "string",
+            "OpenAI Model Scaleset API": "string",
+            "OpenAI Moderations API": "string",
+            "OpenAI Realtime API": "string",
+            "OpenAI Sora API": "string",
+            "OpenAI Whisper API": "string",
+            "Personalizer": "string",
+            "ProjectA APIs": "string",
+            "QnAMaker": "string",
+            "QuestionAnswering": "string",
+            "Speech Services Audio Content Creation": "string",
+            "Speech Services Batch Avatar": "string",
+            "Speech Services Batch Text to Speech": "string",
+            "Speech Services Custom Avatar": "string",
+            "Speech Services Custom Voice": "string",
+            "Speech Services Custom Voice Trial": "string",
+            "Speech Services Speaker Identification": "string",
+            "Speech Services Speaker Verification": "string",
+            "Speech Services Speech to Text": "string",
+            "Speech Services Speech to Text (Standard)": "string",
+            "Speech Services Speech to Text 2024-05-15-preview": "string",
+            "Speech Services Speech to Text 2024-11-15": "string",
+            "Speech Services Speech to Text 2025-10-15": "string",
+            "Speech Services Speech to Text v3": {
+              "2": "string",
+              "2_internal": {
+                "1": "string"
+              }
+            },
+            "Speech Services TTS Player": "string",
+            "Speech Services Text to Speech (Neural)": "string",
+            "Text Analytics": "string",
+            "TextTranslation": "string",
+            "TextTranslation-Global": "string",
+            "Token": "string",
+            "Token Service API": "string",
+            "Turing": "string",
+            "Unified Speech": "string",
+            "Video Translation": "string",
+            "Voice Agent Realtime API": "string",
+            "Voice Live Realtime API": "string"
+          },
+          "internalId": "string",
+          "isMigrated": "boolean",
+          "managedNetwork": "object",
+          "networkAcls": {
+            "bypass": "string",
+            "defaultAction": "string",
+            "ipRules": {
+              "value": "string"
+            },
+            "virtualNetworkRules": {
+              "id": "string",
+              "ignoreMissingVnetServiceEndpoint": "boolean",
+              "state": "string"
+            }
+          },
+          "osProfile": "object",
+          "privateEndpointConnections": {
+            "id": "string",
+            "name": "string",
+            "properties": {
+              "groupIds": "string",
+              "privateEndpoint": {
+                "id": "string"
+              },
+              "privateLinkServiceConnectionState": {
+                "actionsRequired": "string",
+                "description": "string",
+                "status": "string"
+              }
+            },
+            "type": "string"
+          },
+          "provisioningState": "string",
+          "publicNetworkAccess": "string",
+          "quotaLimit": {
+            "rules": {
+              "count": "integer",
+              "key": "string",
+              "matchPatterns": {
+                "method": "string",
+                "path": "string"
+              },
+              "renewalPeriod": "integer"
+            }
+          },
+          "raiMonitorConfig": {
+            "adxStorageResourceId": "string"
+          },
+          "restrictOutboundNetworkAccess": "boolean",
+          "skuChangeInfo": {
+            "countOfDowngrades": "integer",
+            "countOfUpgradesAfterDowngrades": "integer",
+            "lastChangeDate": "string"
+          },
+          "storageProfile": "object",
+          "userOwnedStorage": {
+            "identityClientId": "string",
+            "resourceId": "string"
+          },
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          }
+        },
+        "resources": "object",
+        "sku": {
+          "name": "string"
+        },
+        "systemData": {
+          "createdAt": "string",
+          "createdBy": "string",
+          "createdByType": "string",
+          "lastModifiedAt": "string",
+          "lastModifiedBy": "string",
+          "lastModifiedByType": "string"
+        },
+        "tags": "object",
+        "type": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "configurations": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

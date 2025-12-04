@@ -1,0 +1,111 @@
+[
+  {
+    "memcache.googleapis.com/Instance": {
+      "configuration": {
+        "authorizedNetwork": "string",
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "createTime": "string",
+        "deployment": {
+          "files": "object"
+        },
+        "discoveryEndpoint": "string",
+        "displayName": "string",
+        "envVariables": "object",
+        "labelExtractors": "object",
+        "labels": "object",
+        "maintenancePolicy": "object",
+        "maintenanceSchedule": {
+          "endTime": "string",
+          "scheduleDeadlineTime": "string",
+          "startTime": "string"
+        },
+        "memcacheFullVersion": "string",
+        "memcacheNodes": {
+          "host": "string",
+          "nodeId": "string",
+          "parameters": {
+            "id": "string",
+            "params": {
+              "disable-cas": "string",
+              "disable-evictions": "string",
+              "idle_timeout": "string",
+              "max-item-size": "string",
+              "maxconns_fast": "string"
+            }
+          },
+          "port": "integer",
+          "state": "string",
+          "zone": "string"
+        },
+        "memcacheVersion": "string",
+        "metadata": {
+          "annotations": "object"
+        },
+        "name": "string",
+        "nodeConfig": {
+          "cpuCount": "integer",
+          "labels": "object",
+          "memorySizeMb": "integer",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodeCount": "integer",
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "parameters": {
+          "id": "string",
+          "params": {
+            "disable-cas": "string",
+            "disable-evictions": "string",
+            "idle_timeout": "string",
+            "max-item-size": "string",
+            "maxconns_fast": "string"
+          }
+        },
+        "resourceLabels": "object",
+        "schema": "object",
+        "selectors": "object",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "state": "string",
+        "updateTime": "string",
+        "view": {
+          "query": "string"
+        },
+        "zones": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": "object",
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

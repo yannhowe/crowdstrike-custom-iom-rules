@@ -1,0 +1,286 @@
+[
+  {
+    "Microsoft.ServiceFabric/clusters": {
+      "configuration": {
+        "ID": "string",
+        "Location": "string",
+        "Name": "string",
+        "Properties": {
+          "availableClusterVersions": {
+            "codeVersion": "string",
+            "environment": "string",
+            "supportExpiryUtc": "string"
+          },
+          "certificate": {
+            "thumbprint": "string",
+            "thumbprintSecondary": "string",
+            "x509StoreName": "string"
+          },
+          "certificateCommonNames": {
+            "commonNames": {
+              "certificateCommonName": "string",
+              "certificateIssuerThumbprint": "string"
+            },
+            "x509StoreName": "string"
+          },
+          "clientCertificateThumbprints": {
+            "certificateThumbprint": "string",
+            "isAdmin": "boolean"
+          },
+          "clusterCodeVersion": "string",
+          "clusterEndpoint": "string",
+          "clusterId": "string",
+          "clusterState": "string",
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "diagnosticsStorageAccountConfig": {
+            "blobEndpoint": "string",
+            "protectedAccountKeyName": "string",
+            "protectedAccountKeyName2": "string",
+            "queueEndpoint": "string",
+            "storageAccountName": "string",
+            "tableEndpoint": "string"
+          },
+          "fabricSettings": {
+            "name": "string",
+            "parameters": {
+              "name": "string",
+              "value": "string"
+            }
+          },
+          "managementEndpoint": "string",
+          "metadata": "object",
+          "nodeTypes": {
+            "applicationPorts": {
+              "endPort": "integer",
+              "startPort": "integer"
+            },
+            "clientConnectionEndpointPort": "integer",
+            "durabilityLevel": "string",
+            "ephemeralPorts": {
+              "endPort": "integer",
+              "startPort": "integer"
+            },
+            "httpGatewayEndpointPort": "integer",
+            "isPrimary": "boolean",
+            "isStateless": "boolean",
+            "name": "string",
+            "reverseProxyEndpointPort": "integer",
+            "vmInstanceCount": "integer"
+          },
+          "parameters": "object",
+          "policyRule": "object",
+          "provisioningState": "string",
+          "reliabilityLevel": "string",
+          "upgradeDescription": {
+            "deltaHealthPolicy": {
+              "maxPercentDeltaUnhealthyApplications": "integer",
+              "maxPercentDeltaUnhealthyNodes": "integer",
+              "maxPercentUpgradeDomainDeltaUnhealthyNodes": "integer"
+            },
+            "forceRestart": "boolean",
+            "healthCheckRetryTimeout": "string",
+            "healthCheckStableDuration": "string",
+            "healthCheckWaitDuration": "string",
+            "healthPolicy": {
+              "maxPercentUnhealthyApplications": "integer",
+              "maxPercentUnhealthyNodes": "integer"
+            },
+            "upgradeDomainTimeout": "string",
+            "upgradeReplicaSetCheckTimeout": "string",
+            "upgradeTimeout": "string"
+          },
+          "upgradeMode": "string",
+          "upgradeWave": "string",
+          "vmImage": "string"
+        },
+        "Type": "string",
+        "certificatePem": "string",
+        "id": "string",
+        "identity": {
+          "userAssignedIdentities": "object"
+        },
+        "location": "string",
+        "name": "string",
+        "properties": {
+          "agentPoolProfiles": "object",
+          "applicationTypeVersionsCleanupPolicy": {
+            "maxUnusedVersionsToKeep": "integer"
+          },
+          "availableClusterVersions": {
+            "codeVersion": "string",
+            "environment": "string",
+            "supportExpiryUtc": "string"
+          },
+          "azureActiveDirectory": {
+            "clientApplication": "string",
+            "clusterApplication": "string",
+            "tenantId": "string"
+          },
+          "certificate": {
+            "thumbprint": "string",
+            "thumbprintSecondary": "string",
+            "x509StoreName": "string"
+          },
+          "certificateCommonNames": {
+            "commonNames": {
+              "certificateCommonName": "string",
+              "certificateIssuerThumbprint": "string"
+            },
+            "x509StoreName": "string"
+          },
+          "clientCertificateCommonNames": {
+            "certificateCommonName": "string",
+            "certificateIssuerThumbprint": "string",
+            "isAdmin": "boolean"
+          },
+          "clientCertificateThumbprints": {
+            "certificateThumbprint": "string",
+            "isAdmin": "boolean"
+          },
+          "clusterCodeVersion": "string",
+          "clusterEndpoint": "string",
+          "clusterId": "string",
+          "clusterState": "string",
+          "definition": {
+            "actions": "object"
+          },
+          "diagnosticsStorageAccountConfig": {
+            "blobEndpoint": "string",
+            "protectedAccountKeyName": "string",
+            "protectedAccountKeyName2": "string",
+            "queueEndpoint": "string",
+            "storageAccountName": "string",
+            "tableEndpoint": "string"
+          },
+          "fabricSettings": {
+            "name": "string",
+            "parameters": {
+              "name": "string",
+              "value": "string"
+            }
+          },
+          "managedNetwork": "object",
+          "managementEndpoint": "string",
+          "nodeTypes": {
+            "applicationPorts": {
+              "endPort": "integer",
+              "startPort": "integer"
+            },
+            "capacities": "object",
+            "clientConnectionEndpointPort": "integer",
+            "durabilityLevel": "string",
+            "ephemeralPorts": {
+              "endPort": "integer",
+              "startPort": "integer"
+            },
+            "httpGatewayEndpointPort": "integer",
+            "isPrimary": "boolean",
+            "isStateless": "boolean",
+            "multipleAvailabilityZones": "boolean",
+            "name": "string",
+            "placementProperties": {
+              "ApplicationKind": "string",
+              "DedicatedClosedLoopPaymentProcessing": "string",
+              "HostType": "string",
+              "IsBackend": "string",
+              "IsFabric": "string",
+              "NoServiceWithBackgroundJobOrPolling": "string",
+              "Public": "string",
+              "isDMZ": "string",
+              "isFramework": "string",
+              "isPublic": "string",
+              "zone": "string"
+            },
+            "reverseProxyEndpointPort": "integer",
+            "vmInstanceCount": "integer"
+          },
+          "notifications": {
+            "isEnabled": "boolean",
+            "notificationCategory": "string",
+            "notificationLevel": "string",
+            "notificationTargets": {
+              "notificationChannel": "string",
+              "receivers": "string"
+            }
+          },
+          "osProfile": "object",
+          "provisioningState": "string",
+          "reliabilityLevel": "string",
+          "reverseProxyCertificate": {
+            "thumbprint": "string",
+            "thumbprintSecondary": "string",
+            "x509StoreName": "string"
+          },
+          "reverseProxyCertificateCommonNames": {
+            "commonNames": {
+              "certificateCommonName": "string",
+              "certificateIssuerThumbprint": "string"
+            },
+            "x509StoreName": "string"
+          },
+          "sfZonalUpgradeMode": "string",
+          "storageProfile": "object",
+          "upgradeDescription": {
+            "deltaHealthPolicy": {
+              "applicationDeltaHealthPolicies": {
+                "fabric:/System": {
+                  "defaultServiceTypeDeltaHealthPolicy": {
+                    "maxPercentDeltaUnhealthyServices": "integer"
+                  }
+                }
+              },
+              "maxPercentDeltaUnhealthyApplications": "integer",
+              "maxPercentDeltaUnhealthyNodes": "integer",
+              "maxPercentUpgradeDomainDeltaUnhealthyNodes": "integer"
+            },
+            "forceRestart": "boolean",
+            "healthCheckRetryTimeout": "string",
+            "healthCheckStableDuration": "string",
+            "healthCheckWaitDuration": "string",
+            "healthPolicy": {
+              "maxPercentUnhealthyApplications": "integer",
+              "maxPercentUnhealthyNodes": "integer"
+            },
+            "upgradeDomainTimeout": "string",
+            "upgradeReplicaSetCheckTimeout": "string",
+            "upgradeTimeout": "string"
+          },
+          "upgradeMode": "string",
+          "upgradeWave": "string",
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          },
+          "vmImage": "string",
+          "vmssZonalUpgradeMode": "string"
+        },
+        "resources": "object",
+        "tags": "object",
+        "type": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "configurations": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

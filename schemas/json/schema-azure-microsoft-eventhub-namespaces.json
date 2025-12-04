@@ -1,0 +1,140 @@
+[
+  {
+    "Microsoft.EventHub/namespaces": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "id": "string",
+        "identity": {
+          "principalId": "string",
+          "tenantId": "string",
+          "type": "string",
+          "userAssignedIdentities": "object"
+        },
+        "location": "string",
+        "name": "string",
+        "properties": {
+          "agentPoolProfiles": "object",
+          "clusterArmId": "string",
+          "createdAt": "string",
+          "definition": {
+            "actions": "object"
+          },
+          "disableLocalAuth": "boolean",
+          "encryption": {
+            "keySource": "string",
+            "keyVaultProperties": {
+              "identity": {
+                "userAssignedIdentity": "string"
+              },
+              "keyName": "string",
+              "keyVaultUri": "string",
+              "keyVersion": "string"
+            },
+            "requireInfrastructureEncryption": "boolean"
+          },
+          "isAutoInflateEnabled": "boolean",
+          "kafkaEnabled": "boolean",
+          "managedNetwork": "object",
+          "maximumThroughputUnits": "integer",
+          "metricId": "string",
+          "minimumTlsVersion": "string",
+          "osProfile": "object",
+          "privateEndpointConnections": {
+            "id": "string",
+            "location": "string",
+            "name": "string",
+            "properties": {
+              "privateEndpoint": {
+                "id": "string"
+              },
+              "privateLinkServiceConnectionState": {
+                "description": "string",
+                "status": "string"
+              },
+              "provisioningState": "string"
+            },
+            "type": "string"
+          },
+          "provisioningState": "string",
+          "publicNetworkAccess": "string",
+          "serviceBusEndpoint": "string",
+          "status": "string",
+          "storageProfile": "object",
+          "updatedAt": "string",
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          },
+          "zoneRedundant": "boolean"
+        },
+        "resources": "object",
+        "sku": {
+          "capacity": "integer",
+          "name": "string",
+          "tier": "string"
+        },
+        "tags": "object",
+        "type": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "AuthorizationRules": {
+          "id": "string",
+          "location": "string",
+          "name": "string",
+          "properties": {
+            "rights": "string"
+          },
+          "type": "string"
+        },
+        "NetworkRules": {
+          "id": "string",
+          "location": "string",
+          "name": "string",
+          "properties": {
+            "defaultAction": "string",
+            "ipRules": {
+              "action": "string",
+              "ipMask": "string"
+            },
+            "publicNetworkAccess": "string",
+            "trustedServiceAccessEnabled": "boolean",
+            "virtualNetworkRules": {
+              "ignoreMissingVnetServiceEndpoint": "boolean",
+              "subnet": {
+                "id": "string"
+              }
+            }
+          },
+          "type": "string"
+        },
+        "appSettings": "object",
+        "configurations": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

@@ -48,8 +48,7 @@ venv.bak/
 ehthumbs.db
 Thumbs.db
 
-# Generated files
-*.json
+# Generated files (temporary/dynamic only)
 exported-rules/
 exported-custom-rules/
 created-rule-*.json
@@ -62,9 +61,9 @@ updated-rule-*.json
 bulk-creation-summary-*.json
 deployment-summary-*.json
 custom-rules-list.json
-schema-*.json
-resource-support
 
+# Cache directories
+.schema_cache/
 
 # Logs
 *.log

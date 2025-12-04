@@ -1,0 +1,510 @@
+[
+  {
+    "alloydb.googleapis.com/Cluster": {
+      "configuration": {
+        "automatedBackupPolicy": {
+          "backupWindow": "string",
+          "enabled": "boolean",
+          "encryptionConfig": {
+            "kmsKeyName": "string"
+          },
+          "labels": {
+            "access-privileges": "string",
+            "aiml-service-type": "string",
+            "aiml-team-name": "string",
+            "application": "string",
+            "backup": "string",
+            "backup_policy": "string",
+            "bu-owner-manager": "string",
+            "bu-owner-technical": "string",
+            "business-applicationname": "string",
+            "business-costcenter": "string",
+            "business-org": "string",
+            "business-owner": "string",
+            "business-unit": "string",
+            "cluster": "string",
+            "cluster_type": "string",
+            "cost-center": "string",
+            "cost_center": "string",
+            "data_classification": "string",
+            "deployment-createdby": "string",
+            "deployment-environment": "string",
+            "deployment-method": "string",
+            "dnb_environment": "string",
+            "drn": "string",
+            "encryption": "string",
+            "env": "string",
+            "environment": "string",
+            "incident_email": "string",
+            "legecy_cluster_id": "string",
+            "managed-by": "string",
+            "monitoring": "string",
+            "name": "string",
+            "organization": "string",
+            "owner": "string",
+            "owner_email": "string",
+            "platform": "string",
+            "product": "string",
+            "project_id": "string",
+            "registry_location": "string",
+            "resource_type": "string",
+            "schedule": "string",
+            "security-datatype": "string",
+            "service": "string",
+            "test": "string",
+            "tier": "string"
+          },
+          "location": "string",
+          "quantityBasedRetention": {
+            "count": "integer"
+          },
+          "timeBasedRetention": {
+            "retentionPeriod": "string"
+          },
+          "weeklySchedule": {
+            "daysOfWeek": "string",
+            "startTimes": {
+              "hours": "integer"
+            }
+          }
+        },
+        "backupSource": {
+          "backupName": "string",
+          "backupUid": "string"
+        },
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "clusterType": "string",
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "continuousBackupConfig": {
+          "enabled": "boolean",
+          "encryptionConfig": {
+            "kmsKeyName": "string"
+          },
+          "recoveryWindowDays": "integer"
+        },
+        "continuousBackupInfo": {
+          "enabledTime": "string",
+          "encryptionInfo": {
+            "encryptionType": "string",
+            "kmsKeyVersions": "string"
+          },
+          "schedule": "string"
+        },
+        "createTime": "string",
+        "databaseVersion": "string",
+        "deployment": {
+          "files": "object"
+        },
+        "encryptionConfig": {
+          "kmsKeyName": "string"
+        },
+        "encryptionInfo": {
+          "encryptionType": "string",
+          "kmsKeyVersions": "string"
+        },
+        "envVariables": "object",
+        "labelExtractors": "object",
+        "labels": "object",
+        "maintenancePolicy": "object",
+        "maintenanceSchedule": {
+          "startTime": "string"
+        },
+        "maintenanceUpdatePolicy": {
+          "denyMaintenancePeriods": {
+            "endDate": {
+              "day": "integer",
+              "month": "integer",
+              "year": "integer"
+            },
+            "startDate": {
+              "day": "integer",
+              "month": "integer",
+              "year": "integer"
+            },
+            "time": {
+              "hours": "integer",
+              "minutes": "integer"
+            }
+          },
+          "maintenanceWindows": {
+            "day": "string",
+            "startTime": {
+              "hours": "integer"
+            }
+          }
+        },
+        "metadata": {
+          "annotations": "object"
+        },
+        "migrationSource": {
+          "hostPort": "string",
+          "referenceId": "string",
+          "sourceType": "string"
+        },
+        "name": "string",
+        "network": "string",
+        "networkConfig": {
+          "allocatedIpRange": "string",
+          "network": "string"
+        },
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "primaryConfig": {
+          "secondaryClusterNames": "string"
+        },
+        "pscConfig": {
+          "pscEnabled": "boolean",
+          "serviceOwnedProjectNumber": "string"
+        },
+        "reconciling": "boolean",
+        "resourceLabels": "object",
+        "schema": "object",
+        "secondaryConfig": {
+          "primaryClusterName": "string"
+        },
+        "selectors": "object",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "state": "string",
+        "subscriptionType": "string",
+        "trialMetadata": {
+          "endTime": "string",
+          "graceEndTime": "string",
+          "startTime": "string",
+          "upgradeTime": "string"
+        },
+        "uid": "string",
+        "updateTime": "string",
+        "view": {
+          "query": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "instances": {
+          "activationPolicy": "string",
+          "availabilityType": "string",
+          "clientConnectionConfig": {
+            "requireConnectors": "boolean",
+            "sslConfig": {
+              "sslMode": "string"
+            }
+          },
+          "connectionPoolConfig": {
+            "enabled": "boolean",
+            "flags": {
+              "client_connection_idle_timeout": "string",
+              "ignore_startup_parameters": "string",
+              "max_client_connections": "string",
+              "max_pool_size": "string",
+              "max_prepared_statements": "string",
+              "min_pool_size": "string",
+              "pool_mode": "string",
+              "query_wait_timeout": "string",
+              "server_connection_idle_timeout": "string",
+              "server_lifetime": "string"
+            },
+            "poolerCount": "integer"
+          },
+          "createTime": "string",
+          "databaseFlags": {
+            "alloydb": {
+              "enable_auto_explain": "string",
+              "enable_pg_bigm": "string",
+              "enable_pg_cron": "string",
+              "enable_pg_hint_plan": "string",
+              "enable_pg_wait_sampling": "string",
+              "enable_pgaudit": "string",
+              "enable_pglogical": "string",
+              "iam_authentication": "string",
+              "logical_decoding": "string"
+            },
+            "auto_explain": {
+              "log_analyze": "string",
+              "log_buffers": "string",
+              "log_min_duration": "string",
+              "log_nested_statements": "string",
+              "log_settings": "string",
+              "log_triggers": "string",
+              "log_verbose": "string",
+              "log_wal": "string"
+            },
+            "autovacuum": "string",
+            "autovacuum_analyze_scale_factor": "string",
+            "autovacuum_analyze_threshold": "string",
+            "autovacuum_freeze_max_age": "string",
+            "autovacuum_max_workers": "string",
+            "autovacuum_naptime": "string",
+            "autovacuum_vacuum_scale_factor": "string",
+            "autovacuum_vacuum_threshold": "string",
+            "checkpoint_timeout": "string",
+            "checkpoint_warning": "string",
+            "cron": {
+              "database_name": "string",
+              "log_min_messages": "string",
+              "log_run": "string",
+              "log_statement": "string",
+              "max_running_jobs": "string",
+              "timezone": "string"
+            },
+            "cursor_tuple_fraction": "string",
+            "default_statistics_target": "string",
+            "effective_cache_size": "string",
+            "google_columnar_engine": {
+              "auto_columnarization_schedule": "string",
+              "enable_auto_columnarization": "string",
+              "enable_columnar_recommendation": "string",
+              "enable_columnar_scan": "string",
+              "enable_vectorized_join": "string",
+              "enabled": "string",
+              "memory_size_in_mb": "string",
+              "refresh_threshold_percentage": "string",
+              "refresh_threshold_scan_count": "string",
+              "relations": "string",
+              "storage_cache_size": "string",
+              "vectorized_join_threads": "string"
+            },
+            "google_db_advisor": {
+              "auto_advisor_schedule": "string",
+              "enable_auto_advisor": "string",
+              "enable_query_advisor": "string",
+              "enabled": "string",
+              "recommend_indexes_on_partitions": "string"
+            },
+            "google_job_scheduler": {
+              "maintenance_cpu_percentage": "string",
+              "max_parallel_workers_per_job": "string"
+            },
+            "google_storage": {
+              "log_replay_throttle_read_transactions": "string"
+            },
+            "hot_standby_feedback": "string",
+            "idle_in_transaction_session_timeout": "string",
+            "log_checkpoints": "string",
+            "log_connections": "string",
+            "log_disconnections": "string",
+            "log_duration": "string",
+            "log_error_verbosity": "string",
+            "log_hostname": "string",
+            "log_line_prefix": "string",
+            "log_lock_waits": "string",
+            "log_min_duration_statement": "string",
+            "log_min_messages": "string",
+            "log_replication_commands": "string",
+            "log_statement": "string",
+            "log_statement_stats": "string",
+            "log_temp_files": "string",
+            "log_timezone": "string",
+            "maintenance_work_mem": "string",
+            "max_connections": "string",
+            "max_locks_per_transaction": "string",
+            "max_parallel_maintenance_workers": "string",
+            "max_parallel_workers": "string",
+            "max_parallel_workers_per_gather": "string",
+            "max_wal_senders": "string",
+            "max_wal_size": "string",
+            "max_worker_processes": "string",
+            "password": {
+              "enforce_complexity": "string",
+              "enforce_password_does_not_contain_username": "string",
+              "min_lowercase_letters": "string",
+              "min_numerical_chars": "string",
+              "min_pass_length": "string",
+              "min_special_chars": "string",
+              "min_uppercase_letters": "string"
+            },
+            "password_encryption": "string",
+            "perfsnap": {
+              "interval": "string"
+            },
+            "pg_stat_statements": {
+              "max": "string",
+              "track": "string",
+              "track_utility": "string"
+            },
+            "pgaudit": {
+              "log": "string",
+              "log_catalog": "string",
+              "log_level": "string",
+              "log_parameter": "string"
+            },
+            "random_page_cost": "string",
+            "shared_buffers": "string",
+            "ssl_min_protocol_version": "string",
+            "statement_timeout": "string",
+            "temp_buffers": "string",
+            "temp_file_limit": "string",
+            "track_activity_query_size": "string",
+            "track_io_timing": "string",
+            "vacuum_freeze_table_age": "string",
+            "wal_sender_timeout": "string",
+            "work_mem": "string"
+          },
+          "instanceType": "string",
+          "ipAddress": "string",
+          "labels": {
+            "access-privileges": "string",
+            "aiml-service-type": "string",
+            "aiml-team-name": "string",
+            "app": "string",
+            "application": "string",
+            "backup": "string",
+            "backup_policy": "string",
+            "bu-owner-manager": "string",
+            "bu-owner-technical": "string",
+            "business-applicationname": "string",
+            "business-costcenter": "string",
+            "business-org": "string",
+            "business-owner": "string",
+            "business-unit": "string",
+            "business_unit": "string",
+            "cluster": "string",
+            "cost-center": "string",
+            "cost_center": "string",
+            "data_classification": "string",
+            "deployment-createdby": "string",
+            "deployment-environment": "string",
+            "deployment-method": "string",
+            "dnb_environment": "string",
+            "drn": "string",
+            "encryption": "string",
+            "env": "string",
+            "environment": "string",
+            "gcp_resource": "string",
+            "goog-terraform-provisioned": "string",
+            "incident_email": "string",
+            "instance-type": "string",
+            "instance_type": "string",
+            "legecy_cluster_id": "string",
+            "managed-by": "string",
+            "monitoring": "string",
+            "name": "string",
+            "organization": "string",
+            "owner": "string",
+            "owner_email": "string",
+            "patch-class": "string",
+            "patch-date": "string",
+            "patch-day": "string",
+            "platform": "string",
+            "product": "string",
+            "product_code": "string",
+            "project_id": "string",
+            "project_name": "string",
+            "region": "string",
+            "region_name": "string",
+            "registry_location": "string",
+            "requestedby": "string",
+            "resource_level": "string",
+            "resource_type": "string",
+            "schedule": "string",
+            "sec_criticality": "string",
+            "security-agent-exempt": "string",
+            "security-classification": "string",
+            "security-datatype": "string",
+            "service": "string",
+            "svc": "string",
+            "svc-group": "string",
+            "tier": "string"
+          },
+          "machineConfig": {
+            "cpuCount": "integer",
+            "machineType": "string"
+          },
+          "name": "string",
+          "networkConfig": {
+            "authorizedExternalNetworks": {
+              "cidrRange": "string"
+            },
+            "enableOutboundPublicIp": "boolean",
+            "enablePublicIp": "boolean"
+          },
+          "nodes": {
+            "zoneId": "string"
+          },
+          "observabilityConfig": {
+            "enabled": "boolean",
+            "maxQueryStringLength": "integer",
+            "preserveComments": "boolean",
+            "queryPlansPerMinute": "integer",
+            "recordApplicationTags": "boolean",
+            "trackActiveQueries": "boolean",
+            "trackWaitEventTypes": "boolean",
+            "trackWaitEvents": "boolean"
+          },
+          "outboundPublicIpAddresses": "string",
+          "pscInstanceConfig": {
+            "allowedConsumerProjects": "string",
+            "pscAutoConnections": {
+              "consumerNetwork": "string",
+              "consumerNetworkStatus": "string",
+              "consumerProject": "string",
+              "ipAddress": "string",
+              "status": "string"
+            },
+            "pscDnsName": "string",
+            "pscInterfaceConfigs": {
+              "networkAttachmentResource": "string"
+            },
+            "serviceAttachmentLink": "string"
+          },
+          "publicIpAddress": "string",
+          "queryInsightsConfig": {
+            "queryPlansPerMinute": "integer",
+            "queryStringLength": "integer",
+            "recordApplicationTags": "boolean",
+            "recordClientAddress": "boolean"
+          },
+          "readPoolConfig": {
+            "nodeCount": "integer"
+          },
+          "reconciling": "boolean",
+          "state": "string",
+          "uid": "string",
+          "updateTime": "string",
+          "writableNode": {
+            "zoneId": "string"
+          }
+        },
+        "users": {
+          "databaseRoles": "string",
+          "name": "string",
+          "userType": "string"
+        }
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

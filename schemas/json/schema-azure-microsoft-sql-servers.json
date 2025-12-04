@@ -1,0 +1,170 @@
+[
+  {
+    "Microsoft.Sql/servers": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "id": "string",
+        "identity": {
+          "principalId": "string",
+          "tenantId": "string",
+          "type": "string",
+          "userAssignedIdentities": "object"
+        },
+        "kind": "string",
+        "location": "string",
+        "name": "string",
+        "properties": {
+          "administratorLogin": "string",
+          "administrators": {
+            "administratorType": "string",
+            "azureADOnlyAuthentication": "boolean",
+            "login": "string",
+            "principalType": "string",
+            "sid": "string",
+            "tenantId": "string"
+          },
+          "agentPoolProfiles": "object",
+          "definition": {
+            "actions": "object"
+          },
+          "fullyQualifiedDomainName": "string",
+          "keyId": "string",
+          "managedNetwork": "object",
+          "minimalTlsVersion": "string",
+          "osProfile": "object",
+          "primaryUserAssignedIdentityId": "string",
+          "privateEndpointConnections": {
+            "id": "string",
+            "properties": {
+              "privateEndpoint": {
+                "id": "string"
+              },
+              "privateLinkServiceConnectionState": {
+                "actionsRequired": "string",
+                "description": "string",
+                "status": "string"
+              },
+              "provisioningState": "string"
+            }
+          },
+          "publicNetworkAccess": "string",
+          "restrictOutboundNetworkAccess": "string",
+          "state": "string",
+          "storageProfile": "object",
+          "version": "string",
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          },
+          "workspaceFeature": "string"
+        },
+        "resources": "object",
+        "tags": "object",
+        "type": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "administrator": {
+          "id": "string",
+          "name": "string",
+          "properties": {
+            "administratorType": "string",
+            "azureADOnlyAuthentication": "boolean",
+            "login": "string",
+            "sid": "string",
+            "tenantId": "string"
+          },
+          "type": "string"
+        },
+        "advancedThreatProtection": {
+          "id": "string",
+          "name": "string",
+          "properties": {
+            "creationTime": "string",
+            "state": "string"
+          },
+          "type": "string"
+        },
+        "appSettings": "object",
+        "auditingPolicies": {
+          "id": "string",
+          "name": "string",
+          "properties": {
+            "auditActionsAndGroups": "string",
+            "isAzureMonitorTargetEnabled": "boolean",
+            "isDevopsAuditEnabled": "boolean",
+            "isManagedIdentityInUse": "boolean",
+            "isStorageSecondaryKeyInUse": "boolean",
+            "queueDelayMs": "integer",
+            "retentionDays": "integer",
+            "state": "string",
+            "storageAccountSubscriptionId": "string",
+            "storageEndpoint": "string"
+          },
+          "type": "string"
+        },
+        "configurations": "object",
+        "encryptionProtectors": {
+          "id": "string",
+          "kind": "string",
+          "name": "string",
+          "properties": {
+            "autoRotationEnabled": "boolean",
+            "serverKeyName": "string",
+            "serverKeyType": "string",
+            "uri": "string"
+          },
+          "type": "string"
+        },
+        "firewallRules": {
+          "id": "string",
+          "name": "string",
+          "properties": {
+            "endIpAddress": "string",
+            "startIpAddress": "string"
+          },
+          "type": "string"
+        },
+        "securityAlertPolicies": {
+          "id": "string",
+          "name": "string",
+          "properties": {
+            "creationTime": "string",
+            "disabledAlerts": "string",
+            "emailAccountAdmins": "boolean",
+            "emailAddresses": "string",
+            "retentionDays": "integer",
+            "state": "string",
+            "storageAccountAccessKey": "string",
+            "storageEndpoint": "string"
+          },
+          "type": "string"
+        }
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

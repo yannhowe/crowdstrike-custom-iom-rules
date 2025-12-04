@@ -1,0 +1,84 @@
+[
+  {
+    "aiplatform.googleapis.com/MetadataStore": {
+      "configuration": {
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "createTime": "string",
+        "create_time": {
+          "nanos": "integer",
+          "seconds": "integer"
+        },
+        "deployment": {
+          "files": "object"
+        },
+        "description": "string",
+        "encryptionSpec": {
+          "kmsKeyName": "string"
+        },
+        "envVariables": "object",
+        "labelExtractors": "object",
+        "labels": "object",
+        "maintenancePolicy": "object",
+        "metadata": {
+          "annotations": "object"
+        },
+        "name": "string",
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "resourceLabels": "object",
+        "schema": "object",
+        "selectors": "object",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "state": {
+          "disk_utilization_bytes": "integer"
+        },
+        "updateTime": "string",
+        "update_time": {
+          "nanos": "integer",
+          "seconds": "integer"
+        },
+        "view": {
+          "query": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": "object",
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

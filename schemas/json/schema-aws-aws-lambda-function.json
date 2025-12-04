@@ -1,0 +1,198 @@
+[
+  {
+    "AWS::Lambda::Function": {
+      "configuration": {
+        "architectures": "string",
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "codeSha256": "string",
+        "codeSize": "integer",
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "deadLetterConfig": {
+          "targetArn": "string"
+        },
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "description": "string",
+        "environment": {
+          "error": {
+            "errorCode": "string",
+            "message": "string"
+          },
+          "variables": "object"
+        },
+        "ephemeralStorage": {
+          "size": "integer"
+        },
+        "externalTableDefinition": "object",
+        "fileSystemConfigs": {
+          "arn": "string",
+          "localMountPath": "string"
+        },
+        "firewallStatus": "object",
+        "functionArn": "string",
+        "functionName": "string",
+        "handler": "string",
+        "imageConfigResponse": {
+          "error": {
+            "errorCode": "string",
+            "message": "string"
+          },
+          "imageConfig": {
+            "command": "string",
+            "entryPoint": "string",
+            "workingDirectory": "string"
+          }
+        },
+        "kmsKeyArn": "string",
+        "labels": "object",
+        "lastModified": "string",
+        "lastUpdateStatus": "string",
+        "lastUpdateStatusReason": "string",
+        "lastUpdateStatusReasonCode": "string",
+        "layers": {
+          "arn": "string",
+          "codeSize": "integer",
+          "signingJobArn": "string",
+          "signingProfileVersionArn": "string"
+        },
+        "loggingConfig": {
+          "applicationLogLevel": "string",
+          "logFormat": "string",
+          "logGroup": "string",
+          "systemLogLevel": "string"
+        },
+        "memorySize": "integer",
+        "methodSettings": "object",
+        "packageType": "string",
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "revisionId": "string",
+        "role": "string",
+        "rules": "object",
+        "runtime": "string",
+        "runtimeVersionConfig": {
+          "error": {
+            "errorCode": "string",
+            "message": "string"
+          },
+          "runtimeVersionArn": "string"
+        },
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "signingJobArn": "string",
+        "signingProfileVersionArn": "string",
+        "snapStart": {
+          "applyOn": "string",
+          "optimizationStatus": "string"
+        },
+        "state": "string",
+        "stateReason": "string",
+        "stateReasonCode": "string",
+        "tags": "object",
+        "timeout": "integer",
+        "tracingConfig": {
+          "mode": "string"
+        },
+        "variables": "object",
+        "version": "string",
+        "vpcConfig": {
+          "ipv6AllowedForDualStack": "boolean",
+          "securityGroupIds": "string",
+          "subnetIds": "string",
+          "vpcId": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "codeLocation": {
+          "imageUri": "string",
+          "location": "string",
+          "repositoryType": "string",
+          "resolvedImageUri": "string"
+        },
+        "concurrency": {
+          "reservedConcurrentExecutions": "integer"
+        },
+        "ec2InstanceComplianceItems": "object",
+        "functionUrlConfig": {
+          "authType": "string",
+          "cors": {
+            "allowCredentials": "boolean",
+            "allowHeaders": "string",
+            "allowMethods": "string",
+            "allowOrigins": "string",
+            "exposeHeaders": "string",
+            "maxAge": "integer"
+          },
+          "creationTime": "string",
+          "functionArn": "string",
+          "functionUrl": "string",
+          "invokeMode": "string",
+          "lastModifiedTime": "string"
+        },
+        "instanceAttributeUserData": "object",
+        "layerVersions": {
+          "compatibleArchitectures": "string",
+          "compatibleRuntimes": "string",
+          "content": {
+            "codeSha256": "string",
+            "codeSize": "integer",
+            "location": "string",
+            "signingJobArn": "string",
+            "signingProfileVersionArn": "string"
+          },
+          "createdDate": "string",
+          "description": "string",
+          "layerArn": "string",
+          "layerVersionArn": "string",
+          "licenseInfo": "string",
+          "version": "integer"
+        },
+        "layerVersionsPolicies": {
+          "policy": "string",
+          "revisionId": "string"
+        },
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

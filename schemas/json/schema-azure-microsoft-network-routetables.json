@@ -1,0 +1,79 @@
+[
+  {
+    "Microsoft.Network/routeTables": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "id": "string",
+        "identity": {
+          "userAssignedIdentities": "object"
+        },
+        "location": "string",
+        "name": "string",
+        "properties": {
+          "agentPoolProfiles": "object",
+          "definition": {
+            "actions": "object"
+          },
+          "disableBgpRoutePropagation": "boolean",
+          "managedNetwork": "object",
+          "osProfile": "object",
+          "provisioningState": "string",
+          "resourceGuid": "string",
+          "routes": {
+            "etag": "string",
+            "id": "string",
+            "name": "string",
+            "properties": {
+              "addressPrefix": "string",
+              "hasBgpOverride": "boolean",
+              "nextHopIpAddress": "string",
+              "nextHopType": "string",
+              "provisioningState": "string"
+            },
+            "type": "string"
+          },
+          "storageProfile": "object",
+          "subnets": {
+            "id": "string"
+          },
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          }
+        },
+        "resources": "object",
+        "tags": "object",
+        "type": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "configurations": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

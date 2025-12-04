@@ -1,0 +1,316 @@
+[
+  {
+    "sqladmin.googleapis.com/Instance": {
+      "configuration": {
+        "availableMaintenanceVersions": "string",
+        "backendType": "string",
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "connectionName": "string",
+        "createTime": "string",
+        "databaseInstalledVersion": "string",
+        "databaseVersion": "string",
+        "deployment": {
+          "files": "object"
+        },
+        "diskEncryptionConfiguration": {
+          "kind": "string",
+          "kmsKeyName": "string"
+        },
+        "diskEncryptionStatus": {
+          "kind": "string",
+          "kmsKeyVersionName": "string"
+        },
+        "dnsName": "string",
+        "dnsNames": {
+          "connectionType": "string",
+          "dnsScope": "string",
+          "name": "string"
+        },
+        "envVariables": "object",
+        "failoverReplica": {
+          "available": "boolean",
+          "name": "string"
+        },
+        "gceZone": "string",
+        "geminiConfig": {
+          "activeQueryEnabled": "boolean",
+          "entitled": "boolean",
+          "flagRecommenderEnabled": "boolean",
+          "googleVacuumMgmtEnabled": "boolean",
+          "indexAdvisorEnabled": "boolean",
+          "oomSessionCancelEnabled": "boolean"
+        },
+        "instanceType": "string",
+        "ipAddresses": {
+          "ipAddress": "string",
+          "type": "string"
+        },
+        "kind": "string",
+        "labelExtractors": "object",
+        "labels": "object",
+        "maintenancePolicy": "object",
+        "maintenanceVersion": "string",
+        "masterInstanceName": "string",
+        "metadata": {
+          "annotations": "object"
+        },
+        "name": "string",
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodeCount": "integer",
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "nodes": {
+          "dnsName": "string",
+          "dnsNames": {
+            "connectionType": "string",
+            "dnsScope": "string",
+            "name": "string"
+          },
+          "gceZone": "string",
+          "ipAddresses": {
+            "ipAddress": "string",
+            "type": "string"
+          },
+          "name": "string",
+          "state": "string"
+        },
+        "onPremisesConfiguration": {
+          "dumpFilePath": "string",
+          "hostPort": "string",
+          "kind": "string",
+          "selectedObjects": {
+            "database": "string"
+          },
+          "sourceInstance": {
+            "name": "string",
+            "project": "string"
+          },
+          "sslOption": "string",
+          "username": "string"
+        },
+        "outOfDiskReport": {
+          "sqlMinRecommendedIncreaseSizeGb": "integer",
+          "sqlOutOfDiskState": "string"
+        },
+        "project": "string",
+        "pscServiceAttachmentLink": "string",
+        "region": "string",
+        "replicaConfiguration": {
+          "failoverTarget": "boolean",
+          "kind": "string"
+        },
+        "replicaNames": "string",
+        "replicationCluster": {
+          "drReplica": "boolean",
+          "failoverDrReplicaName": "string",
+          "psaWriteEndpoint": "string"
+        },
+        "resourceLabels": "object",
+        "satisfiesPzi": "boolean",
+        "satisfiesPzs": "boolean",
+        "scheduledMaintenance": {
+          "canReschedule": "boolean",
+          "scheduleDeadlineTime": "string",
+          "startTime": "string"
+        },
+        "schema": "object",
+        "secondaryGceZone": "string",
+        "selectors": "object",
+        "selfLink": "string",
+        "serverCaCert": {
+          "certSerialNumber": "string",
+          "commonName": "string",
+          "createTime": "string",
+          "expirationTime": "string",
+          "instance": "string",
+          "kind": "string",
+          "sha1Fingerprint": "string"
+        },
+        "serviceAccountEmailAddress": "string",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "settings": {
+          "activationPolicy": "string",
+          "activeDirectoryConfig": {
+            "domain": "string",
+            "kind": "string"
+          },
+          "advancedMachineFeatures": "object",
+          "authorizedGaeApplications": "string",
+          "availabilityType": "string",
+          "backupConfiguration": {
+            "backupRetentionSettings": {
+              "retainedBackups": "integer",
+              "retentionUnit": "string"
+            },
+            "backupTier": "string",
+            "binaryLogEnabled": "boolean",
+            "enabled": "boolean",
+            "kind": "string",
+            "location": "string",
+            "pointInTimeRecoveryEnabled": "boolean",
+            "replicationLogArchivingEnabled": "boolean",
+            "startTime": "string",
+            "transactionLogRetentionDays": "integer",
+            "transactionalLogStorageState": "string"
+          },
+          "collation": "string",
+          "connectionPoolConfig": {
+            "connectionPoolingEnabled": "boolean",
+            "flags": {
+              "name": "string",
+              "value": "string"
+            },
+            "poolerCount": "integer"
+          },
+          "connectorEnforcement": "string",
+          "crashSafeReplicationEnabled": "boolean",
+          "dataCacheConfig": {
+            "dataCacheEnabled": "boolean"
+          },
+          "dataDiskProvisionedIops": "string",
+          "dataDiskProvisionedThroughput": "string",
+          "dataDiskSizeGb": "string",
+          "dataDiskType": "string",
+          "databaseFlags": {
+            "name": "string",
+            "value": "string"
+          },
+          "databaseReplicationEnabled": "boolean",
+          "deletionProtectionEnabled": "boolean",
+          "denyMaintenancePeriods": {
+            "endDate": "string",
+            "startDate": "string",
+            "time": "string"
+          },
+          "edition": "string",
+          "enableDataplexIntegration": "boolean",
+          "enableGoogleMlIntegration": "boolean",
+          "finalBackupConfig": {
+            "enabled": "boolean",
+            "retentionDays": "integer"
+          },
+          "insightsConfig": {
+            "queryInsightsEnabled": "boolean",
+            "queryPlansPerMinute": "integer",
+            "queryStringLength": "integer",
+            "recordApplicationTags": "boolean",
+            "recordClientAddress": "boolean"
+          },
+          "ipConfiguration": {
+            "allocatedIpRange": "string",
+            "authorizedNetworks": {
+              "expirationTime": "string",
+              "kind": "string",
+              "name": "string",
+              "value": "string"
+            },
+            "enablePrivatePathForGoogleCloudServices": "boolean",
+            "ipv4Enabled": "boolean",
+            "privateNetwork": "string",
+            "pscConfig": {
+              "allowedConsumerProjects": "string",
+              "networkAttachmentUri": "string",
+              "pscAutoConnections": {
+                "consumerNetwork": "string",
+                "consumerNetworkStatus": "string",
+                "consumerProject": "string",
+                "ipAddress": "string",
+                "status": "string"
+              },
+              "pscEnabled": "boolean"
+            },
+            "requireSsl": "boolean",
+            "serverCaMode": "string",
+            "serverCaPool": "string",
+            "sslMode": "string"
+          },
+          "kind": "string",
+          "locationPreference": {
+            "kind": "string",
+            "secondaryZone": "string",
+            "zone": "string"
+          },
+          "maintenanceWindow": {
+            "day": "integer",
+            "hour": "integer",
+            "kind": "string",
+            "updateTrack": "string"
+          },
+          "passwordValidationPolicy": {
+            "complexity": "string",
+            "disallowUsernameSubstring": "boolean",
+            "enablePasswordPolicy": "boolean",
+            "minLength": "integer",
+            "passwordChangeInterval": "string",
+            "reuseInterval": "integer"
+          },
+          "pricingPlan": "string",
+          "replicationLagMaxSeconds": "integer",
+          "replicationType": "string",
+          "retainBackupsOnDelete": "boolean",
+          "settingsVersion": "string",
+          "sqlServerAuditConfig": {
+            "bucket": "string",
+            "kind": "string",
+            "retentionInterval": "string",
+            "uploadInterval": "string"
+          },
+          "storageAutoResize": "boolean",
+          "storageAutoResizeLimit": "string",
+          "tier": "string",
+          "timeZone": "string",
+          "userLabels": "object"
+        },
+        "sqlNetworkArchitecture": "string",
+        "state": "string",
+        "suspensionReason": "string",
+        "upgradableDatabaseVersions": {
+          "displayName": "string",
+          "majorVersion": "string",
+          "name": "string"
+        },
+        "view": {
+          "query": "string"
+        },
+        "writeEndpoint": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": "object",
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

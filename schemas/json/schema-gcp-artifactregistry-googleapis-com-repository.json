@@ -1,0 +1,135 @@
+[
+  {
+    "artifactregistry.googleapis.com/Repository": {
+      "configuration": {
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "cleanupPolicies": "object",
+        "cleanupPolicyDryRun": "boolean",
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "createTime": "string",
+        "deployment": {
+          "files": "object"
+        },
+        "description": "string",
+        "dockerConfig": {
+          "immutableTags": "boolean"
+        },
+        "envVariables": "object",
+        "format": "string",
+        "kmsKeyName": "string",
+        "labelExtractors": "object",
+        "labels": "object",
+        "maintenancePolicy": "object",
+        "mavenConfig": {
+          "allowSnapshotOverwrites": "boolean",
+          "versionPolicy": "string"
+        },
+        "metadata": {
+          "annotations": "object"
+        },
+        "mode": "string",
+        "name": "string",
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "registryUri": "string",
+        "remoteRepositoryConfig": {
+          "aptRepository": {
+            "publicRepository": {
+              "repositoryBase": "string",
+              "repositoryPath": "string"
+            }
+          },
+          "commonRepository": {
+            "uri": "string"
+          },
+          "description": "string",
+          "dockerRepository": {
+            "customRepository": {
+              "uri": "string"
+            },
+            "publicRepository": "string"
+          },
+          "mavenRepository": {
+            "customRepository": {
+              "uri": "string"
+            },
+            "publicRepository": "string"
+          },
+          "npmRepository": {
+            "publicRepository": "string"
+          },
+          "pythonRepository": {
+            "publicRepository": "string"
+          },
+          "upstreamCredentials": {
+            "usernamePasswordCredentials": {
+              "passwordSecretVersion": "string",
+              "username": "string"
+            }
+          }
+        },
+        "resourceLabels": "object",
+        "satisfiesPzi": "boolean",
+        "satisfiesPzs": "boolean",
+        "schema": "object",
+        "selectors": "object",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "sizeBytes": "string",
+        "updateTime": "string",
+        "view": {
+          "query": "string"
+        },
+        "virtualRepositoryConfig": {
+          "upstreamPolicies": {
+            "id": "string",
+            "priority": "integer",
+            "repository": "string"
+          }
+        },
+        "vulnerabilityScanningConfig": {
+          "enablementConfig": "string",
+          "enablementState": "string",
+          "enablementStateReason": "string",
+          "lastEnableTime": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": "object",
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

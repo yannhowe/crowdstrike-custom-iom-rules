@@ -1,0 +1,357 @@
+[
+  {
+    "AWS::DMS::Endpoint": {
+      "configuration": {
+        "certificateArn": "string",
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "databaseName": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "dmsTransferSettings": {
+          "bucketName": "string",
+          "serviceAccessRoleArn": "string"
+        },
+        "docDbSettings": {
+          "databaseName": "string",
+          "docsToInvestigate": "integer",
+          "extractDocId": "boolean",
+          "nestingLevel": "string",
+          "port": "integer",
+          "secretsManagerAccessRoleArn": "string",
+          "secretsManagerSecretId": "string",
+          "serverName": "string",
+          "useUpdateLookUp": "boolean",
+          "username": "string"
+        },
+        "dynamoDbSettings": {
+          "serviceAccessRoleArn": "string"
+        },
+        "elasticsearchSettings": {
+          "endpointUri": "string",
+          "errorRetryDuration": "integer",
+          "fullLoadErrorPercentage": "integer",
+          "serviceAccessRoleArn": "string",
+          "useNewMappingType": "boolean"
+        },
+        "endpointArn": "string",
+        "endpointIdentifier": "string",
+        "endpointType": "string",
+        "engineDisplayName": "string",
+        "engineName": "string",
+        "environment": {
+          "variables": "object"
+        },
+        "externalId": "string",
+        "externalTableDefinition": "object",
+        "extraConnectionAttributes": "string",
+        "firewallStatus": "object",
+        "gcpMySQLSettings": {
+          "port": "integer",
+          "serverName": "string",
+          "username": "string"
+        },
+        "ibmDb2Settings": {
+          "currentLsn": "string",
+          "databaseName": "string",
+          "port": "integer",
+          "secretsManagerAccessRoleArn": "string",
+          "secretsManagerSecretId": "string",
+          "serverName": "string",
+          "username": "string"
+        },
+        "kafkaSettings": {
+          "broker": "string",
+          "includeControlDetails": "boolean",
+          "includeNullAndEmpty": "boolean",
+          "includePartitionValue": "boolean",
+          "includeTableAlterOperations": "boolean",
+          "includeTransactionDetails": "boolean",
+          "messageFormat": "string",
+          "messageMaxBytes": "integer",
+          "noHexPrefix": "boolean",
+          "partitionIncludeSchemaTable": "boolean",
+          "saslMechanism": "string",
+          "saslUsername": "string",
+          "securityProtocol": "string",
+          "sslCaCertificateArn": "string",
+          "sslClientCertificateArn": "string",
+          "sslClientKeyArn": "string",
+          "sslEndpointIdentificationAlgorithm": "string",
+          "topic": "string"
+        },
+        "kinesisSettings": {
+          "includeControlDetails": "boolean",
+          "includeNullAndEmpty": "boolean",
+          "includePartitionValue": "boolean",
+          "includeTableAlterOperations": "boolean",
+          "includeTransactionDetails": "boolean",
+          "messageFormat": "string",
+          "noHexPrefix": "boolean",
+          "partitionIncludeSchemaTable": "boolean",
+          "serviceAccessRoleArn": "string",
+          "streamArn": "string"
+        },
+        "kmsKeyId": "string",
+        "labels": "object",
+        "methodSettings": "object",
+        "microsoftSQLServerSettings": {
+          "databaseName": "string",
+          "port": "integer",
+          "readBackupOnly": "boolean",
+          "safeguardPolicy": "string",
+          "secretsManagerAccessRoleArn": "string",
+          "secretsManagerSecretId": "string",
+          "serverName": "string",
+          "trimSpaceInChar": "boolean",
+          "useBcpFullLoad": "boolean",
+          "useThirdPartyBackupDevice": "boolean",
+          "username": "string"
+        },
+        "mongoDbSettings": {
+          "authMechanism": "string",
+          "authSource": "string",
+          "authType": "string",
+          "databaseName": "string",
+          "docsToInvestigate": "string",
+          "extractDocId": "string",
+          "kmsKeyId": "string",
+          "nestingLevel": "string",
+          "port": "integer",
+          "secretsManagerAccessRoleArn": "string",
+          "secretsManagerSecretId": "string",
+          "serverName": "string",
+          "useUpdateLookUp": "boolean",
+          "username": "string"
+        },
+        "mySQLSettings": {
+          "afterConnectScript": "string",
+          "cleanSourceMetadataOnMismatch": "boolean",
+          "databaseName": "string",
+          "eventsPollInterval": "integer",
+          "executeTimeout": "integer",
+          "maxFileSize": "integer",
+          "parallelLoadThreads": "integer",
+          "port": "integer",
+          "secretsManagerAccessRoleArn": "string",
+          "secretsManagerSecretId": "string",
+          "serverName": "string",
+          "serverTimezone": "string",
+          "targetDbType": "string",
+          "username": "string"
+        },
+        "neptuneSettings": {
+          "iamAuthEnabled": "boolean",
+          "s3BucketFolder": "string",
+          "s3BucketName": "string",
+          "serviceAccessRoleArn": "string"
+        },
+        "oracleSettings": {
+          "accessAlternateDirectly": "boolean",
+          "addSupplementalLogging": "boolean",
+          "additionalArchivedLogDestId": "integer",
+          "allowSelectNestedTables": "boolean",
+          "archivedLogDestId": "integer",
+          "archivedLogsOnly": "boolean",
+          "asmServer": "string",
+          "asmUser": "string",
+          "charLengthSemantics": "string",
+          "convertTimestampWithZoneToUTC": "boolean",
+          "databaseName": "string",
+          "directPathNoLog": "boolean",
+          "directPathParallelLoad": "boolean",
+          "enableHomogenousTablespace": "boolean",
+          "extraArchivedLogDestIds": "integer",
+          "failTasksOnLobTruncation": "boolean",
+          "numberDatatypeScale": "integer",
+          "openTransactionWindow": "integer",
+          "oraclePathPrefix": "string",
+          "parallelAsmReadThreads": "integer",
+          "port": "integer",
+          "readAheadBlocks": "integer",
+          "replacePathPrefix": "boolean",
+          "secretsManagerAccessRoleArn": "string",
+          "secretsManagerOracleAsmAccessRoleArn": "string",
+          "secretsManagerOracleAsmSecretId": "string",
+          "secretsManagerSecretId": "string",
+          "securityDbEncryptionName": "string",
+          "serverName": "string",
+          "standbyDelayTime": "integer",
+          "trimSpaceInChar": "boolean",
+          "useAlternateFolderForOnline": "boolean",
+          "useBFile": "boolean",
+          "useDirectPathFullLoad": "boolean",
+          "useLogminerReader": "boolean",
+          "usePathPrefix": "string",
+          "username": "string"
+        },
+        "policy": "object",
+        "port": "integer",
+        "postgreSQLSettings": {
+          "afterConnectScript": "string",
+          "babelfishDatabaseName": "string",
+          "captureDdls": "boolean",
+          "databaseMode": "string",
+          "databaseName": "string",
+          "ddlArtifactsSchema": "string",
+          "executeTimeout": "integer",
+          "failTasksOnLobTruncation": "boolean",
+          "heartbeatEnable": "boolean",
+          "heartbeatFrequency": "integer",
+          "heartbeatSchema": "string",
+          "mapBooleanAsBoolean": "boolean",
+          "mapJsonbAsClob": "boolean",
+          "maxFileSize": "integer",
+          "pluginName": "string",
+          "port": "integer",
+          "secretsManagerAccessRoleArn": "string",
+          "secretsManagerSecretId": "string",
+          "serverName": "string",
+          "slotName": "string",
+          "username": "string"
+        },
+        "redisSettings": {
+          "authType": "string",
+          "authUserName": "string",
+          "port": "integer",
+          "serverName": "string",
+          "sslSecurityProtocol": "string"
+        },
+        "redshiftSettings": {
+          "acceptAnyDate": "boolean",
+          "afterConnectScript": "string",
+          "bucketFolder": "string",
+          "bucketName": "string",
+          "caseSensitiveNames": "boolean",
+          "compUpdate": "boolean",
+          "connectionTimeout": "integer",
+          "databaseName": "string",
+          "dateFormat": "string",
+          "emptyAsNull": "boolean",
+          "encryptionMode": "string",
+          "fileTransferUploadStreams": "integer",
+          "loadTimeout": "integer",
+          "mapBooleanAsBoolean": "boolean",
+          "maxFileSize": "integer",
+          "port": "integer",
+          "removeQuotes": "boolean",
+          "replaceChars": "string",
+          "secretsManagerAccessRoleArn": "string",
+          "secretsManagerSecretId": "string",
+          "serverName": "string",
+          "serverSideEncryptionKmsKeyId": "string",
+          "serviceAccessRoleArn": "string",
+          "timeFormat": "string",
+          "trimBlanks": "boolean",
+          "username": "string",
+          "writeBufferSize": "integer"
+        },
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "s3Settings": {
+          "addColumnName": "boolean",
+          "addTrailingPaddingCharacter": "boolean",
+          "bucketFolder": "string",
+          "bucketName": "string",
+          "cannedAclForObjects": "string",
+          "cdcInsertsAndUpdates": "boolean",
+          "cdcInsertsOnly": "boolean",
+          "cdcMaxBatchInterval": "integer",
+          "cdcMinFileSize": "integer",
+          "cdcPath": "string",
+          "compressionType": "string",
+          "csvDelimiter": "string",
+          "csvNoSupValue": "string",
+          "csvNullValue": "string",
+          "csvRowDelimiter": "string",
+          "dataFormat": "string",
+          "dataPageSize": "integer",
+          "datePartitionDelimiter": "string",
+          "datePartitionEnabled": "boolean",
+          "datePartitionSequence": "string",
+          "datePartitionTimezone": "string",
+          "dictPageSizeLimit": "integer",
+          "enableStatistics": "boolean",
+          "encodingType": "string",
+          "encryptionMode": "string",
+          "expectedBucketOwner": "string",
+          "externalTableDefinition": "string",
+          "glueCatalogGeneration": "boolean",
+          "ignoreHeaderRows": "integer",
+          "includeOpForFullLoad": "boolean",
+          "maxFileSize": "integer",
+          "parquetTimestampInMillisecond": "boolean",
+          "parquetVersion": "string",
+          "preserveTransactions": "boolean",
+          "rfc4180": "boolean",
+          "rowGroupLength": "integer",
+          "serverSideEncryptionKmsKeyId": "string",
+          "serviceAccessRoleArn": "string",
+          "timestampColumnName": "string",
+          "useCsvNoSupValue": "boolean",
+          "useTaskStartTimeForFullLoadTimestamp": "boolean"
+        },
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "serverName": "string",
+        "serviceAccessRoleArn": "string",
+        "sslMode": "string",
+        "status": "string",
+        "sybaseSettings": {
+          "databaseName": "string",
+          "port": "integer",
+          "serverName": "string",
+          "username": "string"
+        },
+        "tags": "object",
+        "username": "string",
+        "variables": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

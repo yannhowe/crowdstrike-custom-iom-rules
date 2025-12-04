@@ -1,0 +1,109 @@
+[
+  {
+    "AWS::Redshift::ClusterSnapshot": {
+      "configuration": {
+        "accountsWithRestoreAccess": {
+          "accountId": "string"
+        },
+        "actualIncrementalBackupSizeInMegaBytes": "integer",
+        "availabilityZone": "string",
+        "backupProgressInMegaBytes": "integer",
+        "certificatePem": "string",
+        "clusterCreateTime": "string",
+        "clusterIdentifier": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "clusterVersion": "string",
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "currentBackupRateInMegaBytesPerSecond": "integer",
+        "dbName": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "elapsedTimeInSeconds": "integer",
+        "encrypted": "boolean",
+        "encryptedWithHSM": "boolean",
+        "engineFullVersion": "string",
+        "enhancedVpcRouting": "boolean",
+        "environment": {
+          "variables": "object"
+        },
+        "estimatedSecondsToCompletion": "integer",
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "kmsKeyId": "string",
+        "labels": "object",
+        "maintenanceTrackName": "string",
+        "manualSnapshotRemainingDays": "integer",
+        "manualSnapshotRetentionPeriod": "integer",
+        "masterPasswordSecretArn": "string",
+        "masterPasswordSecretKmsKeyId": "string",
+        "masterUsername": "string",
+        "methodSettings": "object",
+        "nodeType": "string",
+        "numberOfNodes": "integer",
+        "ownerAccount": "string",
+        "policy": "object",
+        "port": "integer",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "restorableNodeTypes": "string",
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "snapshotArn": "string",
+        "snapshotCreateTime": "string",
+        "snapshotIdentifier": "string",
+        "snapshotRetentionStartTime": "string",
+        "snapshotType": "string",
+        "sourceRegion": "string",
+        "status": "string",
+        "tags": "object",
+        "totalBackupSizeInMegaBytes": "integer",
+        "variables": "object",
+        "vpcId": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

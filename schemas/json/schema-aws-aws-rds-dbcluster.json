@@ -1,0 +1,213 @@
+[
+  {
+    "AWS::RDS::DBCluster": {
+      "configuration": {
+        "activityStreamKinesisStreamName": "string",
+        "activityStreamKmsKeyId": "string",
+        "activityStreamMode": "string",
+        "activityStreamStatus": "string",
+        "allocatedStorage": "integer",
+        "associatedRoles": {
+          "featureName": "string",
+          "roleArn": "string",
+          "status": "string"
+        },
+        "autoMinorVersionUpgrade": "boolean",
+        "automaticRestartTime": "string",
+        "availabilityZones": "string",
+        "awsBackupRecoveryPointArn": "string",
+        "backtrackConsumedChangeRecords": "integer",
+        "backtrackWindow": "integer",
+        "backupRetentionPeriod": "integer",
+        "capacity": "integer",
+        "certificateDetails": {
+          "caIdentifier": "string",
+          "validTill": "string"
+        },
+        "certificatePem": "string",
+        "cloneGroupId": "string",
+        "clusterCreateTime": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "copyTagsToSnapshot": "boolean",
+        "crossAccountClone": "boolean",
+        "customEndpoints": "string",
+        "databaseName": "string",
+        "dbClusterArn": "string",
+        "dbClusterIdentifier": "string",
+        "dbClusterInstanceClass": "string",
+        "dbClusterMembers": {
+          "dbClusterParameterGroupStatus": "string",
+          "dbInstanceIdentifier": "string",
+          "isClusterWriter": "boolean",
+          "promotionTier": "integer"
+        },
+        "dbClusterOptionGroupMemberships": {
+          "dbClusterOptionGroupName": "string",
+          "status": "string"
+        },
+        "dbClusterParameterGroup": "string",
+        "dbClusterResourceId": "string",
+        "dbSubnetGroup": "string",
+        "dbSystemId": "string",
+        "deletionProtection": "boolean",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "domainMemberships": {
+          "domain": "string",
+          "fqdn": "string",
+          "iamRoleName": "string",
+          "status": "string"
+        },
+        "earliestBacktrackTime": "string",
+        "earliestRestorableTime": "string",
+        "enabledCloudwatchLogsExports": "string",
+        "endpoint": "string",
+        "engine": "string",
+        "engineLifecycleSupport": "string",
+        "engineMode": "string",
+        "engineVersion": "string",
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "globalWriteForwardingRequested": "boolean",
+        "globalWriteForwardingStatus": "string",
+        "hostedZoneId": "string",
+        "httpEndpointEnabled": "boolean",
+        "iamDatabaseAuthenticationEnabled": "boolean",
+        "ioOptimizedNextAllowedModificationTime": "string",
+        "iops": "integer",
+        "kmsKeyId": "string",
+        "labels": "object",
+        "limitlessDatabase": {
+          "minRequiredACU": "integer",
+          "status": "string"
+        },
+        "localWriteForwardingStatus": "string",
+        "masterUserSecret": {
+          "kmsKeyId": "string",
+          "secretArn": "string",
+          "secretStatus": "string"
+        },
+        "masterUsername": "string",
+        "methodSettings": "object",
+        "monitoringInterval": "integer",
+        "monitoringRoleArn": "string",
+        "multiAZ": "boolean",
+        "networkType": "string",
+        "pendingModifiedValues": {
+          "allocatedStorage": "integer",
+          "certificateDetails": {
+            "caIdentifier": "string",
+            "validTill": "string"
+          },
+          "dbClusterIdentifier": "string",
+          "engineVersion": "string",
+          "iamDatabaseAuthenticationEnabled": "boolean",
+          "iops": "integer",
+          "masterUserPassword": "string",
+          "pendingCloudwatchLogsExports": {
+            "logTypesToDisable": "string",
+            "logTypesToEnable": "string"
+          },
+          "storageType": "string"
+        },
+        "performanceInsightsEnabled": "boolean",
+        "performanceInsightsKMSKeyId": "string",
+        "performanceInsightsRetentionPeriod": "integer",
+        "policy": "object",
+        "port": "integer",
+        "preferredBackupWindow": "string",
+        "preferredMaintenanceWindow": "string",
+        "publiclyAccessible": "boolean",
+        "rdsCustomClusterConfiguration": {
+          "interconnectSubnetId": "string",
+          "transitGatewayMulticastDomainId": "string"
+        },
+        "readReplicaIdentifiers": "string",
+        "readerEndpoint": "string",
+        "replicationSourceIdentifier": "string",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "scalingConfigurationInfo": {
+          "autoPause": "boolean",
+          "maxCapacity": "integer",
+          "minCapacity": "integer",
+          "secondsBeforeTimeout": "integer",
+          "secondsUntilAutoPause": "integer",
+          "timeoutAction": "string"
+        },
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "serverlessV2ScalingConfiguration": {
+          "maxCapacity": "integer",
+          "minCapacity": "integer"
+        },
+        "status": "string",
+        "storageEncrypted": "boolean",
+        "storageThroughput": "integer",
+        "storageType": "string",
+        "tags": "object",
+        "variables": "object",
+        "vpcSecurityGroups": {
+          "status": "string",
+          "vpcSecurityGroupId": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "backtrackDBCluster": {
+          "backtrackIdentifier": "string",
+          "backtrackRequestCreationTime": "string",
+          "backtrackTo": "string",
+          "backtrackedFrom": "string",
+          "dbClusterIdentifier": "string",
+          "status": "string"
+        },
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

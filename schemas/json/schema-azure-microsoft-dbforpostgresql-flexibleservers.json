@@ -1,0 +1,104 @@
+[
+  {
+    "Microsoft.DBforPostgreSQL/flexibleServers": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "id": "string",
+        "identity": {
+          "userAssignedIdentities": "object"
+        },
+        "location": "string",
+        "name": "string",
+        "properties": {
+          "administratorLogin": "string",
+          "agentPoolProfiles": "object",
+          "availabilityZone": "string",
+          "backup": {
+            "backupRetentionDays": "integer",
+            "earliestRestoreDate": "string",
+            "geoRedundantBackup": "string"
+          },
+          "definition": {
+            "actions": "object"
+          },
+          "fullyQualifiedDomainName": "string",
+          "highAvailability": {
+            "mode": "string",
+            "standbyAvailabilityZone": "string",
+            "state": "string"
+          },
+          "maintenanceWindow": {
+            "customWindow": "string",
+            "dayOfWeek": "integer",
+            "startHour": "integer",
+            "startMinute": "integer"
+          },
+          "managedNetwork": "object",
+          "minorVersion": "string",
+          "network": {
+            "delegatedSubnetResourceId": "string",
+            "privateDnsZoneArmResourceId": "string",
+            "publicNetworkAccess": "string"
+          },
+          "osProfile": "object",
+          "sourceServerResourceId": "string",
+          "state": "string",
+          "storage": {
+            "storageSizeGB": "integer"
+          },
+          "storageProfile": "object",
+          "version": "string",
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          }
+        },
+        "resources": "object",
+        "sku": {
+          "name": "string",
+          "tier": "string"
+        },
+        "tags": "object",
+        "type": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "configurations": "object",
+        "firewallRules": {
+          "id": "string",
+          "name": "string",
+          "properties": {
+            "endIpAddress": "string",
+            "startIpAddress": "string"
+          },
+          "type": "string"
+        }
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

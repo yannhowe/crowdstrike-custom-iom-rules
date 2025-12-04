@@ -1,0 +1,213 @@
+[
+  {
+    "Microsoft.DocumentDB/databaseAccounts": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "id": "string",
+        "identity": {
+          "principalId": "string",
+          "tenantId": "string",
+          "type": "string",
+          "userAssignedIdentities": "object"
+        },
+        "kind": "string",
+        "location": "string",
+        "name": "string",
+        "properties": {
+          "agentPoolProfiles": "object",
+          "analyticalStorageConfiguration": {
+            "schemaType": "string"
+          },
+          "apiProperties": {
+            "serverVersion": "string"
+          },
+          "backupPolicy": {
+            "continuousModeProperties": {
+              "tier": "string"
+            },
+            "migrationState": {
+              "startTime": "string",
+              "status": "string",
+              "targetType": "string"
+            },
+            "periodicModeProperties": {
+              "backupIntervalInMinutes": "integer",
+              "backupRetentionIntervalInHours": "integer",
+              "backupStorageRedundancy": "string"
+            },
+            "type": "string"
+          },
+          "capabilities": {
+            "name": "string"
+          },
+          "capacity": {
+            "totalThroughputLimit": "integer"
+          },
+          "consistencyPolicy": {
+            "defaultConsistencyLevel": "string",
+            "maxIntervalInSeconds": "integer",
+            "maxStalenessPrefix": "integer"
+          },
+          "cors": {
+            "allowedHeaders": "string",
+            "allowedMethods": "string",
+            "allowedOrigins": "string",
+            "exposedHeaders": "string",
+            "maxAgeInSeconds": "integer"
+          },
+          "createMode": "string",
+          "databaseAccountOfferType": "string",
+          "defaultIdentity": "string",
+          "definition": {
+            "actions": "object"
+          },
+          "diagnosticLogSettings": {
+            "enableFullTextQuery": "string"
+          },
+          "disableKeyBasedMetadataWriteAccess": "boolean",
+          "disableLocalAuth": "boolean",
+          "documentEndpoint": "string",
+          "enableAnalyticalStorage": "boolean",
+          "enableAutomaticFailover": "boolean",
+          "enableFreeTier": "boolean",
+          "enableMaterializedViews": "boolean",
+          "enableMultipleWriteLocations": "boolean",
+          "enablePartitionMerge": "boolean",
+          "failoverPolicies": {
+            "failoverPriority": "integer",
+            "id": "string",
+            "locationName": "string"
+          },
+          "instanceId": "string",
+          "ipRules": {
+            "ipAddressOrRange": "string"
+          },
+          "isVirtualNetworkFilterEnabled": "boolean",
+          "keyVaultKeyUri": "string",
+          "keysMetadata": {
+            "primaryMasterKey": {
+              "generationTime": "string"
+            },
+            "primaryReadonlyMasterKey": {
+              "generationTime": "string"
+            },
+            "secondaryMasterKey": {
+              "generationTime": "string"
+            },
+            "secondaryReadonlyMasterKey": {
+              "generationTime": "string"
+            }
+          },
+          "locations": {
+            "documentEndpoint": "string",
+            "failoverPriority": "integer",
+            "id": "string",
+            "isZoneRedundant": "boolean",
+            "locationName": "string",
+            "provisioningState": "string"
+          },
+          "managedNetwork": "object",
+          "networkAclBypass": "string",
+          "networkAclBypassResourceIds": "string",
+          "osProfile": "object",
+          "privateEndpointConnections": {
+            "id": "string",
+            "properties": {
+              "privateEndpoint": {
+                "id": "string"
+              },
+              "privateLinkServiceConnectionState": {
+                "actionsRequired": "string",
+                "description": "string",
+                "status": "string"
+              }
+            }
+          },
+          "provisioningState": "string",
+          "publicNetworkAccess": "string",
+          "readLocations": {
+            "documentEndpoint": "string",
+            "failoverPriority": "integer",
+            "id": "string",
+            "isZoneRedundant": "boolean",
+            "locationName": "string",
+            "provisioningState": "string"
+          },
+          "restoreParameters": {
+            "databasesToRestore": {
+              "collectionNames": "string",
+              "databaseName": "string"
+            },
+            "gremlinDatabasesToRestore": {
+              "databaseName": "string",
+              "graphNames": "string"
+            },
+            "restoreMode": "string",
+            "restoreSource": "string",
+            "restoreTimestampInUtc": "string"
+          },
+          "storageProfile": "object",
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          },
+          "virtualNetworkRules": {
+            "id": "string",
+            "ignoreMissingVNetServiceEndpoint": "boolean"
+          },
+          "writeLocations": {
+            "documentEndpoint": "string",
+            "failoverPriority": "integer",
+            "id": "string",
+            "isZoneRedundant": "boolean",
+            "locationName": "string",
+            "provisioningState": "string"
+          }
+        },
+        "resources": "object",
+        "systemData": {
+          "createdAt": "string"
+        },
+        "tags": "object",
+        "type": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "configurations": "object",
+        "threatProtectionSetting": {
+          "id": "string",
+          "name": "string",
+          "properties": {
+            "isEnabled": "boolean"
+          },
+          "type": "string"
+        }
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

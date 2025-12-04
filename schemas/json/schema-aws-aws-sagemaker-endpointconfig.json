@@ -1,0 +1,154 @@
+[
+  {
+    "AWS::SageMaker::EndpointConfig": {
+      "configuration": {
+        "asyncInferenceConfig": {
+          "clientConfig": {
+            "maxConcurrentInvocationsPerInstance": "integer"
+          },
+          "outputConfig": {
+            "kmsKeyId": "string",
+            "notificationConfig": {
+              "errorTopic": "string",
+              "includeInferenceResponseIn": "string",
+              "successTopic": "string"
+            },
+            "s3FailurePath": "string",
+            "s3OutputPath": "string"
+          }
+        },
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "creationTime": "string",
+        "dataCaptureConfig": {
+          "captureContentTypeHeader": {
+            "csvContentTypes": "string",
+            "jsonContentTypes": "string"
+          },
+          "captureOptions": {
+            "captureMode": "string"
+          },
+          "destinationS3Uri": "string",
+          "enableCapture": "boolean",
+          "initialSamplingPercentage": "integer",
+          "kmsKeyId": "string"
+        },
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "enableNetworkIsolation": "boolean",
+        "endpointConfigArn": "string",
+        "endpointConfigName": "string",
+        "environment": {
+          "variables": "object"
+        },
+        "executionRoleArn": "string",
+        "explainerConfig": {
+          "clarifyExplainerConfig": {
+            "enableExplanations": "string",
+            "shapConfig": {
+              "shapBaselineConfig": {
+                "shapBaseline": "string"
+              }
+            }
+          }
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "kmsKeyId": "string",
+        "labels": "object",
+        "methodSettings": "object",
+        "policy": "object",
+        "productionVariants": {
+          "acceleratorType": "string",
+          "containerStartupHealthCheckTimeoutInSeconds": "integer",
+          "enableSSMAccess": "boolean",
+          "inferenceAmiVersion": "string",
+          "initialInstanceCount": "integer",
+          "initialVariantWeight": "integer",
+          "instanceType": "string",
+          "managedInstanceScaling": {
+            "maxInstanceCount": "integer",
+            "minInstanceCount": "integer",
+            "status": "string"
+          },
+          "modelDataDownloadTimeoutInSeconds": "integer",
+          "modelName": "string",
+          "routingConfig": {
+            "routingStrategy": "string"
+          },
+          "serverlessConfig": {
+            "maxConcurrency": "integer",
+            "memorySizeInMB": "integer",
+            "provisionedConcurrency": "integer"
+          },
+          "variantName": "string",
+          "volumeSizeInGB": "integer"
+        },
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "shadowProductionVariants": {
+          "enableSSMAccess": "boolean",
+          "initialInstanceCount": "integer",
+          "initialVariantWeight": "integer",
+          "instanceType": "string",
+          "modelName": "string",
+          "variantName": "string",
+          "volumeSizeInGB": "integer"
+        },
+        "tags": "object",
+        "variables": "object",
+        "vpcConfig": {
+          "securityGroupIds": "string",
+          "subnets": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

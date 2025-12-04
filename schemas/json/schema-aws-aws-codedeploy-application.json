@@ -1,0 +1,204 @@
+[
+  {
+    "AWS::CodeDeploy::Application": {
+      "configuration": {
+        "applicationId": "string",
+        "applicationName": "string",
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "computePlatform": "string",
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "createTime": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "gitHubAccountName": "string",
+        "labels": "object",
+        "linkedToGitHub": "boolean",
+        "methodSettings": "object",
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "tags": "object",
+        "variables": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "deploymentGroups": {
+          "alarmConfiguration": {
+            "alarms": {
+              "name": "string"
+            },
+            "enabled": "boolean",
+            "ignorePollAlarmFailure": "boolean"
+          },
+          "applicationName": "string",
+          "autoRollbackConfiguration": {
+            "enabled": "boolean",
+            "events": "string"
+          },
+          "autoScalingGroups": {
+            "hook": "string",
+            "name": "string",
+            "terminationHook": "string"
+          },
+          "blueGreenDeploymentConfiguration": {
+            "deploymentReadyOption": {
+              "actionOnTimeout": "string",
+              "waitTimeInMinutes": "integer"
+            },
+            "greenFleetProvisioningOption": {
+              "action": "string"
+            },
+            "terminateBlueInstancesOnDeploymentSuccess": {
+              "action": "string",
+              "terminationWaitTimeInMinutes": "integer"
+            }
+          },
+          "computePlatform": "string",
+          "deploymentConfigName": "string",
+          "deploymentGroupId": "string",
+          "deploymentGroupName": "string",
+          "deploymentStyle": {
+            "deploymentOption": "string",
+            "deploymentType": "string"
+          },
+          "ec2TagFilters": {
+            "key": "string",
+            "type": "string",
+            "value": "string"
+          },
+          "ec2TagSet": {
+            "ec2TagSetList": {
+              "key": "string",
+              "type": "string",
+              "value": "string"
+            }
+          },
+          "ecsServices": {
+            "clusterName": "string",
+            "serviceName": "string"
+          },
+          "lastAttemptedDeployment": {
+            "createTime": "string",
+            "deploymentId": "string",
+            "endTime": "string",
+            "status": "string"
+          },
+          "lastSuccessfulDeployment": {
+            "createTime": "string",
+            "deploymentId": "string",
+            "endTime": "string",
+            "status": "string"
+          },
+          "loadBalancerInfo": {
+            "elbInfoList": {
+              "name": "string"
+            },
+            "targetGroupInfoList": {
+              "name": "string"
+            },
+            "targetGroupPairInfoList": {
+              "prodTrafficRoute": {
+                "listenerArns": "string"
+              },
+              "targetGroups": {
+                "name": "string"
+              },
+              "testTrafficRoute": {
+                "listenerArns": "string"
+              }
+            }
+          },
+          "onPremisesInstanceTagFilters": {
+            "key": "string",
+            "type": "string",
+            "value": "string"
+          },
+          "onPremisesTagSet": {
+            "onPremisesTagSetList": {
+              "key": "string",
+              "type": "string",
+              "value": "string"
+            }
+          },
+          "outdatedInstancesStrategy": "string",
+          "serviceRoleArn": "string",
+          "targetRevision": {
+            "appSpecContent": {
+              "sha256": "string"
+            },
+            "gitHubLocation": {
+              "commitId": "string",
+              "repository": "string"
+            },
+            "revisionType": "string",
+            "s3Location": {
+              "bucket": "string",
+              "bundleType": "string",
+              "eTag": "string",
+              "key": "string",
+              "version": "string"
+            },
+            "string": {
+              "sha256": "string"
+            }
+          },
+          "terminationHookEnabled": "boolean",
+          "triggerConfigurations": {
+            "triggerEvents": "string",
+            "triggerName": "string",
+            "triggerTargetArn": "string"
+          }
+        },
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

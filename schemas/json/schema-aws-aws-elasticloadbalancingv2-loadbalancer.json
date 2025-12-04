@@ -1,0 +1,104 @@
+[
+  {
+    "AWS::ElasticLoadBalancingV2::LoadBalancer": {
+      "configuration": {
+        "availabilityZones": {
+          "loadBalancerAddresses": {
+            "allocationId": "string",
+            "iPv6Address": "string",
+            "ipAddress": "string",
+            "privateIPv4Address": "string"
+          },
+          "sourceNatIpv6Prefixes": "string",
+          "subnetId": "string",
+          "zoneName": "string"
+        },
+        "canonicalHostedZoneId": "string",
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "createdTime": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "dnsName": "string",
+        "enablePrefixForIpv6SourceNat": "string",
+        "enforceSecurityGroupInboundRulesOnPrivateLinkTraffic": "string",
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "ipAddressType": "string",
+        "ipamPools": {
+          "ipv4IpamPoolId": "string"
+        },
+        "labels": "object",
+        "loadBalancerArn": "string",
+        "loadBalancerName": "string",
+        "methodSettings": "object",
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "scheme": "string",
+        "secretVersionsToStages": "object",
+        "securityGroups": "string",
+        "selectors": {
+          "labels": "object"
+        },
+        "state": {
+          "code": "string"
+        },
+        "tags": "object",
+        "type": "string",
+        "variables": "object",
+        "vpcId": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "attributes": {
+          "key": "string",
+          "value": "string"
+        },
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

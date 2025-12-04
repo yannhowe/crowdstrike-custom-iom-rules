@@ -1,0 +1,245 @@
+[
+  {
+    "AWS::RDS::DBInstance": {
+      "configuration": {
+        "activityStreamEngineNativeAuditFieldsIncluded": "boolean",
+        "activityStreamKinesisStreamName": "string",
+        "activityStreamKmsKeyId": "string",
+        "activityStreamMode": "string",
+        "activityStreamPolicyStatus": "string",
+        "activityStreamStatus": "string",
+        "allocatedStorage": "integer",
+        "associatedRoles": {
+          "featureName": "string",
+          "roleArn": "string",
+          "status": "string"
+        },
+        "autoMinorVersionUpgrade": "boolean",
+        "automaticRestartTime": "string",
+        "automationMode": "string",
+        "availabilityZone": "string",
+        "awsBackupRecoveryPointArn": "string",
+        "backupRetentionPeriod": "integer",
+        "backupTarget": "string",
+        "caCertificateIdentifier": "string",
+        "certificateDetails": {
+          "caIdentifier": "string",
+          "validTill": "string"
+        },
+        "certificatePem": "string",
+        "characterSetName": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "copyTagsToSnapshot": "boolean",
+        "customIamInstanceProfile": "string",
+        "customerOwnedIpEnabled": "boolean",
+        "dbClusterIdentifier": "string",
+        "dbInstanceArn": "string",
+        "dbInstanceAutomatedBackupsReplications": {
+          "dbInstanceAutomatedBackupsArn": "string"
+        },
+        "dbInstanceClass": "string",
+        "dbInstanceIdentifier": "string",
+        "dbInstancePort": "integer",
+        "dbInstanceStatus": "string",
+        "dbName": "string",
+        "dbParameterGroups": {
+          "dbParameterGroupName": "string",
+          "parameterApplyStatus": "string"
+        },
+        "dbSecurityGroups": {
+          "dbSecurityGroupName": "string",
+          "status": "string"
+        },
+        "dbSubnetGroup": {
+          "dbSubnetGroupDescription": "string",
+          "dbSubnetGroupName": "string",
+          "subnetGroupStatus": "string",
+          "subnets": {
+            "subnetAvailabilityZone": {
+              "name": "string"
+            },
+            "subnetIdentifier": "string",
+            "subnetOutpost": "object",
+            "subnetStatus": "string"
+          },
+          "vpcId": "string"
+        },
+        "dbSystemId": "string",
+        "dbiResourceId": "string",
+        "dedicatedLogVolume": "boolean",
+        "deletionProtection": "boolean",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "domainMemberships": {
+          "authSecretArn": "string",
+          "dnsIps": "string",
+          "domain": "string",
+          "fqdn": "string",
+          "iamRoleName": "string",
+          "ou": "string",
+          "status": "string"
+        },
+        "enabledCloudwatchLogsExports": "string",
+        "endpoint": {
+          "address": "string",
+          "hostedZoneId": "string",
+          "port": "integer"
+        },
+        "engine": "string",
+        "engineLifecycleSupport": "string",
+        "engineVersion": "string",
+        "enhancedMonitoringResourceArn": "string",
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "iamDatabaseAuthenticationEnabled": "boolean",
+        "instanceCreateTime": "string",
+        "iops": "integer",
+        "isStorageConfigUpgradeAvailable": "boolean",
+        "kmsKeyId": "string",
+        "labels": "object",
+        "licenseModel": "string",
+        "listenerEndpoint": {
+          "address": "string",
+          "hostedZoneId": "string",
+          "port": "integer"
+        },
+        "masterUserSecret": {
+          "kmsKeyId": "string",
+          "secretArn": "string",
+          "secretStatus": "string"
+        },
+        "masterUsername": "string",
+        "maxAllocatedStorage": "integer",
+        "methodSettings": "object",
+        "monitoringInterval": "integer",
+        "monitoringRoleArn": "string",
+        "multiAZ": "boolean",
+        "multiTenant": "boolean",
+        "ncharCharacterSetName": "string",
+        "networkType": "string",
+        "optionGroupMemberships": {
+          "optionGroupName": "string",
+          "status": "string"
+        },
+        "pendingModifiedValues": {
+          "allocatedStorage": "integer",
+          "automationMode": "string",
+          "backupRetentionPeriod": "integer",
+          "caCertificateIdentifier": "string",
+          "dbInstanceClass": "string",
+          "dbInstanceIdentifier": "string",
+          "dbSubnetGroupName": "string",
+          "dedicatedLogVolume": "boolean",
+          "engine": "string",
+          "engineVersion": "string",
+          "iamDatabaseAuthenticationEnabled": "boolean",
+          "iops": "integer",
+          "licenseModel": "string",
+          "masterUserPassword": "string",
+          "multiAZ": "boolean",
+          "multiTenant": "boolean",
+          "pendingCloudwatchLogsExports": {
+            "logTypesToDisable": "string",
+            "logTypesToEnable": "string"
+          },
+          "port": "integer",
+          "processorFeatures": {
+            "name": "string",
+            "value": "string"
+          },
+          "resumeFullAutomationModeTime": "string",
+          "storageThroughput": "integer",
+          "storageType": "string"
+        },
+        "percentProgress": "string",
+        "performanceInsightsEnabled": "boolean",
+        "performanceInsightsKMSKeyId": "string",
+        "performanceInsightsRetentionPeriod": "integer",
+        "policy": "object",
+        "preferredBackupWindow": "string",
+        "preferredMaintenanceWindow": "string",
+        "processorFeatures": {
+          "name": "string",
+          "value": "string"
+        },
+        "promotionTier": "integer",
+        "publiclyAccessible": "boolean",
+        "readReplicaDBClusterIdentifiers": "string",
+        "readReplicaDBInstanceIdentifiers": "string",
+        "readReplicaSourceDBClusterIdentifier": "string",
+        "readReplicaSourceDBInstanceIdentifier": "string",
+        "replicaMode": "string",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "resumeFullAutomationModeTime": "string",
+        "rules": "object",
+        "secondaryAvailabilityZone": "string",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "statusInfos": {
+          "message": "string",
+          "normal": "boolean",
+          "status": "string",
+          "statusType": "string"
+        },
+        "storageEncrypted": "boolean",
+        "storageThroughput": "integer",
+        "storageType": "string",
+        "tags": "object",
+        "timezone": "string",
+        "variables": "object",
+        "vpcSecurityGroups": {
+          "status": "string",
+          "vpcSecurityGroupId": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

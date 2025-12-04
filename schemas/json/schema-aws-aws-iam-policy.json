@@ -1,0 +1,86 @@
+[
+  {
+    "AWS::IAM::Policy": {
+      "configuration": {
+        "arn": "string",
+        "attachmentCount": "integer",
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "createDate": "string",
+        "defaultVersionId": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "description": "string",
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "isAttachable": "boolean",
+        "labels": "object",
+        "methodSettings": "object",
+        "path": "string",
+        "permissionsBoundaryUsageCount": "integer",
+        "policy": "object",
+        "policyId": "string",
+        "policyName": "string",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "tags": "object",
+        "updateDate": "string",
+        "variables": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "managedBy": "string",
+        "policy": "object",
+        "policyVersion": {
+          "createDate": "string",
+          "document": "object",
+          "isDefaultVersion": "boolean",
+          "versionId": "string"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

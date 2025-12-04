@@ -1,0 +1,176 @@
+[
+  {
+    "dataproc.googleapis.com/Cluster": {
+      "configuration": {
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "clusterName": "string",
+        "clusterUuid": "string",
+        "config": {
+          "autoscalingConfig": {
+            "policyUri": "string"
+          },
+          "configBucket": "string",
+          "encryptionConfig": {
+            "gcePdKmsKeyName": "string"
+          },
+          "endpointConfig": {
+            "enableHttpPortAccess": "boolean",
+            "httpPorts": "object"
+          },
+          "gceClusterConfig": {
+            "internalIpOnly": "boolean",
+            "metadata": "object",
+            "networkUri": "string",
+            "reservationAffinity": {
+              "consumeReservationType": "string"
+            },
+            "serviceAccount": "string",
+            "serviceAccountScopes": "string",
+            "subnetworkUri": "string",
+            "tags": "string",
+            "zoneUri": "string"
+          },
+          "initializationActions": {
+            "executableFile": "string",
+            "executionTimeout": "string"
+          },
+          "labels": "object",
+          "lifecycleConfig": {
+            "autoDeleteTime": "string",
+            "idleDeleteTtl": "string"
+          },
+          "masterConfig": {
+            "accelerators": {
+              "acceleratorCount": "integer",
+              "acceleratorTypeUri": "string"
+            },
+            "diskConfig": {
+              "bootDiskSizeGb": "integer",
+              "bootDiskType": "string",
+              "numLocalSsds": "integer"
+            },
+            "imageUri": "string",
+            "instanceNames": "string",
+            "machineTypeUri": "string",
+            "managedGroupConfig": {
+              "instanceGroupManagerName": "string",
+              "instanceTemplateName": "string"
+            },
+            "minCpuPlatform": "string",
+            "numInstances": "integer",
+            "preemptibility": "string"
+          },
+          "secondaryWorkerConfig": {
+            "diskConfig": {
+              "bootDiskSizeGb": "integer",
+              "bootDiskType": "string",
+              "numLocalSsds": "integer"
+            },
+            "imageUri": "string",
+            "isPreemptible": "boolean",
+            "machineTypeUri": "string",
+            "managedGroupConfig": {
+              "instanceGroupManagerName": "string",
+              "instanceTemplateName": "string"
+            },
+            "minCpuPlatform": "string",
+            "numInstances": "integer",
+            "preemptibility": "string"
+          },
+          "securityConfig": {
+            "kerberosConfig": {
+              "enableKerberos": "boolean",
+              "kmsKeyUri": "string",
+              "rootPrincipalPasswordUri": "string"
+            }
+          },
+          "softwareConfig": {
+            "imageVersion": "string",
+            "optionalComponents": "string",
+            "properties": "object"
+          },
+          "tempBucket": "string",
+          "workerConfig": {
+            "accelerators": {
+              "acceleratorCount": "integer",
+              "acceleratorTypeUri": "string"
+            },
+            "diskConfig": {
+              "bootDiskSizeGb": "integer",
+              "bootDiskType": "string",
+              "numLocalSsds": "integer"
+            },
+            "imageUri": "string",
+            "instanceNames": "string",
+            "machineTypeUri": "string",
+            "managedGroupConfig": {
+              "instanceGroupManagerName": "string",
+              "instanceTemplateName": "string"
+            },
+            "minCpuPlatform": "string",
+            "numInstances": "integer",
+            "preemptibility": "string"
+          }
+        },
+        "deployment": {
+          "files": "object"
+        },
+        "envVariables": "object",
+        "labelExtractors": "object",
+        "labels": "object",
+        "maintenancePolicy": "object",
+        "metadata": {
+          "annotations": "object"
+        },
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "projectId": "string",
+        "resourceLabels": "object",
+        "schema": "object",
+        "selectors": "object",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "status": {
+          "state": "string",
+          "stateStartTime": "string"
+        },
+        "statusHistory": {
+          "detail": "string",
+          "state": "string",
+          "stateStartTime": "string"
+        },
+        "view": {
+          "query": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": "object",
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

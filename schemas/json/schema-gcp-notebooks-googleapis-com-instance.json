@@ -1,0 +1,348 @@
+[
+  {
+    "notebooks.googleapis.com/Instance": {
+      "configuration": {
+        "Infrastructure": {
+          "GceSetup": {
+            "Image": {
+              "ContainerImage": {
+                "repository": "string",
+                "tag": "string"
+              }
+            },
+            "accelerator_configs": {
+              "core_count": "integer",
+              "type": "integer"
+            },
+            "boot_disk": {
+              "disk_encryption": "integer",
+              "disk_size_gb": "integer"
+            },
+            "data_disks": {
+              "disk_encryption": "integer",
+              "disk_size_gb": "integer"
+            },
+            "disable_public_ip": "boolean",
+            "gpu_driver_config": {
+              "enable_gpu_driver": "boolean"
+            },
+            "machine_type": "string",
+            "metadata": {
+              "agent-health-check-interval-seconds": "string",
+              "block-project-ssh-keys": "string",
+              "componente": "string",
+              "container": "string",
+              "container-custom-params": "string",
+              "container-env-file": "string",
+              "cos-update-strategy": "string",
+              "custom-container-image": "string",
+              "custom-container-payload": "string",
+              "disable-mixer": "string",
+              "disable-swap-binaries": "string",
+              "empresa": "string",
+              "enable-guest-attributes": "string",
+              "enable-jupyterlab4-preview": "string",
+              "enable-osconfig": "string",
+              "enable-oslogin": "string",
+              "framework": "string",
+              "generate-diagnostics-bucket": "string",
+              "generate-diagnostics-file": "string",
+              "generate-diagnostics-options": "string",
+              "google-logging-enabled": "string",
+              "hsgdi_bill_tracker": "string",
+              "idle-timeout-seconds": "string",
+              "image-url": "string",
+              "install-monitoring-agent": "string",
+              "install-nvidia-driver": "string",
+              "install-unattended-upgrades": "string",
+              "installed-extensions": "string",
+              "last_updated_diagnostic": "string",
+              "notebook-disable-downloads": "string",
+              "notebook-disable-nbconvert": "string",
+              "notebook-disable-root": "string",
+              "notebook-disable-terminal": "string",
+              "notebook-enable-delete-to-trash": "string",
+              "notebook-upgrade-schedule": "string",
+              "notebooks-api": "string",
+              "notebooks-api-version": "string",
+              "post-startup-script": "string",
+              "proxy-backend-id": "string",
+              "proxy-byoid-url": "string",
+              "proxy-mode": "string",
+              "proxy-registration-url": "string",
+              "proxy-url": "string",
+              "proxy-user-mail": "string",
+              "report-container-health": "string",
+              "report-dns-resolution": "string",
+              "report-event-health": "string",
+              "report-event-url": "string",
+              "report-notebook-metrics": "string",
+              "report-system-health": "string",
+              "resource-url": "string",
+              "restriction": "string",
+              "serial-port-logging-enable": "string",
+              "service-account-mode": "string",
+              "servicio": "string",
+              "shutdown-script": "string",
+              "ssh-keys": "string",
+              "terraform": "string",
+              "title": "string",
+              "use-collaborative": "string",
+              "user-data": "string",
+              "version": "string",
+              "warmup-libraries": "string"
+            },
+            "network_interfaces": {
+              "network": "string",
+              "subnet": "string"
+            },
+            "service_accounts": {
+              "email": "string",
+              "scopes": "string"
+            },
+            "shielded_instance_config": {
+              "enable_integrity_monitoring": "boolean",
+              "enable_secure_boot": "boolean",
+              "enable_vtpm": "boolean"
+            },
+            "tags": "string"
+          }
+        },
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "createTime": "string",
+        "create_time": {
+          "nanos": "integer",
+          "seconds": "integer"
+        },
+        "creator": "string",
+        "deployment": {
+          "files": "object"
+        },
+        "disableProxyAccess": "boolean",
+        "disable_proxy_access": "boolean",
+        "envVariables": "object",
+        "gceSetup": {
+          "acceleratorConfigs": {
+            "coreCount": "string",
+            "type": "string"
+          },
+          "bootDisk": {
+            "diskEncryption": "string",
+            "diskSizeGb": "string"
+          },
+          "containerImage": {
+            "repository": "string",
+            "tag": "string"
+          },
+          "dataDisks": {
+            "diskEncryption": "string",
+            "diskSizeGb": "string"
+          },
+          "disablePublicIp": "boolean",
+          "enableIpForwarding": "boolean",
+          "gpuDriverConfig": {
+            "enableGpuDriver": "boolean"
+          },
+          "machineType": "string",
+          "metadata": {
+            "agent-health-check-interval-seconds": "string",
+            "block-project-ssh-keys": "string",
+            "boot_disk_size_gb": "string",
+            "container": "string",
+            "container-custom-params": "string",
+            "container-env-file": "string",
+            "cos-update-strategy": "string",
+            "custom-container-image": "string",
+            "custom-container-payload": "string",
+            "disable-mixer": "string",
+            "disable-ssh": "string",
+            "disable-swap-binaries": "string",
+            "enable-guest-attributes": "string",
+            "enable-jupyterlab4-preview": "string",
+            "enable-osconfig": "string",
+            "enable-oslogin": "string",
+            "euc-enabled": "string",
+            "framework": "string",
+            "gcs-data-bucket": "string",
+            "google-logging-enabled": "string",
+            "idle-timeout-seconds": "string",
+            "image-url": "string",
+            "install-gpu-driver": "string",
+            "install-monitoring-agent": "string",
+            "install-nvidia-driver": "string",
+            "install-unattended-upgrades": "string",
+            "instance-region": "string",
+            "notebook-disable-downloads": "string",
+            "notebook-disable-nbconvert": "string",
+            "notebook-disable-root": "string",
+            "notebook-disable-terminal": "string",
+            "notebook-enable-delete-to-trash": "string",
+            "notebook-upgrade-schedule": "string",
+            "notebooks-api": "string",
+            "notebooks-api-version": "string",
+            "post-startup-script": "string",
+            "post-startup-script-behavior": "string",
+            "proxy-backend-id": "string",
+            "proxy-byoid-url": "string",
+            "proxy-mode": "string",
+            "proxy-registration-url": "string",
+            "proxy-url": "string",
+            "proxy-user-mail": "string",
+            "proxy_mode": "string",
+            "report-container-health": "string",
+            "report-dns-resolution": "string",
+            "report-event-health": "string",
+            "report-event-url": "string",
+            "report-notebook-metrics": "string",
+            "report-system-health": "string",
+            "resource-url": "string",
+            "restriction": "string",
+            "serial-port-enable": "string",
+            "serial-port-logging-enable": "string",
+            "service-account-mode": "string",
+            "shutdown-script": "string",
+            "ssh-keys": "string",
+            "terraform": "string",
+            "test-key": "string",
+            "title": "string",
+            "use-collaborative": "string",
+            "user-data": "string",
+            "version": "string",
+            "warmup-libraries": "string"
+          },
+          "networkInterfaces": {
+            "network": "string",
+            "nicType": "string",
+            "subnet": "string"
+          },
+          "serviceAccounts": {
+            "email": "string",
+            "scopes": "string"
+          },
+          "shieldedInstanceConfig": {
+            "enableIntegrityMonitoring": "boolean",
+            "enableSecureBoot": "boolean",
+            "enableVtpm": "boolean"
+          },
+          "tags": "string"
+        },
+        "healthInfo": {
+          "data_disk_utilization_percent": "string",
+          "diagnostic_service_status": "string",
+          "docker_proxy_agent_status": "string",
+          "docker_status": "string",
+          "idle_shutdown_agent_status": "string",
+          "jupyterlab_api_status": "string",
+          "jupyterlab_status": "string",
+          "last_updated": "string",
+          "notebooks_api_dns": "string",
+          "proxy_agent_status": "string",
+          "proxy_registration_dns": "string",
+          "system_health": "string"
+        },
+        "healthState": "string",
+        "health_info": {
+          "data_disk_utilization_percent": "string",
+          "diagnostic_service_status": "string",
+          "docker_proxy_agent_status": "string",
+          "docker_status": "string",
+          "idle_shutdown_agent_status": "string",
+          "jupyterlab_api_status": "string",
+          "jupyterlab_status": "string",
+          "last_updated": "string",
+          "notebooks_api_dns": "string",
+          "proxy_agent_status": "string",
+          "proxy_registration_dns": "string",
+          "system_health": "string"
+        },
+        "health_state": "integer",
+        "id": "string",
+        "labelExtractors": "object",
+        "labels": "object",
+        "maintenancePolicy": "object",
+        "metadata": {
+          "annotations": "object"
+        },
+        "name": "string",
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "proxyUri": "string",
+        "proxy_uri": "string",
+        "resourceLabels": "object",
+        "schema": "object",
+        "selectors": "object",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "state": "string",
+        "updateTime": "string",
+        "update_time": {
+          "nanos": "integer",
+          "seconds": "integer"
+        },
+        "upgradeHistory": {
+          "action": "string",
+          "createTime": "string",
+          "framework": "string",
+          "snapshot": "string",
+          "state": "string",
+          "targetVersion": "string",
+          "version": "string",
+          "vmImage": "string"
+        },
+        "upgrade_history": {
+          "action": "integer",
+          "create_time": {
+            "nanos": "integer",
+            "seconds": "integer"
+          },
+          "framework": "string",
+          "snapshot": "string",
+          "state": "integer",
+          "target_version": "string",
+          "version": "string",
+          "vm_image": "string"
+        },
+        "view": {
+          "query": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": "object",
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

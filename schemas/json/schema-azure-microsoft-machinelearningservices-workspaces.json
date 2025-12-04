@@ -1,0 +1,159 @@
+[
+  {
+    "Microsoft.MachineLearningServices/workspaces": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "id": "string",
+        "identity": {
+          "principalId": "string",
+          "tenantId": "string",
+          "type": "string",
+          "userAssignedIdentities": "object"
+        },
+        "kind": "string",
+        "location": "string",
+        "name": "string",
+        "properties": {
+          "agentPoolProfiles": "object",
+          "applicationInsights": "string",
+          "associatedWorkspaces": "string",
+          "containerRegistry": "string",
+          "definition": {
+            "actions": "object"
+          },
+          "description": "string",
+          "discoveryUrl": "string",
+          "enableDataIsolation": "boolean",
+          "encryption": {
+            "identity": {
+              "userAssignedIdentity": "string"
+            },
+            "keyVaultProperties": {
+              "keyIdentifier": "string",
+              "keyVaultArmId": "string"
+            },
+            "status": "string"
+          },
+          "featureStoreSettings": {
+            "computeRuntime": {
+              "sparkRuntimeVersion": "string"
+            },
+            "offlineStoreConnectionName": "string",
+            "onlineStoreConnectionName": "string"
+          },
+          "friendlyName": "string",
+          "hbiWorkspace": "boolean",
+          "hubResourceId": "string",
+          "imageBuildCompute": "string",
+          "keyVault": "string",
+          "managedNetwork": "object",
+          "mlFlowTrackingUri": "string",
+          "notebookInfo": {
+            "fqdn": "string",
+            "notebookPreparationError": {
+              "errorMessage": "string",
+              "statusCode": "integer"
+            },
+            "resourceId": "string"
+          },
+          "osProfile": "object",
+          "primaryUserAssignedIdentity": "string",
+          "privateEndpointConnections": {
+            "id": "string",
+            "location": "string",
+            "properties": {
+              "privateEndpoint": {
+                "id": "string"
+              },
+              "privateLinkServiceConnectionState": {
+                "actionsRequired": "string",
+                "description": "string",
+                "status": "string"
+              },
+              "provisioningState": "string"
+            }
+          },
+          "privateLinkCount": "integer",
+          "provisioningState": "string",
+          "publicNetworkAccess": "string",
+          "serverlessComputeSettings": {
+            "serverlessComputeCustomSubnet": "string",
+            "serverlessComputeNoPublicIP": "boolean"
+          },
+          "serviceManagedResourcesSettings": {
+            "cosmosDb": {
+              "collectionsThroughput": "integer"
+            }
+          },
+          "serviceProvisionedResourceGroup": "string",
+          "sharedPrivateLinkResources": {
+            "name": "string",
+            "properties": {
+              "groupId": "string",
+              "privateLinkResourceId": "string",
+              "requestMessage": "string",
+              "status": "string"
+            }
+          },
+          "storageAccount": "string",
+          "storageHnsEnabled": "boolean",
+          "storageProfile": "object",
+          "tenantId": "string",
+          "v1LegacyMode": "boolean",
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          },
+          "workspaceHubConfig": {
+            "defaultWorkspaceResourceGroup": "string"
+          },
+          "workspaceId": "string"
+        },
+        "resources": "object",
+        "sku": {
+          "name": "string",
+          "tier": "string"
+        },
+        "systemData": {
+          "createdAt": "string",
+          "createdBy": "string",
+          "createdByType": "string",
+          "lastModifiedAt": "string",
+          "lastModifiedBy": "string",
+          "lastModifiedByType": "string"
+        },
+        "tags": "object",
+        "type": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "configurations": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "Microsoft.Compute/virtualMachines": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "extendedLocation": {
+          "name": "string",
+          "type": "string"
+        },
+        "id": "string",
+        "identity": {
+          "principalId": "string",
+          "tenantId": "string",
+          "type": "string",
+          "userAssignedIdentities": "object"
+        },
+        "location": "string",
+        "name": "string",
+        "plan": {
+          "name": "string",
+          "product": "string",
+          "promotionCode": "string",
+          "publisher": "string"
+        },
+        "properties": {
+          "additionalCapabilities": {
+            "hibernationEnabled": "boolean",
+            "ultraSSDEnabled": "boolean"
+          },
+          "agentPoolProfiles": "object",
+          "applicationProfile": {
+            "galleryApplications": {
+              "enableAutomaticUpgrade": "boolean",
+              "order": "integer",
+              "packageReferenceId": "string",
+              "tags": "string",
+              "treatFailureAsDeploymentFailure": "boolean"
+            }
+          },
+          "availabilitySet": {
+            "id": "string"
+          },
+          "billingProfile": {
+            "maxPrice": "integer"
+          },
+          "capacityReservation": {
+            "capacityReservationGroup": {
+              "id": "string"
+            }
+          },
+          "definition": {
+            "actions": "object"
+          },
+          "diagnosticsProfile": {
+            "bootDiagnostics": {
+              "enabled": "boolean",
+              "storageUri": "string"
+            }
+          },
+          "evictionPolicy": "string",
+          "extended": {
+            "instanceView": {
+              "computerName": "string",
+              "hyperVGeneration": "string",
+              "osName": "string",
+              "osVersion": "string",
+              "powerState": {
+                "code": "string",
+                "displayStatus": "string",
+                "level": "string"
+              }
+            }
+          },
+          "extensionsTimeBudget": "string",
+          "hardwareProfile": {
+            "vmSize": "string"
+          },
+          "host": {
+            "id": "string"
+          },
+          "hostGroup": {
+            "id": "string"
+          },
+          "licenseType": "string",
+          "managedNetwork": "object",
+          "networkProfile": {
+            "networkInterfaces": {
+              "id": "string",
+              "properties": {
+                "deleteOption": "string",
+                "primary": "boolean"
+              }
+            }
+          },
+          "osProfile": "object",
+          "priority": "string",
+          "provisioningState": "string",
+          "proximityPlacementGroup": {
+            "id": "string"
+          },
+          "scheduledEventsProfile": {
+            "terminateNotificationProfile": {
+              "enable": "boolean",
+              "notBeforeTimeout": "string"
+            }
+          },
+          "securityProfile": {
+            "encryptionAtHost": "boolean",
+            "securityType": "string",
+            "uefiSettings": {
+              "secureBootEnabled": "boolean",
+              "vTpmEnabled": "boolean"
+            }
+          },
+          "storageProfile": "object",
+          "timeCreated": "string",
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          },
+          "virtualMachineScaleSet": {
+            "id": "string"
+          },
+          "vmId": "string"
+        },
+        "resources": "object",
+        "tags": "object",
+        "type": "string",
+        "zones": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "configurations": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

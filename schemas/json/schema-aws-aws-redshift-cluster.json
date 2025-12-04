@@ -1,0 +1,215 @@
+[
+  {
+    "AWS::Redshift::Cluster": {
+      "configuration": {
+        "allowVersionUpgrade": "boolean",
+        "aquaConfiguration": {
+          "aquaConfigurationStatus": "string",
+          "aquaStatus": "string"
+        },
+        "automatedSnapshotRetentionPeriod": "integer",
+        "availabilityZone": "string",
+        "availabilityZoneRelocationStatus": "string",
+        "certificatePem": "string",
+        "clusterAvailabilityStatus": "string",
+        "clusterCreateTime": "string",
+        "clusterIdentifier": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "clusterNamespaceArn": "string",
+        "clusterNodes": {
+          "nodeRole": "string",
+          "privateIPAddress": "string",
+          "publicIPAddress": "string"
+        },
+        "clusterParameterGroups": {
+          "clusterParameterStatusList": {
+            "parameterApplyErrorDescription": "string",
+            "parameterApplyStatus": "string",
+            "parameterName": "string"
+          },
+          "parameterApplyStatus": "string",
+          "parameterGroupName": "string"
+        },
+        "clusterPublicKey": "string",
+        "clusterRevisionNumber": "string",
+        "clusterSnapshotCopyStatus": {
+          "destinationRegion": "string",
+          "manualSnapshotRetentionPeriod": "integer",
+          "retentionPeriod": "integer",
+          "snapshotCopyGrantName": "string"
+        },
+        "clusterStatus": "string",
+        "clusterSubnetGroupName": "string",
+        "clusterVersion": "string",
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "customDomainCertificateArn": "string",
+        "customDomainCertificateExpiryDate": "string",
+        "customDomainName": "string",
+        "dataTransferProgress": {
+          "currentRateInMegaBytesPerSecond": "integer",
+          "dataTransferredInMegaBytes": "integer",
+          "elapsedTimeInSeconds": "integer",
+          "estimatedTimeToCompletionInSeconds": "integer",
+          "status": "string",
+          "totalDataInMegaBytes": "integer"
+        },
+        "dbName": "string",
+        "defaultIamRoleArn": "string",
+        "deferredMaintenanceWindows": {
+          "deferMaintenanceEndTime": "string",
+          "deferMaintenanceIdentifier": "string",
+          "deferMaintenanceStartTime": "string"
+        },
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "elasticIpStatus": {
+          "elasticIp": "string",
+          "status": "string"
+        },
+        "elasticResizeNumberOfNodeOptions": "string",
+        "encrypted": "boolean",
+        "endpoint": {
+          "address": "string",
+          "port": "integer",
+          "vpcEndpoints": {
+            "networkInterfaces": {
+              "availabilityZone": "string",
+              "ipv6Address": "string",
+              "networkInterfaceId": "string",
+              "privateIpAddress": "string",
+              "subnetId": "string"
+            },
+            "vpcEndpointId": "string",
+            "vpcId": "string"
+          }
+        },
+        "enhancedVpcRouting": "boolean",
+        "environment": {
+          "variables": "object"
+        },
+        "expectedNextSnapshotScheduleTime": "string",
+        "expectedNextSnapshotScheduleTimeStatus": "string",
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "iamRoles": {
+          "applyStatus": "string",
+          "iamRoleArn": "string"
+        },
+        "ipAddressType": "string",
+        "kmsKeyId": "string",
+        "labels": "object",
+        "maintenanceTrackName": "string",
+        "manualSnapshotRetentionPeriod": "integer",
+        "masterPasswordSecretArn": "string",
+        "masterPasswordSecretKmsKeyId": "string",
+        "masterUsername": "string",
+        "methodSettings": "object",
+        "multiAZ": "string",
+        "multiAZSecondary": {
+          "availabilityZone": "string",
+          "clusterNodes": {
+            "nodeRole": "string",
+            "privateIPAddress": "string",
+            "publicIPAddress": "string"
+          }
+        },
+        "nextMaintenanceWindowStartTime": "string",
+        "nodeType": "string",
+        "numberOfNodes": "integer",
+        "pendingModifiedValues": {
+          "clusterType": "string",
+          "encryptionType": "string",
+          "enhancedVpcRouting": "boolean",
+          "maintenanceTrackName": "string",
+          "masterUserPassword": "string",
+          "nodeType": "string",
+          "numberOfNodes": "integer",
+          "publiclyAccessible": "boolean"
+        },
+        "policy": "object",
+        "preferredMaintenanceWindow": "string",
+        "publiclyAccessible": "boolean",
+        "resizeInfo": {
+          "allowCancelResize": "boolean",
+          "resizeType": "string"
+        },
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "restoreStatus": {
+          "currentRestoreRateInMegaBytesPerSecond": "integer",
+          "elapsedTimeInSeconds": "integer",
+          "estimatedTimeToCompletionInSeconds": "integer",
+          "progressInMegaBytes": "integer",
+          "snapshotSizeInMegaBytes": "integer",
+          "status": "string"
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "snapshotScheduleIdentifier": "string",
+        "snapshotScheduleState": "string",
+        "tags": "object",
+        "totalStorageCapacityInMegaBytes": "integer",
+        "variables": "object",
+        "vpcId": "string",
+        "vpcSecurityGroups": {
+          "status": "string",
+          "vpcSecurityGroupId": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "LoggingStatus": {
+          "bucketName": "string",
+          "lastFailureMessage": "string",
+          "lastFailureTime": "string",
+          "lastSuccessfulDeliveryTime": "string",
+          "logDestinationType": "string",
+          "logExports": "string",
+          "loggingEnabled": "boolean",
+          "s3KeyPrefix": "string"
+        },
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

@@ -1,0 +1,143 @@
+[
+  {
+    "redis.googleapis.com/Cluster": {
+      "configuration": {
+        "authorizationMode": "string",
+        "automatedBackupConfig": {
+          "automatedBackupMode": "string"
+        },
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "clusterEndpoints": {
+          "connections": {
+            "pscAutoConnection": {
+              "address": "string",
+              "connectionType": "string",
+              "forwardingRule": "string",
+              "network": "string",
+              "projectId": "string",
+              "pscConnectionId": "string",
+              "pscConnectionStatus": "string",
+              "serviceAttachment": "string"
+            }
+          }
+        },
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "createTime": "string",
+        "deletionProtectionEnabled": "boolean",
+        "deployment": {
+          "files": "object"
+        },
+        "discoveryEndpoints": {
+          "address": "string",
+          "port": "integer",
+          "pscConfig": {
+            "network": "string"
+          }
+        },
+        "encryptionInfo": {
+          "encryptionType": "string",
+          "kmsKeyPrimaryState": "string",
+          "lastUpdateTime": "string"
+        },
+        "envVariables": "object",
+        "kmsKey": "string",
+        "labelExtractors": "object",
+        "labels": "object",
+        "maintenancePolicy": "object",
+        "maintenanceSchedule": {
+          "endTime": "string",
+          "startTime": "string"
+        },
+        "metadata": {
+          "annotations": "object"
+        },
+        "name": "string",
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "nodeType": "string",
+        "persistenceConfig": {
+          "mode": "string",
+          "rdbConfig": {
+            "rdbSnapshotPeriod": "string",
+            "rdbSnapshotStartTime": "string"
+          }
+        },
+        "preciseSizeGb": "float",
+        "pscConnections": {
+          "address": "string",
+          "forwardingRule": "string",
+          "network": "string",
+          "projectId": "string",
+          "pscConnectionId": "string",
+          "serviceAttachment": "string"
+        },
+        "pscServiceAttachments": {
+          "connectionType": "string",
+          "serviceAttachment": "string"
+        },
+        "redisConfigs": {
+          "maxmemory-policy": "string"
+        },
+        "replicaCount": "integer",
+        "resourceLabels": "object",
+        "schema": "object",
+        "selectors": "object",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "shardCount": "integer",
+        "sizeGb": "integer",
+        "state": "string",
+        "stateInfo": {
+          "updateInfo": {
+            "targetShardCount": "integer"
+          }
+        },
+        "transitEncryptionMode": "string",
+        "uid": "string",
+        "view": {
+          "query": "string"
+        },
+        "zoneDistributionConfig": {
+          "mode": "string",
+          "zone": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": "object",
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

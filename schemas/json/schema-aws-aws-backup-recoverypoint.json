@@ -1,0 +1,106 @@
+[
+  {
+    "AWS::Backup::RecoveryPoint": {
+      "configuration": {
+        "backupSizeInBytes": "integer",
+        "backupVaultArn": "string",
+        "backupVaultName": "string",
+        "calculatedLifecycle": {
+          "deleteAt": "string",
+          "moveToColdStorageAt": "string"
+        },
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "completionDate": "string",
+        "compositeMemberIdentifier": "string",
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "createdBy": {
+          "backupPlanArn": "string",
+          "backupPlanId": "string",
+          "backupPlanVersion": "string",
+          "backupRuleId": "string"
+        },
+        "creationDate": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "encryptionKeyArn": "string",
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "iamRoleArn": "string",
+        "isEncrypted": "boolean",
+        "isParent": "boolean",
+        "labels": "object",
+        "lastRestoreTime": "string",
+        "lifecycle": {
+          "deleteAfterDays": "integer",
+          "moveToColdStorageAfterDays": "integer",
+          "optInToArchiveForSupportedResources": "boolean"
+        },
+        "methodSettings": "object",
+        "parentRecoveryPointArn": "string",
+        "policy": "object",
+        "recoveryPointArn": "string",
+        "resourceArn": "string",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "resourceName": "string",
+        "resourceType": "string",
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "sourceBackupVaultArn": "string",
+        "status": "string",
+        "statusMessage": "string",
+        "tags": "object",
+        "variables": "object",
+        "vaultType": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

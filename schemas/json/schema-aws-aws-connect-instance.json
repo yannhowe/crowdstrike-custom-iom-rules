@@ -1,0 +1,96 @@
+[
+  {
+    "AWS::Connect::Instance": {
+      "configuration": {
+        "arn": "string",
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "createdTime": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "id": "string",
+        "identityManagementType": "string",
+        "inboundCallsEnabled": "boolean",
+        "instanceAccessUrl": "string",
+        "instanceAlias": "string",
+        "instanceStatus": "string",
+        "labels": "object",
+        "methodSettings": "object",
+        "outboundCallsEnabled": "boolean",
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "serviceRole": "string",
+        "tags": "object",
+        "variables": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttribute": {
+          "attributeType": "string",
+          "value": "string"
+        },
+        "instanceAttributeUserData": "object",
+        "instanceStorageConfigs": {
+          "associationId": "string",
+          "s3Config": {
+            "bucketName": "string",
+            "bucketPrefix": "string",
+            "encryptionConfig": {
+              "encryptionType": "string",
+              "keyId": "string"
+            }
+          },
+          "storageType": "string"
+        },
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

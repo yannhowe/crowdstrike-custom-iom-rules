@@ -1,0 +1,101 @@
+[
+  {
+    "Microsoft.Automation/automationAccounts": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "id": "string",
+        "identity": {
+          "principalId": "string",
+          "tenantId": "string",
+          "type": "string",
+          "userAssignedIdentities": "object"
+        },
+        "location": "string",
+        "name": "string",
+        "properties": {
+          "agentPoolProfiles": "object",
+          "automationHybridServiceUrl": "string",
+          "creationTime": "string",
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "disableLocalAuth": "boolean",
+          "encryption": {
+            "identity": "object",
+            "keySource": "string"
+          },
+          "lastModifiedTime": "string",
+          "managedNetwork": "object",
+          "metadata": "object",
+          "osProfile": "object",
+          "parameters": "object",
+          "policyRule": "object",
+          "privateEndpointConnections": {
+            "id": "string",
+            "name": "string",
+            "properties": {
+              "groupIds": "string",
+              "privateEndpoint": {
+                "id": "string"
+              },
+              "privateLinkServiceConnectionState": {
+                "actionsRequired": "string",
+                "description": "string",
+                "status": "string"
+              }
+            },
+            "type": "string"
+          },
+          "publicNetworkAccess": "boolean",
+          "sku": {
+            "name": "string"
+          },
+          "state": "string",
+          "storageProfile": "object",
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          }
+        },
+        "resources": "object",
+        "systemData": {
+          "createdAt": "string",
+          "lastModifiedAt": "string"
+        },
+        "tags": "object",
+        "type": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "configurations": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

@@ -1,0 +1,150 @@
+[
+  {
+    "AWS::ElasticLoadBalancing::LoadBalancer": {
+      "configuration": {
+        "availabilityZones": "string",
+        "backendServerDescriptions": {
+          "instancePort": "integer",
+          "policyNames": "string"
+        },
+        "canonicalHostedZoneName": "string",
+        "canonicalHostedZoneNameID": "string",
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "createdTime": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "dnsName": "string",
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "healthCheck": {
+          "healthyThreshold": "integer",
+          "interval": "integer",
+          "target": "string",
+          "timeout": "integer",
+          "unhealthyThreshold": "integer"
+        },
+        "instances": {
+          "instanceId": "string"
+        },
+        "labels": "object",
+        "listenerDescriptions": {
+          "listener": {
+            "instancePort": "integer",
+            "instanceProtocol": "string",
+            "loadBalancerPort": "integer",
+            "protocol": "string",
+            "sslCertificateId": "string"
+          },
+          "policyNames": "string"
+        },
+        "loadBalancerName": "string",
+        "methodSettings": "object",
+        "policies": {
+          "appCookieStickinessPolicies": {
+            "cookieName": "string",
+            "policyName": "string"
+          },
+          "lbCookieStickinessPolicies": {
+            "cookieExpirationPeriod": "integer",
+            "policyName": "string"
+          },
+          "otherPolicies": "string"
+        },
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "scheme": "string",
+        "secretVersionsToStages": "object",
+        "securityGroups": "string",
+        "selectors": {
+          "labels": "object"
+        },
+        "sourceSecurityGroup": {
+          "groupName": "string",
+          "ownerAlias": "string"
+        },
+        "subnets": "string",
+        "tags": "object",
+        "variables": "object",
+        "vpcId": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "attributes": {
+          "accessLog": {
+            "emitInterval": "integer",
+            "enabled": "boolean",
+            "s3BucketName": "string",
+            "s3BucketPrefix": "string"
+          },
+          "additionalAttributes": {
+            "key": "string",
+            "value": "string"
+          },
+          "connectionDraining": {
+            "enabled": "boolean",
+            "timeout": "integer"
+          },
+          "connectionSettings": {
+            "idleTimeout": "integer"
+          },
+          "crossZoneLoadBalancing": {
+            "enabled": "boolean"
+          }
+        },
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policies": {
+          "policyAttributeDescriptions": {
+            "attributeName": "string",
+            "attributeValue": "string"
+          },
+          "policyName": "string",
+          "policyTypeName": "string"
+        },
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

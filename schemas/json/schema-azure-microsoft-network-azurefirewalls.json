@@ -1,0 +1,208 @@
+[
+  {
+    "Microsoft.Network/azureFirewalls": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "id": "string",
+        "identity": {
+          "userAssignedIdentities": "object"
+        },
+        "location": "string",
+        "name": "string",
+        "properties": {
+          "additionalProperties": {
+            "Network": {
+              "AdditionalLogs": {
+                "EnableFatFlowLogging": "string"
+              },
+              "DNS": {
+                "EnableProxy": "string",
+                "Servers": "string"
+              },
+              "FTP": {
+                "AllowActiveFTP": "string"
+              },
+              "RouteServerInfo": {
+                "RouteServerID": "string"
+              },
+              "SNAT": {
+                "PrivateRanges": "string"
+              }
+            },
+            "ThreatIntel": {
+              "Whitelist": {
+                "IpAddresses": "string"
+              }
+            }
+          },
+          "agentPoolProfiles": "object",
+          "applicationRuleCollections": {
+            "etag": "string",
+            "id": "string",
+            "name": "string",
+            "properties": {
+              "action": {
+                "type": "string"
+              },
+              "priority": "integer",
+              "provisioningState": "string",
+              "rules": {
+                "description": "string",
+                "fqdnTags": "string",
+                "name": "string",
+                "protocols": {
+                  "port": "integer",
+                  "protocolType": "string"
+                },
+                "sourceAddresses": "string",
+                "sourceIpGroups": "string",
+                "targetFqdns": "string"
+              }
+            }
+          },
+          "definition": {
+            "actions": "object"
+          },
+          "firewallPolicy": {
+            "id": "string"
+          },
+          "hubIPAddresses": {
+            "privateIPAddress": "string",
+            "publicIPs": {
+              "addresses": {
+                "address": "string"
+              },
+              "count": "integer"
+            }
+          },
+          "ipConfigurations": {
+            "etag": "string",
+            "id": "string",
+            "name": "string",
+            "properties": {
+              "privateIPAddress": "string",
+              "provisioningState": "string",
+              "publicIPAddress": {
+                "id": "string"
+              },
+              "subnet": {
+                "id": "string"
+              }
+            },
+            "type": "string"
+          },
+          "managedNetwork": "object",
+          "managementIpConfiguration": {
+            "etag": "string",
+            "id": "string",
+            "name": "string",
+            "properties": {
+              "provisioningState": "string",
+              "publicIPAddress": {
+                "id": "string"
+              },
+              "subnet": {
+                "id": "string"
+              }
+            },
+            "type": "string"
+          },
+          "natRuleCollections": {
+            "etag": "string",
+            "id": "string",
+            "name": "string",
+            "properties": {
+              "action": {
+                "type": "string"
+              },
+              "priority": "integer",
+              "provisioningState": "string",
+              "rules": {
+                "description": "string",
+                "destinationAddresses": "string",
+                "destinationPorts": "string",
+                "name": "string",
+                "protocols": "string",
+                "sourceAddresses": "string",
+                "sourceIpGroups": "string",
+                "translatedAddress": "string",
+                "translatedPort": "string"
+              }
+            }
+          },
+          "networkRuleCollections": {
+            "etag": "string",
+            "id": "string",
+            "name": "string",
+            "properties": {
+              "action": {
+                "type": "string"
+              },
+              "priority": "integer",
+              "provisioningState": "string",
+              "rules": {
+                "description": "string",
+                "destinationAddresses": "string",
+                "destinationFqdns": "string",
+                "destinationIpGroups": "string",
+                "destinationPorts": "string",
+                "name": "string",
+                "protocols": "string",
+                "sourceAddresses": "string",
+                "sourceIpGroups": "string"
+              }
+            }
+          },
+          "osProfile": "object",
+          "provisioningState": "string",
+          "sku": {
+            "name": "string",
+            "tier": "string"
+          },
+          "storageProfile": "object",
+          "threatIntelMode": "string",
+          "virtualHub": {
+            "id": "string"
+          },
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          }
+        },
+        "resources": "object",
+        "tags": "object",
+        "type": "string",
+        "zones": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "configurations": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

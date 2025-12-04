@@ -1,0 +1,206 @@
+[
+  {
+    "compute.googleapis.com/BackendService": {
+      "configuration": {
+        "affinityCookieTtlSec": "integer",
+        "backends": {
+          "balancingMode": "string",
+          "capacityScaler": "integer",
+          "description": "string",
+          "group": "string",
+          "maxConnections": "integer",
+          "maxConnectionsPerEndpoint": "integer",
+          "maxConnectionsPerInstance": "integer",
+          "maxRate": "integer",
+          "maxRatePerEndpoint": "integer",
+          "maxRatePerInstance": "integer",
+          "maxUtilization": "float",
+          "preference": "string"
+        },
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "cdnPolicy": {
+          "bypassCacheOnRequestHeaders": {
+            "headerName": "string"
+          },
+          "cacheKeyPolicy": {
+            "includeHost": "boolean",
+            "includeHttpHeaders": "string",
+            "includeNamedCookies": "string",
+            "includeProtocol": "boolean",
+            "includeQueryString": "boolean",
+            "queryStringBlacklist": "string",
+            "queryStringWhitelist": "string"
+          },
+          "cacheMode": "string",
+          "clientTtl": "integer",
+          "defaultTtl": "integer",
+          "maxTtl": "integer",
+          "negativeCaching": "boolean",
+          "negativeCachingPolicy": {
+            "code": "integer",
+            "ttl": "integer"
+          },
+          "requestCoalescing": "boolean",
+          "serveWhileStale": "integer",
+          "signedUrlCacheMaxAgeSec": "string",
+          "signedUrlKeyNames": "string"
+        },
+        "certificatePem": "string",
+        "compressionMode": "string",
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "connectionDraining": {
+          "drainingTimeoutSec": "integer"
+        },
+        "consistentHash": {
+          "httpCookie": {
+            "name": "string",
+            "path": "string",
+            "ttl": {
+              "nanos": "integer",
+              "seconds": "string"
+            }
+          },
+          "httpHeaderName": "string",
+          "minimumRingSize": "string"
+        },
+        "creationTimestamp": "string",
+        "customRequestHeaders": "string",
+        "customResponseHeaders": "string",
+        "deployment": {
+          "files": "object"
+        },
+        "description": "string",
+        "edgeSecurityPolicy": "string",
+        "enableCDN": "boolean",
+        "envVariables": "object",
+        "externalManagedMigrationState": "string",
+        "fingerprint": "string",
+        "healthChecks": "string",
+        "iap": {
+          "enabled": "boolean",
+          "oauth2ClientId": "string"
+        },
+        "id": "string",
+        "ipAddressSelectionPolicy": "string",
+        "labelExtractors": "object",
+        "labels": "object",
+        "loadBalancingScheme": "string",
+        "localityLbPolicy": "string",
+        "logConfig": {
+          "enable": "boolean",
+          "optionalFields": "string",
+          "optionalMode": "string",
+          "sampleRate": "integer"
+        },
+        "maintenancePolicy": "object",
+        "metadata": {
+          "annotations": "object"
+        },
+        "metadatas": {
+          "GOOGLE_INTERNAL_GSM_FQDN": "string",
+          "GOOGLE_INTERNAL_GSM_HEADLESS_SERVICE": "string",
+          "GOOGLE_INTERNAL_GSM_NAME": "string",
+          "GOOGLE_INTERNAL_GSM_NAMESPACE": "string",
+          "GOOGLE_INTERNAL_GSM_PORT": "string",
+          "GOOGLE_INTERNAL_GSM_PROTOCOL": "string",
+          "GOOGLE_INTERNAL_GSM_SCOPE": "string",
+          "GOOGLE_INTERNAL_GSM_SUBSET": "string",
+          "GOOGLE_INTERNAL_GSM_TARGET_PORT": "string",
+          "GOOGLE_INTERNAL_GSM_VISIBILITY": "string"
+        },
+        "name": "string",
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "outlierDetection": {
+          "baseEjectionTime": {
+            "nanos": "integer",
+            "seconds": "string"
+          },
+          "consecutiveErrors": "integer",
+          "consecutiveGatewayFailure": "integer",
+          "enforcingConsecutiveErrors": "integer",
+          "enforcingConsecutiveGatewayFailure": "integer",
+          "enforcingSuccessRate": "integer",
+          "interval": {
+            "nanos": "integer",
+            "seconds": "string"
+          },
+          "maxEjectionPercent": "integer",
+          "successRateMinimumHosts": "integer",
+          "successRateRequestVolume": "integer",
+          "successRateStdevFactor": "integer"
+        },
+        "port": "integer",
+        "portName": "string",
+        "protocol": "string",
+        "resourceLabels": "object",
+        "schema": "object",
+        "securityPolicy": "string",
+        "securitySettings": {
+          "awsV4Authentication": {
+            "accessKeyId": "string",
+            "accessKeyVersion": "string",
+            "originRegion": "string"
+          },
+          "clientTlsPolicy": "string"
+        },
+        "selectors": "object",
+        "selfLink": "string",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "serviceLbPolicy": "string",
+        "sessionAffinity": "string",
+        "strongSessionAffinityCookie": {
+          "name": "string",
+          "path": "string",
+          "ttl": {
+            "nanos": "integer",
+            "seconds": "string"
+          }
+        },
+        "timeoutSec": "integer",
+        "usedBy": {
+          "reference": "string"
+        },
+        "view": {
+          "query": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": "object",
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

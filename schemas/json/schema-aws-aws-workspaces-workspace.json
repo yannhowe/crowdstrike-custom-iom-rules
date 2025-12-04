@@ -1,0 +1,144 @@
+[
+  {
+    "AWS::WorkSpaces::Workspace": {
+      "configuration": {
+        "applicationSettings": {
+          "s3BucketName": "string",
+          "settingsGroup": "string",
+          "status": "string"
+        },
+        "bundleId": "string",
+        "capacityStatus": {
+          "activeUserSessions": "integer",
+          "actualUserSessions": "integer",
+          "availableUserSessions": "integer",
+          "desiredUserSessions": "integer"
+        },
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "computerName": "string",
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "createdAt": "string",
+        "dataReplicationSettings": {
+          "dataReplication": "string",
+          "recoverySnapshotTime": "string"
+        },
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "description": "string",
+        "directoryId": "string",
+        "environment": {
+          "variables": "object"
+        },
+        "errorCode": "string",
+        "errorMessage": "string",
+        "errors": {
+          "errorCode": "string",
+          "errorMessage": "string"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "ipAddress": "string",
+        "labels": "object",
+        "methodSettings": "object",
+        "modificationStates": {
+          "resource": "string",
+          "state": "string"
+        },
+        "policy": "object",
+        "poolArn": "string",
+        "poolId": "string",
+        "poolName": "string",
+        "relatedWorkspaces": {
+          "region": "string",
+          "state": "string",
+          "type": "string",
+          "workspaceId": "string"
+        },
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rootVolumeEncryptionEnabled": "boolean",
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "standbyWorkspacesProperties": {
+          "dataReplication": "string",
+          "recoverySnapshotTime": "string",
+          "standbyWorkspaceId": "string"
+        },
+        "state": "string",
+        "subnetId": "string",
+        "tags": "object",
+        "timeoutSettings": {
+          "disconnectTimeoutInSeconds": "integer",
+          "idleDisconnectTimeoutInSeconds": "integer",
+          "maxUserDurationInSeconds": "integer"
+        },
+        "userName": "string",
+        "userVolumeEncryptionEnabled": "boolean",
+        "variables": "object",
+        "volumeEncryptionKey": "string",
+        "workspaceId": "string",
+        "workspaceName": "string",
+        "workspaceProperties": {
+          "computeTypeName": "string",
+          "operatingSystemName": "string",
+          "protocols": "string",
+          "rootVolumeSizeGib": "integer",
+          "runningMode": "string",
+          "runningModeAutoStopTimeoutInMinutes": "integer",
+          "userVolumeSizeGib": "integer"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object",
+        "workspacesConnectionStatus ": {
+          "connectionState": "string",
+          "connectionStateCheckTimestamp": "string",
+          "lastKnownUserConnectionTimestamp": "string",
+          "workspaceId": "string"
+        }
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

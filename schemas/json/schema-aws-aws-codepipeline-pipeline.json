@@ -1,0 +1,485 @@
+[
+  {
+    "AWS::CodePipeline::Pipeline": {
+      "configuration": {
+        "artifactStore": {
+          "encryptionKey": {
+            "id": "string",
+            "type": "string"
+          },
+          "location": "string",
+          "type": "string"
+        },
+        "artifactStores": {
+          "af-south-1": {
+            "location": "string",
+            "type": "string"
+          },
+          "ap-east-1": {
+            "encryptionKey": {
+              "id": "string",
+              "type": "string"
+            },
+            "location": "string",
+            "type": "string"
+          },
+          "ap-northeast-1": {
+            "encryptionKey": {
+              "id": "string",
+              "type": "string"
+            },
+            "location": "string",
+            "type": "string"
+          },
+          "ap-northeast-2": {
+            "location": "string",
+            "type": "string"
+          },
+          "ap-northeast-3": {
+            "location": "string",
+            "type": "string"
+          },
+          "ap-south-1": {
+            "location": "string",
+            "type": "string"
+          },
+          "ap-southeast-1": {
+            "encryptionKey": {
+              "id": "string",
+              "type": "string"
+            },
+            "location": "string",
+            "type": "string"
+          },
+          "ap-southeast-2": {
+            "encryptionKey": {
+              "id": "string",
+              "type": "string"
+            },
+            "location": "string",
+            "type": "string"
+          },
+          "ap-southeast-4": {
+            "encryptionKey": {
+              "id": "string",
+              "type": "string"
+            },
+            "location": "string",
+            "type": "string"
+          },
+          "ca-central-1": {
+            "encryptionKey": {
+              "id": "string",
+              "type": "string"
+            },
+            "location": "string",
+            "type": "string"
+          },
+          "eu-central-1": {
+            "encryptionKey": {
+              "id": "string",
+              "type": "string"
+            },
+            "location": "string",
+            "type": "string"
+          },
+          "eu-north-1": {
+            "encryptionKey": {
+              "id": "string",
+              "type": "string"
+            },
+            "location": "string",
+            "type": "string"
+          },
+          "eu-south-1": {
+            "encryptionKey": {
+              "id": "string",
+              "type": "string"
+            },
+            "location": "string",
+            "type": "string"
+          },
+          "eu-west-1": {
+            "encryptionKey": {
+              "id": "string",
+              "type": "string"
+            },
+            "location": "string",
+            "type": "string"
+          },
+          "eu-west-2": {
+            "encryptionKey": {
+              "id": "string",
+              "type": "string"
+            },
+            "location": "string",
+            "type": "string"
+          },
+          "eu-west-3": {
+            "location": "string",
+            "type": "string"
+          },
+          "me-central-1": {
+            "encryptionKey": {
+              "id": "string",
+              "type": "string"
+            },
+            "location": "string",
+            "type": "string"
+          },
+          "sa-east-1": {
+            "location": "string",
+            "type": "string"
+          },
+          "us-east-1": {
+            "encryptionKey": {
+              "id": "string",
+              "type": "string"
+            },
+            "location": "string",
+            "type": "string"
+          },
+          "us-east-2": {
+            "encryptionKey": {
+              "id": "string",
+              "type": "string"
+            },
+            "location": "string",
+            "type": "string"
+          },
+          "us-west-1": {
+            "encryptionKey": {
+              "id": "string",
+              "type": "string"
+            },
+            "location": "string",
+            "type": "string"
+          },
+          "us-west-2": {
+            "encryptionKey": {
+              "id": "string",
+              "type": "string"
+            },
+            "location": "string",
+            "type": "string"
+          }
+        },
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "environment": {
+          "variables": "object"
+        },
+        "executionMode": "string",
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "labels": "object",
+        "methodSettings": "object",
+        "name": "string",
+        "pipelineType": "string",
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "roleArn": "string",
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "stages": {
+          "actions": {
+            "actionTypeId": {
+              "category": "string",
+              "owner": "string",
+              "provider": "string",
+              "version": "string"
+            },
+            "configuration": "object",
+            "inputArtifacts": {
+              "name": "string"
+            },
+            "name": "string",
+            "namespace": "string",
+            "outputArtifacts": {
+              "name": "string"
+            },
+            "region": "string",
+            "roleArn": "string",
+            "runOrder": "integer",
+            "timeoutInMinutes": "integer"
+          },
+          "beforeEntry": {
+            "conditions": {
+              "result": "string",
+              "rules": {
+                "configuration": {
+                  "Cron": "string",
+                  "FunctionName": "string",
+                  "Operator": "string",
+                  "TimeZone": "string",
+                  "Value": "string",
+                  "Variable": "string"
+                },
+                "name": "string",
+                "region": "string",
+                "ruleTypeId": {
+                  "category": "string",
+                  "owner": "string",
+                  "provider": "string",
+                  "version": "string"
+                }
+              }
+            }
+          },
+          "name": "string",
+          "onFailure": {
+            "conditions": {
+              "result": "string",
+              "rules": {
+                "configuration": {
+                  "FunctionName": "string",
+                  "UserParameters": "string"
+                },
+                "inputArtifacts": {
+                  "name": "string"
+                },
+                "name": "string",
+                "region": "string",
+                "ruleTypeId": {
+                  "category": "string",
+                  "owner": "string",
+                  "provider": "string",
+                  "version": "string"
+                }
+              }
+            },
+            "result": "string"
+          }
+        },
+        "tags": "object",
+        "triggers": {
+          "gitConfiguration": {
+            "pullRequest": {
+              "branches": {
+                "excludes": "string",
+                "includes": "string"
+              },
+              "events": "string",
+              "filePaths": {
+                "excludes": "string",
+                "includes": "string"
+              }
+            },
+            "push": {
+              "branches": {
+                "excludes": "string",
+                "includes": "string"
+              },
+              "filePaths": {
+                "excludes": "string",
+                "includes": "string"
+              },
+              "tags": {
+                "excludes": "string",
+                "includes": "string"
+              }
+            },
+            "sourceActionName": "string"
+          },
+          "providerType": "string"
+        },
+        "variables": "object",
+        "version": "integer"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "pipeline_state": {
+          "created": "string",
+          "pipelineName": "string",
+          "pipelineVersion": "integer",
+          "stageStates": {
+            "actionStates": {
+              "actionName": "string",
+              "currentRevision": {
+                "created": "string",
+                "revisionId": "string"
+              },
+              "entityUrl": "string",
+              "latestExecution": {
+                "actionExecutionId": "string",
+                "errorDetails": {
+                  "code": "string",
+                  "message": "string"
+                },
+                "externalExecutionId": "string",
+                "externalExecutionUrl": "string",
+                "lastStatusChange": "string",
+                "lastUpdatedBy": "string",
+                "status": "string",
+                "summary": "string",
+                "token": "string"
+              },
+              "revisionUrl": "string"
+            },
+            "beforeEntryConditionState": {
+              "conditionStates": {
+                "latestExecution": {
+                  "status": "string"
+                },
+                "ruleStates": {
+                  "entityUrl": "string",
+                  "latestExecution": {
+                    "errorDetails": {
+                      "code": "string",
+                      "message": "string"
+                    },
+                    "externalExecutionId": "string",
+                    "externalExecutionUrl": "string",
+                    "lastStatusChange": "string",
+                    "ruleExecutionId": "string",
+                    "status": "string",
+                    "summary": "string"
+                  },
+                  "ruleName": "string"
+                }
+              }
+            },
+            "inboundExecution": {
+              "pipelineExecutionId": "string",
+              "status": "string"
+            },
+            "inboundExecutions": {
+              "pipelineExecutionId": "string",
+              "status": "string"
+            },
+            "inboundTransitionState": {
+              "disabledReason": "string",
+              "enabled": "boolean",
+              "lastChangedAt": "string",
+              "lastChangedBy": "string"
+            },
+            "latestExecution": {
+              "pipelineExecutionId": "string",
+              "status": "string",
+              "type": "string"
+            },
+            "onFailureConditionState": {
+              "conditionStates": {
+                "latestExecution": {
+                  "status": "string"
+                },
+                "ruleStates": {
+                  "entityUrl": "string",
+                  "latestExecution": {
+                    "errorDetails": {
+                      "code": "string",
+                      "message": "string"
+                    },
+                    "lastStatusChange": "string",
+                    "ruleExecutionId": "string",
+                    "status": "string"
+                  },
+                  "ruleName": "string"
+                }
+              }
+            },
+            "stageName": "string"
+          },
+          "updated": "string"
+        },
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "rule_executions": {
+          "input": {
+            "configuration": {
+              "Cron": "string",
+              "FunctionName": "string",
+              "Operator": "string",
+              "TimeZone": "string",
+              "UserParameters": "string",
+              "Value": "string",
+              "Variable": "string"
+            },
+            "inputArtifacts": {
+              "name": "string",
+              "s3Location": {
+                "bucket": "string",
+                "key": "string"
+              }
+            },
+            "region": "string",
+            "resolvedConfiguration": {
+              "Cron": "string",
+              "FunctionName": "string",
+              "Operator": "string",
+              "TimeZone": "string",
+              "UserParameters": "string",
+              "Value": "string",
+              "Variable": "string"
+            },
+            "ruleTypeId": {
+              "category": "string",
+              "owner": "string",
+              "provider": "string",
+              "version": "string"
+            }
+          },
+          "lastUpdateTime": "string",
+          "output": {
+            "executionResult": {
+              "errorDetails": {
+                "code": "string"
+              },
+              "externalExecutionSummary": "string"
+            }
+          },
+          "pipelineExecutionId": "string",
+          "pipelineVersion": "integer",
+          "ruleExecutionId": "string",
+          "ruleName": "string",
+          "stageName": "string",
+          "startTime": "string",
+          "status": "string"
+        },
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

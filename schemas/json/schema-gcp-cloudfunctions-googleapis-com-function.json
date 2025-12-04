@@ -1,0 +1,169 @@
+[
+  {
+    "cloudfunctions.googleapis.com/Function": {
+      "configuration": {
+        "buildConfig": {
+          "automaticUpdatePolicy": "object",
+          "build": "string",
+          "dockerRegistry": "string",
+          "dockerRepository": "string",
+          "entryPoint": "string",
+          "environmentVariables": "object",
+          "onDeployUpdatePolicy": {
+            "runtimeVersion": "string"
+          },
+          "runtime": "string",
+          "serviceAccount": "string",
+          "source": {
+            "repoSource": {
+              "branchName": "string",
+              "commitSha": "string",
+              "dir": "string",
+              "projectId": "string",
+              "repoName": "string",
+              "tagName": "string"
+            },
+            "storageSource": {
+              "bucket": "string",
+              "generation": "string",
+              "object": "string",
+              "sourceUploadUrl": "string"
+            }
+          },
+          "sourceProvenance": {
+            "resolvedRepoSource": {
+              "branchName": "string",
+              "commitSha": "string",
+              "dir": "string",
+              "projectId": "string",
+              "repoName": "string",
+              "tagName": "string"
+            },
+            "resolvedStorageSource": {
+              "bucket": "string",
+              "generation": "string",
+              "object": "string"
+            }
+          },
+          "workerPool": "string"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "createTime": "string",
+        "deployment": {
+          "files": "object"
+        },
+        "description": "string",
+        "envVariables": "object",
+        "environment": "string",
+        "eventTrigger": {
+          "eventFilters": {
+            "attribute": "string",
+            "operator": "string",
+            "value": "string"
+          },
+          "eventType": "string",
+          "pubsubTopic": "string",
+          "retryPolicy": "string",
+          "service": "string",
+          "serviceAccountEmail": "string",
+          "trigger": "string",
+          "triggerRegion": "string"
+        },
+        "kmsKeyName": "string",
+        "labelExtractors": "object",
+        "labels": "object",
+        "maintenancePolicy": "object",
+        "metadata": {
+          "annotations": "object"
+        },
+        "name": "string",
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "resourceLabels": "object",
+        "satisfiesPzs": "boolean",
+        "schema": "object",
+        "selectors": "object",
+        "serviceConfig": {
+          "allTrafficOnLatestRevision": "boolean",
+          "availableCpu": "string",
+          "availableMemory": "string",
+          "binaryAuthorizationPolicy": "string",
+          "environmentVariables": "object",
+          "ingressSettings": "string",
+          "maxInstanceCount": "integer",
+          "maxInstanceRequestConcurrency": "integer",
+          "minInstanceCount": "integer",
+          "revision": "string",
+          "secretEnvironmentVariables": {
+            "key": "string",
+            "projectId": "string",
+            "secret": "string",
+            "version": "string"
+          },
+          "secretVolumes": {
+            "mountPath": "string",
+            "projectId": "string",
+            "secret": "string",
+            "versions": {
+              "path": "string",
+              "version": "string"
+            }
+          },
+          "securityLevel": "string",
+          "service": "string",
+          "serviceAccountEmail": "string",
+          "timeoutSeconds": "integer",
+          "uri": "string",
+          "vpcConnector": "string",
+          "vpcConnectorEgressSettings": "string"
+        },
+        "state": "string",
+        "stateMessages": {
+          "message": "string",
+          "severity": "string",
+          "type": "string"
+        },
+        "updateTime": "string",
+        "url": "string",
+        "view": {
+          "query": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "downloadUrl": "string"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

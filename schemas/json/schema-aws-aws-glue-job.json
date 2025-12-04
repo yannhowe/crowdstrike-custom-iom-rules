@@ -1,0 +1,168 @@
+[
+  {
+    "AWS::Glue::Job": {
+      "configuration": {
+        "allocatedCapacity": "integer",
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "codeGenConfigurationNodes": "object",
+        "command": {
+          "name": "string",
+          "pythonVersion": "string",
+          "runtime": "string",
+          "scriptLocation": "string"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "connections": {
+          "connections": "string"
+        },
+        "containerDefinitions": "object",
+        "createdOn": "string",
+        "defaultArguments": "object",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "description": "string",
+        "environment": {
+          "variables": "object"
+        },
+        "executionClass": "string",
+        "executionProperty": {
+          "maxConcurrentRuns": "integer"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "glueVersion": "string",
+        "jobMode": "string",
+        "labels": "object",
+        "lastModifiedOn": "string",
+        "logUri": "string",
+        "maxCapacity": "integer",
+        "maxRetries": "integer",
+        "methodSettings": "object",
+        "name": "string",
+        "nonOverridableArguments": {
+          "--DYNAMODB_TABLE": "string",
+          "--REGION": "string",
+          "--S3_BUCKET": "string",
+          "--SECRET_ID": "string",
+          "--TABLE_KIND": "string",
+          "--TargetSchema": "string",
+          "--TempDir": "string",
+          "--acc_enabled_apps": "string",
+          "--account_id": "string",
+          "--additional-python-modules": "string",
+          "--catalog_id": "string",
+          "--conf": "string",
+          "--conf ": "string",
+          "--creator_arn": "string",
+          "--date": "string",
+          "--enable-continuous-cloudwatch-log": "string",
+          "--enable-job-insights": "string",
+          "--enable-metrics": "string",
+          "--enable-observability-metrics": "string",
+          "--enable-spark-ui": "string",
+          "--encryption-type": "string",
+          "--environment": "string",
+          "--eod_csv_path": "string",
+          "--extra-py-files": "string",
+          "--glue_endpoint": "string",
+          "--job-bookmark-option": "string",
+          "--job-language": "string",
+          "--job_environment": "string",
+          "--job_index": "string",
+          "--lookup_path_csv": "string",
+          "--murex_path": "string",
+          "--num_jobs": "string",
+          "--region": "string",
+          "--source_table_prefix": "string",
+          "--spark-event-logs-path": "string",
+          "--table_config": "string",
+          "--target_database": "string",
+          "--target_format": "string",
+          "--target_s3_location": "string",
+          "--target_table_prefix": "string",
+          "--ticker_def_csv": "string",
+          "--transition_state": "string",
+          "--version": "string",
+          "--yarn": {
+            "nodemanager": {
+              "vmem-check-enabled": "string"
+            }
+          },
+          "KeyName": "string",
+          "date": "string",
+          "iam_role": "string",
+          "s3_bucket": "string",
+          "s3_object": "string",
+          "schema_name": "string",
+          "table_name": "string",
+          "test_bucket": "string"
+        },
+        "notificationProperty": {
+          "notifyDelayAfter": "integer"
+        },
+        "numberOfWorkers": "integer",
+        "policy": "object",
+        "profileName": "string",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "role": "string",
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "securityConfiguration": "string",
+        "selectors": {
+          "labels": "object"
+        },
+        "sourceControlDetails": {
+          "branch": "string",
+          "folder": "string",
+          "lastCommitId": "string",
+          "provider": "string",
+          "repository": "string"
+        },
+        "tags": "object",
+        "timeout": "integer",
+        "variables": "object",
+        "workerType": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "Microsoft.Network/privateDnsZones": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "id": "string",
+        "identity": {
+          "userAssignedIdentities": "object"
+        },
+        "location": "string",
+        "name": "string",
+        "properties": {
+          "agentPoolProfiles": "object",
+          "definition": {
+            "actions": "object"
+          },
+          "internalId": "string",
+          "managedNetwork": "object",
+          "maxNumberOfRecordSets": "integer",
+          "maxNumberOfVirtualNetworkLinks": "integer",
+          "maxNumberOfVirtualNetworkLinksWithRegistration": "integer",
+          "numberOfRecordSets": "integer",
+          "numberOfVirtualNetworkLinks": "integer",
+          "numberOfVirtualNetworkLinksWithRegistration": "integer",
+          "osProfile": "object",
+          "provisioningState": "string",
+          "storageProfile": "object",
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          }
+        },
+        "resources": "object",
+        "tags": "object",
+        "type": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "RecordSets": {
+          "etag": "string",
+          "id": "string",
+          "name": "string",
+          "properties": {
+            "aRecords": {
+              "ipv4Address": "string"
+            },
+            "aaaaRecords": {
+              "ipv6Address": "string"
+            },
+            "cnameRecord": {
+              "cname": "string"
+            },
+            "fqdn": "string",
+            "isAutoRegistered": "boolean",
+            "metadata": "object",
+            "mxRecords": {
+              "exchange": "string",
+              "preference": "integer"
+            },
+            "ptrRecords": {
+              "ptrdname": "string"
+            },
+            "soaRecord": {
+              "email": "string",
+              "expireTime": "integer",
+              "host": "string",
+              "minimumTtl": "integer",
+              "refreshTime": "integer",
+              "retryTime": "integer",
+              "serialNumber": "integer"
+            },
+            "srvRecords": {
+              "port": "integer",
+              "priority": "integer",
+              "target": "string",
+              "weight": "integer"
+            },
+            "ttl": "integer",
+            "txtRecords": {
+              "value": "string"
+            }
+          },
+          "type": "string"
+        },
+        "appSettings": "object",
+        "configurations": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

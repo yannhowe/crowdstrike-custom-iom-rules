@@ -1,0 +1,232 @@
+[
+  {
+    "identitytoolkit.googleapis.com/Config": {
+      "configuration": {
+        "authorizedDomains": "string",
+        "autodeleteAnonymousUsers": "boolean",
+        "blockingFunctions": {
+          "forwardInboundCredentials": {
+            "accessToken": "boolean",
+            "idToken": "boolean"
+          },
+          "triggers": {
+            "beforeCreate": {
+              "functionUri": "string",
+              "updateTime": "string"
+            },
+            "beforeSignIn": {
+              "functionUri": "string",
+              "updateTime": "string"
+            }
+          }
+        },
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "client": {
+          "apiKey": "string",
+          "firebaseSubdomain": "string",
+          "permissions": {
+            "disabledUserDeletion": "boolean",
+            "disabledUserSignup": "boolean"
+          }
+        },
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "defaultHostingSite": "string",
+        "deployment": {
+          "files": "object"
+        },
+        "emailPrivacyConfig": {
+          "enableImprovedEmailPrivacy": "boolean"
+        },
+        "envVariables": "object",
+        "labelExtractors": "object",
+        "labels": "object",
+        "maintenancePolicy": "object",
+        "metadata": {
+          "annotations": "object"
+        },
+        "mfa": {
+          "enabledProviders": "string",
+          "state": "string"
+        },
+        "mobileLinksConfig": {
+          "domain": "string"
+        },
+        "monitoring": {
+          "requestLogging": {
+            "enabled": "boolean"
+          }
+        },
+        "multiTenant": {
+          "allowTenants": "boolean",
+          "defaultTenantLocation": "string"
+        },
+        "name": "string",
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "notification": {
+          "defaultLocale": "string",
+          "sendEmail": {
+            "callbackUri": "string",
+            "changeEmailTemplate": {
+              "body": "string",
+              "bodyFormat": "string",
+              "customized": "boolean",
+              "replyTo": "string",
+              "senderDisplayName": "string",
+              "senderLocalPart": "string",
+              "subject": "string"
+            },
+            "dnsInfo": {
+              "customDomain": "string",
+              "customDomainState": "string",
+              "domainVerificationRequestTime": "string",
+              "pendingCustomDomain": "string",
+              "useCustomDomain": "boolean"
+            },
+            "method": "string",
+            "resetPasswordTemplate": {
+              "body": "string",
+              "bodyFormat": "string",
+              "customized": "boolean",
+              "replyTo": "string",
+              "senderDisplayName": "string",
+              "senderLocalPart": "string",
+              "subject": "string"
+            },
+            "revertSecondFactorAdditionTemplate": {
+              "body": "string",
+              "bodyFormat": "string",
+              "replyTo": "string",
+              "senderLocalPart": "string",
+              "subject": "string"
+            },
+            "smtp": {
+              "host": "string",
+              "port": "integer",
+              "securityMode": "string",
+              "senderEmail": "string",
+              "username": "string"
+            },
+            "verifyEmailTemplate": {
+              "body": "string",
+              "bodyFormat": "string",
+              "customized": "boolean",
+              "replyTo": "string",
+              "senderDisplayName": "string",
+              "senderLocalPart": "string",
+              "subject": "string"
+            }
+          },
+          "sendSms": {
+            "smsTemplate": {
+              "content": "string"
+            }
+          }
+        },
+        "passwordPolicyConfig": {
+          "lastUpdateTime": "string",
+          "passwordPolicyEnforcementState": "string",
+          "passwordPolicyVersions": {
+            "customStrengthOptions": {
+              "maxPasswordLength": "integer",
+              "minPasswordLength": "integer"
+            },
+            "schemaVersion": "integer"
+          }
+        },
+        "quota": {
+          "signUpQuotaConfig": {
+            "quota": "string",
+            "quotaDuration": "string",
+            "startTime": "string"
+          }
+        },
+        "recaptchaConfig": {
+          "emailPasswordEnforcementState": "string",
+          "phoneEnforcementState": "string"
+        },
+        "resourceLabels": "object",
+        "schema": "object",
+        "selectors": "object",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "signIn": {
+          "allowDuplicateEmails": "boolean",
+          "anonymous": {
+            "enabled": "boolean"
+          },
+          "email": {
+            "enabled": "boolean",
+            "passwordRequired": "boolean"
+          },
+          "hashConfig": "object",
+          "phoneNumber": {
+            "enabled": "boolean",
+            "testPhoneNumbers": {
+              "+10987654444": "string",
+              "+13524096583": "string",
+              "+13524096584": "string",
+              "+16505551212": "string",
+              "+5216220890": "string",
+              "+525512802023": "string",
+              "+525516220889": "string",
+              "+525516220896": "string",
+              "+525516220897": "string",
+              "+525516220898": "string",
+              "+601232112322": "string",
+              "+601245678901": "string",
+              "+6555556669": "string",
+              "+6593914706": "string"
+            }
+          }
+        },
+        "smsRegionConfig": {
+          "allowByDefault": "object",
+          "allowlistOnly": {
+            "allowedRegions": "string"
+          }
+        },
+        "subtype": "string",
+        "view": {
+          "query": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": "object",
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

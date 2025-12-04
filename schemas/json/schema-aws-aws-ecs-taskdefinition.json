@@ -1,0 +1,186 @@
+[
+  {
+    "AWS::ECS::TaskDefinition": {
+      "configuration": {
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "compatibilities": "string",
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "cpu": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "environment": {
+          "variables": "object"
+        },
+        "ephemeralStorage": {
+          "sizeInGiB": "integer"
+        },
+        "executionRoleArn": "string",
+        "externalTableDefinition": "object",
+        "family": "string",
+        "firewallStatus": "object",
+        "ipcMode": "string",
+        "labels": "object",
+        "memory": "string",
+        "methodSettings": "object",
+        "networkMode": "string",
+        "pidMode": "string",
+        "placementConstraints": {
+          "expression": "string",
+          "type": "string"
+        },
+        "policy": "object",
+        "proxyConfiguration": {
+          "containerName": "string",
+          "properties": {
+            "name": "string",
+            "value": "string"
+          },
+          "type": "string"
+        },
+        "registeredAt": "string",
+        "registeredBy": "string",
+        "requiresAttributes": {
+          "name": "string"
+        },
+        "requiresCompatibilities": "string",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "revision": "integer",
+        "rules": "object",
+        "runtimePlatform": {
+          "cpuArchitecture": "string",
+          "operatingSystemFamily": "string"
+        },
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "status": "string",
+        "tags": "object",
+        "taskDefinitionArn": "string",
+        "taskRoleArn": "string",
+        "variables": "object",
+        "volumes": {
+          "configuredAtLaunch": "boolean",
+          "dockerVolumeConfiguration": {
+            "autoprovision": "boolean",
+            "driver": "string",
+            "driverOpts": {
+              "IOPS": "string",
+              "S3FS_OPTIONS": "string",
+              "VolumeType": "string",
+              "backing": "string",
+              "device": "string",
+              "ebstype": "string",
+              "encrpted": "string",
+              "encrypted": "string",
+              "encryption": "string",
+              "encryptionKey": "string",
+              "encryptionkey": "string",
+              "fstype": "string",
+              "iops": "string",
+              "o": "string",
+              "o:": "string",
+              "size": "string",
+              "snapshotName": "string",
+              "throughput": "string",
+              "type": "string",
+              "volumeType": "string",
+              "volume_type": "string",
+              "volumetype": "string"
+            },
+            "labels": {
+              "Group": "string",
+              "Name": "string",
+              "Rnd": "string",
+              "TestVol": "string",
+              "app": "string",
+              "clinical": "string",
+              "detectta": "string",
+              "dir": "string",
+              "grafana": "string",
+              "homefolder": "string",
+              "jenkins": "string",
+              "micro": "string",
+              "micro-integrator": "string",
+              "name": "string",
+              "permissions": "string",
+              "prometheus": "string",
+              "purpose": "string",
+              "scope": "string",
+              "scratch": "string",
+              "scratch_slim": "string",
+              "tomcatLogs": "string",
+              "use": "string"
+            },
+            "scope": "string"
+          },
+          "efsVolumeConfiguration": {
+            "authorizationConfig": {
+              "accessPointId": "string",
+              "iam": "string"
+            },
+            "fileSystemId": "string",
+            "rootDirectory": "string",
+            "transitEncryption": "string",
+            "transitEncryptionPort": "integer"
+          },
+          "fsxWindowsFileServerVolumeConfiguration": {
+            "authorizationConfig": {
+              "credentialsParameter": "string",
+              "domain": "string"
+            },
+            "fileSystemId": "string",
+            "rootDirectory": "string"
+          },
+          "host": {
+            "sourcePath": "string"
+          },
+          "name": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

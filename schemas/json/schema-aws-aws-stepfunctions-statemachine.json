@@ -1,0 +1,96 @@
+[
+  {
+    "AWS::StepFunctions::StateMachine": {
+      "configuration": {
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "creationDate": "string",
+        "definition": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "encryptionConfiguration": {
+          "kmsDataKeyReusePeriodSeconds": "integer",
+          "kmsKeyId": "string",
+          "type": "string"
+        },
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "labels": "object",
+        "loggingConfiguration": {
+          "destinations": {
+            "cloudWatchLogsLogGroup": {
+              "logGroupArn": "string"
+            }
+          },
+          "includeExecutionData": "boolean",
+          "level": "string"
+        },
+        "methodSettings": "object",
+        "name": "string",
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "revisionId": "string",
+        "roleArn": "string",
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "stateMachineArn": "string",
+        "status": "string",
+        "tags": "object",
+        "tracingConfiguration": {
+          "enabled": "boolean"
+        },
+        "type": "string",
+        "variables": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

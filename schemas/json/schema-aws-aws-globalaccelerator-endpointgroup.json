@@ -1,0 +1,89 @@
+[
+  {
+    "AWS::GlobalAccelerator::EndpointGroup": {
+      "configuration": {
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "endpointDescriptions": {
+          "clientIPPreservationEnabled": "boolean",
+          "endpointId": "string",
+          "healthState": "string",
+          "weight": "integer"
+        },
+        "endpointGroupArn": "string",
+        "endpointGroupRegion": "string",
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "healthCheckIntervalSeconds": "integer",
+        "healthCheckPath": "string",
+        "healthCheckPort": "integer",
+        "healthCheckProtocol": "string",
+        "labels": "object",
+        "methodSettings": "object",
+        "policy": "object",
+        "portOverrides": {
+          "endpointPort": "integer",
+          "listenerPort": "integer"
+        },
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "tags": "object",
+        "thresholdCount": "integer",
+        "trafficDialPercentage": "integer",
+        "variables": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

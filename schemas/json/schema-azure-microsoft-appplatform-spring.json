@@ -1,0 +1,107 @@
+[
+  {
+    "Microsoft.AppPlatform/Spring": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "id": "string",
+        "identity": {
+          "userAssignedIdentities": "object"
+        },
+        "location": "string",
+        "name": "string",
+        "properties": {
+          "agentPoolProfiles": "object",
+          "definition": {
+            "actions": "object"
+          },
+          "fqdn": "string",
+          "managedNetwork": "object",
+          "marketplaceResource": {
+            "plan": "string",
+            "product": "string",
+            "publisher": "string"
+          },
+          "networkProfile": {
+            "appNetworkResourceGroup": "string",
+            "appSubnetId": "string",
+            "ingressConfig": {
+              "readTimeoutInSeconds": "integer"
+            },
+            "outboundIPs": {
+              "publicIPs": "string"
+            },
+            "outboundType": "string",
+            "requiredTraffics": {
+              "direction": "string",
+              "fqdns": "string",
+              "ips": "string",
+              "port": "integer",
+              "protocol": "string"
+            },
+            "serviceCidr": "string",
+            "serviceRuntimeNetworkResourceGroup": "string",
+            "serviceRuntimeSubnetId": "string"
+          },
+          "osProfile": "object",
+          "powerState": "string",
+          "provisioningState": "string",
+          "serviceId": "string",
+          "storageProfile": "object",
+          "version": "integer",
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          },
+          "vnetAddons": {
+            "logStreamPublicEndpoint": "boolean"
+          },
+          "zoneRedundant": "boolean"
+        },
+        "resources": "object",
+        "sku": {
+          "name": "string",
+          "tier": "string"
+        },
+        "systemData": {
+          "createdAt": "string",
+          "createdBy": "string",
+          "createdByType": "string",
+          "lastModifiedAt": "string",
+          "lastModifiedBy": "string",
+          "lastModifiedByType": "string"
+        },
+        "tags": "object",
+        "type": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "configurations": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

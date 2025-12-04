@@ -1,0 +1,120 @@
+[
+  {
+    "compute.googleapis.com/Disk": {
+      "configuration": {
+        "accessMode": "string",
+        "architecture": "string",
+        "asyncPrimaryDisk": {
+          "consistencyGroupPolicy": "string",
+          "consistencyGroupPolicyId": "string",
+          "disk": "string",
+          "diskId": "string"
+        },
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "creationTimestamp": "string",
+        "deployment": {
+          "files": "object"
+        },
+        "description": "string",
+        "diskEncryptionKey": {
+          "kmsKeyName": "string",
+          "kmsKeyServiceAccount": "string",
+          "sha256": "string"
+        },
+        "enableConfidentialCompute": "boolean",
+        "envVariables": "object",
+        "guestOsFeatures": {
+          "type": "string"
+        },
+        "id": "string",
+        "labelExtractors": "object",
+        "labelFingerprint": "string",
+        "labels": "object",
+        "lastAttachTimestamp": "string",
+        "lastDetachTimestamp": "string",
+        "licenseCodes": "string",
+        "licenses": "string",
+        "maintenancePolicy": "object",
+        "metadata": {
+          "annotations": "object"
+        },
+        "name": "string",
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "physicalBlockSizeBytes": "string",
+        "provisionedIops": "string",
+        "provisionedThroughput": "string",
+        "resourceLabels": "object",
+        "resourcePolicies": "string",
+        "resourceStatus": {
+          "asyncPrimaryDisk": {
+            "state": "string"
+          }
+        },
+        "satisfiesPzi": "boolean",
+        "satisfiesPzs": "boolean",
+        "schema": "object",
+        "selectors": "object",
+        "selfLink": "string",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "sizeGb": "string",
+        "sourceConsistencyGroupPolicy": "string",
+        "sourceConsistencyGroupPolicyId": "string",
+        "sourceDisk": "string",
+        "sourceDiskId": "string",
+        "sourceImage": "string",
+        "sourceImageId": "string",
+        "sourceInstantSnapshot": "string",
+        "sourceInstantSnapshotId": "string",
+        "sourceSnapshot": "string",
+        "sourceSnapshotId": "string",
+        "status": "string",
+        "storagePool": "string",
+        "type": "string",
+        "users": "string",
+        "view": {
+          "query": "string"
+        },
+        "zone": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": "object",
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

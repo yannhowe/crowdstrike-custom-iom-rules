@@ -1,0 +1,91 @@
+[
+  {
+    "alloydb.googleapis.com/Backup": {
+      "configuration": {
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "clusterName": "string",
+        "clusterUid": "string",
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "createCompletionTime": "string",
+        "createTime": "string",
+        "databaseVersion": "string",
+        "deployment": {
+          "files": "object"
+        },
+        "description": "string",
+        "encryptionConfig": {
+          "kmsKeyName": "string"
+        },
+        "encryptionInfo": {
+          "encryptionType": "string",
+          "kmsKeyVersions": "string"
+        },
+        "envVariables": "object",
+        "expiryQuantity": {
+          "retentionCount": "integer",
+          "totalRetentionCount": "integer"
+        },
+        "expiryTime": "string",
+        "labelExtractors": "object",
+        "labels": "object",
+        "maintenancePolicy": "object",
+        "metadata": {
+          "annotations": "object"
+        },
+        "name": "string",
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "reconciling": "boolean",
+        "resourceLabels": "object",
+        "schema": "object",
+        "selectors": "object",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "sizeBytes": "string",
+        "state": "string",
+        "type": "string",
+        "uid": "string",
+        "updateTime": "string",
+        "view": {
+          "query": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": "object",
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

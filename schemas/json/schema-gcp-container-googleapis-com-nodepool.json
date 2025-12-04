@@ -1,0 +1,378 @@
+[
+  {
+    "container.googleapis.com/NodePool": {
+      "configuration": {
+        "autoscaling": {
+          "autoprovisioned": "boolean",
+          "enabled": "boolean",
+          "locationPolicy": "string",
+          "maxNodeCount": "integer",
+          "minNodeCount": "integer",
+          "totalMaxNodeCount": "integer",
+          "totalMinNodeCount": "integer"
+        },
+        "bestEffortProvisioning": {
+          "enabled": "boolean"
+        },
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "conditions": {
+          "canonicalCode": "string",
+          "code": "string",
+          "message": "string"
+        },
+        "config": {
+          "accelerators": {
+            "acceleratorCount": "string",
+            "acceleratorType": "string",
+            "gpuDriverInstallationConfig": {
+              "gpuDriverVersion": "string"
+            },
+            "gpuSharingConfig": {
+              "gpuSharingStrategy": "string",
+              "maxSharedClientsPerGpu": "string"
+            }
+          },
+          "advancedMachineFeatures": {
+            "enableNestedVirtualization": "boolean",
+            "threadsPerCore": "string"
+          },
+          "bootDiskKmsKey": "string",
+          "confidentialNodes": {
+            "confidentialInstanceType": "string",
+            "enabled": "boolean"
+          },
+          "containerdConfig": {
+            "privateRegistryAccessConfig": {
+              "certificateAuthorityDomainConfig": {
+                "fqdns": "string",
+                "gcpSecretManagerCertificateConfig": {
+                  "secretUri": "string"
+                }
+              },
+              "enabled": "boolean"
+            }
+          },
+          "diskSizeGb": "integer",
+          "diskType": "string",
+          "effectiveCgroupMode": "string",
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "ephemeralStorageLocalSsdConfig": {
+            "dataCacheCount": "integer",
+            "localSsdCount": "integer"
+          },
+          "fastSocket": "object",
+          "flexStart": "boolean",
+          "gcfsConfig": {
+            "enabled": "boolean"
+          },
+          "gvnic": {
+            "enabled": "boolean"
+          },
+          "imageType": "string",
+          "kubeletConfig": {
+            "cpuCfsQuota": "boolean",
+            "cpuCfsQuotaPeriod": "string",
+            "cpuManagerPolicy": "string",
+            "imageGcHighThresholdPercent": "integer",
+            "imageGcLowThresholdPercent": "integer",
+            "insecureKubeletReadonlyPortEnabled": "boolean",
+            "podPidsLimit": "string"
+          },
+          "labels": "object",
+          "linuxNodeConfig": {
+            "cgroupMode": "string",
+            "sysctls": {
+              "fs": {
+                "aio-max-nr": "string"
+              },
+              "net": {
+                "core": {
+                  "netdev_max_backlog": "string",
+                  "optmem_max": "string",
+                  "rmem_max": "string",
+                  "somaxconn": "string",
+                  "wmem_default": "string",
+                  "wmem_max": "string"
+                },
+                "ipv4": {
+                  "tcp_rmem": "string",
+                  "tcp_tw_reuse": "string",
+                  "tcp_wmem": "string"
+                },
+                "ipv6": {
+                  "conf": {
+                    "all": {
+                      "disable_ipv6": "string"
+                    },
+                    "default": {
+                      "disable_ipv6": "string"
+                    }
+                  }
+                }
+              },
+              "vm": {
+                "max_map_count": "string"
+              }
+            }
+          },
+          "localNvmeSsdBlockConfig": {
+            "localSsdCount": "integer"
+          },
+          "localSsdCount": "integer",
+          "loggingConfig": {
+            "variantConfig": {
+              "variant": "string"
+            }
+          },
+          "machineType": "string",
+          "maxRunDuration": "string",
+          "metadata": {
+            "VmDnsSeting": "string",
+            "VmDnsSetting": "string",
+            "app": "string",
+            "app_owner": "string",
+            "app_role": "string",
+            "block-project-ssh-keys": "string",
+            "block_project_ssh_keys": "string",
+            "budget_owner": "string",
+            "business_unit": "string",
+            "cast-pool-version": "string",
+            "cluster": "string",
+            "cluster_name": "string",
+            "company": "string",
+            "cost_center": "string",
+            "default-node-pool": "string",
+            "disable-legacy-endpoint": "string",
+            "disable-legacy-endpoints": "string",
+            "disable-legecy-endpoints": "string",
+            "disable-project-ssh-keys": "string",
+            "dm-lifecycle": "string",
+            "dm-nodepool": "string",
+            "dm-role": "string",
+            "enable-gvnic": "string",
+            "env": "string",
+            "environemnt": "string",
+            "environment": "string",
+            "etag": "string",
+            "fallback-version": "string",
+            "function": "string",
+            "goog-gke-node-pool-provisioning-model": "string",
+            "google-compute-enable-integrity-monitoring": "string",
+            "google-compute-enable-virtio-rng": "string",
+            "google-compute-enable-vtpm": "string",
+            "hostgroup": "string",
+            "install-nvidia-driver": "string",
+            "k8s": "string",
+            "managed_by": "string",
+            "market": "string",
+            "name": "string",
+            "native-pool": "string",
+            "node-pool-metadata-custom-value": "string",
+            "node-pool-name": "string",
+            "node_pool": "string",
+            "node_pool_cost": "string",
+            "nodegroup": "string",
+            "pool_name": "string",
+            "product-group-name": "string",
+            "project_owner": "string",
+            "provisioned_by": "string",
+            "purpose": "string",
+            "role": "string",
+            "serial-port-enable": "string",
+            "serial-port-logging-enable": "string",
+            "server_group": "string",
+            "server_owner": "string",
+            "server_role": "string",
+            "service": "string",
+            "shutdown-script": "string",
+            "shutdown-script-url": "string",
+            "source-pool": "string",
+            "ssh-keys": "string",
+            "sysprep-specialize-script-ps1": "string",
+            "taints": "string",
+            "team": "string",
+            "team-name": "string",
+            "team_name": "string",
+            "tech": "string",
+            "technical_owner": "string",
+            "terraform": "string",
+            "watchdog-fallback": "string",
+            "workload": "string",
+            "workload-metadata": "string"
+          },
+          "minCpuPlatform": "string",
+          "oauthScopes": "string",
+          "preemptible": "boolean",
+          "reservationAffinity": {
+            "consumeReservationType": "string",
+            "key": "string",
+            "values": "string"
+          },
+          "resourceLabels": "object",
+          "resourceManagerTags": {
+            "tags": {
+              "cmod-dv-k8s-2896/k8s": "string",
+              "cmod-pe-k8s-2271/k8s": "string",
+              "cmod-pr-k8s-aec2/k8s": "string",
+              "cmod-qa-k8s-36cc/k8s": "string",
+              "cmod-ut-k8s-763e/k8s": "string",
+              "msh-np-k8s-9f1a/k8s": "string",
+              "msh-pe-k8s-3f24/k8s": "string",
+              "msh-pr-k8s-359b/k8s": "string",
+              "msh-ut-k8s-8592/k8s": "string",
+              "tagKeys/281475782885138": "string",
+              "tagKeys/281476614826788": "string",
+              "tagKeys/281479086565641": "string",
+              "tagKeys/281483643750784": "string"
+            }
+          },
+          "sandboxConfig": {
+            "type": "string"
+          },
+          "secondaryBootDisks": {
+            "diskImage": "string",
+            "mode": "string"
+          },
+          "serviceAccount": "string",
+          "shieldedInstanceConfig": {
+            "enableIntegrityMonitoring": "boolean",
+            "enableSecureBoot": "boolean"
+          },
+          "softwareConfig": {
+            "properties": "object"
+          },
+          "spot": "boolean",
+          "tags": "string",
+          "taints": {
+            "effect": "string",
+            "key": "string",
+            "value": "string"
+          },
+          "windowsNodeConfig": {
+            "osVersion": "string"
+          },
+          "workloadMetadataConfig": {
+            "mode": "string"
+          }
+        },
+        "deployment": {
+          "files": "object"
+        },
+        "envVariables": "object",
+        "etag": "string",
+        "initialNodeCount": "integer",
+        "instanceGroupUrls": "string",
+        "labelExtractors": "object",
+        "labels": "object",
+        "locations": "string",
+        "maintenancePolicy": "object",
+        "management": {
+          "autoRepair": "boolean",
+          "autoUpgrade": "boolean",
+          "upgradeOptions": "object"
+        },
+        "maxPodsConstraint": {
+          "maxPodsPerNode": "string"
+        },
+        "metadata": {
+          "annotations": "object"
+        },
+        "name": "string",
+        "networkConfig": {
+          "additionalNodeNetworkConfigs": {
+            "network": "string",
+            "subnetwork": "string"
+          },
+          "additionalPodNetworkConfigs": {
+            "maxPodsPerNode": {
+              "maxPodsPerNode": "string"
+            },
+            "secondaryPodRange": "string",
+            "subnetwork": "string"
+          },
+          "enablePrivateNodes": "boolean",
+          "networkPerformanceConfig": {
+            "totalEgressBandwidthTier": "string"
+          },
+          "podIpv4CidrBlock": "string",
+          "podIpv4RangeUtilization": "float",
+          "podRange": "string"
+        },
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "placementPolicy": {
+          "policyName": "string",
+          "type": "string"
+        },
+        "podIpv4CidrSize": "integer",
+        "queuedProvisioning": {
+          "enabled": "boolean"
+        },
+        "resourceLabels": "object",
+        "schema": "object",
+        "selectors": "object",
+        "selfLink": "string",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "status": "string",
+        "statusMessage": "string",
+        "updateInfo": {
+          "blueGreenInfo": {
+            "blueInstanceGroupUrls": "string",
+            "bluePoolDeletionStartTime": "string",
+            "greenInstanceGroupUrls": "string",
+            "greenPoolVersion": "string",
+            "phase": "string"
+          }
+        },
+        "upgradeSettings": {
+          "blueGreenSettings": {
+            "nodePoolSoakDuration": "string",
+            "standardRolloutPolicy": {
+              "batchNodeCount": "integer",
+              "batchPercentage": "integer",
+              "batchSoakDuration": "string"
+            }
+          },
+          "maxSurge": "integer",
+          "maxUnavailable": "integer",
+          "strategy": "string"
+        },
+        "version": "string",
+        "view": {
+          "query": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": "object",
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

@@ -1,0 +1,311 @@
+[
+  {
+    "run.googleapis.com/Service": {
+      "configuration": {
+        "apiVersion": "string",
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "deployment": {
+          "files": "object"
+        },
+        "envVariables": "object",
+        "kind": "string",
+        "labelExtractors": "object",
+        "labels": "object",
+        "maintenancePolicy": "object",
+        "metadata": {
+          "annotations": "object",
+          "creationTimestamp": "string",
+          "deletionTimestamp": "string",
+          "finalizers": "string",
+          "generation": "integer",
+          "labels": "object",
+          "name": "string",
+          "namespace": "string",
+          "resourceVersion": "string",
+          "selfLink": "string",
+          "uid": "string"
+        },
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "resourceLabels": "object",
+        "schema": "object",
+        "selectors": "object",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "spec": {
+          "template": {
+            "metadata": {
+              "annotations": {
+                "VPC_CONNECTOR": "string",
+                "VPC_EGRESS": "string",
+                "autoscaling": {
+                  "knative": {
+                    "dev/class": "string",
+                    "dev/maxScale": "string",
+                    "dev/metric": "string",
+                    "dev/minScale": "string",
+                    "dev/scaleDownDelay": "string",
+                    "dev/scaleToZeroPodRetentionPeriod": "string",
+                    "dev/target": "string",
+                    "dev/target-utilization-percentage": "string"
+                  }
+                },
+                "biz-salsa-nacho/redeploy-cause": "string",
+                "biz-salsa-nacho/redeploy-timestamp": "string",
+                "build-timestamp": "string",
+                "client": {
+                  "knative": {
+                    "dev/user-image": "string"
+                  }
+                },
+                "cloudfunctions": {
+                  "googleapis": {
+                    "com/trigger-type": "string"
+                  }
+                },
+                "deploy/image-digest": "string",
+                "deploymentTimestamp": "string",
+                "gcf-v2-enable-pubsub-retries": "string",
+                "generated-by": "string",
+                "redeploy-cause": "string",
+                "redeploy-trigger": "string",
+                "run": {
+                  "googleapis": {
+                    "com/base-images": "string",
+                    "com/build-service-account": "string",
+                    "com/client-name": "string",
+                    "com/client-version": "string",
+                    "com/cloudsql-instances": "string",
+                    "com/container-dependencies": "string",
+                    "com/cpu-throttling": "string",
+                    "com/custom-audiences": "string",
+                    "com/encryption-key": "string",
+                    "com/encryption-key-shutdown-hours": "string",
+                    "com/execution-environment": "string",
+                    "com/gpu-zonal-redundancy-disabled": "string",
+                    "com/health-check-disabled": "string",
+                    "com/iap-enabled": "string",
+                    "com/launch-stage": "string",
+                    "com/mesh": "string",
+                    "com/mesh-dataplane": "string",
+                    "com/network-interfaces": "string",
+                    "com/post-key-revocation-action-type": "string",
+                    "com/sandbox": "string",
+                    "com/secrets": "string",
+                    "com/sessionAffinity": "string",
+                    "com/startup-cpu-boost": "string",
+                    "com/vpc-access-connector": "string",
+                    "com/vpc-access-egress": "string"
+                  }
+                },
+                "sftp-key-version": "string",
+                "vpc-access-egress": "string",
+                "vpc-connector": "string"
+              },
+              "labels": "object",
+              "name": "string"
+            },
+            "spec": {
+              "containerConcurrency": "integer",
+              "containers": {
+                "args": "string",
+                "command": "string",
+                "env": {
+                  "name": "string",
+                  "value": "string",
+                  "valueFrom": {
+                    "secretKeyRef": {
+                      "key": "string",
+                      "name": "string"
+                    }
+                  }
+                },
+                "image": "string",
+                "livenessProbe": {
+                  "failureThreshold": "integer",
+                  "grpc": {
+                    "port": "integer",
+                    "service": "string"
+                  },
+                  "httpGet": {
+                    "httpHeaders": {
+                      "name": "string",
+                      "value": "string"
+                    },
+                    "path": "string",
+                    "port": "integer"
+                  },
+                  "initialDelaySeconds": "integer",
+                  "periodSeconds": "integer",
+                  "timeoutSeconds": "integer"
+                },
+                "name": "string",
+                "ports": {
+                  "containerPort": "integer",
+                  "name": "string"
+                },
+                "readinessProbe": {
+                  "failureThreshold": "integer",
+                  "httpGet": {
+                    "path": "string",
+                    "port": "integer"
+                  },
+                  "periodSeconds": "integer",
+                  "timeoutSeconds": "integer"
+                },
+                "resources": {
+                  "limits": {
+                    "cpu": "string",
+                    "memory": "string",
+                    "nvidia": {
+                      "com/gpu": "string"
+                    }
+                  },
+                  "requests": {
+                    "cpu": "string",
+                    "memory": "string"
+                  }
+                },
+                "startupProbe": {
+                  "failureThreshold": "integer",
+                  "grpc": {
+                    "port": "integer",
+                    "service": "string"
+                  },
+                  "httpGet": {
+                    "httpHeaders": {
+                      "name": "string",
+                      "value": "string"
+                    },
+                    "path": "string",
+                    "port": "integer"
+                  },
+                  "initialDelaySeconds": "integer",
+                  "periodSeconds": "integer",
+                  "tcpSocket": {
+                    "port": "integer"
+                  },
+                  "timeoutSeconds": "integer"
+                },
+                "volumeMounts": {
+                  "mountPath": "string",
+                  "name": "string",
+                  "readOnly": "boolean"
+                }
+              },
+              "nodeSelector": {
+                "run": {
+                  "googleapis": {
+                    "com/accelerator": "string"
+                  }
+                }
+              },
+              "runtimeClassName": "string",
+              "serviceAccountName": "string",
+              "timeoutSeconds": "integer",
+              "volumes": {
+                "csi": {
+                  "driver": "string",
+                  "readOnly": "boolean",
+                  "volumeAttributes": {
+                    "bucketName": "string",
+                    "mountOptions": "string"
+                  }
+                },
+                "emptyDir": {
+                  "medium": "string",
+                  "sizeLimit": "string"
+                },
+                "name": "string",
+                "nfs": {
+                  "path": "string",
+                  "readOnly": "boolean",
+                  "server": "string"
+                },
+                "secret": {
+                  "defaultMode": "integer",
+                  "items": {
+                    "key": "string",
+                    "mode": "integer",
+                    "path": "string"
+                  },
+                  "secretName": "string"
+                }
+              }
+            }
+          },
+          "traffic": {
+            "latestRevision": "boolean",
+            "percent": "integer",
+            "revisionName": "string",
+            "tag": "string"
+          }
+        },
+        "status": {
+          "address": {
+            "url": "string"
+          },
+          "conditions": {
+            "lastTransitionTime": "string",
+            "message": "string",
+            "reason": "string",
+            "severity": "string",
+            "status": "string",
+            "type": "string"
+          },
+          "latestCreatedRevisionName": "string",
+          "latestReadyRevisionName": "string",
+          "observedGeneration": "integer",
+          "traffic": {
+            "latestRevision": "boolean",
+            "percent": "integer",
+            "revisionName": "string",
+            "tag": "string",
+            "url": "string"
+          },
+          "url": "string"
+        },
+        "view": {
+          "query": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": "object",
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "AWS::CodeDeploy::DeploymentConfig": {
+      "configuration": {
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "computePlatform": "string",
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "createTime": "string",
+        "deploymentConfigId": "string",
+        "deploymentConfigName": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "labels": "object",
+        "methodSettings": "object",
+        "minimumHealthyHosts": {
+          "type": "string",
+          "value": "integer"
+        },
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "tags": "object",
+        "trafficRoutingConfig": {
+          "timeBasedCanary": {
+            "canaryInterval": "integer",
+            "canaryPercentage": "integer"
+          },
+          "timeBasedLinear": {
+            "linearInterval": "integer",
+            "linearPercentage": "integer"
+          },
+          "type": "string"
+        },
+        "variables": "object",
+        "zonalConfig": {
+          "firstZoneMonitorDurationInSeconds": "integer",
+          "minimumHealthyHostsPerZone": {
+            "type": "string",
+            "value": "integer"
+          },
+          "monitorDurationInSeconds": "integer"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

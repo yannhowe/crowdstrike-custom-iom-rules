@@ -1,0 +1,110 @@
+[
+  {
+    "aiplatform.googleapis.com/Dataset": {
+      "configuration": {
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "createTime": "string",
+        "create_time": {
+          "nanos": "integer",
+          "seconds": "integer"
+        },
+        "dataItemCount": "string",
+        "data_item_count": "integer",
+        "deployment": {
+          "files": "object"
+        },
+        "description": "string",
+        "displayName": "string",
+        "display_name": "string",
+        "encryptionSpec": {
+          "kmsKeyName": "string"
+        },
+        "envVariables": "object",
+        "etag": "string",
+        "labelExtractors": "object",
+        "labels": "object",
+        "maintenancePolicy": "object",
+        "metadata": {
+          "annotations": "object",
+          "dataItemSchemaUri": "string",
+          "gcsBucket": "string",
+          "inputConfig": {
+            "bigquerySource": {
+              "uri": "string"
+            },
+            "gcsSource": {
+              "uri": "string"
+            }
+          },
+          "note": "string",
+          "promptType": "string",
+          "timeColumn": "string",
+          "timeSeriesIdentifierColumn": "string"
+        },
+        "metadataArtifact": "string",
+        "metadataSchemaUri": "string",
+        "metadata_artifact": "string",
+        "metadata_schema_uri": "string",
+        "modelReference": "string",
+        "model_reference": "string",
+        "name": "string",
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "resourceLabels": "object",
+        "satisfiesPzi": "boolean",
+        "satisfiesPzs": "boolean",
+        "satisfies_pzi": "boolean",
+        "satisfies_pzs": "boolean",
+        "schema": "object",
+        "selectors": "object",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "updateTime": "string",
+        "update_time": {
+          "nanos": "integer",
+          "seconds": "integer"
+        },
+        "view": {
+          "query": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": "object",
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

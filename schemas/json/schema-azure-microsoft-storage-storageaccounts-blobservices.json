@@ -1,0 +1,98 @@
+[
+  {
+    "Microsoft.Storage/storageAccounts/blobServices": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "id": "string",
+        "identity": {
+          "userAssignedIdentities": "object"
+        },
+        "name": "string",
+        "properties": {
+          "agentPoolProfiles": "object",
+          "changeFeed": {
+            "enabled": "boolean",
+            "retentionInDays": "integer"
+          },
+          "containerDeleteRetentionPolicy": {
+            "days": "integer",
+            "enabled": "boolean"
+          },
+          "cors": {
+            "corsRules": {
+              "allowedHeaders": "string",
+              "allowedMethods": "string",
+              "allowedOrigins": "string",
+              "exposedHeaders": "string",
+              "maxAgeInSeconds": "integer"
+            }
+          },
+          "defaultServiceVersion": "string",
+          "definition": {
+            "actions": "object"
+          },
+          "deleteRetentionPolicy": {
+            "allowPermanentDelete": "boolean",
+            "days": "integer",
+            "enabled": "boolean"
+          },
+          "isVersioningEnabled": "boolean",
+          "lastAccessTimeTrackingPolicy": {
+            "blobType": "string",
+            "enable": "boolean",
+            "name": "string",
+            "trackingGranularityInDays": "integer"
+          },
+          "managedNetwork": "object",
+          "osProfile": "object",
+          "restorePolicy": {
+            "days": "integer",
+            "enabled": "boolean",
+            "minRestoreTime": "string"
+          },
+          "storageProfile": "object",
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          }
+        },
+        "resources": "object",
+        "sku": {
+          "name": "string",
+          "tier": "string"
+        },
+        "tags": "object",
+        "type": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "configurations": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

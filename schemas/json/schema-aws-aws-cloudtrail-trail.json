@@ -1,0 +1,109 @@
+[
+  {
+    "AWS::CloudTrail::Trail": {
+      "configuration": {
+        "certificatePem": "string",
+        "cloudWatchLogsLogGroupArn": "string",
+        "cloudWatchLogsRoleArn": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "hasCustomEventSelectors": "boolean",
+        "hasInsightSelectors": "boolean",
+        "homeRegion": "string",
+        "includeGlobalServiceEvents": "boolean",
+        "isMultiRegionTrail": "boolean",
+        "isOrganizationTrail": "boolean",
+        "kmsKeyId": "string",
+        "labels": "object",
+        "logFileValidationEnabled": "boolean",
+        "methodSettings": "object",
+        "name": "string",
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "s3BucketName": "string",
+        "s3KeyPrefix": "string",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "snsTopicARN": "string",
+        "snsTopicName": "string",
+        "tags": "object",
+        "trailARN": "string",
+        "variables": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "advancedEventSelectors": {
+          "fieldSelectors": {
+            "endsWith": "string",
+            "equals": "string",
+            "field": "string",
+            "notEndsWith": "string",
+            "notEquals": "string",
+            "notStartsWith": "string",
+            "startsWith": "string"
+          },
+          "name": "string"
+        },
+        "ec2InstanceComplianceItems": "object",
+        "eventSelectors": {
+          "dataResources": {
+            "type": "string",
+            "values": "string"
+          },
+          "excludeManagementEventSources": "string",
+          "includeManagementEvents": "boolean",
+          "readWriteType": "string"
+        },
+        "instanceAttributeUserData": "object",
+        "isLogging": "boolean",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

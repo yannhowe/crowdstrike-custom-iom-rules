@@ -1,0 +1,2362 @@
+{
+  "provider": "aws",
+  "total_tested": 413,
+  "total_supported": 128,
+  "total_unsupported": 285,
+  "support_percentage": 30.99273607748184,
+  "supported_types": [
+    {
+      "resource_type": "AWS::ACM::Certificate",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::ACMPCA::CertificateAuthority",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::AccessAnalyzer::Analyzer",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::ApiGateway::RestApi",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::ApiGateway::Stage",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::ApiGatewayV2::Api",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::Athena::DataCatalog",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::AuditManager::Assessment",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::AutoScaling::LaunchConfiguration",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::AutoScaling::ScalingPolicy",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::Backup::BackupPlan",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::Backup::BackupSelection",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::Backup::BackupVault",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::Batch::JobQueue",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::Cassandra::Keyspace",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::CloudFormation::Stack",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::CloudFront::Distribution",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::CloudTrail::Trail",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::CloudWatch::Alarm",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::CodeArtifact::Repository",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::CodeBuild::Project",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::CodeDeploy::Application",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::CodePipeline::Pipeline",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::Cognito::IdentityPool",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::Cognito::UserPoolClient",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::Cognito::UserPoolGroup",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::Config::ConfigurationRecorder",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::Connect::Instance",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::DMS::Certificate",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::DMS::ReplicationInstance",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::DMS::ReplicationTask",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::DynamoDB::Table",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::EC2::ClientVpnEndpoint",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::EC2::CustomerGateway",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::EC2::EIP",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::EC2::EgressOnlyInternetGateway",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::EC2::FlowLog",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::EC2::Host",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::EC2::Instance",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::EC2::InternetGateway",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::EC2::LaunchTemplate",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::EC2::NetworkAcl",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::EC2::NetworkInsightsAccessScopeAnalysis",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::EC2::RouteTable",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::EC2::SecurityGroup",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::EC2::Subnet",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::EC2::TransitGateway",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::EC2::TransitGatewayAttachment",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::EC2::TransitGatewayRouteTable",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::EC2::VPC",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::EC2::VPCEndpoint",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::EC2::VPCEndpointService",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::EC2::VPCPeeringConnection",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::EC2::VPNConnection",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::EC2::VPNGateway",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::EC2::Volume",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::ECR::PublicRepository",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::ECR::RegistryPolicy",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::ECR::Repository",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::ECS::Cluster",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::ECS::Service",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::ECS::TaskDefinition",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::EFS::AccessPoint",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::EKS::Addon",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::EKS::Cluster",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::EKS::FargateProfile",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::ElasticLoadBalancing::LoadBalancer",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::ElasticLoadBalancingV2::Listener",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::ElasticLoadBalancingV2::LoadBalancer",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::Events::ApiDestination",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::Events::Archive",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::Events::Connection",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::Events::Rule",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::GlobalAccelerator::Accelerator",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::GlobalAccelerator::EndpointGroup",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::GlobalAccelerator::Listener",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::Glue::Job",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::GuardDuty::Detector",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::IAM::Group",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::IAM::Policy",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::IAM::Role",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::IAM::ServerCertificate",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::IAM::User",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::ImageBuilder::ImagePipeline",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::ImageBuilder::ImageRecipe",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::ImageBuilder::InfrastructureConfiguration",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::KMS::Alias",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::KMS::Key",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::Kinesis::Stream",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::Kinesis::StreamConsumer",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::Lambda::CodeSigningConfig",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::Lambda::Function",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::Lightsail::Bucket",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::Lightsail::Disk",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::MSK::Cluster",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::MSK::VpcConnection",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::MemoryDB::SubnetGroup",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::NetworkFirewall::Firewall",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::NetworkFirewall::FirewallPolicy",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::OpenSearch::Domain",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::RDS::DBCluster",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::RDS::DBClusterSnapshot",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::RDS::DBInstance",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::RDS::DBSnapshot",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::RDS::EventSubscription",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::Redshift::Cluster",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::Redshift::ClusterParameterGroup",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::Redshift::ClusterSnapshot",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::Route53::HostedZone",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::S3::AccountPublicAccessBlock",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::S3::Bucket",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::SNS::Topic",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::SQS::Queue",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::SSM::Document",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::SageMaker::Domain",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::SageMaker::EndpointConfig",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::SageMaker::Model",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::SageMaker::NotebookInstance",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::Shield::Protection",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::StepFunctions::StateMachine",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::WAFRegional::Rule",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::WAFRegional::RuleGroup",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::WAFRegional::WebACL",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::WAFv2::IPSet",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::WAFv2::RuleGroup",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::WAFv2::WebACL",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::WorkSpaces::Workspace",
+      "provider": "aws",
+      "schema_available": true
+    },
+    {
+      "resource_type": "AWS::XRay::EncryptionConfig",
+      "provider": "aws",
+      "schema_available": true
+    }
+  ],
+  "unsupported_types": [
+    {
+      "resource_type": "AWS::ACMPCA::CertificateAuthorityActivation",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::APS::RuleGroupsNamespace",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::AmazonMQ::Broker",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Amplify::App",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Amplify::Branch",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::ApiGatewayV2::Stage",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::AppConfig::Application",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::AppConfig::ConfigurationProfile",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::AppConfig::DeploymentStrategy",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::AppConfig::Environment",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::AppConfig::ExtensionAssociation",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::AppConfig::HostedConfigurationVersion",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::AppFlow::Flow",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::AppIntegrations::EventIntegration",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::AppMesh::GatewayRoute",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::AppMesh::Mesh",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::AppMesh::Route",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::AppMesh::VirtualGateway",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::AppMesh::VirtualNode",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::AppMesh::VirtualRouter",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::AppMesh::VirtualService",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::AppRunner::Service",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::AppRunner::VpcConnector",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::AppStream::Application",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::AppStream::DirectoryConfig",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::AppStream::Fleet",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::AppStream::Stack",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::AppSync::GraphQLApi",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Athena::PreparedStatement",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Athena::WorkGroup",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::AutoScaling::AutoScalingGroup",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::AutoScaling::ScheduledAction",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::AutoScaling::WarmPool",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Backup::RecoveryPoint",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Backup::ReportPlan",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Batch::ComputeEnvironment",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Batch::SchedulingPolicy",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Budgets::BudgetsAction",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Cloud9::EnvironmentEC2",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::CloudFront::StreamingDistribution",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::CloudWatch::MetricStream",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::CodeBuild::ReportGroup",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::CodeDeploy::DeploymentConfig",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::CodeDeploy::DeploymentGroup",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::CodeGuruProfiler::ProfilingGroup",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::CodeGuruReviewer::RepositoryAssociation",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Config::ConformancePackCompliance",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Config::ResourceCompliance",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Connect::PhoneNumber",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Connect::QuickConnect",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::CustomerProfiles::Domain",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::CustomerProfiles::ObjectType",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::DMS::Endpoint",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::DMS::EventSubscription",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::DMS::ReplicationSubnetGroup",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::DataSync::LocationEFS",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::DataSync::LocationFSxLustre",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::DataSync::LocationFSxWindows",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::DataSync::LocationHDFS",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::DataSync::LocationNFS",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::DataSync::LocationObjectStorage",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::DataSync::LocationS3",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::DataSync::LocationSMB",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::DataSync::Task",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Detective::Graph",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::DeviceFarm::InstanceProfile",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::DeviceFarm::Project",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::DeviceFarm::TestGridProject",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::EC2::CapacityReservation",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::EC2::CarrierGateway",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::EC2::DHCPOptions",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::EC2::EC2Fleet",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::EC2::IPAM",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::EC2::IPAMPool",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::EC2::IPAMScope",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::EC2::NatGateway",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::EC2::NetworkInsightsAccessScope",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::EC2::NetworkInsightsPath",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::EC2::NetworkInterface",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::EC2::PrefixList",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::EC2::RegisteredHAInstance",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::EC2::SpotFleet",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::EC2::SubnetRouteTableAssociation",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::EC2::TrafficMirrorFilter",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::EC2::TrafficMirrorSession",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::EC2::TrafficMirrorTarget",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::EC2::TransitGatewayConnect",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::EC2::TransitGatewayMulticastDomain",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::EC2::VPCBlockPublicAccessExclusion",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::EC2::VPCBlockPublicAccessOptions",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::ECR::PullThroughCacheRule",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::ECS::CapacityProvider",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::ECS::TaskSet",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::EFS::FileSystem",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::EKS::IdentityProviderConfig",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::EMR::SecurityConfiguration",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::ElasticBeanstalk::Application",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::ElasticBeanstalk::ApplicationVersion",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::ElasticBeanstalk::Environment",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Elasticsearch::Domain",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::EventSchemas::Discoverer",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::EventSchemas::Registry",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::EventSchemas::RegistryPolicy",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::EventSchemas::Schema",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Events::Endpoint",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Events::EventBus",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Evidently::Launch",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Evidently::Project",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Evidently::Segment",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Forecast::DatasetGroup",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::FraudDetector::EntityType",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::FraudDetector::Label",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::FraudDetector::Outcome",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::FraudDetector::Variable",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Glue::Classifier",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Glue::MLTransform",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::GreengrassV2::ComponentVersion",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::GroundStation::Config",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::GroundStation::DataflowEndpointGroup",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::GroundStation::MissionProfile",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::GuardDuty::Filter",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IAM::OIDCProvider",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IAM::SAMLProvider",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IVS::Channel",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IVS::PlaybackKeyPair",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IVS::RecordingConfiguration",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::ImageBuilder::ContainerRecipe",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::ImageBuilder::DistributionConfiguration",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::InspectorV2::Filter",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IoT::AccountAuditConfiguration",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IoT::Authorizer",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IoT::CACertificate",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IoT::CustomMetric",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IoT::Dimension",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IoT::FleetMetric",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IoT::JobTemplate",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IoT::MitigationAction",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IoT::Policy",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IoT::ProvisioningTemplate",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IoT::RoleAlias",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IoT::ScheduledAudit",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IoT::SecurityProfile",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IoTAnalytics::Channel",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IoTAnalytics::Dataset",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IoTAnalytics::Datastore",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IoTAnalytics::Pipeline",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IoTEvents::AlarmModel",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IoTEvents::DetectorModel",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IoTEvents::Input",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IoTSiteWise::AssetModel",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IoTSiteWise::Dashboard",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IoTSiteWise::Gateway",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IoTSiteWise::Portal",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IoTSiteWise::Project",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IoTTwinMaker::Entity",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IoTTwinMaker::Scene",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IoTTwinMaker::SyncJob",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IoTTwinMaker::Workspace",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IoTWireless::FuotaTask",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IoTWireless::MulticastGroup",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::IoTWireless::ServiceProfile",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Kendra::Index",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::KinesisAnalyticsV2::Application",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::KinesisFirehose::DeliveryStream",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::KinesisVideo::SignalingChannel",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::KinesisVideo::Stream",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Lex::Bot",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Lex::BotAlias",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Lightsail::Certificate",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Lightsail::StaticIp",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Logs::Destination",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::LookoutVision::Project",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::M2::Environment",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::MSK::BatchScramSecret",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::MSK::ClusterPolicy",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::MSK::Configuration",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::MediaConnect::FlowSource",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::MediaConnect::FlowVpcInterface",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::MediaConnect::Gateway",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::MediaPackage::PackagingConfiguration",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::MediaPackage::PackagingGroup",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::MediaTailor::PlaybackConfiguration",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::NetworkFirewall::RuleGroup",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::NetworkFirewall::TLSInspectionConfiguration",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::NetworkManager::ConnectPeer",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::NetworkManager::CustomerGatewayAssociation",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::NetworkManager::Device",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::NetworkManager::GlobalNetwork",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::NetworkManager::Link",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::NetworkManager::LinkAssociation",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::NetworkManager::Site",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::NetworkManager::TransitGatewayRegistration",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::OpenSearchServerless::VpcEndpoint",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Panorama::Package",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Personalize::Dataset",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Personalize::DatasetGroup",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Personalize::Schema",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Personalize::Solution",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Pinpoint::App",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Pinpoint::ApplicationSettings",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Pinpoint::Campaign",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Pinpoint::EmailChannel",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Pinpoint::EmailTemplate",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Pinpoint::EventStream",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Pinpoint::InAppTemplate",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Pinpoint::Segment",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::QLDB::Ledger",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::QuickSight::DataSource",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::RDS::DBSecurityGroup",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::RDS::DBSubnetGroup",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::RDS::GlobalCluster",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::RDS::OptionGroup",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::RUM::AppMonitor",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Redshift::ClusterSecurityGroup",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Redshift::ClusterSubnetGroup",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Redshift::EndpointAccess",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Redshift::EndpointAuthorization",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Redshift::EventSubscription",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Redshift::ScheduledAction",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::ResilienceHub::App",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::ResilienceHub::ResiliencyPolicy",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::ResourceExplorer2::Index",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::RoboMaker::RobotApplication",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::RoboMaker::RobotApplicationVersion",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::RoboMaker::SimulationApplication",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Route53::HealthCheck",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Route53RecoveryControl::Cluster",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Route53RecoveryControl::ControlPanel",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Route53RecoveryControl::RoutingControl",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Route53RecoveryControl::SafetyRule",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Route53RecoveryReadiness::Cell",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Route53RecoveryReadiness::ReadinessCheck",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Route53RecoveryReadiness::RecoveryGroup",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Route53RecoveryReadiness::ResourceSet",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Route53Resolver::FirewallDomainList",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Route53Resolver::FirewallRuleGroup",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Route53Resolver::FirewallRuleGroupAssociation",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Route53Resolver::ResolverQueryLoggingConfig",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Route53Resolver::ResolverQueryLoggingConfigAssociation",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Route53Resolver::ResolverRule",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Route53Resolver::ResolverRuleAssociation",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::S3::AccessPoint",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::S3::MultiRegionAccessPoint",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::S3::StorageLens",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::S3Express::BucketPolicy",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::S3Express::DirectoryBucket",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::SES::ConfigurationSet",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::SES::ContactList",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::SES::ReceiptFilter",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::SES::ReceiptRuleSet",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::SES::Template",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::SSM::AssociationCompliance",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::SSM::FileData",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::SSM::ManagedInstanceInventory",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::SSM::PatchCompliance",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::SageMaker::AppImageConfig",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::SageMaker::CodeRepository",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::SageMaker::FeatureGroup",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::SageMaker::Image",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::SageMaker::NotebookInstanceLifecycleConfig",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::SageMaker::Workteam",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::SecretsManager::Secret",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::ServiceCatalog::CloudFormationProduct",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::ServiceCatalog::CloudFormationProvisionedProduct",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::ServiceCatalog::Portfolio",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::ServiceDiscovery::HttpNamespace",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::ServiceDiscovery::Instance",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::ServiceDiscovery::PublicDnsNamespace",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::ServiceDiscovery::Service",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::ShieldRegional::Protection",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Signer::SigningProfile",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::StepFunctions::Activity",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Transfer::Agreement",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Transfer::Certificate",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Transfer::Connector",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Transfer::Profile",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::Transfer::Workflow",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::WAF::RateBasedRule",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::WAF::Rule",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::WAF::RuleGroup",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::WAF::WebACL",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::WAFRegional::RateBasedRule",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::WAFv2::ManagedRuleSet",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::WAFv2::RegexPatternSet",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "AWS::WorkSpaces::ConnectionAlias",
+      "provider": "aws",
+      "schema_available": false,
+      "error": "No schema returned"
+    }
+  ],
+  "timestamp": "2025-12-03T06:21:00Z"
+}

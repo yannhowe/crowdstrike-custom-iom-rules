@@ -1,0 +1,95 @@
+[
+  {
+    "AWS::EC2::VPC": {
+      "configuration": {
+        "certificatePem": "string",
+        "cidrBlock": "string",
+        "cidrBlockAssociationSet": {
+          "associationId": "string",
+          "cidrBlock": "string",
+          "cidrBlockState": {
+            "state": "string",
+            "statusMessage": "string"
+          }
+        },
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "dhcpOptionsId": "string",
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "instanceTenancy": "string",
+        "ipv6CidrBlockAssociationSet": {
+          "associationId": "string",
+          "ipv6CidrBlock": "string",
+          "ipv6CidrBlockState": {
+            "state": "string"
+          },
+          "ipv6Pool": "string",
+          "networkBorderGroup": "string"
+        },
+        "isDefault": "boolean",
+        "labels": "object",
+        "methodSettings": "object",
+        "ownerId": "string",
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "state": "string",
+        "tags": "object",
+        "variables": "object",
+        "vpcId": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

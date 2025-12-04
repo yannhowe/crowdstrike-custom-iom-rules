@@ -1,0 +1,93 @@
+[
+  {
+    "Microsoft.Network/networkWatchers": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "id": "string",
+        "identity": {
+          "userAssignedIdentities": "object"
+        },
+        "location": "string",
+        "name": "string",
+        "properties": {
+          "agentPoolProfiles": "object",
+          "definition": {
+            "actions": "object"
+          },
+          "managedNetwork": "object",
+          "osProfile": "object",
+          "provisioningState": "string",
+          "storageProfile": "object",
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          }
+        },
+        "resources": "object",
+        "tags": "object",
+        "type": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "configurations": "object",
+        "flowLogs": {
+          "etag": "string",
+          "id": "string",
+          "location": "string",
+          "name": "string",
+          "properties": {
+            "enabled": "boolean",
+            "flowAnalyticsConfiguration": {
+              "networkWatcherFlowAnalyticsConfiguration": {
+                "enabled": "boolean",
+                "trafficAnalyticsInterval": "integer",
+                "workspaceId": "string",
+                "workspaceRegion": "string",
+                "workspaceResourceId": "string"
+              }
+            },
+            "format": {
+              "type": "string",
+              "version": "integer"
+            },
+            "provisioningState": "string",
+            "retentionPolicy": {
+              "days": "integer",
+              "enabled": "boolean"
+            },
+            "storageId": "string",
+            "targetResourceGuid": "string",
+            "targetResourceId": "string"
+          },
+          "tags": "object",
+          "type": "string"
+        }
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "AWS::RDS::EventSubscription": {
+      "configuration": {
+        "certificatePem": "string",
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "custSubscriptionId": "string",
+        "customerAwsId": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "enabled": "boolean",
+        "environment": {
+          "variables": "object"
+        },
+        "eventCategoriesList": "string",
+        "eventSubscriptionArn": "string",
+        "externalTableDefinition": "object",
+        "labels": "object",
+        "methodSettings": "object",
+        "policy": "object",
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "snsTopicArn": "string",
+        "sourceIdsList": "string",
+        "sourceType": "string",
+        "status": "string",
+        "subscriptionCreationTime": "string",
+        "tags": "object",
+        "variables": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": {
+          "methods": "object"
+        }
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

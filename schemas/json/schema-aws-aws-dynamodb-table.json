@@ -1,0 +1,200 @@
+[
+  {
+    "AWS::DynamoDB::Table": {
+      "configuration": {
+        "archivalSummary": {
+          "archivalBackupArn": "string",
+          "archivalDateTime": "string",
+          "archivalReason": "string"
+        },
+        "attributeDefinitions": {
+          "attributeName": "string",
+          "attributeType": "string"
+        },
+        "billingModeSummary": {
+          "billingMode": "string",
+          "lastUpdateToPayPerRequestDateTime": "string"
+        },
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "creationDateTime": "string",
+        "deletionProtectionEnabled": "boolean",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "globalSecondaryIndexes": {
+          "backfilling": "boolean",
+          "indexArn": "string",
+          "indexName": "string",
+          "indexSizeBytes": "integer",
+          "indexStatus": "string",
+          "itemCount": "integer",
+          "keySchema": {
+            "attributeName": "string",
+            "keyType": "string"
+          },
+          "onDemandThroughput": {
+            "maxReadRequestUnits": "integer",
+            "maxWriteRequestUnits": "integer"
+          },
+          "projection": {
+            "nonKeyAttributes": "string",
+            "projectionType": "string"
+          },
+          "provisionedThroughput": {
+            "lastDecreaseDateTime": "string",
+            "lastIncreaseDateTime": "string",
+            "numberOfDecreasesToday": "integer",
+            "readCapacityUnits": "integer",
+            "writeCapacityUnits": "integer"
+          }
+        },
+        "globalTableVersion": "string",
+        "keySchema": {
+          "attributeName": "string",
+          "keyType": "string"
+        },
+        "labels": "object",
+        "latestStreamArn": "string",
+        "latestStreamLabel": "string",
+        "localSecondaryIndexes": {
+          "indexArn": "string",
+          "indexName": "string",
+          "indexSizeBytes": "integer",
+          "itemCount": "integer",
+          "keySchema": {
+            "attributeName": "string",
+            "keyType": "string"
+          },
+          "projection": {
+            "nonKeyAttributes": "string",
+            "projectionType": "string"
+          }
+        },
+        "methodSettings": "object",
+        "onDemandThroughput": {
+          "maxReadRequestUnits": "integer",
+          "maxWriteRequestUnits": "integer"
+        },
+        "policy": "object",
+        "provisionedThroughput": {
+          "lastDecreaseDateTime": "string",
+          "lastIncreaseDateTime": "string",
+          "numberOfDecreasesToday": "integer",
+          "readCapacityUnits": "integer",
+          "writeCapacityUnits": "integer"
+        },
+        "replicas": {
+          "globalSecondaryIndexes": {
+            "indexName": "string",
+            "provisionedThroughputOverride": {
+              "readCapacityUnits": "integer"
+            }
+          },
+          "kmsMasterKeyId": "string",
+          "onDemandThroughputOverride": {
+            "maxReadRequestUnits": "integer"
+          },
+          "provisionedThroughputOverride": {
+            "readCapacityUnits": "integer"
+          },
+          "regionName": "string",
+          "replicaInaccessibleDateTime": "string",
+          "replicaStatus": "string",
+          "replicaStatusDescription": "string",
+          "replicaTableClassSummary": {
+            "lastUpdateDateTime": "string",
+            "tableClass": "string"
+          }
+        },
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "restoreSummary": {
+          "restoreDateTime": "string",
+          "restoreInProgress": "boolean",
+          "sourceBackupArn": "string",
+          "sourceTableArn": "string"
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "sseDescription": {
+          "inaccessibleEncryptionDateTime": "string",
+          "kmsMasterKeyArn": "string",
+          "sseType": "string",
+          "status": "string"
+        },
+        "streamSpecification": {
+          "streamEnabled": "boolean",
+          "streamViewType": "string"
+        },
+        "tableArn": "string",
+        "tableClassSummary": {
+          "lastUpdateDateTime": "string",
+          "tableClass": "string"
+        },
+        "tableId": "string",
+        "tableName": "string",
+        "tableStatus": "string",
+        "tags": "object",
+        "variables": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "continuous_backups_description": {
+          "continuousBackupsStatus": "string",
+          "pointInTimeRecoveryDescription": {
+            "earliestRestorableDateTime": "string",
+            "latestRestorableDateTime": "string",
+            "pointInTimeRecoveryStatus": "string"
+          }
+        },
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

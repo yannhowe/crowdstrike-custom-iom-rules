@@ -1,0 +1,124 @@
+[
+  {
+    "compute.googleapis.com/Image": {
+      "configuration": {
+        "architecture": "string",
+        "archiveSizeBytes": "string",
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "creationTimestamp": "string",
+        "deployment": {
+          "files": "object"
+        },
+        "deprecated": {
+          "deleted": "string",
+          "deprecated": "string",
+          "obsolete": "string",
+          "replacement": "string",
+          "state": "string"
+        },
+        "description": "string",
+        "diskSizeGb": "string",
+        "enableConfidentialCompute": "boolean",
+        "envVariables": "object",
+        "family": "string",
+        "guestOsFeatures": {
+          "type": "string"
+        },
+        "id": "string",
+        "imageEncryptionKey": {
+          "kmsKeyName": "string"
+        },
+        "labelExtractors": "object",
+        "labelFingerprint": "string",
+        "labels": "object",
+        "licenseCodes": "string",
+        "licenses": "string",
+        "maintenancePolicy": "object",
+        "metadata": {
+          "annotations": "object"
+        },
+        "name": "string",
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "rawDisk": {
+          "containerType": "string",
+          "source": "string"
+        },
+        "resourceLabels": "object",
+        "satisfiesPzs": "boolean",
+        "schema": "object",
+        "selectors": "object",
+        "selfLink": "string",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "shieldedInstanceInitialState": {
+          "dbs": {
+            "content": "string",
+            "fileType": "string"
+          },
+          "dbxs": {
+            "content": "string",
+            "fileType": "string"
+          },
+          "keks": {
+            "content": "string",
+            "fileType": "string"
+          },
+          "pk": {
+            "content": "string",
+            "fileType": "string"
+          }
+        },
+        "sourceDisk": "string",
+        "sourceDiskId": "string",
+        "sourceImage": "string",
+        "sourceImageId": "string",
+        "sourceSnapshot": "string",
+        "sourceSnapshotId": "string",
+        "sourceType": "string",
+        "status": "string",
+        "storageLocations": "string",
+        "view": {
+          "query": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": "object",
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

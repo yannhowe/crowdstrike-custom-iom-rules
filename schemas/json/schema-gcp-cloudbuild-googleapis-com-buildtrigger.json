@@ -1,0 +1,210 @@
+[
+  {
+    "cloudbuild.googleapis.com/BuildTrigger": {
+      "configuration": {
+        "autodetect": "boolean",
+        "build": {
+          "artifacts": {
+            "images": "string",
+            "objects": {
+              "location": "string",
+              "paths": "string"
+            }
+          },
+          "availableSecrets": {
+            "secretManager": {
+              "env": "string",
+              "versionName": "string"
+            }
+          },
+          "id": "string",
+          "images": "string",
+          "logsBucket": "string",
+          "options": {
+            "automapSubstitutions": "boolean",
+            "diskSizeGb": "string",
+            "dynamicSubstitutions": "boolean",
+            "env": "string",
+            "logging": "string",
+            "machineType": "string",
+            "pool": {
+              "name": "string"
+            },
+            "requestedVerifyOption": "string",
+            "secretEnv": "string",
+            "substitutionOption": "string",
+            "volumes": {
+              "name": "string",
+              "path": "string"
+            },
+            "workerPool": "string"
+          },
+          "queueTtl": "string",
+          "secrets": {
+            "secretEnv": {
+              "_AZURE_DEVOPS_PAT": "string"
+            }
+          },
+          "serviceAccount": "string",
+          "source": {
+            "repoSource": {
+              "branchName": "string",
+              "projectId": "string",
+              "repoName": "string"
+            }
+          },
+          "steps": {
+            "allowFailure": "boolean",
+            "args": "string",
+            "automapSubstitutions": "boolean",
+            "dir": "string",
+            "entrypoint": "string",
+            "env": "string",
+            "id": "string",
+            "name": "string",
+            "script": "string",
+            "secretEnv": "string",
+            "timeout": "string",
+            "volumes": {
+              "name": "string",
+              "path": "string"
+            },
+            "waitFor": "string"
+          },
+          "substitutions": "object",
+          "tags": "string",
+          "timeout": "string"
+        },
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "createTime": "string",
+        "deployment": {
+          "files": "object"
+        },
+        "description": "string",
+        "disabled": "boolean",
+        "envVariables": "object",
+        "filename": "string",
+        "filter": "string",
+        "gitFileSource": {
+          "githubEnterpriseConfig": "string",
+          "path": "string",
+          "repoType": "string",
+          "repository": "string",
+          "revision": "string",
+          "uri": "string"
+        },
+        "github": {
+          "name": "string",
+          "owner": "string",
+          "pullRequest": {
+            "branch": "string",
+            "commentControl": "string",
+            "invertRegex": "boolean"
+          },
+          "push": {
+            "branch": "string",
+            "invertRegex": "boolean",
+            "tag": "string"
+          }
+        },
+        "id": "string",
+        "ignoredFiles": "string",
+        "includedFiles": "string",
+        "labelExtractors": "object",
+        "labels": "object",
+        "maintenancePolicy": "object",
+        "metadata": {
+          "annotations": "object"
+        },
+        "name": "string",
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "pubsubConfig": {
+          "subscription": "string",
+          "topic": "string"
+        },
+        "repositoryEventConfig": {
+          "pullRequest": {
+            "branch": "string",
+            "commentControl": "string"
+          },
+          "push": {
+            "branch": "string",
+            "invertRegex": "boolean",
+            "tag": "string"
+          },
+          "repository": "string",
+          "repositoryType": "string"
+        },
+        "resourceLabels": "object",
+        "resourceName": "string",
+        "schema": "object",
+        "selectors": "object",
+        "serviceAccount": "string",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "sourceToBuild": {
+          "githubEnterpriseConfig": "string",
+          "ref": "string",
+          "repoType": "string",
+          "repository": "string",
+          "uri": "string"
+        },
+        "substitutions": "object",
+        "tags": "string",
+        "triggerTemplate": {
+          "branchName": "string",
+          "commitSha": "string",
+          "dir": "string",
+          "invertRegex": "boolean",
+          "projectId": "string",
+          "repoName": "string",
+          "tagName": "string"
+        },
+        "view": {
+          "query": "string"
+        },
+        "webhookConfig": {
+          "secret": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": "object",
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

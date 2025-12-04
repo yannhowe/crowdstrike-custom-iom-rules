@@ -1,0 +1,134 @@
+[
+  {
+    "aiplatform.googleapis.com/NotebookRuntimeTemplate": {
+      "configuration": {
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "createTime": "string",
+        "create_time": {
+          "nanos": "integer",
+          "seconds": "integer"
+        },
+        "dataPersistentDiskSpec": {
+          "diskSizeGb": "string",
+          "diskType": "string"
+        },
+        "data_persistent_disk_spec": {
+          "disk_size_gb": "integer",
+          "disk_type": "string"
+        },
+        "deployment": {
+          "files": "object"
+        },
+        "description": "string",
+        "displayName": "string",
+        "display_name": "string",
+        "envVariables": "object",
+        "etag": "string",
+        "eucConfig": {
+          "eucDisabled": "boolean"
+        },
+        "euc_config": {
+          "euc_disabled": "boolean"
+        },
+        "idleShutdownConfig": {
+          "idleShutdownDisabled": "boolean",
+          "idleTimeout": "string"
+        },
+        "idle_shutdown_config": {
+          "idle_shutdown_disabled": "boolean",
+          "idle_timeout": {
+            "seconds": "integer"
+          }
+        },
+        "labelExtractors": "object",
+        "labels": "object",
+        "machineSpec": {
+          "acceleratorCount": "integer",
+          "acceleratorType": "string",
+          "machineType": "string"
+        },
+        "machine_spec": {
+          "accelerator_count": "integer",
+          "accelerator_type": "integer",
+          "machine_type": "string"
+        },
+        "maintenancePolicy": "object",
+        "metadata": {
+          "annotations": "object"
+        },
+        "name": "string",
+        "networkSpec": {
+          "enableInternetAccess": "boolean",
+          "network": "string",
+          "subnetwork": "string"
+        },
+        "networkTags": "string",
+        "network_spec": {
+          "enable_internet_access": "boolean",
+          "network": "string",
+          "subnetwork": "string"
+        },
+        "network_tags": "string",
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "notebookRuntimeType": "string",
+        "notebook_runtime_type": "integer",
+        "resourceLabels": "object",
+        "schema": "object",
+        "selectors": "object",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "shieldedVmConfig": {
+          "enableSecureBoot": "boolean"
+        },
+        "shielded_vm_config": "object",
+        "softwareConfig": "object",
+        "updateTime": "string",
+        "update_time": {
+          "nanos": "integer",
+          "seconds": "integer"
+        },
+        "view": {
+          "query": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": "object",
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

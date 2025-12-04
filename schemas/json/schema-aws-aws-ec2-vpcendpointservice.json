@@ -1,0 +1,99 @@
+[
+  {
+    "AWS::EC2::VPCEndpointService": {
+      "configuration": {
+        "acceptanceRequired": "boolean",
+        "availabilityZones": "string",
+        "baseEndpointDnsNames": "string",
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "labels": "object",
+        "managesVpcEndpoints": "boolean",
+        "methodSettings": "object",
+        "owner": "string",
+        "payerResponsibility": "string",
+        "policy": "object",
+        "privateDnsName": "string",
+        "privateDnsNameVerificationState": "string",
+        "privateDnsNames": {
+          "privateDnsName": "string"
+        },
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "serviceId": "string",
+        "serviceName": "string",
+        "serviceType": {
+          "serviceType": "string"
+        },
+        "supportedIpAddressTypes": "string",
+        "tags": "object",
+        "variables": "object",
+        "vpcEndpointPolicySupported": "boolean"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "allowedPrincipals": {
+          "principal": "string",
+          "principalType": "string",
+          "serviceId": "string",
+          "servicePermissionId": "string",
+          "tags": {
+            "key": "string",
+            "value": "string"
+          }
+        },
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

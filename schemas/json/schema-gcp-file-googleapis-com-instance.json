@@ -1,0 +1,119 @@
+[
+  {
+    "file.googleapis.com/Instance": {
+      "configuration": {
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "createTime": "string",
+        "customPerformanceSupported": "boolean",
+        "deletionProtectionEnabled": "boolean",
+        "deletionProtectionReason": "string",
+        "deployment": {
+          "files": "object"
+        },
+        "description": "string",
+        "envVariables": "object",
+        "fileShares": {
+          "capacityGb": "string",
+          "name": "string",
+          "nfsExportOptions": {
+            "accessMode": "string",
+            "anonGid": "string",
+            "anonUid": "string",
+            "ipRanges": "string",
+            "squashMode": "string"
+          },
+          "sourceBackup": "string"
+        },
+        "kmsKeyName": "string",
+        "labelExtractors": "object",
+        "labels": "object",
+        "maintenancePolicy": "object",
+        "metadata": {
+          "annotations": "object"
+        },
+        "name": "string",
+        "networks": {
+          "connectMode": "string",
+          "ipAddresses": "string",
+          "modes": "string",
+          "network": "string",
+          "reservedIpRange": "string"
+        },
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "performanceConfig": {
+          "fixedIops": {
+            "maxIops": "string"
+          },
+          "iopsPerTb": {
+            "maxIopsPerTb": "string"
+          }
+        },
+        "performanceLimits": {
+          "maxIops": "string",
+          "maxReadIops": "string",
+          "maxReadThroughputBps": "string",
+          "maxWriteIops": "string",
+          "maxWriteThroughputBps": "string"
+        },
+        "protocol": "string",
+        "replication": {
+          "replicas": {
+            "peerInstance": "string",
+            "state": "string"
+          },
+          "role": "string"
+        },
+        "resourceLabels": "object",
+        "satisfiesPzi": "boolean",
+        "satisfiesPzs": "boolean",
+        "schema": "object",
+        "selectors": "object",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "state": "string",
+        "tier": "string",
+        "view": {
+          "query": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": "object",
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

@@ -1,0 +1,95 @@
+[
+  {
+    "AWS::SageMaker::NotebookInstance": {
+      "configuration": {
+        "acceleratorTypes": "string",
+        "additionalCodeRepositories": "string",
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "creationTime": "string",
+        "defaultCodeRepository": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "directInternetAccess": "string",
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "failureReason": "string",
+        "firewallStatus": "object",
+        "instanceMetadataServiceConfiguration": {
+          "minimumInstanceMetadataServiceVersion": "string"
+        },
+        "instanceType": "string",
+        "kmsKeyId": "string",
+        "labels": "object",
+        "lastModifiedTime": "string",
+        "methodSettings": "object",
+        "networkInterfaceId": "string",
+        "notebookInstanceArn": "string",
+        "notebookInstanceLifecycleConfigName": "string",
+        "notebookInstanceName": "string",
+        "notebookInstanceStatus": "string",
+        "platformIdentifier": "string",
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "roleArn": "string",
+        "rootAccess": "string",
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "securityGroups": "string",
+        "selectors": {
+          "labels": "object"
+        },
+        "subnetId": "string",
+        "tags": "object",
+        "url": "string",
+        "variables": "object",
+        "volumeSizeInGB": "integer"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

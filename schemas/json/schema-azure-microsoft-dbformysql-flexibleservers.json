@@ -1,0 +1,109 @@
+[
+  {
+    "Microsoft.DBforMySQL/flexibleServers": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "id": "string",
+        "identity": {
+          "principalId": "string",
+          "tenantId": "string",
+          "type": "string",
+          "userAssignedIdentities": "object"
+        },
+        "location": "string",
+        "name": "string",
+        "properties": {
+          "administratorLogin": "string",
+          "agentPoolProfiles": "object",
+          "availabilityZone": "string",
+          "backup": {
+            "backupRetentionDays": "integer",
+            "earliestRestoreDate": "string",
+            "geoRedundantBackup": "string"
+          },
+          "dataEncryption": {
+            "geoBackupKeyUri": "string",
+            "geoBackupUserAssignedIdentityId": "string",
+            "primaryKeyUri": "string",
+            "primaryUserAssignedIdentityId": "string",
+            "type": "string"
+          },
+          "definition": {
+            "actions": "object"
+          },
+          "fullyQualifiedDomainName": "string",
+          "highAvailability": {
+            "mode": "string",
+            "standbyAvailabilityZone": "string",
+            "state": "string"
+          },
+          "maintenanceWindow": {
+            "customWindow": "string",
+            "dayOfWeek": "integer",
+            "startHour": "integer",
+            "startMinute": "integer"
+          },
+          "managedNetwork": "object",
+          "network": {
+            "delegatedSubnetResourceId": "string",
+            "privateDnsZoneResourceId": "string",
+            "publicNetworkAccess": "string"
+          },
+          "osProfile": "object",
+          "replicaCapacity": "integer",
+          "replicationRole": "string",
+          "sourceServerResourceId": "string",
+          "state": "string",
+          "storage": {
+            "autoGrow": "string",
+            "iops": "integer",
+            "storageSizeGB": "integer",
+            "storageSku": "string"
+          },
+          "storageProfile": "object",
+          "version": "string",
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          }
+        },
+        "resources": "object",
+        "sku": {
+          "name": "string",
+          "tier": "string"
+        },
+        "tags": "object",
+        "type": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "configurations": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

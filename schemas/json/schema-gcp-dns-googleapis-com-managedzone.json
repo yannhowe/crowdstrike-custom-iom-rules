@@ -1,0 +1,113 @@
+[
+  {
+    "dns.googleapis.com/ManagedZone": {
+      "configuration": {
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "cloudLoggingConfig": {
+          "enableLogging": "boolean"
+        },
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "creationTime": "string",
+        "deployment": {
+          "files": "object"
+        },
+        "description": "string",
+        "dnsName": "string",
+        "dnssecConfig": {
+          "defaultKeySpecs": {
+            "algorithm": "string",
+            "keyLength": "integer",
+            "keyType": "string"
+          },
+          "nonExistence": "string",
+          "state": "string"
+        },
+        "envVariables": "object",
+        "forwardingConfig": {
+          "targetNameServers": {
+            "forwardingPath": "string",
+            "ipv4Address": "string"
+          }
+        },
+        "id": "string",
+        "labelExtractors": "object",
+        "labels": "object",
+        "maintenancePolicy": "object",
+        "metadata": {
+          "annotations": "object"
+        },
+        "name": "string",
+        "nameServerSet": "string",
+        "nameServers": "string",
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "peeringConfig": {
+          "targetNetwork": {
+            "deactivateTime": "string",
+            "networkUrl": "string"
+          }
+        },
+        "privateVisibilityConfig": {
+          "gkeClusters": {
+            "gkeClusterName": "string"
+          },
+          "networks": {
+            "networkUrl": "string"
+          }
+        },
+        "resourceLabels": "object",
+        "reverseLookupConfig": "object",
+        "schema": "object",
+        "selectors": "object",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "serviceDirectoryConfig": {
+          "namespace": {
+            "deletionTime": "string",
+            "namespaceUrl": "string"
+          }
+        },
+        "view": {
+          "query": "string"
+        },
+        "visibility": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": "object",
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

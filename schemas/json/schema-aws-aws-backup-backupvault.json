@@ -1,0 +1,93 @@
+[
+  {
+    "AWS::Backup::BackupVault": {
+      "configuration": {
+        "backupVaultArn": "string",
+        "backupVaultName": "string",
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "creationDate": "string",
+        "creatorRequestId": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "encryptionKeyArn": "string",
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "labels": "object",
+        "lockDate": "string",
+        "locked": "boolean",
+        "maxRetentionDays": "integer",
+        "methodSettings": "object",
+        "minRetentionDays": "integer",
+        "numberOfRecoveryPoints": "integer",
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "tags": "object",
+        "variables": "object",
+        "vaultType": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "backupVaultAccessPolicy": {
+          "backupVaultArn": "string",
+          "backupVaultName": "string",
+          "policy": "string"
+        },
+        "backupVaultNotifications": {
+          "backupVaultArn": "string",
+          "backupVaultEvents": "string",
+          "backupVaultName": "string",
+          "snsTopicArn": "string"
+        },
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

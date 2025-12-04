@@ -1,0 +1,403 @@
+[
+  {
+    "bigquery.googleapis.com/Table": {
+      "configuration": {
+        "biglakeConfiguration": {
+          "connectionId": "string",
+          "fileFormat": "string",
+          "storageUri": "string",
+          "tableFormat": "string"
+        },
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "cloneDefinition": {
+          "baseTableReference": {
+            "datasetId": "string",
+            "projectId": "string",
+            "tableId": "string"
+          },
+          "cloneTime": "string"
+        },
+        "clustering": {
+          "fields": "string"
+        },
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "creationTime": "string",
+        "defaultCollation": "string",
+        "defaultRoundingMode": "string",
+        "deployment": {
+          "files": "object"
+        },
+        "description": "string",
+        "encryptionConfiguration": {
+          "kmsKeyName": "string"
+        },
+        "envVariables": "object",
+        "etag": "string",
+        "expirationTime": "string",
+        "externalCatalogTableOptions": {
+          "connectionId": "string",
+          "parameters": {
+            "DO_NOT_UPDATE_STATS": "string",
+            "EXTERNAL": "string",
+            "bq_connection": "string",
+            "bq_table": "string",
+            "compression": "string",
+            "created-at": "string",
+            "current-schema": "string",
+            "current-snapshot-id": "string",
+            "current-snapshot-summary": "string",
+            "current-snapshot-timestamp-ms": "string",
+            "default-partition-spec": "string",
+            "engine": {
+              "hive": {
+                "enabled": "string"
+              }
+            },
+            "external": "string",
+            "format": "string",
+            "history": {
+              "expire": {
+                "max-snapshot-age-ms": "string",
+                "min-snapshots-to-keep": "string"
+              }
+            },
+            "metadata_location": "string",
+            "numFiles": "string",
+            "numRows": "string",
+            "option": {
+              "compression": "string",
+              "format": "string",
+              "uris": "string"
+            },
+            "owner": "string",
+            "previous_metadata_location": "string",
+            "primary-keys": "string",
+            "schema": {
+              "name-mapping": {
+                "default": "string"
+              }
+            },
+            "snapshot-count": "string",
+            "storage_handler": "string",
+            "table_type": "string",
+            "totalSize": "string",
+            "transient_lastDdlTime": "string",
+            "uris": "string",
+            "uuid": "string",
+            "write": {
+              "format": {
+                "default": "string"
+              },
+              "metadata": {
+                "clustering-columns": "string",
+                "delete-after-commit": {
+                  "enabled": "string"
+                },
+                "previous-versions-max": "string",
+                "uuid-columns": "string"
+              },
+              "orc": {
+                "compression-codec": "string"
+              },
+              "parquet": {
+                "compression-codec": "string",
+                "compression-level": "string"
+              },
+              "target-file-size-bytes": "string",
+              "upsert": {
+                "enabled": "string"
+              },
+              "wap": {
+                "enabled": "string"
+              }
+            }
+          },
+          "storageDescriptor": {
+            "inputFormat": "string",
+            "locationUri": "string",
+            "outputFormat": "string",
+            "serdeInfo": {
+              "serializationLibrary": "string"
+            }
+          }
+        },
+        "externalDataConfiguration": {
+          "autodetect": "boolean",
+          "avroOptions": {
+            "useAvroLogicalTypes": "boolean"
+          },
+          "bigtableOptions": {
+            "columnFamilies": {
+              "columns": {
+                "encoding": "string",
+                "fieldName": "string",
+                "onlyReadLatest": "boolean",
+                "qualifierString": "string",
+                "type": "string"
+              },
+              "encoding": "string",
+              "familyId": "string",
+              "onlyReadLatest": "boolean",
+              "type": "string"
+            },
+            "ignoreUnspecifiedColumnFamilies": "boolean",
+            "readRowkeyAsString": "boolean"
+          },
+          "compression": "string",
+          "connectionId": "string",
+          "csvOptions": {
+            "allowJaggedRows": "boolean",
+            "allowQuotedNewlines": "boolean",
+            "encoding": "string",
+            "fieldDelimiter": "string",
+            "nullMarker": "string",
+            "nullMarkers": "string",
+            "preserveAsciiControlCharacters": "boolean",
+            "quote": "string",
+            "skipLeadingRows": "string",
+            "sourceColumnMatch": "string"
+          },
+          "dateFormat": "string",
+          "datetimeFormat": "string",
+          "decimalTargetTypes": "string",
+          "fileSetSpecType": "string",
+          "googleSheetsOptions": {
+            "range": "string",
+            "skipLeadingRows": "string"
+          },
+          "hivePartitioningOptions": {
+            "fields": "string",
+            "mode": "string",
+            "requirePartitionFilter": "boolean",
+            "sourceUriPrefix": "string"
+          },
+          "ignoreUnknownValues": "boolean",
+          "jsonOptions": {
+            "encoding": "string"
+          },
+          "maxBadRecords": "integer",
+          "metadataCacheMode": "string",
+          "objectMetadata": "string",
+          "parquetOptions": {
+            "enableListInference": "boolean",
+            "enumAsString": "boolean"
+          },
+          "sourceFormat": "string",
+          "sourceUris": "string",
+          "timestampFormat": "string"
+        },
+        "friendlyName": "string",
+        "id": "string",
+        "kind": "string",
+        "labelExtractors": "object",
+        "labels": "object",
+        "location": "string",
+        "maintenancePolicy": "object",
+        "materializedView": {
+          "allowNonIncrementalDefinition": "boolean",
+          "enableRefresh": "boolean",
+          "query": "string",
+          "refreshIntervalMs": "string"
+        },
+        "materializedViewStatus": "object",
+        "maxStaleness": "string",
+        "metadata": {
+          "annotations": "object"
+        },
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "numActivePhysicalBytes": "string",
+        "numCurrentPhysicalBytes": "string",
+        "numLongTermPhysicalBytes": "string",
+        "numPartitions": "string",
+        "numTimeTravelPhysicalBytes": "string",
+        "numTotalPhysicalBytes": "string",
+        "partitionDefinition": {
+          "partitionedColumn": {
+            "field": "string"
+          }
+        },
+        "rangePartitioning": {
+          "field": "string",
+          "range": {
+            "end": "string",
+            "interval": "string",
+            "start": "string"
+          }
+        },
+        "requirePartitionFilter": "boolean",
+        "resourceLabels": "object",
+        "resourceTags": {
+          "117697270761/swarovski:data_access_allow": "string",
+          "117697270761/swarovski:data_access_deny": "string",
+          "500666905131/business_unit": "string",
+          "500666905131/env": "string",
+          "500666905131/product": "string",
+          "985654808871/business_classification_l1": "string",
+          "985654808871/business_classification_l2": "string",
+          "985654808871/business_classification_l3": "string",
+          "985654808871/critical_data_element": "string",
+          "985654808871/domain": "string",
+          "985654808871/function": "string",
+          "985654808871/personally_identifiable_information": "string",
+          "985654808871/process": "string",
+          "985654808871/region": "string",
+          "985654808871/row_level_security_identifier": "string",
+          "985654808871/security_classification": "string",
+          "985654808871/testpoctag": "string",
+          "985654808871/third_party_agreement_identifier": "string",
+          "data-prod-292614/table_protected_from_deletion": "string",
+          "data-qa-292614/table_protected_from_deletion": "string",
+          "geotab-restricted-gbq-test/gbq-sec": "string",
+          "grp-cec-kosmo-dev/data_sensitivity": "string",
+          "itg-btdpslt-gbl-ww-dv/domain-csa": "string",
+          "itg-btdpslt-gbl-ww-dv/domain-dvpk": "string",
+          "itg-btdpslt-gbl-ww-dv/domain-fin": "string",
+          "itg-btdpslt-gbl-ww-dv/domain-hr": "string",
+          "itg-btdpslt-gbl-ww-dv/domain-it": "string",
+          "itg-btdpslt-gbl-ww-dv/domain-mqehs": "string",
+          "itg-btdpslt-gbl-ww-dv/domain-pdd": "string",
+          "itg-btdpslt-gbl-ww-dv/domain-sc": "string",
+          "itg-btdpslt-gbl-ww-dv/domain-src": "string",
+          "itg-btdpslt-gbl-ww-dv/zone-amer": "string",
+          "itg-btdpslt-gbl-ww-dv/zone-apmena": "string",
+          "itg-btdpslt-gbl-ww-dv/zone-china": "string",
+          "itg-btdpslt-gbl-ww-dv/zone-eu": "string",
+          "itg-btdpslt-gbl-ww-np/domain-csa": "string",
+          "itg-btdpslt-gbl-ww-np/domain-dvpk": "string",
+          "itg-btdpslt-gbl-ww-np/domain-fin": "string",
+          "itg-btdpslt-gbl-ww-np/domain-hr": "string",
+          "itg-btdpslt-gbl-ww-np/domain-it": "string",
+          "itg-btdpslt-gbl-ww-np/domain-mqehs": "string",
+          "itg-btdpslt-gbl-ww-np/domain-pdd": "string",
+          "itg-btdpslt-gbl-ww-np/domain-sc": "string",
+          "itg-btdpslt-gbl-ww-np/domain-src": "string",
+          "itg-btdpslt-gbl-ww-pd/domain-csa": "string",
+          "itg-btdpslt-gbl-ww-pd/domain-dvpk": "string",
+          "itg-btdpslt-gbl-ww-pd/domain-fin": "string",
+          "itg-btdpslt-gbl-ww-pd/domain-hr": "string",
+          "itg-btdpslt-gbl-ww-pd/domain-it": "string",
+          "itg-btdpslt-gbl-ww-pd/domain-mqehs": "string",
+          "itg-btdpslt-gbl-ww-pd/domain-pdd": "string",
+          "itg-btdpslt-gbl-ww-pd/domain-sc": "string",
+          "itg-btdpslt-gbl-ww-pd/domain-src": "string",
+          "itg-btdpslt-gbl-ww-qa/domain-csa": "string",
+          "itg-btdpslt-gbl-ww-qa/domain-dvpk": "string",
+          "itg-btdpslt-gbl-ww-qa/domain-fin": "string",
+          "itg-btdpslt-gbl-ww-qa/domain-hr": "string",
+          "itg-btdpslt-gbl-ww-qa/domain-it": "string",
+          "itg-btdpslt-gbl-ww-qa/domain-mqehs": "string",
+          "itg-btdpslt-gbl-ww-qa/domain-pdd": "string",
+          "itg-btdpslt-gbl-ww-qa/domain-sc": "string",
+          "itg-btdpslt-gbl-ww-qa/domain-src": "string",
+          "kb-lake-dev-techcompute/Asset_Domain_Content_Biz": "string",
+          "kb-lake-dev-techcompute/Asset_Domain_Content_Dev": "string",
+          "kb-lake-dev-techcompute/Asset_Domain_User_Biz": "string",
+          "kb-lake-dev-techcompute/Asset_Domain_User_Dev": "string",
+          "kb-lake-prd-techcompute/Asset_Domain_Content_Biz": "string",
+          "kb-lake-uat-techcompute/Asset_Domain_Content_Biz": "string",
+          "sas-engenharia-analytics/nivel-de-sensibilidade": "string",
+          "ttc-scm-chatpoc-all-s-a001/Environment": "string",
+          "ttc-scm-chatpoc-all-s-a001/datatype": "string",
+          "ttc-sm-all-d-a002/dataclassification": "string",
+          "ttc-sm-all-d-a002/datalayer": "string",
+          "ttc-sm-all-d-a002/dataproduct": "string",
+          "ttc-sm-all-d-a002/subdomain": "string",
+          "ttc-ssdaa-d-a002-891b/column security": "string",
+          "ttc-ssdaa-d-a002-891b/dataclassificationtest": "string",
+          "ttc-ssdaa-d-a002-891b/dataproducttest": "string",
+          "ttc-ssdaa-d-a002-891b/layertest": "string",
+          "uk-dta-cloud-arch-sand/Architecture": "string",
+          "uk-dta-cloud-arch-sand/environment": "string"
+        },
+        "restrictions": {
+          "type": "string"
+        },
+        "schema": "object",
+        "selectors": "object",
+        "selfLink": "string",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "snapshotDefinition": {
+          "baseTableReference": {
+            "datasetId": "string",
+            "projectId": "string",
+            "tableId": "string"
+          },
+          "snapshotTime": "string"
+        },
+        "tableConstraints": {
+          "foreignKeys": {
+            "columnReferences": {
+              "referencedColumn": "string",
+              "referencingColumn": "string"
+            },
+            "name": "string",
+            "referencedTable": {
+              "datasetId": "string",
+              "projectId": "string",
+              "tableId": "string"
+            }
+          },
+          "primaryKey": "object"
+        },
+        "tableReference": {
+          "datasetId": "string",
+          "projectId": "string",
+          "tableId": "string"
+        },
+        "timePartitioning": {
+          "expirationMs": "string",
+          "field": "string",
+          "requirePartitionFilter": "boolean",
+          "type": "string"
+        },
+        "type": "string",
+        "view": {
+          "query": "string",
+          "useExplicitColumnNames": "boolean",
+          "useLegacySql": "boolean",
+          "userDefinedFunctionResources": {
+            "resourceUri": "string"
+          }
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": "object",
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

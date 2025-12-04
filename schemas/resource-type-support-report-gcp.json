@@ -1,0 +1,3315 @@
+{
+  "provider": "gcp",
+  "total_tested": 562,
+  "total_supported": 69,
+  "total_unsupported": 493,
+  "support_percentage": 12.277580071174377,
+  "supported_types": [
+    {
+      "resource_type": "aiplatform.googleapis.com/Dataset",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "aiplatform.googleapis.com/MetadataStore",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "aiplatform.googleapis.com/NotebookExecutionJob",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "aiplatform.googleapis.com/NotebookRuntime",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "aiplatform.googleapis.com/NotebookRuntimeTemplate",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "aiplatform.googleapis.com/PipelineJob",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "alloydb.googleapis.com/Backup",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "alloydb.googleapis.com/Cluster",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "apigateway.googleapis.com/Api",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "apigateway.googleapis.com/ApiConfig",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "apikeys.googleapis.com/Key",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "appengine.googleapis.com/Application",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "appengine.googleapis.com/Service",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "bigquery.googleapis.com/Dataset",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "bigquery.googleapis.com/Table",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "bigtableadmin.googleapis.com/Instance",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "bigtableadmin.googleapis.com/Table",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "cloudbuild.googleapis.com/BuildTrigger",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "clouddeploy.googleapis.com/DeliveryPipeline",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "cloudfunctions.googleapis.com/CloudFunction",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "cloudfunctions.googleapis.com/Function",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "cloudkms.googleapis.com/CryptoKey",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "cloudresourcemanager.googleapis.com/Folder",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "cloudresourcemanager.googleapis.com/Organization",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "cloudtasks.googleapis.com/Queue",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "compute.googleapis.com/BackendService",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "compute.googleapis.com/Firewall",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "compute.googleapis.com/FirewallPolicy",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "compute.googleapis.com/InstanceGroupManager",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "compute.googleapis.com/Network",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "compute.googleapis.com/Project",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "compute.googleapis.com/Route",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "compute.googleapis.com/Router",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "compute.googleapis.com/SecurityPolicy",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "compute.googleapis.com/Subnetwork",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "compute.googleapis.com/TargetHttpProxy",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "compute.googleapis.com/TargetHttpsProxy",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "compute.googleapis.com/TargetInstance",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "compute.googleapis.com/TargetSslProxy",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "compute.googleapis.com/TargetVpnGateway",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "container.googleapis.com/NodePool",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "dataplex.googleapis.com/Lake",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "dataproc.googleapis.com/Cluster",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "datastream.googleapis.com/Stream",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "essentialcontacts.googleapis.com/Contact",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "file.googleapis.com/Instance",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "firebase.googleapis.com/FirebaseProject",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "firestore.googleapis.com/Database",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "iam.googleapis.com/ServiceAccount",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "iam.googleapis.com/ServiceAccountKey",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "identitytoolkit.googleapis.com/Config",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "logging.googleapis.com/LogBucket",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "logging.googleapis.com/LogMetric",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "logging.googleapis.com/LogSink",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "memcache.googleapis.com/Instance",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "monitoring.googleapis.com/AlertPolicy",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "notebooks.googleapis.com/Instance",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "privateca.googleapis.com/Certificate",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "pubsub.googleapis.com/Snapshot",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "pubsub.googleapis.com/Subscription",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "pubsub.googleapis.com/Topic",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "redis.googleapis.com/Cluster",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "redis.googleapis.com/Instance",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "run.googleapis.com/Service",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "secretmanager.googleapis.com/Secret",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "serviceusage.googleapis.com/Service",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "spanner.googleapis.com/Instance",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "sqladmin.googleapis.com/Instance",
+      "provider": "gcp",
+      "schema_available": true
+    },
+    {
+      "resource_type": "storage.googleapis.com/Bucket",
+      "provider": "gcp",
+      "schema_available": true
+    }
+  ],
+  "unsupported_types": [
+    {
+      "resource_type": "accessapproval.googleapis.com/AccessApprovalSettings",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "accesscontextmanager.googleapis.com/AuthorizedOrgsDesc",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "admissionregistration.k8s.io/MutatingWebhookConfiguration",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "admissionregistration.k8s.io/ValidatingWebhookConfiguration",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "aiplatform.googleapis.com/BatchPredictionJob",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "aiplatform.googleapis.com/CustomJob",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "aiplatform.googleapis.com/DataLabelingJob",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "aiplatform.googleapis.com/Endpoint",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "aiplatform.googleapis.com/FeatureGroup",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "aiplatform.googleapis.com/FeatureOnlineStore",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "aiplatform.googleapis.com/Featurestore",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "aiplatform.googleapis.com/HyperparameterTuningJob",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "aiplatform.googleapis.com/Index",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "aiplatform.googleapis.com/IndexEndpoint",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "aiplatform.googleapis.com/Model",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "aiplatform.googleapis.com/ModelDeploymentMonitoringJob",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "aiplatform.googleapis.com/NasJob",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "aiplatform.googleapis.com/ReasoningEngine",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "aiplatform.googleapis.com/SpecialistPool",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "aiplatform.googleapis.com/Tensorboard",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "aiplatform.googleapis.com/TrainingPipeline",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "aiplatform.googleapis.com/TuningJob",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "alloydb.googleapis.com/Instance",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "analyticshub.googleapis.com/DataExchange",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "analyticshub.googleapis.com/Listing",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "anthos.googleapis.com/ConnectedCluster",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "apigateway.googleapis.com/Gateway",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "apigee.googleapis.com/Instance",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "apigee.googleapis.com/Organization",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "apihub.googleapis.com/ApiHubInstance",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "appengine.googleapis.com/Version",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "apphub.googleapis.com/Application",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "apphub.googleapis.com/Service",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "apphub.googleapis.com/ServiceProjectAttachment",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "apphub.googleapis.com/Workload",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "apps.k8s.io/DaemonSet",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "apps.k8s.io/Deployment",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "apps.k8s.io/ReplicaSet",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "apps.k8s.io/StatefulSet",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "artifactregistry.googleapis.com/DockerImage",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "artifactregistry.googleapis.com/MavenArtifact",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "artifactregistry.googleapis.com/NpmPackage",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "artifactregistry.googleapis.com/PythonPackage",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "artifactregistry.googleapis.com/Repository",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "artifactregistry.googleapis.com/Rule",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "assuredworkloads.googleapis.com/Workload",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "autoscaling.k8s.io/HorizontalPodAutoscaler",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "backupdr.googleapis.com/Backup",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "backupdr.googleapis.com/BackupPlan",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "backupdr.googleapis.com/BackupPlanAssociation",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "backupdr.googleapis.com/BackupVault",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "backupdr.googleapis.com/DataSource",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "backupdr.googleapis.com/DataSourceReference",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "backupdr.googleapis.com/ManagementServer",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "batch.googleapis.com/Job",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "batch.k8s.io/CronJob",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "batch.k8s.io/Job",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "beyondcorp.googleapis.com/AppConnection",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "beyondcorp.googleapis.com/AppConnector",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "beyondcorp.googleapis.com/AppGateway",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "beyondcorp.googleapis.com/ClientConnectorService",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "beyondcorp.googleapis.com/ClientGateway",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "bigquery.googleapis.com/Model",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "bigquerydatatransfer.googleapis.com/TransferConfig",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "bigquerymigration.googleapis.com/MigrationWorkflow",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "binaryauthorization.googleapis.com/Attestor",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "binaryauthorization.googleapis.com/PlatformPolicy",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "binaryauthorization.googleapis.com/Policy",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "bigtableadmin.googleapis.com/AppProfile",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "bigtableadmin.googleapis.com/Backup",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "bigtableadmin.googleapis.com/Cluster",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "blockchainnodeengine.googleapis.com/BlockchainNode",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "certificatemanager.googleapis.com/Certificate",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "certificatemanager.googleapis.com/CertificateIssuanceConfig",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "certificatemanager.googleapis.com/CertificateMap",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "certificatemanager.googleapis.com/CertificateMapEntry",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "certificatemanager.googleapis.com/DnsAuthorization",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "certificatemanager.googleapis.com/TrustConfig",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "cloudasset.googleapis.com/Feed",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "cloudbilling.googleapis.com/BillingAccount",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "cloudbilling.googleapis.com/ProjectBillingInfo",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "cloudbuild.googleapis.com/BitbucketServerConfig",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "cloudbuild.googleapis.com/Build",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "cloudbuild.googleapis.com/Connection",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "cloudbuild.googleapis.com/GithubEnterpriseConfig",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "cloudbuild.googleapis.com/GlobalTriggerSettings",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "cloudbuild.googleapis.com/Repository",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "cloudbuild.googleapis.com/WorkerPool",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "clouddeploy.googleapis.com/Automation",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "clouddeploy.googleapis.com/AutomationRun",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "clouddeploy.googleapis.com/CustomTargetType",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "clouddeploy.googleapis.com/DeployPolicy",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "clouddeploy.googleapis.com/JobRun",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "clouddeploy.googleapis.com/Release",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "clouddeploy.googleapis.com/Rollout",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "clouddeploy.googleapis.com/Target",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "cloudkms.googleapis.com/AutokeyConfig",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "cloudkms.googleapis.com/CryptoKeyVersion",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "cloudkms.googleapis.com/EkmConfig",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "cloudkms.googleapis.com/EkmConnection",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "cloudkms.googleapis.com/ImportJob",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "cloudkms.googleapis.com/KeyHandle",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "cloudkms.googleapis.com/KeyRing",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "cloudquotas.googleapis.com/QuotaPreference",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "cloudresourcemanager.googleapis.com/Lien",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "cloudresourcemanager.googleapis.com/Project",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "cloudresourcemanager.googleapis.com/TagBinding",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "cloudresourcemanager.googleapis.com/TagKey",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "cloudresourcemanager.googleapis.com/TagValue",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "composer.googleapis.com/Environment",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/Address",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/Autoscaler",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/BackendBucket",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/Commitment",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/Disk",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/ExternalVpnGateway",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/ForwardingRule",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/GlobalAddress",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/GlobalForwardingRule",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/HealthCheck",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/HttpHealthCheck",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/HttpsHealthCheck",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/Image",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/Instance",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/InstanceGroup",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/InstanceSettings",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/InstanceTemplate",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/InstantSnapshot",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/Interconnect",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/InterconnectAttachment",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/License",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/MachineImage",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/NetworkAttachment",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/NetworkEdgeSecurityService",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/NetworkEndpointGroup",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/NodeGroup",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/NodeTemplate",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/PacketMirroring",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/PublicDelegatedPrefix",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/RegionBackendService",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/RegionDisk",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/Reservation",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/ResourcePolicy",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/ServiceAttachment",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/Snapshot",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/SslCertificate",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/SslPolicy",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/StoragePool",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/TargetGrpcProxy",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/TargetPool",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/TargetTcpProxy",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/UrlMap",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/VpnGateway",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "compute.googleapis.com/VpnTunnel",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "config.googleapis.com/Deployment",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "config.googleapis.com/Preview",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "connectors.googleapis.com/Connection",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "connectors.googleapis.com/EndpointAttachment",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "connectors.googleapis.com/EventSubscription",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "connectors.googleapis.com/ManagedZone",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "connectors.googleapis.com/RegionalSettings",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "connectors.googleapis.com/Settings",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "contactcenterinsights.googleapis.com/EncryptionSpec",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "contactcenterinsights.googleapis.com/IssueModel",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "contactcenterinsights.googleapis.com/PhraseMatcher",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "contactcenterinsights.googleapis.com/View",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "container.googleapis.com/Cluster",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "containerregistry.googleapis.com/Image",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "datafusion.googleapis.com/DnsPeering",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "datafusion.googleapis.com/Instance",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "datalineage.googleapis.com/Process",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "datamigration.googleapis.com/ConnectionProfile",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "datamigration.googleapis.com/ConversionWorkspace",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "datamigration.googleapis.com/MigrationJob",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "datamigration.googleapis.com/PrivateConnection",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "dataplex.googleapis.com/AspectType",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "dataplex.googleapis.com/Asset",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "dataplex.googleapis.com/DataScan",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "dataplex.googleapis.com/EncryptionConfig",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "dataplex.googleapis.com/EntryGroup",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "dataplex.googleapis.com/EntryType",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "dataplex.googleapis.com/Environment",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "dataplex.googleapis.com/Glossary",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "dataplex.googleapis.com/MetadataJob",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "dataplex.googleapis.com/Task",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "dataplex.googleapis.com/Zone",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "dataproc.googleapis.com/AutoscalingPolicy",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "dataproc.googleapis.com/Batch",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "dataproc.googleapis.com/Job",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "dataproc.googleapis.com/Session",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "dataproc.googleapis.com/WorkflowTemplate",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "datastream.googleapis.com/ConnectionProfile",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "datastream.googleapis.com/PrivateConnection",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "developerconnect.googleapis.com/Connection",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "developerconnect.googleapis.com/GitRepositoryLink",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "dialogflow.googleapis.com/Agent",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "dialogflow.googleapis.com/ConversationProfile",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "dialogflow.googleapis.com/KnowledgeBase",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "dialogflow.googleapis.com/LocationSettings",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "discoveryengine.googleapis.com/Collection",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "discoveryengine.googleapis.com/DataStore",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "discoveryengine.googleapis.com/Engine",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "discoveryengine.googleapis.com/Notebook",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "dlp.googleapis.com/DeidentifyTemplate",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "dlp.googleapis.com/DiscoveryConfig",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "dlp.googleapis.com/DlpJob",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "dlp.googleapis.com/InspectTemplate",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "dlp.googleapis.com/JobTrigger",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "dlp.googleapis.com/StoredInfoType",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "dns.googleapis.com/ManagedZone",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "dns.googleapis.com/Policy",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "dns.googleapis.com/ResourceRecordSet",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "dns.googleapis.com/ResponsePolicy",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "dns.googleapis.com/ResponsePolicyRule",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "documentai.googleapis.com/HumanReviewConfig",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "documentai.googleapis.com/LabelerPool",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "documentai.googleapis.com/Processor",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "documentai.googleapis.com/ProcessorVersion",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "domains.googleapis.com/Registration",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "eventarc.googleapis.com/Channel",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "eventarc.googleapis.com/ChannelConnection",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "eventarc.googleapis.com/Enrollment",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "eventarc.googleapis.com/GoogleApiSource",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "eventarc.googleapis.com/GoogleChannelConfig",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "eventarc.googleapis.com/MessageBus",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "eventarc.googleapis.com/Pipeline",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "eventarc.googleapis.com/Trigger",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "extensions.k8s.io/DaemonSet",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "extensions.k8s.io/Ingress",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "file.googleapis.com/Backup",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "file.googleapis.com/Snapshot",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "financialservices.googleapis.com/BacktestResult",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "financialservices.googleapis.com/Dataset",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "financialservices.googleapis.com/EngineConfig",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "financialservices.googleapis.com/Instance",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "financialservices.googleapis.com/Model",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "financialservices.googleapis.com/PredictionResult",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "firebase.googleapis.com/FirebaseAppInfo",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "firebasedataconnect.googleapis.com/Connector",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "firebasedataconnect.googleapis.com/Schema",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "firebasedataconnect.googleapis.com/Service",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "firebaserules.googleapis.com/Release",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "firebaserules.googleapis.com/Ruleset",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "firestore.googleapis.com/Backup",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "gateway.networking.k8s.io/Gateway",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "gateway.networking.k8s.io/GatewayClass",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "gateway.networking.k8s.io/HTTPRoute",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "gateway.networking.k8s.io/ReferenceGrant",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "gkebackup.googleapis.com/Backup",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "gkebackup.googleapis.com/BackupPlan",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "gkebackup.googleapis.com/Restore",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "gkebackup.googleapis.com/RestorePlan",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "gkebackup.googleapis.com/VolumeBackup",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "gkebackup.googleapis.com/VolumeRestore",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "gkehub.googleapis.com/Feature",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "gkehub.googleapis.com/Fleet",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "gkehub.googleapis.com/Membership",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "gkehub.googleapis.com/MembershipBinding",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "gkehub.googleapis.com/MembershipFeature",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "gkehub.googleapis.com/Namespace",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "gkehub.googleapis.com/RBACRoleBinding",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "gkehub.googleapis.com/Scope",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "gkemulticloud.googleapis.com/AttachedCluster",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "gkemulticloud.googleapis.com/AwsCluster",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "gkemulticloud.googleapis.com/AwsNodePool",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "gkemulticloud.googleapis.com/AzureClient",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "gkemulticloud.googleapis.com/AzureCluster",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "gkemulticloud.googleapis.com/AzureNodePool",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "gkeonprem.googleapis.com/BareMetalAdminCluster",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "gkeonprem.googleapis.com/BareMetalCluster",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "gkeonprem.googleapis.com/BareMetalNodePool",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "gkeonprem.googleapis.com/VmwareAdminCluster",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "gkeonprem.googleapis.com/VmwareCluster",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "gkeonprem.googleapis.com/VmwareNodePool",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "healthcare.googleapis.com/ConsentStore",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "healthcare.googleapis.com/Dataset",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "healthcare.googleapis.com/DicomStore",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "healthcare.googleapis.com/FhirStore",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "healthcare.googleapis.com/Hl7V2Store",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "iam.googleapis.com/OauthClient",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "iam.googleapis.com/OauthClientCredential",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "iam.googleapis.com/PolicyV2",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "iam.googleapis.com/Role",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "iam.googleapis.com/WorkforcePool",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "iam.googleapis.com/WorkforcePoolProvider",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "iam.googleapis.com/WorkforcePoolProviderKey",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "iam.googleapis.com/WorkloadIdentityPool",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "iam.googleapis.com/WorkloadIdentityPoolProvider",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "iam.googleapis.com/WorkloadIdentityPoolProviderKey",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "identity.accesscontextmanager.googleapis.com/AccessLevel",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "identity.accesscontextmanager.googleapis.com/AccessPolicy",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "identity.accesscontextmanager.googleapis.com/ServicePerimeter",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "identitytoolkit.googleapis.com/DefaultSupportedIdpConfig",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "identitytoolkit.googleapis.com/InboundSamlConfig",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "identitytoolkit.googleapis.com/OauthIdpConfig",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "identitytoolkit.googleapis.com/Tenant",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "ids.googleapis.com/Endpoint",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "integrations.googleapis.com/AuthConfig",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "integrations.googleapis.com/Certificate",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "integrations.googleapis.com/Execution",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "integrations.googleapis.com/Integration",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "integrations.googleapis.com/IntegrationVersion",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "integrations.googleapis.com/SfdcChannel",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "integrations.googleapis.com/SfdcInstance",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "integrations.googleapis.com/Suspension",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "k8s.io/Endpoints",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "k8s.io/Namespace",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "k8s.io/Node",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "k8s.io/PersistentVolume",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "k8s.io/PersistentVolumeClaim",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "k8s.io/Pod",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "k8s.io/PodTemplate",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "k8s.io/ReplicationController",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "k8s.io/ResourceQuota",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "k8s.io/Secret",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "k8s.io/Service",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "k8s.io/ServiceAccount",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "livestream.googleapis.com/Asset",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "livestream.googleapis.com/Channel",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "livestream.googleapis.com/Input",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "livestream.googleapis.com/Pool",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "logging.googleapis.com/Link",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "logging.googleapis.com/LogView",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "logging.googleapis.com/RecentQuery",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "logging.googleapis.com/SavedQuery",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "logging.googleapis.com/Settings",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "looker.googleapis.com/Backup",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "looker.googleapis.com/Instance",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "lustre.googleapis.com/Instance",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "managedidentities.googleapis.com/Domain",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "managedkafka.googleapis.com/Cluster",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "managedkafka.googleapis.com/ConnectCluster",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "memorystore.googleapis.com/Instance",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "metastore.googleapis.com/Backup",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "metastore.googleapis.com/Federation",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "metastore.googleapis.com/MetadataImport",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "metastore.googleapis.com/Service",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "monitoring.googleapis.com/Dashboard",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "monitoring.googleapis.com/NotificationChannel",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "monitoring.googleapis.com/Snooze",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "monitoring.googleapis.com/UptimeCheckConfig",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "netapp.googleapis.com/ActiveDirectory",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "netapp.googleapis.com/Backup",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "netapp.googleapis.com/BackupPolicy",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "netapp.googleapis.com/BackupVault",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "netapp.googleapis.com/KmsConfig",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "netapp.googleapis.com/Replication",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "netapp.googleapis.com/Snapshot",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "netapp.googleapis.com/StoragePool",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "netapp.googleapis.com/Volume",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networkconnectivity.googleapis.com/Group",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networkconnectivity.googleapis.com/Hub",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networkconnectivity.googleapis.com/HubRoute",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networkconnectivity.googleapis.com/PolicyBasedRoute",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networkconnectivity.googleapis.com/RouteTable",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networkconnectivity.googleapis.com/Spoke",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networkmanagement.googleapis.com/ConnectivityTest",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networksecurity.googleapis.com/AddressGroup",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networksecurity.googleapis.com/AuthorizationPolicy",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networksecurity.googleapis.com/AuthzPolicy",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networksecurity.googleapis.com/ClientTlsPolicy",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networksecurity.googleapis.com/FirewallEndpoint",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networksecurity.googleapis.com/FirewallEndpointAssociation",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networksecurity.googleapis.com/GatewaySecurityPolicy",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networksecurity.googleapis.com/GatewaySecurityPolicyRule",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networksecurity.googleapis.com/MirroringDeployment",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networksecurity.googleapis.com/MirroringDeploymentGroup",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networksecurity.googleapis.com/MirroringEndpointGroup",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networksecurity.googleapis.com/MirroringEndpointGroupAssociation",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networksecurity.googleapis.com/SecurityProfile",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networksecurity.googleapis.com/SecurityProfileGroup",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networksecurity.googleapis.com/ServerTlsPolicy",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networksecurity.googleapis.com/TlsInspectionPolicy",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networksecurity.googleapis.com/UrlList",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networkservices.googleapis.com/AuthzExtension",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networkservices.googleapis.com/EdgeCacheKeyset",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networkservices.googleapis.com/EdgeCacheOrigin",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networkservices.googleapis.com/EdgeCacheService",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networkservices.googleapis.com/EndpointPolicy",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networkservices.googleapis.com/Gateway",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networkservices.googleapis.com/GrpcRoute",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networkservices.googleapis.com/HttpRoute",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networkservices.googleapis.com/LbRouteExtension",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networkservices.googleapis.com/LbTrafficExtension",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networkservices.googleapis.com/Mesh",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networkservices.googleapis.com/ServiceBinding",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networkservices.googleapis.com/ServiceLbPolicy",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networkservices.googleapis.com/TcpRoute",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networkservices.googleapis.com/TlsRoute",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networkservices.googleapis.com/WasmPlugin",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networkservices.googleapis.com/WasmPluginVersion",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networking.k8s.io/Ingress",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "networking.k8s.io/NetworkPolicy",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "oracledatabase.googleapis.com/AutonomousDatabase",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "oracledatabase.googleapis.com/CloudExadataInfrastructure",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "oracledatabase.googleapis.com/CloudVmCluster",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "orgpolicy.googleapis.com/CustomConstraint",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "orgpolicy.googleapis.com/Policy",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "osconfig.googleapis.com/OSPolicyAssignment",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "osconfig.googleapis.com/OSPolicyAssignmentReport",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "osconfig.googleapis.com/PatchDeployment",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "osconfig.googleapis.com/VulnerabilityReport",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "parametermanager.googleapis.com/Parameter",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "parametermanager.googleapis.com/ParameterVersion",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "policy.k8s.io/PodDisruptionBudget",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "privateca.googleapis.com/CaPool",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "privateca.googleapis.com/CertificateAuthority",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "privateca.googleapis.com/CertificateRevocationList",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "privateca.googleapis.com/CertificateTemplate",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "privilegedaccessmanager.googleapis.com/Grant",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "pubsub.googleapis.com/Schema",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "rbac.authorization.k8s.io/ClusterRole",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "rbac.authorization.k8s.io/ClusterRoleBinding",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "rbac.authorization.k8s.io/Role",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "rbac.authorization.k8s.io/RoleBinding",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "recaptchaenterprise.googleapis.com/FirewallPolicy",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "recaptchaenterprise.googleapis.com/Key",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "retail.googleapis.com/Catalog",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "run.googleapis.com/DomainMapping",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "run.googleapis.com/Execution",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "run.googleapis.com/Job",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "run.googleapis.com/Revision",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "secretmanager.googleapis.com/SecretVersion",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "securesourcemanager.googleapis.com/Instance",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "securitycenter.googleapis.com/BigQueryExport",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "securitycenter.googleapis.com/ContainerThreatDetectionSettings",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "securitycenter.googleapis.com/EventThreatDetectionSettings",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "securitycenter.googleapis.com/MuteConfig",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "securitycenter.googleapis.com/NotificationConfig",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "securitycenter.googleapis.com/ResourceValueConfig",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "securitycenter.googleapis.com/SecurityHealthAnalyticsSettings",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "securitycenter.googleapis.com/VirtualMachineThreatDetectionSettings",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "securitycenter.googleapis.com/WebSecurityScannerSettings",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "securitycentermanagement.googleapis.com/EventThreatDetectionCustomModule",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "securitycentermanagement.googleapis.com/SecurityCenterService",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "securitycentermanagement.googleapis.com/SecurityHealthAnalyticsCustomModule",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "securityposture.googleapis.com/Posture",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "securityposture.googleapis.com/PostureDeployment",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "servicedirectory.googleapis.com/Endpoint",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "servicedirectory.googleapis.com/Namespace",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "servicedirectory.googleapis.com/Service",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "servicemanagement.googleapis.com/ManagedService",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "servicemanagement.googleapis.com/Service",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "servicenetworking.googleapis.com/Connection",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "spanner.googleapis.com/Backup",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "spanner.googleapis.com/Database",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "spanner.googleapis.com/InstanceConfig",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "spanner.googleapis.com/InstancePartition",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "speakerid.googleapis.com/Phrase",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "speakerid.googleapis.com/Settings",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "speakerid.googleapis.com/Speaker",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "speech.googleapis.com/Config",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "speech.googleapis.com/CustomClass",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "speech.googleapis.com/Endpoint",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "speech.googleapis.com/Model",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "speech.googleapis.com/PhraseSet",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "speech.googleapis.com/Recognizer",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "sqladmin.googleapis.com/Backup",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "sqladmin.googleapis.com/BackupRun",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "storageinsights.googleapis.com/ReportConfig",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "storageinsights.googleapis.com/ReportDetail",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "storage.k8s.io/StorageClass",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "storagetransfer.googleapis.com/TransferJob",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "tpu.googleapis.com/Node",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "transcoder.googleapis.com/Job",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "transcoder.googleapis.com/JobTemplate",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "videostitcher.googleapis.com/CdnKey",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "videostitcher.googleapis.com/LiveConfig",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "videostitcher.googleapis.com/Slate",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "videostitcher.googleapis.com/VodConfig",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "vmmigration.googleapis.com/CloneJob",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "vmmigration.googleapis.com/CutoverJob",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "vmmigration.googleapis.com/DatacenterConnector",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "vmmigration.googleapis.com/Group",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "vmmigration.googleapis.com/ImageImport",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "vmmigration.googleapis.com/MigratingVm",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "vmmigration.googleapis.com/Source",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "vmmigration.googleapis.com/TargetProject",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "vmmigration.googleapis.com/UtilizationReport",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "vmwareengine.googleapis.com/Cluster",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "vmwareengine.googleapis.com/ExternalAccessRule",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "vmwareengine.googleapis.com/ExternalAddress",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "vmwareengine.googleapis.com/NetworkPeering",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "vmwareengine.googleapis.com/NetworkPolicy",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "vmwareengine.googleapis.com/PrivateCloud",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "vmwareengine.googleapis.com/PrivateConnection",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "vmwareengine.googleapis.com/VmwareEngineNetwork",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "vpcaccess.googleapis.com/Connector",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "websecurityscanner.googleapis.com/ScanConfig",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "workflows.googleapis.com/Workflow",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "workstations.googleapis.com/Workstation",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "workstations.googleapis.com/WorkstationCluster",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    },
+    {
+      "resource_type": "workstations.googleapis.com/WorkstationConfig",
+      "provider": "gcp",
+      "schema_available": false,
+      "error": "No schema returned"
+    }
+  ],
+  "timestamp": "2025-12-03T06:21:00Z"
+}

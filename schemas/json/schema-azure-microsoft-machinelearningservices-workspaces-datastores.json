@@ -1,0 +1,107 @@
+[
+  {
+    "Microsoft.MachineLearningServices/workspaces/datastores": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "id": "string",
+        "identity": {
+          "userAssignedIdentities": "object"
+        },
+        "name": "string",
+        "properties": {
+          "accountName": "string",
+          "agentPoolProfiles": "object",
+          "artifact": {
+            "artifactName": "string",
+            "artifactType": "string"
+          },
+          "containerName": "string",
+          "credentials": {
+            "authorityUrl": "string",
+            "clientId": "string",
+            "credentialsType": "string",
+            "resourceUrl": "string",
+            "tenantId": "string"
+          },
+          "datastoreType": "string",
+          "definition": {
+            "actions": "object"
+          },
+          "description": "string",
+          "endpoint": "string",
+          "fileShareName": "string",
+          "filesystem": "string",
+          "isDefault": "boolean",
+          "managedNetwork": "object",
+          "oneLakeWorkspaceName": "string",
+          "osProfile": "object",
+          "properties": {
+            "IntellectualPropertyAccessMode": "string",
+            "IntellectualPropertyPublisher": "string"
+          },
+          "protocol": "string",
+          "resourceGroup": "string",
+          "serviceDataAccessAuthIdentity": "string",
+          "storageProfile": "object",
+          "storeName": "string",
+          "subscriptionId": "string",
+          "tags": {
+            "Department": "string",
+            "Docs": "string",
+            "Environment": "string",
+            "Owner": "string",
+            "Project": "string",
+            "Purpose": "string",
+            "Toolkit": "string",
+            "feed": "string",
+            "source": "string"
+          },
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          }
+        },
+        "resources": "object",
+        "systemData": {
+          "createdAt": "string",
+          "createdBy": "string",
+          "createdByType": "string",
+          "lastModifiedAt": "string",
+          "lastModifiedBy": "string",
+          "lastModifiedByType": "string"
+        },
+        "tags": "object",
+        "type": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "configurations": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

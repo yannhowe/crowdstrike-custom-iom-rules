@@ -1,0 +1,137 @@
+[
+  {
+    "AWS::ACM::Certificate": {
+      "configuration": {
+        "certificateArn": "string",
+        "certificateAuthorityArn": "string",
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "createdAt": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "domainName": "string",
+        "domainValidationOptions": {
+          "domainName": "string",
+          "httpRedirect": {
+            "redirectFrom": "string",
+            "redirectTo": "string"
+          },
+          "resourceRecord": {
+            "name": "string",
+            "type": "string",
+            "value": "string"
+          },
+          "validationDomain": "string",
+          "validationEmails": "string",
+          "validationMethod": "string",
+          "validationStatus": "string"
+        },
+        "environment": {
+          "variables": "object"
+        },
+        "extendedKeyUsages": {
+          "name": "string",
+          "oid": "string"
+        },
+        "externalTableDefinition": "object",
+        "failureReason": "string",
+        "firewallStatus": "object",
+        "importedAt": "string",
+        "inUseBy": "string",
+        "issuedAt": "string",
+        "issuer": "string",
+        "keyAlgorithm": "string",
+        "keyUsages": {
+          "name": "string"
+        },
+        "labels": "object",
+        "managedBy": "string",
+        "methodSettings": "object",
+        "notAfter": "string",
+        "notBefore": "string",
+        "options": {
+          "certificateTransparencyLoggingPreference": "string",
+          "export": "string"
+        },
+        "policy": "object",
+        "renewalEligibility": "string",
+        "renewalSummary": {
+          "domainValidationOptions": {
+            "domainName": "string",
+            "resourceRecord": {
+              "name": "string",
+              "type": "string",
+              "value": "string"
+            },
+            "validationDomain": "string",
+            "validationEmails": "string",
+            "validationMethod": "string",
+            "validationStatus": "string"
+          },
+          "renewalStatus": "string",
+          "renewalStatusReason": "string",
+          "updatedAt": "string"
+        },
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "revocationReason": "string",
+        "revokedAt": "string",
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "serial": "string",
+        "signatureAlgorithm": "string",
+        "status": "string",
+        "subject": "string",
+        "subjectAlternativeNames": "string",
+        "tags": "object",
+        "type": "string",
+        "variables": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

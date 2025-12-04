@@ -1,0 +1,442 @@
+[
+  {
+    "AWS::WAFv2::RuleGroup": {
+      "configuration": {
+        "arn": "string",
+        "availableLabels": {
+          "name": "string"
+        },
+        "capacity": "integer",
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "consumedLabels": {
+          "name": "string"
+        },
+        "containerDefinitions": "object",
+        "customResponseBodies": {
+          "403-forbidden": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "404-Not-Found": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "404-default-apache-page": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "404-not-found": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "429-many": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "60011": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "AccessDenied": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "AccessDenied-HTML": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "BLOCKED_REFERER": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "Block_Response": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "BlockedResponse": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "BlockedbyWaf": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "CustomResponseWAF": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "CustomResponse_RateControl": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "DC-WAF-Response": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "Deny_Page": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "Deny_Page_1": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "Error-page": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "FileType_BlockingPage": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "Forbidden": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "GeoBlock_response": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "HTMLAccessDeniedbyIP": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "IPRestriction": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "IPrestriction": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "Maintenace-message": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "Maintenance-page-for-non-prod": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "No-bigger-than-8kb": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "PROD-USE1-QuickCharge-WAF-01-Blocked-Requests": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "QC-WAF-Pilot-Blocked-Request": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "RATE_LIMIT_DEFAULT": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "RATE_LIMIT_THROTTLED": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "SQLi_blocked": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "SUSPICIOUS_IP": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "WAF_block_response": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "access-denied-error": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "access_denied": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "access_denied_prd": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "access_denied_response": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "accessdenied-response": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "anex_denied_html_prd": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "anonymous-block-response": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "anz-source-restriction": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "apply-rate-exceeded": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "block-blacklist": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "block-geoip": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "block-response": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "block_all_response": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "block_zscaler_response": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "blocked_html": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "blocked_request_custom_response": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "blocked_user_agent_ewt": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "cs-prompt": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "custom_response": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "emptyjson": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "error": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "error2": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "http-403-forbidden": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "http-405-method-not-allowed": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "ip-denied-error": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "ip-resctriction": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "ip-restriction": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "ip-restriction-response": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "ip-restrition-responsec": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "ip2": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "iprestriction": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "last_rule_block": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "maintain": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "maintainImg": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "maintenance": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "maintenance-reponse": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "method_not_allowed": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "nonretail_blocked_known_bot_data_center_request_custom_response": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "nonretail_blocked_request_custom_response": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "nonretail_blocked_unsupported_browser_custom_response": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "paymentcenter_blocked_request_custom_response": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "rate-limit": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "rate-limit-response": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "rate_limit_exceeded": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "site-maintenance": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "template": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "test": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "test-rule1": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "test-too-many-default-requests": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "test-too-many-requests": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "too-many-requests": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "waf_block": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "xss-document-cookie-response": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "xss_document_cookie_deny": {
+            "content": "string",
+            "contentType": "string"
+          }
+        },
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "description": "string",
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "id": "string",
+        "labelNamespace": "string",
+        "labels": "object",
+        "methodSettings": "object",
+        "name": "string",
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "tags": "object",
+        "variables": "object",
+        "visibilityConfig": {
+          "cloudWatchMetricsEnabled": "boolean",
+          "metricName": "string",
+          "sampledRequestsEnabled": "boolean"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

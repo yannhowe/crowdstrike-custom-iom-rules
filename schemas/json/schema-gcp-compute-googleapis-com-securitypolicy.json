@@ -1,0 +1,183 @@
+[
+  {
+    "compute.googleapis.com/SecurityPolicy": {
+      "configuration": {
+        "adaptiveProtectionConfig": {
+          "layer7DdosDefenseConfig": {
+            "enable": "boolean",
+            "ruleVisibility": "string"
+          }
+        },
+        "advancedOptionsConfig": {
+          "jsonCustomConfig": {
+            "contentTypes": "string"
+          },
+          "jsonParsing": "string",
+          "logLevel": "string"
+        },
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "creationTimestamp": "string",
+        "ddosProtectionConfig": {
+          "ddosProtection": "string"
+        },
+        "deployment": {
+          "files": "object"
+        },
+        "description": "string",
+        "envVariables": "object",
+        "fingerprint": "string",
+        "id": "string",
+        "labelExtractors": "object",
+        "labelFingerprint": "string",
+        "labels": "object",
+        "maintenancePolicy": "object",
+        "metadata": {
+          "annotations": "object"
+        },
+        "name": "string",
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "recaptchaOptionsConfig": {
+          "redirectSiteKey": "string"
+        },
+        "region": "string",
+        "resourceLabels": "object",
+        "rules": {
+          "action": "string",
+          "description": "string",
+          "headerAction": {
+            "requestHeadersToAdds": {
+              "headerName": "string",
+              "headerValue": "string"
+            }
+          },
+          "match": {
+            "config": {
+              "srcIpRanges": "string"
+            },
+            "expr": {
+              "expression": "string"
+            },
+            "exprOptions": {
+              "recaptchaOptions": "object"
+            },
+            "versionedExpr": "string"
+          },
+          "networkMatch": {
+            "ipProtocols": "string",
+            "srcIpRanges": "string",
+            "srcPorts": "string",
+            "srcRegionCodes": "string",
+            "userDefinedFields": {
+              "name": "string",
+              "values": "string"
+            }
+          },
+          "preconfiguredWafConfig": {
+            "exclusions": {
+              "requestCookiesToExclude": {
+                "op": "string",
+                "val": "string"
+              },
+              "requestHeadersToExclude": {
+                "op": "string",
+                "val": "string"
+              },
+              "requestQueryParamsToExclude": {
+                "op": "string",
+                "val": "string"
+              },
+              "requestUrisToExclude": {
+                "op": "string",
+                "val": "string"
+              },
+              "targetRuleIds": "string",
+              "targetRuleSet": "string"
+            }
+          },
+          "preview": "boolean",
+          "priority": "integer",
+          "rateLimitOptions": {
+            "banDurationSec": "integer",
+            "banThreshold": {
+              "count": "integer",
+              "intervalSec": "integer"
+            },
+            "conformAction": "string",
+            "enforceOnKey": "string",
+            "enforceOnKeyConfigs": {
+              "enforceOnKeyName": "string",
+              "enforceOnKeyType": "string"
+            },
+            "enforceOnKeyName": "string",
+            "exceedAction": "string",
+            "exceedRedirectOptions": {
+              "type": "string"
+            },
+            "rateLimitThreshold": {
+              "count": "integer",
+              "intervalSec": "integer"
+            }
+          },
+          "redirectOptions": {
+            "target": "string",
+            "type": "string"
+          }
+        },
+        "schema": "object",
+        "selectors": "object",
+        "selfLink": "string",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "type": "string",
+        "userDefinedFields": {
+          "base": "string",
+          "mask": "string",
+          "name": "string",
+          "offset": "integer",
+          "size": "integer"
+        },
+        "view": {
+          "query": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": "object",
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

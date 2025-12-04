@@ -1,0 +1,171 @@
+[
+  {
+    "Microsoft.ContainerRegistry/registries": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "id": "string",
+        "identity": {
+          "principalId": "string",
+          "tenantId": "string",
+          "type": "string",
+          "userAssignedIdentities": "object"
+        },
+        "location": "string",
+        "name": "string",
+        "properties": {
+          "adminUserEnabled": "boolean",
+          "agentPoolProfiles": "object",
+          "anonymousPullEnabled": "boolean",
+          "creationDate": "string",
+          "dataEndpointEnabled": "boolean",
+          "dataEndpointHostNames": "string",
+          "definition": {
+            "actions": "object"
+          },
+          "encryption": {
+            "keyVaultProperties": {
+              "identity": "string",
+              "keyIdentifier": "string",
+              "keyRotationEnabled": "boolean",
+              "lastKeyRotationTimestamp": "string",
+              "versionedKeyIdentifier": "string"
+            },
+            "status": "string"
+          },
+          "loginServer": "string",
+          "managedNetwork": "object",
+          "networkRuleBypassOptions": "string",
+          "networkRuleSet": {
+            "defaultAction": "string",
+            "ipRules": {
+              "action": "string",
+              "value": "string"
+            }
+          },
+          "osProfile": "object",
+          "policies": {
+            "azureADAuthenticationAsArmPolicy": {
+              "status": "string"
+            },
+            "exportPolicy": {
+              "status": "string"
+            },
+            "quarantinePolicy": {
+              "status": "string"
+            },
+            "retentionPolicy": {
+              "days": "integer",
+              "lastUpdatedTime": "string",
+              "status": "string"
+            },
+            "softDeletePolicy": {
+              "lastUpdatedTime": "string",
+              "retentionDays": "integer",
+              "status": "string"
+            },
+            "trustPolicy": {
+              "status": "string",
+              "type": "string"
+            }
+          },
+          "privateEndpointConnections": {
+            "id": "string",
+            "name": "string",
+            "properties": {
+              "privateEndpoint": {
+                "id": "string"
+              },
+              "privateLinkServiceConnectionState": {
+                "description": "string",
+                "status": "string"
+              },
+              "provisioningState": "string"
+            },
+            "systemData": {
+              "createdAt": "string",
+              "createdBy": "string",
+              "createdByType": "string",
+              "lastModifiedAt": "string",
+              "lastModifiedBy": "string",
+              "lastModifiedByType": "string"
+            },
+            "type": "string"
+          },
+          "provisioningState": "string",
+          "publicNetworkAccess": "string",
+          "storageProfile": "object",
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          },
+          "zoneRedundancy": "string"
+        },
+        "resources": "object",
+        "sku": {
+          "name": "string",
+          "tier": "string"
+        },
+        "tags": "object",
+        "type": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "configurations": "object",
+        "diagnosticSettings": {
+          "id": "string",
+          "name": "string",
+          "properties": {
+            "eventHubAuthorizationRuleId": "string",
+            "eventHubName": "string",
+            "logs": {
+              "category": "string",
+              "categoryGroup": "string",
+              "enabled": "boolean",
+              "retentionPolicy": {
+                "days": "integer",
+                "enabled": "boolean"
+              }
+            },
+            "marketplacePartnerId": "string",
+            "metrics": {
+              "category": "string",
+              "enabled": "boolean",
+              "retentionPolicy": {
+                "days": "integer",
+                "enabled": "boolean"
+              }
+            },
+            "storageAccountId": "string",
+            "workspaceId": "string"
+          },
+          "type": "string"
+        }
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

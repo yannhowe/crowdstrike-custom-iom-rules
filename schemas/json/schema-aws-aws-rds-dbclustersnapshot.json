@@ -1,0 +1,81 @@
+[
+  {
+    "AWS::RDS::DBClusterSnapshot": {
+      "configuration": {
+        "allocatedStorage": "integer",
+        "availabilityZones": "string",
+        "certificatePem": "string",
+        "clusterCreateTime": "string",
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "dbClusterIdentifier": "string",
+        "dbClusterResourceId": "string",
+        "dbClusterSnapshotArn": "string",
+        "dbClusterSnapshotIdentifier": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "engine": "string",
+        "engineMode": "string",
+        "engineVersion": "string",
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "iamDatabaseAuthenticationEnabled": "boolean",
+        "kmsKeyId": "string",
+        "labels": "object",
+        "licenseModel": "string",
+        "masterUsername": "string",
+        "methodSettings": "object",
+        "percentProgress": "integer",
+        "policy": "object",
+        "port": "integer",
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "snapshotCreateTime": "string",
+        "snapshotType": "string",
+        "sourceDBClusterSnapshotArn": "string",
+        "status": "string",
+        "storageEncrypted": "boolean",
+        "storageThroughput": "integer",
+        "storageType": "string",
+        "tagList": {
+          "key": "string",
+          "value": "string"
+        },
+        "tags": "object",
+        "variables": "object",
+        "vpcId": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": {
+          "methods": "object"
+        }
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

@@ -1,0 +1,145 @@
+[
+  {
+    "redis.googleapis.com/Instance": {
+      "configuration": {
+        "alternativeLocationId": "string",
+        "authEnabled": "boolean",
+        "authorizedNetwork": "string",
+        "authorized_network": "string",
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "connectMode": "string",
+        "connect_mode": "integer",
+        "createTime": "string",
+        "create_time": {
+          "nanos": "integer",
+          "seconds": "integer"
+        },
+        "currentLocationId": "string",
+        "current_location_id": "string",
+        "customerManagedKey": "string",
+        "deployment": {
+          "files": "object"
+        },
+        "displayName": "string",
+        "display_name": "string",
+        "envVariables": "object",
+        "host": "string",
+        "labelExtractors": "object",
+        "labels": "object",
+        "locationId": "string",
+        "location_id": "string",
+        "maintenancePolicy": "object",
+        "maintenanceSchedule": {
+          "endTime": "string",
+          "scheduleDeadlineTime": "string",
+          "startTime": "string"
+        },
+        "maintenanceVersion": "string",
+        "maintenance_version": "string",
+        "memorySizeGb": "integer",
+        "memory_size_gb": "integer",
+        "metadata": {
+          "annotations": "object"
+        },
+        "name": "string",
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "nodes": {
+          "id": "string",
+          "zone": "string"
+        },
+        "persistenceConfig": {
+          "persistenceMode": "string",
+          "rdbSnapshotPeriod": "string",
+          "rdbSnapshotStartTime": "string"
+        },
+        "persistenceIamIdentity": "string",
+        "persistence_config": {
+          "persistence_mode": "integer"
+        },
+        "persistence_iam_identity": "string",
+        "port": "integer",
+        "readEndpoint": "string",
+        "readEndpointPort": "integer",
+        "readReplicasMode": "string",
+        "read_replicas_mode": "integer",
+        "redisConfigs": {
+          "activedefrag": "string",
+          "lazyfree-lazy-eviction": "string",
+          "lazyfree-lazy-expire": "string",
+          "lazyfree-lazy-user-del": "string",
+          "lazyfree-lazy-user-flush": "string",
+          "lfu-decay-time": "string",
+          "lfu-log-factor": "string",
+          "maxmemory-clients": "string",
+          "maxmemory-gb": "string",
+          "maxmemory-policy": "string",
+          "notify-keyspace-events": "string",
+          "timeout": "string"
+        },
+        "redisVersion": "string",
+        "redis_version": "string",
+        "replicaCount": "integer",
+        "reservedIpRange": "string",
+        "reserved_ip_range": "string",
+        "resourceLabels": "object",
+        "schema": "object",
+        "secondaryIpRange": "string",
+        "selectors": "object",
+        "serverCaCerts": {
+          "createTime": "string",
+          "expireTime": "string",
+          "serialNumber": "string",
+          "sha1Fingerprint": "string"
+        },
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "state": "integer",
+        "suspensionReasons": "string",
+        "tier": "integer",
+        "transitEncryptionMode": "string",
+        "transit_encryption_mode": "integer",
+        "view": {
+          "query": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": "object",
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

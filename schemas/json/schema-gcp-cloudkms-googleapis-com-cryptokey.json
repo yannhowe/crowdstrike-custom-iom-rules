@@ -1,0 +1,102 @@
+[
+  {
+    "cloudkms.googleapis.com/CryptoKey": {
+      "configuration": {
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "createTime": "string",
+        "deployment": {
+          "files": "object"
+        },
+        "destroyScheduledDuration": "string",
+        "envVariables": "object",
+        "importOnly": "boolean",
+        "labelExtractors": "object",
+        "labels": "object",
+        "maintenancePolicy": "object",
+        "metadata": {
+          "annotations": "object"
+        },
+        "name": "string",
+        "nextRotationTime": "string",
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "primary": {
+          "algorithm": "string",
+          "attestation": {
+            "certChains": {
+              "caviumCerts": "string",
+              "googleCardCerts": "string",
+              "googlePartitionCerts": "string"
+            },
+            "content": "string",
+            "format": "string"
+          },
+          "createTime": "string",
+          "destroyEventTime": "string",
+          "destroyTime": "string",
+          "externalProtectionLevelOptions": {
+            "externalKeyUri": "string"
+          },
+          "generateTime": "string",
+          "importJob": "string",
+          "importTime": "string",
+          "name": "string",
+          "protectionLevel": "string",
+          "reimportEligible": "boolean",
+          "state": "string"
+        },
+        "purpose": "string",
+        "resourceLabels": "object",
+        "rotationPeriod": "string",
+        "schema": "object",
+        "selectors": "object",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "versionTemplate": {
+          "algorithm": "string",
+          "protectionLevel": "string"
+        },
+        "view": {
+          "query": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": "object",
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

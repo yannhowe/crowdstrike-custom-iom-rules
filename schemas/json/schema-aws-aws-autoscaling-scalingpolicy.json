@@ -1,0 +1,204 @@
+[
+  {
+    "AWS::AutoScaling::ScalingPolicy": {
+      "configuration": {
+        "adjustmentType": "string",
+        "alarms": {
+          "alarmARN": "string",
+          "alarmName": "string"
+        },
+        "autoScalingGroupName": "string",
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "cooldown": "integer",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "enabled": "boolean",
+        "environment": {
+          "variables": "object"
+        },
+        "estimatedInstanceWarmup": "integer",
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "labels": "object",
+        "methodSettings": "object",
+        "metricAggregationType": "string",
+        "minAdjustmentMagnitude": "integer",
+        "minAdjustmentStep": "integer",
+        "policy": "object",
+        "policyARN": "string",
+        "policyName": "string",
+        "policyType": "string",
+        "predictiveScalingConfiguration": {
+          "maxCapacityBreachBehavior": "string",
+          "maxCapacityBuffer": "integer",
+          "metricSpecifications": {
+            "customizedCapacityMetricSpecification": {
+              "metricDataQueries": {
+                "expression": "string",
+                "id": "string",
+                "metricStat": {
+                  "metric": {
+                    "dimensions": {
+                      "name": "string",
+                      "value": "string"
+                    },
+                    "metricName": "string",
+                    "namespace": "string"
+                  },
+                  "stat": "string"
+                },
+                "returnData": "boolean"
+              }
+            },
+            "customizedLoadMetricSpecification": {
+              "metricDataQueries": {
+                "expression": "string",
+                "id": "string",
+                "label": "string",
+                "metricStat": {
+                  "metric": {
+                    "dimensions": {
+                      "name": "string",
+                      "value": "string"
+                    },
+                    "metricName": "string",
+                    "namespace": "string"
+                  },
+                  "stat": "string"
+                },
+                "returnData": "boolean"
+              }
+            },
+            "customizedScalingMetricSpecification": {
+              "metricDataQueries": {
+                "expression": "string",
+                "id": "string",
+                "label": "string",
+                "metricStat": {
+                  "metric": {
+                    "dimensions": {
+                      "name": "string",
+                      "value": "string"
+                    },
+                    "metricName": "string",
+                    "namespace": "string"
+                  },
+                  "stat": "string"
+                },
+                "returnData": "boolean"
+              }
+            },
+            "predefinedLoadMetricSpecification": {
+              "predefinedMetricType": "string",
+              "resourceLabel": "string"
+            },
+            "predefinedMetricPairSpecification": {
+              "predefinedMetricType": "string",
+              "resourceLabel": "string"
+            },
+            "predefinedScalingMetricSpecification": {
+              "predefinedMetricType": "string",
+              "resourceLabel": "string"
+            },
+            "targetValue": "integer"
+          },
+          "mode": "string",
+          "schedulingBufferTime": "integer"
+        },
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "scalingAdjustment": "integer",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "stepAdjustments": {
+          "metricIntervalLowerBound": "integer",
+          "metricIntervalUpperBound": "integer",
+          "scalingAdjustment": "integer"
+        },
+        "tags": "object",
+        "targetTrackingConfiguration": {
+          "customizedMetricSpecification": {
+            "dimensions": {
+              "name": "string",
+              "value": "string"
+            },
+            "metricName": "string",
+            "metrics": {
+              "expression": "string",
+              "id": "string",
+              "label": "string",
+              "metricStat": {
+                "metric": {
+                  "dimensions": {
+                    "name": "string",
+                    "value": "string"
+                  },
+                  "metricName": "string",
+                  "namespace": "string"
+                },
+                "stat": "string"
+              },
+              "returnData": "boolean"
+            },
+            "namespace": "string",
+            "statistic": "string",
+            "unit": "string"
+          },
+          "disableScaleIn": "boolean",
+          "predefinedMetricSpecification": {
+            "predefinedMetricType": "string",
+            "resourceLabel": "string"
+          },
+          "targetValue": "integer"
+        },
+        "variables": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

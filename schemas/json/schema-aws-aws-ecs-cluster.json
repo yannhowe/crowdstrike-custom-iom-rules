@@ -1,0 +1,122 @@
+[
+  {
+    "AWS::ECS::Cluster": {
+      "configuration": {
+        "activeServicesCount": "integer",
+        "attachments": {
+          "details": {
+            "name": "string",
+            "value": "string"
+          },
+          "id": "string",
+          "status": "string",
+          "type": "string"
+        },
+        "attachmentsStatus": "string",
+        "capacityProviders": "string",
+        "certificatePem": "string",
+        "clusterArn": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "clusterName": "string",
+        "configuration": {
+          "executeCommandConfiguration": {
+            "kmsKeyId": "string",
+            "logConfiguration": {
+              "cloudWatchEncryptionEnabled": "boolean",
+              "cloudWatchLogGroupName": "string",
+              "s3BucketName": "string",
+              "s3EncryptionEnabled": "boolean",
+              "s3KeyPrefix": "string"
+            },
+            "logging": "string"
+          },
+          "managedStorageConfiguration": {
+            "fargateEphemeralStorageKmsKeyId": "string",
+            "kmsKeyId": "string"
+          }
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "defaultCapacityProviderStrategy": {
+          "base": "integer",
+          "capacityProvider": "string",
+          "weight": "integer"
+        },
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "labels": "object",
+        "methodSettings": "object",
+        "pendingTasksCount": "integer",
+        "policy": "object",
+        "registeredContainerInstancesCount": "integer",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "runningTasksCount": "integer",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "serviceConnectDefaults": {
+          "namespace": "string"
+        },
+        "settings": {
+          "name": "string",
+          "value": "string"
+        },
+        "statistics": {
+          "name": "string",
+          "value": "string"
+        },
+        "status": "string",
+        "tags": "object",
+        "variables": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

@@ -1,0 +1,121 @@
+[
+  {
+    "Microsoft.Sql/managedInstances": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "id": "string",
+        "identity": {
+          "principalId": "string",
+          "tenantId": "string",
+          "type": "string",
+          "userAssignedIdentities": "object"
+        },
+        "location": "string",
+        "name": "string",
+        "properties": {
+          "administrators": {
+            "administratorType": "string",
+            "azureADOnlyAuthentication": "boolean",
+            "login": "string",
+            "principalType": "string",
+            "sid": "string",
+            "tenantId": "string"
+          },
+          "agentPoolProfiles": "object",
+          "collation": "string",
+          "currentBackupStorageRedundancy": "string",
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "dnsZone": "string",
+          "fullyQualifiedDomainName": "string",
+          "keyId": "string",
+          "licenseType": "string",
+          "maintenanceConfigurationId": "string",
+          "managedNetwork": "object",
+          "metadata": "object",
+          "minimalTlsVersion": "string",
+          "osProfile": "object",
+          "parameters": "object",
+          "policyRule": "object",
+          "primaryUserAssignedIdentityId": "string",
+          "privateEndpointConnections": {
+            "id": "string",
+            "properties": {
+              "privateEndpoint": {
+                "id": "string"
+              },
+              "privateLinkServiceConnectionState": {
+                "actionsRequired": "string",
+                "description": "string",
+                "status": "string"
+              },
+              "provisioningState": "string"
+            }
+          },
+          "provisioningState": "string",
+          "proxyOverride": "string",
+          "publicDataEndpointEnabled": "boolean",
+          "requestedBackupStorageRedundancy": "string",
+          "servicePrincipal": {
+            "clientId": "string",
+            "principalId": "string",
+            "tenantId": "string",
+            "type": "string"
+          },
+          "state": "string",
+          "storageProfile": "object",
+          "storageSizeInGB": "integer",
+          "subnetId": "string",
+          "timezoneId": "string",
+          "vCores": "integer",
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          },
+          "zoneRedundant": "boolean"
+        },
+        "resources": "object",
+        "sku": {
+          "capacity": "integer",
+          "family": "string",
+          "name": "string",
+          "tier": "string"
+        },
+        "tags": "object",
+        "type": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "configurations": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

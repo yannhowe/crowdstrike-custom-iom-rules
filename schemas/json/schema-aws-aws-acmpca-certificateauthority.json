@@ -1,0 +1,123 @@
+[
+  {
+    "AWS::ACMPCA::CertificateAuthority": {
+      "configuration": {
+        "arn": "string",
+        "certificateAuthorityConfiguration": {
+          "keyAlgorithm": "string",
+          "signingAlgorithm": "string",
+          "subject": {
+            "commonName": "string",
+            "country": "string",
+            "customAttributes": {
+              "objectIdentifier": "string",
+              "value": "string"
+            },
+            "distinguishedNameQualifier": "string",
+            "generationQualifier": "string",
+            "givenName": "string",
+            "initials": "string",
+            "locality": "string",
+            "organization": "string",
+            "organizationalUnit": "string",
+            "pseudonym": "string",
+            "serialNumber": "string",
+            "state": "string",
+            "surname": "string",
+            "title": "string"
+          }
+        },
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "createdAt": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "keyStorageSecurityStandard": "string",
+        "labels": "object",
+        "lastStateChangeAt": "string",
+        "methodSettings": "object",
+        "notAfter": "string",
+        "notBefore": "string",
+        "ownerAccount": "string",
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "restorableUntil": "string",
+        "revocationConfiguration": {
+          "crlConfiguration": {
+            "crlDistributionPointExtensionConfiguration": {
+              "omitExtension": "boolean"
+            },
+            "customCname": "string",
+            "enabled": "boolean",
+            "expirationInDays": "integer",
+            "s3BucketName": "string",
+            "s3ObjectAcl": "string"
+          },
+          "ocspConfiguration": {
+            "enabled": "boolean",
+            "ocspCustomCname": "string"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "serial": "string",
+        "status": "string",
+        "tags": "object",
+        "type": "string",
+        "usageMode": "string",
+        "variables": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

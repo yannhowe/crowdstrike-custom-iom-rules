@@ -1,0 +1,117 @@
+[
+  {
+    "AWS::EC2::ClientVpnEndpoint": {
+      "configuration": {
+        "authenticationOptions": {
+          "activeDirectory": {
+            "directoryId": "string"
+          },
+          "federatedAuthentication": {
+            "samlProviderArn": "string",
+            "selfServiceSamlProviderArn": "string"
+          },
+          "mutualAuthentication": {
+            "clientRootCertificateChain": "string"
+          },
+          "type": "string"
+        },
+        "certificatePem": "string",
+        "clientCidrBlock": "string",
+        "clientConnectOptions": {
+          "enabled": "boolean",
+          "lambdaFunctionArn": "string",
+          "status": {
+            "code": "string"
+          }
+        },
+        "clientLoginBannerOptions": {
+          "bannerText": "string",
+          "enabled": "boolean"
+        },
+        "clientVpnEndpointId": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "connectionLogOptions": {
+          "cloudwatchLogGroup": "string",
+          "cloudwatchLogStream": "string",
+          "enabled": "boolean"
+        },
+        "containerDefinitions": "object",
+        "creationTime": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "description": "string",
+        "dnsName": "string",
+        "dnsServers": "string",
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "labels": "object",
+        "methodSettings": "object",
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "securityGroupIds": "string",
+        "selectors": {
+          "labels": "object"
+        },
+        "selfServicePortalUrl": "string",
+        "serverCertificateArn": "string",
+        "sessionTimeoutHours": "integer",
+        "splitTunnel": "boolean",
+        "status": {
+          "code": "string"
+        },
+        "tags": "object",
+        "transportProtocol": "string",
+        "variables": "object",
+        "vpcId": "string",
+        "vpnPort": "integer",
+        "vpnProtocol": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

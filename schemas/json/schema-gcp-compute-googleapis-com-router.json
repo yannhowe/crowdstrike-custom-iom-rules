@@ -1,0 +1,173 @@
+[
+  {
+    "compute.googleapis.com/Router": {
+      "configuration": {
+        "bgp": {
+          "advertiseMode": "string",
+          "advertisedGroups": "string",
+          "advertisedIpRanges": {
+            "description": "string",
+            "range": "string"
+          },
+          "asn": "integer",
+          "identifierRange": "string",
+          "keepaliveInterval": "integer"
+        },
+        "bgpPeers": {
+          "advertiseMode": "string",
+          "advertisedGroups": "string",
+          "advertisedIpRanges": {
+            "description": "string",
+            "range": "string"
+          },
+          "advertisedRoutePriority": "integer",
+          "bfd": {
+            "minReceiveInterval": "integer",
+            "minTransmitInterval": "integer",
+            "multiplier": "integer",
+            "sessionInitializationMode": "string"
+          },
+          "customLearnedIpRanges": {
+            "range": "string"
+          },
+          "customLearnedRoutePriority": "integer",
+          "enable": "string",
+          "enableIpv4": "boolean",
+          "enableIpv6": "boolean",
+          "exportPolicies": "string",
+          "importPolicies": "string",
+          "interfaceName": "string",
+          "ipAddress": "string",
+          "ipv4NexthopAddress": "string",
+          "ipv6NexthopAddress": "string",
+          "managementType": "string",
+          "md5AuthenticationKeyName": "string",
+          "name": "string",
+          "peerAsn": "integer",
+          "peerIpAddress": "string",
+          "peerIpv4NexthopAddress": "string",
+          "peerIpv6NexthopAddress": "string",
+          "routerApplianceInstance": "string"
+        },
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "creationTimestamp": "string",
+        "deployment": {
+          "files": "object"
+        },
+        "description": "string",
+        "encryptedInterconnectRouter": "boolean",
+        "envVariables": "object",
+        "id": "string",
+        "interfaces": {
+          "ipRange": "string",
+          "ipVersion": "string",
+          "linkedInterconnectAttachment": "string",
+          "linkedVpnTunnel": "string",
+          "managementType": "string",
+          "name": "string",
+          "privateIpAddress": "string",
+          "redundantInterface": "string",
+          "subnetwork": "string"
+        },
+        "labelExtractors": "object",
+        "labels": "object",
+        "maintenancePolicy": "object",
+        "md5AuthenticationKeys": {
+          "name": "string"
+        },
+        "metadata": {
+          "annotations": "object"
+        },
+        "name": "string",
+        "nats": {
+          "autoNetworkTier": "string",
+          "drainNatIps": "string",
+          "enableDynamicPortAllocation": "boolean",
+          "enableEndpointIndependentMapping": "boolean",
+          "endpointTypes": "string",
+          "icmpIdleTimeoutSec": "integer",
+          "logConfig": {
+            "enable": "boolean",
+            "filter": "string"
+          },
+          "maxPortsPerVm": "integer",
+          "minPortsPerVm": "integer",
+          "name": "string",
+          "natIpAllocateOption": "string",
+          "natIps": "string",
+          "rules": {
+            "action": {
+              "sourceNatActiveIps": "string",
+              "sourceNatActiveRanges": "string"
+            },
+            "description": "string",
+            "match": "string",
+            "ruleNumber": "integer"
+          },
+          "sourceSubnetworkIpRangesToNat": "string",
+          "sourceSubnetworkIpRangesToNat64": "string",
+          "subnetworks": {
+            "name": "string",
+            "secondaryIpRangeNames": "string",
+            "sourceIpRangesToNat": "string"
+          },
+          "tcpEstablishedIdleTimeoutSec": "integer",
+          "tcpTimeWaitTimeoutSec": "integer",
+          "tcpTransitoryIdleTimeoutSec": "integer",
+          "type": "string",
+          "udpIdleTimeoutSec": "integer"
+        },
+        "network": "string",
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "region": "string",
+        "resourceLabels": "object",
+        "schema": "object",
+        "selectors": "object",
+        "selfLink": "string",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "view": {
+          "query": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": "object",
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

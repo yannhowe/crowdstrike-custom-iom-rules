@@ -1,0 +1,380 @@
+[
+  {
+    "Microsoft.Web/sites": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "extendedLocation": {
+          "name": "string",
+          "type": "string"
+        },
+        "id": "string",
+        "identity": {
+          "principalId": "string",
+          "tenantId": "string",
+          "type": "string",
+          "userAssignedIdentities": "object"
+        },
+        "kind": "string",
+        "location": "string",
+        "name": "string",
+        "properties": {
+          "agentPoolProfiles": "object",
+          "availabilityState": "string",
+          "clientAffinityEnabled": "boolean",
+          "clientCertEnabled": "boolean",
+          "clientCertExclusionPaths": "string",
+          "clientCertMode": "string",
+          "containerSize": "integer",
+          "customDomainVerificationId": "string",
+          "dailyMemoryTimeQuota": "integer",
+          "defaultHostName": "string",
+          "definition": {
+            "actions": "object"
+          },
+          "enabled": "boolean",
+          "enabledHostNames": "string",
+          "hostNameSslStates": {
+            "hostType": "string",
+            "name": "string",
+            "sslState": "string",
+            "thumbprint": "string",
+            "virtualIP": "string"
+          },
+          "hostNames": "string",
+          "hostNamesDisabled": "boolean",
+          "hostingEnvironmentProfile": {
+            "id": "string",
+            "name": "string",
+            "type": "string"
+          },
+          "httpsOnly": "boolean",
+          "hyperV": "boolean",
+          "inProgressOperationId": "string",
+          "isXenon": "boolean",
+          "keyVaultReferenceIdentity": "string",
+          "lastModifiedTimeUtc": "string",
+          "managedNetwork": "object",
+          "osProfile": "object",
+          "outboundIpAddresses": "string",
+          "possibleOutboundIpAddresses": "string",
+          "redundancyMode": "string",
+          "repositorySiteName": "string",
+          "reserved": "boolean",
+          "resourceGroup": "string",
+          "scmSiteAlsoStopped": "boolean",
+          "serverFarmId": "string",
+          "siteConfig": {
+            "acrUseManagedIdentityCreds": "boolean",
+            "acrUserManagedIdentityID": "string",
+            "alwaysOn": "boolean",
+            "cors": {
+              "allowedOrigins": "string",
+              "supportCredentials": "boolean"
+            },
+            "functionAppScaleLimit": "integer",
+            "http20Enabled": "boolean",
+            "linuxFxVersion": "string",
+            "localMySqlEnabled": "boolean",
+            "machineKey": "object",
+            "minimumElasticInstanceCount": "integer",
+            "netFrameworkVersion": "string",
+            "numberOfWorkers": "integer",
+            "publishingUsername": "string",
+            "scmType": "string",
+            "use32BitWorkerProcess": "boolean",
+            "windowsFxVersion": "string"
+          },
+          "slotSwapStatus": {
+            "destinationSlotName": "string",
+            "sourceSlotName": "string",
+            "timestampUtc": "string"
+          },
+          "state": "string",
+          "storageAccountRequired": "boolean",
+          "storageProfile": "object",
+          "suspendedTill": "string",
+          "targetSwapSlot": "string",
+          "trafficManagerHostNames": "string",
+          "usageState": "string",
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          },
+          "virtualNetworkSubnetId": "string"
+        },
+        "resources": "object",
+        "tags": "object",
+        "type": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "authSettings": {
+          "id": "string",
+          "name": "string",
+          "properties": {
+            "aadClaimsAuthorization": "string",
+            "additionalLoginParams": "string",
+            "allowedAudiences": "string",
+            "allowedExternalRedirectUrls": "string",
+            "authFilePath": "string",
+            "clientId": "string",
+            "clientSecret": "string",
+            "clientSecretSettingName": "string",
+            "configVersion": "string",
+            "defaultProvider": "string",
+            "enabled": "boolean",
+            "facebookAppId": "string",
+            "facebookAppSecretSettingName": "string",
+            "facebookOAuthScopes": "string",
+            "gitHubClientId": "string",
+            "gitHubClientSecretSettingName": "string",
+            "googleClientId": "string",
+            "googleClientSecret": "string",
+            "googleClientSecretSettingName": "string",
+            "isAuthFromFile": "string",
+            "issuer": "string",
+            "microsoftAccountClientId": "string",
+            "microsoftAccountClientSecret": "string",
+            "microsoftAccountClientSecretSettingName": "string",
+            "microsoftAccountOAuthScopes": "string",
+            "runtimeVersion": "string",
+            "tokenRefreshExtensionHours": "integer",
+            "tokenStoreEnabled": "boolean",
+            "unauthenticatedClientAction": "string"
+          },
+          "type": "string"
+        },
+        "configurations": "object",
+        "diagnosticSettings": {
+          "id": "string",
+          "name": "string",
+          "properties": {
+            "eventHubAuthorizationRuleId": "string",
+            "eventHubName": "string",
+            "logs": {
+              "category": "string",
+              "categoryGroup": "string",
+              "enabled": "boolean",
+              "retentionPolicy": {
+                "days": "integer",
+                "enabled": "boolean"
+              }
+            },
+            "marketplacePartnerId": "string",
+            "metrics": {
+              "category": "string",
+              "enabled": "boolean",
+              "retentionPolicy": {
+                "days": "integer",
+                "enabled": "boolean"
+              }
+            },
+            "storageAccountId": "string",
+            "workspaceId": "string"
+          },
+          "type": "string"
+        },
+        "ftpAllowed": "boolean",
+        "functions": {
+          "id": "string",
+          "name": "string",
+          "properties": {
+            "config": {
+              "Host": {
+                "CORS": "string",
+                "LocalHttpPort": "integer"
+              },
+              "_comments": "string",
+              "authLevel": "string",
+              "bindings": "object",
+              "commitHash": "string",
+              "configurationSource": "string",
+              "disable": "boolean",
+              "disabled": "boolean",
+              "entryPoint": "string",
+              "excluded": "boolean",
+              "extensions": {
+                "durableTask": {
+                  "hubName": "string"
+                },
+                "http": {
+                  "routePrefix": "string"
+                }
+              },
+              "frameworks": {
+                "net46": {
+                  "dependencies": {
+                    "System": {
+                      "Data": {
+                        "SqlClient": "string"
+                      }
+                    }
+                  }
+                }
+              },
+              "functionDirectory": "string",
+              "functionName": "string",
+              "functionTimeout": "string",
+              "generatedBy": "string",
+              "israw": "string",
+              "language": "string",
+              "logging": {
+                "fileLoggingMode": "string",
+                "logLevel": {
+                  "Function": "string",
+                  "Host": {
+                    "Aggregator": "string",
+                    "Results": "string",
+                    "Triggers": {
+                      "DurableTask": "string"
+                    }
+                  },
+                  "default": "string"
+                }
+              },
+              "maep1adpprcsstor_STORAGE": "string",
+              "name": "string",
+              "releaseVersion": "string",
+              "retry": {
+                "delayInterval": "string",
+                "maxRetryCount": "integer",
+                "maximumInterval": "string",
+                "minimumInterval": "string",
+                "strategy": "string"
+              },
+              "runOnStartup": "boolean",
+              "runtime": "string",
+              "scriptFile": "string",
+              "timeout": "string",
+              "uri": "string",
+              "version": "string"
+            },
+            "config_href": "string",
+            "href": "string",
+            "invoke_url_template": "string",
+            "isDisabled": "boolean",
+            "language": "string",
+            "script_href": "string",
+            "script_root_path_href": "string",
+            "secrets_file_href": "string",
+            "test_data": "string",
+            "test_data_href": "string"
+          },
+          "type": "string"
+        },
+        "metadata": {
+          "id": "string",
+          "name": "string",
+          "properties": {
+            "ActiveTFSDeployment": "string",
+            "CURRENT_STACK": "string",
+            "CloneUri": "string",
+            "LinuxFxVersion": "string",
+            "OAuthExpirationTime": "string",
+            "OAuthRefreshToken": "string",
+            "OAuthToken": "string",
+            "OAuthTokenSecret": "string",
+            "OneDrivePath": "string",
+            "OneDriveUserAccountEmail": "string",
+            "OneDriveUserDisplayName": "string",
+            "PLATFORM": "string",
+            "PublishingProfile": "string",
+            "RepoApiUri": "string",
+            "RepoUrl": "string",
+            "ScmEnvironmentType": "string",
+            "ScmGitHubActionClientIdSecretName": "string",
+            "ScmGitHubActionCodeRuntimeStack": "string",
+            "ScmGitHubActionCodeRuntimeVersion": "string",
+            "ScmGitHubActionGenerateWorkflowFile": "string",
+            "ScmGitHubActionIsLinux": "string",
+            "ScmGitHubActionRegistryPasswordSecretName": "string",
+            "ScmGitHubActionRegistryUsernameSecretName": "string",
+            "ScmGitHubActionSecretName": "string",
+            "ScmGitHubActionSubscriptionIdSecretName": "string",
+            "ScmGitHubActionTenantIdSecretName": "string",
+            "ScmGitHubActionWorkflowFilePath": "string",
+            "ScmGitHubActionWorkflowSettings": "string",
+            "ScmOperationId": "string",
+            "ScmOperationTime": "string",
+            "ScmUri": "string",
+            "VSTSRM_AccountId": "string",
+            "VSTSRM_BuildDefinitionId": "string",
+            "VSTSRM_BuildDefinitionWebAccessUrl": "string",
+            "VSTSRM_ConfiguredCDEndPoint": "string",
+            "VSTSRM_ProdAppName": "string",
+            "VSTSRM_ProjectId": "string",
+            "VSTSRM_ReleaseDefinitionId": "string",
+            "VSTSRM_SlotName": "string",
+            "VSTSRM_TestAppName": "string",
+            "VsoTfsImpersonate": "string",
+            "branch": "string",
+            "defaultDocuments": "string",
+            "dropbox_email": "string",
+            "dropbox_path": "string",
+            "dropbox_username": "string",
+            "healthCheckPath": "string",
+            "linuxFxVersion": "string",
+            "minTlsVersion": "string",
+            "numberOfWorkers": "string",
+            "subscription": "string",
+            "synctriggersstatus": "string",
+            "tfsauthtoken": "string",
+            "tfsauthtoken_expiresat": "string",
+            "tfslinkacct": "string",
+            "tfslinkproj": "string",
+            "tfslinkprojguid": "string",
+            "tfsrefreshtoken": "string",
+            "use32BitWorkerProcess": "string",
+            "vnetRouteAllEnabled": "string"
+          },
+          "type": "string"
+        },
+        "privateEndpointConnection": {
+          "id": "string",
+          "name": "string",
+          "properties": {
+            "ipAddresses": "string",
+            "privateEndpoint": {
+              "id": "string"
+            },
+            "privateLinkServiceConnectionState": {
+              "actionsRequired": "string",
+              "description": "string",
+              "status": "string"
+            },
+            "provisioningState": "string"
+          },
+          "type": "string"
+        },
+        "scmAllowed": "boolean",
+        "sku": "string",
+        "uri": "string"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

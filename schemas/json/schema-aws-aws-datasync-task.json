@@ -1,0 +1,155 @@
+[
+  {
+    "AWS::DataSync::Task": {
+      "configuration": {
+        "certificatePem": "string",
+        "cloudWatchLogGroupArn": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "creationTime": "string",
+        "currentTaskExecutionArn": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "destinationLocationArn": "string",
+        "destinationNetworkInterfaceArns": "string",
+        "environment": {
+          "variables": "object"
+        },
+        "errorCode": "string",
+        "errorDetail": "string",
+        "excludes": {
+          "filterType": "string",
+          "value": "string"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "includes": {
+          "filterType": "string",
+          "value": "string"
+        },
+        "labels": "object",
+        "manifestConfig": {
+          "action": "string",
+          "format": "string",
+          "source": {
+            "s3": {
+              "bucketAccessRoleArn": "string",
+              "manifestObjectPath": "string",
+              "manifestObjectVersionId": "string",
+              "s3BucketArn": "string"
+            }
+          }
+        },
+        "methodSettings": "object",
+        "name": "string",
+        "options": {
+          "atime": "string",
+          "bytesPerSecond": "integer",
+          "gid": "string",
+          "logLevel": "string",
+          "mtime": "string",
+          "objectTags": "string",
+          "overwriteMode": "string",
+          "posixPermissions": "string",
+          "preserveDeletedFiles": "string",
+          "preserveDevices": "string",
+          "securityDescriptorCopyFlags": "string",
+          "taskQueueing": "string",
+          "transferMode": "string",
+          "uid": "string",
+          "verifyMode": "string"
+        },
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "schedule": {
+          "scheduleExpression": "string",
+          "status": "string"
+        },
+        "scheduleDetails": {
+          "disabledBy": "string",
+          "disabledReason": "string",
+          "statusUpdateTime": "string"
+        },
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "sourceLocationArn": "string",
+        "sourceNetworkInterfaceArns": "string",
+        "status": "string",
+        "tags": "object",
+        "taskArn": "string",
+        "taskReportConfig": {
+          "destination": {
+            "s3": {
+              "bucketAccessRoleArn": "string",
+              "s3BucketArn": "string",
+              "subdirectory": "string"
+            }
+          },
+          "objectVersionIds": "string",
+          "outputType": "string",
+          "overrides": {
+            "deleted": {
+              "reportLevel": "string"
+            },
+            "skipped": {
+              "reportLevel": "string"
+            },
+            "transferred": {
+              "reportLevel": "string"
+            },
+            "verified": {
+              "reportLevel": "string"
+            }
+          },
+          "reportLevel": "string"
+        },
+        "variables": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

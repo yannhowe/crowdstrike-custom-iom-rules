@@ -1,0 +1,3437 @@
+[
+  {
+    "Microsoft.Logic/workflows": {
+      "configuration": {
+        "ID": "string",
+        "Location": "string",
+        "Name": "string",
+        "Properties": {
+          "accessEndpoint": "string",
+          "changedTime": "string",
+          "createdTime": "string",
+          "definition": {
+            "$schema": "string",
+            "actions": "object",
+            "contentVersion": "string",
+            "outputs": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "endpointsConfiguration": {
+            "connector": {
+              "outgoingIpAddresses": {
+                "address": "string"
+              }
+            },
+            "workflow": {
+              "accessEndpointIpAddresses": {
+                "address": "string"
+              },
+              "outgoingIpAddresses": {
+                "address": "string"
+              }
+            }
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object",
+          "provisioningState": "string",
+          "state": "string",
+          "version": "string"
+        },
+        "Type": "string",
+        "certificatePem": "string",
+        "id": "string",
+        "identity": {
+          "principalId": "string",
+          "tenantId": "string",
+          "type": "string",
+          "userAssignedIdentities": "object"
+        },
+        "location": "string",
+        "name": "string",
+        "properties": {
+          "accessControl": {
+            "actions": {
+              "allowedCallerIpAddresses": {
+                "addressRange": "string"
+              }
+            },
+            "contents": {
+              "allowedCallerIpAddresses": {
+                "addressRange": "string"
+              }
+            },
+            "triggers": {
+              "allowedCallerIpAddresses": {
+                "addressRange": "string"
+              },
+              "openAuthenticationPolicies": {
+                "policies": {
+                  "Azure Active Directory Authorization": {
+                    "claims": {
+                      "name": "string",
+                      "value": "string"
+                    },
+                    "type": "string"
+                  },
+                  "AzureADEntitlementManagementPOPAuthPolicy": {
+                    "claims": {
+                      "name": "string",
+                      "value": "string"
+                    },
+                    "type": "string"
+                  },
+                  "AzureADLifecycleWorkflowsAuthPOPAuthPolicy": {
+                    "claims": {
+                      "name": "string",
+                      "value": "string"
+                    },
+                    "type": "string"
+                  },
+                  "Only Valid Logins": {
+                    "claims": {
+                      "name": "string",
+                      "value": "string"
+                    },
+                    "type": "string"
+                  },
+                  "autofiler-AzureAD-Oauth": {
+                    "claims": {
+                      "name": "string",
+                      "value": "string"
+                    },
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "accessEndpoint": "string",
+          "agentPoolProfiles": "object",
+          "changedTime": "string",
+          "createdTime": "string",
+          "definition": {
+            "$schema": "string",
+            "actions": "object",
+            "contentVersion": "string",
+            "description": "string",
+            "outputs": "object",
+            "parameters": "object",
+            "staticResults": "object",
+            "triggers": {
+              "Azure_Sentinel_\u30a4\u30f3\u30b7\u30c7\u30f3\u30c8\u4f5c\u6210\u30eb\u30fc\u30eb\u304c\u30c8\u30ea\u30ac\u30fc\u3055\u308c\u305f\u3068\u304d": {
+                "inputs": {
+                  "body": {
+                    "callback_url": "string"
+                  },
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "path": "string"
+                },
+                "type": "string"
+              },
+              "Batch_messages": {
+                "inputs": {
+                  "configurations": {
+                    "OpenCTIToSentinel": {
+                      "releaseCriteria": {
+                        "messageCount": "integer",
+                        "recurrence": {
+                          "frequency": "string",
+                          "interval": "integer"
+                        }
+                      }
+                    },
+                    "RFIP90Plus": {
+                      "releaseCriteria": {
+                        "messageCount": "integer",
+                        "recurrence": {
+                          "frequency": "string",
+                          "interval": "integer"
+                        }
+                      }
+                    }
+                  },
+                  "mode": "string"
+                },
+                "type": "string"
+              },
+              "CU_Trigger": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "splitOn": "string",
+                "type": "string"
+              },
+              "Canary": {
+                "inputs": {
+                  "method": "string",
+                  "schema": {
+                    "properties": {
+                      "additional_data": {
+                        "properties": {
+                          "additional_info": {
+                            "properties": "object",
+                            "type": "string"
+                          },
+                          "geo_info": {
+                            "properties": {
+                              "asn": {
+                                "properties": {
+                                  "asn": {
+                                    "type": "string"
+                                  },
+                                  "domain": {
+                                    "type": "string"
+                                  },
+                                  "name": {
+                                    "type": "string"
+                                  },
+                                  "route": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string"
+                                  }
+                                },
+                                "type": "string"
+                              },
+                              "city": {
+                                "type": "string"
+                              },
+                              "continent": {
+                                "type": "string"
+                              },
+                              "country": {
+                                "type": "string"
+                              },
+                              "hostname": {
+                                "type": "string"
+                              },
+                              "ip": {
+                                "type": "string"
+                              },
+                              "loc": {
+                                "type": "string"
+                              },
+                              "org": {
+                                "type": "string"
+                              },
+                              "postal": {
+                                "type": "string"
+                              },
+                              "region": {
+                                "type": "string"
+                              },
+                              "timezone": {
+                                "type": "string"
+                              }
+                            },
+                            "type": "string"
+                          },
+                          "request_args": {
+                            "properties": "object",
+                            "type": "string"
+                          },
+                          "request_headers": {
+                            "properties": {
+                              "Accept": {
+                                "type": "string"
+                              },
+                              "Accept-Encoding": {
+                                "type": "string"
+                              },
+                              "Accept-Language": {
+                                "type": "string"
+                              },
+                              "Connection": {
+                                "type": "string"
+                              },
+                              "DNT": {
+                                "type": "string"
+                              },
+                              "Host": {
+                                "type": "string"
+                              },
+                              "Priority": {
+                                "type": "string"
+                              },
+                              "Sec-Fetch-Dest": {
+                                "type": "string"
+                              },
+                              "Sec-Fetch-Mode": {
+                                "type": "string"
+                              },
+                              "Sec-Fetch-Site": {
+                                "type": "string"
+                              },
+                              "Sec-Fetch-User": {
+                                "type": "string"
+                              },
+                              "Sec-Gpc": {
+                                "type": "string"
+                              },
+                              "Upgrade-Insecure-Requests": {
+                                "type": "string"
+                              },
+                              "User-Agent": {
+                                "type": "string"
+                              },
+                              "X-Forwarded-For": {
+                                "type": "string"
+                              },
+                              "X-Forwarded-Host": {
+                                "type": "string"
+                              },
+                              "X-Real-Ip": {
+                                "type": "string"
+                              }
+                            },
+                            "type": "string"
+                          },
+                          "time_hm": {
+                            "type": "string"
+                          },
+                          "time_ymd": {
+                            "type": "string"
+                          },
+                          "useragent": {
+                            "type": "string"
+                          }
+                        },
+                        "type": "string"
+                      },
+                      "channel": {
+                        "type": "string"
+                      },
+                      "manage_url": {
+                        "type": "string"
+                      },
+                      "memo": {
+                        "type": "string"
+                      },
+                      "public_domain": {
+                        "type": "string"
+                      },
+                      "src_ip": {
+                        "type": "string"
+                      },
+                      "time": {
+                        "type": "string"
+                      },
+                      "token": {
+                        "type": "string"
+                      },
+                      "token_type": {
+                        "type": "string"
+                      }
+                    },
+                    "type": "string"
+                  }
+                },
+                "kind": "string",
+                "type": "string"
+              },
+              "Get_Command_From_Teams": {
+                "inputs": {
+                  "body": {
+                    "chats": "string",
+                    "notificationUrl": "string"
+                  },
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "path": "string",
+                  "queries": {
+                    "$search": "string"
+                  }
+                },
+                "type": "string"
+              },
+              "HTTP": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "schedule": {
+                    "hours": "string",
+                    "weekDays": "string"
+                  },
+                  "timeZone": "string"
+                },
+                "inputs": {
+                  "authentication": {
+                    "audience": "string",
+                    "identity": "string",
+                    "type": "string"
+                  },
+                  "body": {
+                    "message": "string",
+                    "potato": "string"
+                  },
+                  "headers": {
+                    "Authorization": "string",
+                    "Content-Type": "string",
+                    "X-Author-Person": "string"
+                  },
+                  "method": "string",
+                  "uri": "string"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "schedule": {
+                    "hours": "string",
+                    "weekDays": "string"
+                  },
+                  "timeZone": "string"
+                },
+                "type": "string"
+              },
+              "HTTP_GET_to_Cyderes_MISP": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "inputs": {
+                  "authentication": {
+                    "type": "string",
+                    "value": "string"
+                  },
+                  "method": "string",
+                  "uri": "string"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "type": "string"
+              },
+              "Initiate_Using_Keyword": {
+                "inputs": {
+                  "body": {
+                    "chats": "string",
+                    "notificationUrl": "string"
+                  },
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "path": "string",
+                  "queries": {
+                    "$search": "string"
+                  }
+                },
+                "type": "string"
+              },
+              "Keyword_Trigger": {
+                "inputs": {
+                  "body": {
+                    "chats": "string",
+                    "notificationUrl": "string"
+                  },
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "path": "string",
+                  "queries": {
+                    "$search": "string"
+                  }
+                },
+                "type": "string"
+              },
+              "Microsoft_Sentinel_alert": {
+                "inputs": {
+                  "body": {
+                    "callback_url": "string"
+                  },
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "path": "string"
+                },
+                "type": "string"
+              },
+              "Microsoft_Sentinel_entity": {
+                "inputs": {
+                  "body": {
+                    "callback_url": "string"
+                  },
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "path": "string"
+                },
+                "type": "string"
+              },
+              "Microsoft_Sentinel_incident": {
+                "description": "string",
+                "inputs": {
+                  "body": {
+                    "callback_url": "string"
+                  },
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "path": "string",
+                  "retryPolicy": {
+                    "count": "integer",
+                    "interval": "string",
+                    "type": "string"
+                  }
+                },
+                "type": "string"
+              },
+              "Microsoft_Sentinel_\u306e\u30a4\u30f3\u30b7\u30c7\u30f3\u30c8": {
+                "inputs": {
+                  "body": {
+                    "callback_url": "string"
+                  },
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "path": "string"
+                },
+                "type": "string"
+              },
+              "New_email": {
+                "inputs": {
+                  "fetch": {
+                    "method": "string",
+                    "pathTemplate": {
+                      "template": "string"
+                    },
+                    "queries": {
+                      "fetchOnlyWithAttachment": "boolean",
+                      "folderPath": "string",
+                      "importance": "string",
+                      "includeAttachments": "boolean",
+                      "subjectFilter": "string"
+                    }
+                  },
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "subscribe": {
+                    "body": {
+                      "NotificationUrl": "string"
+                    },
+                    "method": "string",
+                    "pathTemplate": {
+                      "template": "string"
+                    },
+                    "queries": {
+                      "fetchOnlyWithAttachment": "boolean",
+                      "folderPath": "string",
+                      "importance": "string"
+                    }
+                  }
+                },
+                "splitOn": "string",
+                "type": "string"
+              },
+              "Peek_lock_message_from_Search_queue": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "startTime": "string",
+                  "timeZone": "string"
+                },
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string",
+                  "queries": {
+                    "queueType": "string",
+                    "sessionId": "string"
+                  }
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "startTime": "string",
+                  "timeZone": "string"
+                },
+                "runtimeConfiguration": {
+                  "concurrency": {
+                    "maximumWaitingRuns": "integer",
+                    "runs": "integer"
+                  }
+                },
+                "type": "string"
+              },
+              "Periodicidad": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "type": "string"
+              },
+              "Recurrence": {
+                "conditions": {
+                  "expression": "string"
+                },
+                "description": "string",
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "schedule": {
+                    "hours": "string",
+                    "minutes": "integer",
+                    "monthDays": "integer",
+                    "weekDays": "string"
+                  },
+                  "startTime": "string",
+                  "timeZone": "string"
+                },
+                "inputs": "object",
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "schedule": {
+                    "hours": "string",
+                    "minutes": "integer",
+                    "monthDays": "integer",
+                    "weekDays": "string"
+                  },
+                  "startTime": "string",
+                  "timeZone": "string"
+                },
+                "runtimeConfiguration": {
+                  "concurrency": {
+                    "runs": "integer"
+                  }
+                },
+                "type": "string"
+              },
+              "Recurrence(1_day)": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "schedule": {
+                    "hours": "string",
+                    "minutes": "integer"
+                  },
+                  "timeZone": "string"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "schedule": {
+                    "hours": "string",
+                    "minutes": "integer"
+                  },
+                  "timeZone": "string"
+                },
+                "type": "string"
+              },
+              "Recurrence_(run_Every_15_mins_M-F_8AM_EST_-_11PM_EST_)": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "schedule": {
+                    "hours": "string",
+                    "minutes": "integer",
+                    "weekDays": "string"
+                  },
+                  "timeZone": "string"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "schedule": {
+                    "hours": "string",
+                    "minutes": "integer",
+                    "weekDays": "string"
+                  },
+                  "timeZone": "string"
+                },
+                "type": "string"
+              },
+              "Recurrence_(run_once_a_day_at_0700_UTC)": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "schedule": {
+                    "hours": "string"
+                  }
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "schedule": {
+                    "hours": "string"
+                  }
+                },
+                "type": "string"
+              },
+              "Recurrence_(run_once_a_day_at_1000_UTC)": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "schedule": {
+                    "hours": "string"
+                  }
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "schedule": {
+                    "hours": "string"
+                  }
+                },
+                "type": "string"
+              },
+              "Recurrence_(run_once_a_day_at_10PM_EST)": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "schedule": {
+                    "hours": "string"
+                  }
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "schedule": {
+                    "hours": "string"
+                  }
+                },
+                "type": "string"
+              },
+              "Recurrence_-_9am_EST_weekly": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "schedule": {
+                    "hours": "integer",
+                    "minutes": "integer",
+                    "weekDays": "string"
+                  },
+                  "startTime": "string",
+                  "timeZone": "string"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "schedule": {
+                    "hours": "integer",
+                    "minutes": "integer",
+                    "weekDays": "string"
+                  },
+                  "startTime": "string",
+                  "timeZone": "string"
+                },
+                "type": "string"
+              },
+              "Recurrence_-_Run_Every_Hour": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "startTime": "string",
+                  "timeZone": "string"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "startTime": "string",
+                  "timeZone": "string"
+                },
+                "type": "string"
+              },
+              "Recurrence_7AM": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "schedule": {
+                    "hours": "integer",
+                    "minutes": "integer"
+                  },
+                  "startTime": "string",
+                  "timeZone": "string"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "schedule": {
+                    "hours": "integer",
+                    "minutes": "integer"
+                  },
+                  "startTime": "string",
+                  "timeZone": "string"
+                },
+                "type": "string"
+              },
+              "Recurrence_Every_3_Hours": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "schedule": {
+                    "hours": "string",
+                    "minutes": "integer"
+                  },
+                  "timeZone": "string"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "schedule": {
+                    "hours": "string",
+                    "minutes": "integer"
+                  },
+                  "timeZone": "string"
+                },
+                "type": "string"
+              },
+              "Recurrence_Once_a_Day": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "schedule": {
+                    "hours": "string",
+                    "minutes": "integer"
+                  },
+                  "timeZone": "string"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "schedule": {
+                    "hours": "string",
+                    "minutes": "integer"
+                  },
+                  "timeZone": "string"
+                },
+                "type": "string"
+              },
+              "Recurrence_every_3_minutes": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "type": "string"
+              },
+              "RelayMessage": {
+                "inputs": {
+                  "method": "string",
+                  "schema": {
+                    "properties": {
+                      "Analysis": {
+                        "type": "string"
+                      },
+                      "Customer": {
+                        "type": "string"
+                      },
+                      "Escalation": {
+                        "type": "string"
+                      },
+                      "Ticket": {
+                        "type": "string"
+                      },
+                      "TicketText": {
+                        "type": "string"
+                      }
+                    },
+                    "type": "string"
+                  }
+                },
+                "kind": "string",
+                "type": "string"
+              },
+              "ResearchAgent": {
+                "inputs": {
+                  "method": "string",
+                  "schema": {
+                    "properties": {
+                      "m_data[AUM_Amount]": {
+                        "type": "string"
+                      },
+                      "m_data[AUM_CurrencyName]": {
+                        "type": "string"
+                      },
+                      "m_data[AUM_CurrencySymbol]": {
+                        "type": "string"
+                      },
+                      "m_data[AddressCountryName]": {
+                        "type": "string"
+                      },
+                      "m_data[AddressLine1]": {
+                        "type": "string"
+                      },
+                      "m_data[AddressLine3]": {
+                        "type": "string"
+                      },
+                      "m_data[AddressLine4]": {
+                        "type": "string"
+                      },
+                      "m_data[AddressLine5]": {
+                        "type": "string"
+                      },
+                      "m_data[AddressLine6]": {
+                        "type": "string"
+                      },
+                      "m_data[AreaName]": {
+                        "type": "string"
+                      },
+                      "m_data[CompanyID]": {
+                        "type": "string"
+                      },
+                      "m_data[CompanyTypeName]": {
+                        "type": "string"
+                      },
+                      "m_data[Company_Background]": {
+                        "type": "string"
+                      },
+                      "m_data[CountryName]": {
+                        "type": "string"
+                      },
+                      "m_data[FullLocationName]": {
+                        "type": "string"
+                      },
+                      "m_data[InstitutionalInvestorStyleName]": {
+                        "type": "string"
+                      },
+                      "m_data[InstitutionalInvestorTypeName]": {
+                        "type": "string"
+                      },
+                      "m_data[Investment_Approach]": {
+                        "type": "string"
+                      },
+                      "m_data[LocationName]": {
+                        "type": "string"
+                      },
+                      "m_data[Name]": {
+                        "type": "string"
+                      },
+                      "m_data[ParentName]": {
+                        "type": "string"
+                      },
+                      "m_data[Phone]": {
+                        "type": "string"
+                      },
+                      "m_data[RegionName]": {
+                        "type": "string"
+                      },
+                      "m_data[URL]": {
+                        "type": "string"
+                      }
+                    },
+                    "type": "string"
+                  }
+                },
+                "kind": "string",
+                "type": "string"
+              },
+              "Run_every_7_Days": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "type": "string"
+              },
+              "Run_once_per_week": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "schedule": {
+                    "hours": "string",
+                    "weekDays": "string"
+                  },
+                  "timeZone": "string"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "schedule": {
+                    "hours": "string",
+                    "weekDays": "string"
+                  },
+                  "timeZone": "string"
+                },
+                "type": "string"
+              },
+              "Schedule_Poll_to_Delinea_API_endpoint_-_5_Mins": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "type": "string"
+              },
+              "Scheduled_Check_List_-_1_Day": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "type": "string"
+              },
+              "Set_schedule": {
+                "description": "string",
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "startTime": "string"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "startTime": "string"
+                },
+                "type": "string"
+              },
+              "Set_scheduled_run_every_20_Minutes": {
+                "description": "string",
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "type": "string"
+              },
+              "UpdateTrigger": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "splitOn": "string",
+                "type": "string"
+              },
+              "When_Azure_Sentinel_incident_creation_rule_was_triggered": {
+                "description": "string",
+                "inputs": {
+                  "body": {
+                    "callback_url": "string"
+                  },
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "path": "string"
+                },
+                "type": "string"
+              },
+              "When_Azure_Sentinel_incident_creation_rule_was_triggered_(Private_Preview_only)": {
+                "inputs": {
+                  "body": {
+                    "callback_url": "string"
+                  },
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "path": "string"
+                },
+                "type": "string"
+              },
+              "When_Hibob_Employee_Updated": {
+                "kind": "string",
+                "type": "string"
+              },
+              "When_I'm_@mentioned": {
+                "inputs": {
+                  "body": {
+                    "chats": "string",
+                    "notificationUrl": "string"
+                  },
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "path": "string"
+                },
+                "runtimeConfiguration": {
+                  "secureData": {
+                    "properties": "string"
+                  }
+                },
+                "type": "string"
+              },
+              "When_a_HTTP_request_is_received": {
+                "inputs": {
+                  "method": "string",
+                  "schema": {
+                    "Status": "string",
+                    "alertName": "string",
+                    "deviceId": "string",
+                    "deviceName": "string",
+                    "ipAddress": "string",
+                    "items": {
+                      "properties": {
+                        "arrivalLocation": {
+                          "type": "string"
+                        },
+                        "departureLocation": {
+                          "type": "string"
+                        },
+                        "lastChange": {
+                          "type": "string"
+                        },
+                        "marketingRoutingPartyName": {
+                          "type": "string"
+                        },
+                        "marketingRoutingPartySupplement": {
+                          "type": "string"
+                        },
+                        "srn": {
+                          "type": "string"
+                        }
+                      },
+                      "required": "string",
+                      "type": "string"
+                    },
+                    "properties": {
+                      "Body": {
+                        "type": "string"
+                      },
+                      "Date": {
+                        "format": "string",
+                        "type": "string"
+                      },
+                      "Email": {
+                        "type": "string"
+                      },
+                      "Feedback": {
+                        "type": "string"
+                      },
+                      "Initiator": {
+                        "type": "string"
+                      },
+                      "JiraTicket": {
+                        "type": "string"
+                      },
+                      "Subject": {
+                        "type": "string"
+                      },
+                      "Title": {
+                        "type": "string"
+                      },
+                      "To": {
+                        "type": "string"
+                      },
+                      "UPN": {
+                        "type": "string"
+                      },
+                      "URL": {
+                        "type": "string"
+                      },
+                      "Username": {
+                        "type": "string"
+                      },
+                      "address": {
+                        "type": "string"
+                      },
+                      "alternate_name": {
+                        "type": "string"
+                      },
+                      "artifact": {
+                        "type": "string"
+                      },
+                      "azureSqlServerName": {
+                        "type": "string"
+                      },
+                      "bacpacFileName": {
+                        "type": "string"
+                      },
+                      "body": {
+                        "type": "string"
+                      },
+                      "clientName": {
+                        "type": "string"
+                      },
+                      "client_cid": {
+                        "type": "string"
+                      },
+                      "client_shortcode": {
+                        "type": "string"
+                      },
+                      "countries": {
+                        "type": "string"
+                      },
+                      "data": {
+                        "properties": {
+                          "CorrelationId": {
+                            "type": "string"
+                          },
+                          "EndDateTime": {
+                            "type": "string"
+                          },
+                          "MaintenanceConfigurationId": {
+                            "type": "string"
+                          },
+                          "ResourceSubscriptionIds": {
+                            "items": {
+                              "type": "string"
+                            },
+                            "type": "string"
+                          },
+                          "StartDateTime": {
+                            "type": "string"
+                          },
+                          "Status": {
+                            "type": "string"
+                          },
+                          "alertContext": {
+                            "properties": {
+                              "properties": {
+                                "properties": {
+                                  "dimensions": {
+                                    "type": "string"
+                                  },
+                                  "evaluatedValue": {
+                                    "type": "string"
+                                  },
+                                  "lastFiredTime": {
+                                    "type": "string"
+                                  },
+                                  "metricName": {
+                                    "type": "string"
+                                  },
+                                  "metricNamespace": {
+                                    "type": "string"
+                                  },
+                                  "operator": {
+                                    "type": "string"
+                                  },
+                                  "threshold": {
+                                    "type": "string"
+                                  },
+                                  "timeAggregation": {
+                                    "type": "string"
+                                  },
+                                  "values": {
+                                    "items": {
+                                      "properties": {
+                                        "average": {
+                                          "type": "string"
+                                        },
+                                        "timeStamp": {
+                                          "type": "string"
+                                        }
+                                      },
+                                      "required": "string",
+                                      "type": "string"
+                                    },
+                                    "type": "string"
+                                  },
+                                  "windowSize": {
+                                    "type": "string"
+                                  }
+                                },
+                                "type": "string"
+                              }
+                            },
+                            "type": "string"
+                          },
+                          "essentials": {
+                            "properties": {
+                              "alertId": {
+                                "type": "string"
+                              },
+                              "alertRule": {
+                                "type": "string"
+                              },
+                              "alertTargetIDs": {
+                                "items": {
+                                  "type": "string"
+                                },
+                                "type": "string"
+                              },
+                              "description": {
+                                "type": "string"
+                              },
+                              "essentialsVersion": {
+                                "type": "string"
+                              },
+                              "firedDateTime": {
+                                "type": "string"
+                              },
+                              "monitorCondition": {
+                                "type": "string"
+                              },
+                              "monitorService": {
+                                "type": "string"
+                              },
+                              "originContributions": {
+                                "items": {
+                                  "type": "string"
+                                },
+                                "type": "string"
+                              },
+                              "resolvedDateTime": "object",
+                              "severity": {
+                                "type": "string"
+                              },
+                              "signalType": {
+                                "type": "string"
+                              },
+                              "targetResource": {
+                                "type": "string"
+                              },
+                              "targetResourceGroup": {
+                                "type": "string"
+                              },
+                              "targetResourceType": {
+                                "type": "string"
+                              }
+                            },
+                            "type": "string"
+                          },
+                          "investigatable": {
+                            "investigatable_id": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "type": "string"
+                      },
+                      "databaseName": {
+                        "type": "string"
+                      },
+                      "department": {
+                        "type": "string"
+                      },
+                      "departure_date": {
+                        "type": "string"
+                      },
+                      "description": {
+                        "type": "string"
+                      },
+                      "email": {
+                        "type": "string"
+                      },
+                      "file": {
+                        "type": "string"
+                      },
+                      "filename": {
+                        "type": "string"
+                      },
+                      "firstName": {
+                        "type": "string"
+                      },
+                      "first_name": {
+                        "type": "string"
+                      },
+                      "folder": {
+                        "type": "string"
+                      },
+                      "global_roaming_required": {
+                        "type": "string"
+                      },
+                      "hello": {
+                        "type": "string"
+                      },
+                      "id": {
+                        "type": "string"
+                      },
+                      "initiator": {
+                        "type": "string"
+                      },
+                      "invoiceDate": {
+                        "type": "string"
+                      },
+                      "invoiceNumber": {
+                        "type": "string"
+                      },
+                      "ioc": {
+                        "type": "string"
+                      },
+                      "ip": {
+                        "type": "string"
+                      },
+                      "jiraTicketNumber": {
+                        "type": "string"
+                      },
+                      "lastName": {
+                        "type": "string"
+                      },
+                      "last_name": {
+                        "type": "string"
+                      },
+                      "location": {
+                        "type": "string"
+                      },
+                      "manager_name": {
+                        "type": "string"
+                      },
+                      "message": {
+                        "type": "string"
+                      },
+                      "meta": {
+                        "properties": {
+                          "event_reference_url": {
+                            "type": "string"
+                          },
+                          "timestamp": {
+                            "type": "string"
+                          },
+                          "trigger_category": {
+                            "type": "string"
+                          },
+                          "trigger_name": {
+                            "type": "string"
+                          },
+                          "workflow_id": {
+                            "type": "string"
+                          }
+                        },
+                        "type": "string"
+                      },
+                      "mobile_number": {
+                        "type": "string"
+                      },
+                      "organization": {
+                        "type": "string"
+                      },
+                      "other_notes": {
+                        "type": "string"
+                      },
+                      "phone": {
+                        "type": "string"
+                      },
+                      "potato": {
+                        "type": "string"
+                      },
+                      "request": {
+                        "properties": {
+                          "context": {
+                            "items": {
+                              "properties": {
+                                "source": {
+                                  "type": "string"
+                                },
+                                "type": {
+                                  "type": "string"
+                                },
+                                "user": {
+                                  "properties": {
+                                    "additionalAttributes": {
+                                      "properties": "object",
+                                      "type": "string"
+                                    }
+                                  },
+                                  "type": "string"
+                                }
+                              },
+                              "required": "string",
+                              "type": "string"
+                            },
+                            "type": "string"
+                          },
+                          "metadata": {
+                            "properties": {
+                              "externalSessionId": {
+                                "type": "string"
+                              },
+                              "qualifiedIdentity": {
+                                "properties": {
+                                  "id": {
+                                    "type": "string"
+                                  },
+                                  "namespace": {
+                                    "type": "string"
+                                  }
+                                },
+                                "type": "string"
+                              },
+                              "tenantId": {
+                                "type": "string"
+                              },
+                              "timestamp": {
+                                "type": "string"
+                              },
+                              "transactionId": {
+                                "type": "string"
+                              }
+                            },
+                            "type": "string"
+                          },
+                          "transaction": {
+                            "properties": {
+                              "brand": {
+                                "properties": {
+                                  "value": {
+                                    "type": "string"
+                                  }
+                                },
+                                "type": "string"
+                              },
+                              "channel": {
+                                "properties": {
+                                  "value": {
+                                    "type": "string"
+                                  }
+                                },
+                                "type": "string"
+                              },
+                              "type": {
+                                "properties": {
+                                  "value": {
+                                    "type": "string"
+                                  }
+                                },
+                                "type": "string"
+                              }
+                            },
+                            "type": "string"
+                          }
+                        },
+                        "type": "string"
+                      },
+                      "requester_id": {
+                        "type": "string"
+                      },
+                      "requester_name": {
+                        "type": "string"
+                      },
+                      "resourceGroupName": {
+                        "type": "string"
+                      },
+                      "return_date": {
+                        "type": "string"
+                      },
+                      "schemaId": {
+                        "type": "string"
+                      },
+                      "severity": {
+                        "type": "string"
+                      },
+                      "source": {
+                        "type": "string"
+                      },
+                      "specversion": {
+                        "type": "string"
+                      },
+                      "storageAccountName": {
+                        "type": "string"
+                      },
+                      "storageContainerName": {
+                        "type": "string"
+                      },
+                      "subject": {
+                        "type": "string"
+                      },
+                      "suppressionKey": {
+                        "type": "string"
+                      },
+                      "tableConfigs": {
+                        "items": {
+                          "properties": {
+                            "_labelOverride": {
+                              "default": "string",
+                              "description": "string",
+                              "title": "string",
+                              "type": "string"
+                            },
+                            "_seriesDecomposeAnomaliesADMethod": {
+                              "default": "string",
+                              "description": "string",
+                              "enum": "string",
+                              "title": "string",
+                              "type": "string"
+                            },
+                            "_seriesDecomposeAnomaliesSeasonality": {
+                              "default": "integer",
+                              "description": "string",
+                              "title": "string",
+                              "type": "string"
+                            },
+                            "_seriesDecomposeAnomaliesSeasonalityThreshold": {
+                              "default": "float",
+                              "description": "string",
+                              "title": "string",
+                              "type": "string"
+                            },
+                            "_seriesDecomposeAnomaliesTestPoints": {
+                              "default": "integer",
+                              "description": "string",
+                              "title": "string",
+                              "type": "string"
+                            },
+                            "_seriesDecomposeAnomaliesThreshold": {
+                              "default": "float",
+                              "description": "string",
+                              "title": "string",
+                              "type": "string"
+                            },
+                            "_seriesDecomposeAnomaliesTrend": {
+                              "default": "string",
+                              "description": "string",
+                              "enum": "string",
+                              "title": "string",
+                              "type": "string"
+                            },
+                            "dimension": {
+                              "description": "string",
+                              "title": "string",
+                              "type": "string"
+                            },
+                            "dimensionType": {
+                              "description": "string",
+                              "enum": "string",
+                              "title": "string",
+                              "type": "string"
+                            },
+                            "enabled": {
+                              "description": "string",
+                              "title": "string",
+                              "type": "string"
+                            },
+                            "lookbackOverride": {
+                              "description": "string",
+                              "title": "string",
+                              "type": "string"
+                            },
+                            "table": {
+                              "description": "string",
+                              "title": "string",
+                              "type": "string"
+                            },
+                            "timeField": {
+                              "description": "string",
+                              "title": "string",
+                              "type": "string"
+                            }
+                          },
+                          "required": "string",
+                          "type": "string"
+                        },
+                        "type": "string"
+                      },
+                      "taxableAmount": {
+                        "type": "string"
+                      },
+                      "text": {
+                        "description": "string",
+                        "title": "string",
+                        "type": "string",
+                        "x-ms-content-hint": "string",
+                        "x-ms-dynamically-added": "boolean"
+                      },
+                      "text_1": {
+                        "description": "string",
+                        "title": "string",
+                        "type": "string",
+                        "x-ms-content-hint": "string",
+                        "x-ms-dynamically-added": "boolean"
+                      },
+                      "ticket": {
+                        "type": "string"
+                      },
+                      "time": {
+                        "type": "string"
+                      },
+                      "title": {
+                        "type": "string"
+                      },
+                      "token": {
+                        "type": "string"
+                      },
+                      "totalAmount": {
+                        "type": "string"
+                      },
+                      "transporter": {
+                        "type": "string"
+                      },
+                      "transporterCode": {
+                        "type": "string"
+                      },
+                      "type": {
+                        "type": "string"
+                      },
+                      "untitled": {
+                        "type": "string"
+                      },
+                      "username": {
+                        "type": "string"
+                      },
+                      "visible": {
+                        "type": "string"
+                      }
+                    },
+                    "required": "string",
+                    "type": "string",
+                    "username": "string"
+                  }
+                },
+                "kind": "string",
+                "operationOptions": "string",
+                "runtimeConfiguration": {
+                  "concurrency": {
+                    "maximumWaitingRuns": "integer",
+                    "runs": "integer"
+                  },
+                  "secureData": {
+                    "properties": "string"
+                  }
+                },
+                "type": "string"
+              },
+              "When_a_blob_is_added_or_modified_(properties_only)": {
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string",
+                  "queries": {
+                    "folderId": "string",
+                    "maxFileCount": "integer"
+                  }
+                },
+                "metadata": {
+                  "JTJmaW5wdXQ=": "string"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "splitOn": "string",
+                "type": "string"
+              },
+              "When_a_blob_is_added_or_modified_(properties_only)_(V2)": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "startTime": "string",
+                  "timeZone": "string"
+                },
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string",
+                  "queries": {
+                    "checkBothCreatedAndModifiedDateTime": "boolean",
+                    "folderId": "string",
+                    "maxFileCount": "integer"
+                  }
+                },
+                "metadata": {
+                  "JTJmYWdpZGlzdCUyZmZhbGNvbiUyZg==": "string",
+                  "JTJmb2VjZA==": "string",
+                  "JTJmbGFuZGluZy04NDUy": "string",
+                  "JTJmbWFydmVs": "string",
+                  "JTJmcGF0dGVybiUyZmluYm91bmQlMmY=": "string",
+                  "JTJmd2Zw": "string"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "startTime": "string",
+                  "timeZone": "string"
+                },
+                "splitOn": "string",
+                "type": "string"
+              },
+              "When_a_file_is_added_or_modified": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string",
+                  "queries": {
+                    "folderId": "string",
+                    "includeFileContent": "boolean",
+                    "inferContentType": "boolean",
+                    "queryParametersSingleEncoded": "boolean"
+                  }
+                },
+                "metadata": {
+                  "6e202211-2856-4d17-9ded-5beb8b8626b0": "string",
+                  "L091dGJvdW5k": "string",
+                  "L2ludGVncmF0aW9ucy9hY3VtZW4vb3V0Ym91bmQ=": "string"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "type": "string"
+              },
+              "When_a_file_is_created_(properties_only)": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "startTime": "string",
+                  "timeZone": "string"
+                },
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string",
+                  "queries": {
+                    "folderPath": "string"
+                  }
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "startTime": "string",
+                  "timeZone": "string"
+                },
+                "splitOn": "string",
+                "type": "string"
+              },
+              "When_a_file_is_created_(properties_only)_(V2)": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "startTime": "string",
+                  "timeZone": "string"
+                },
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string",
+                  "queries": {
+                    "folderId": "string",
+                    "maxFileCount": "integer"
+                  }
+                },
+                "metadata": {
+                  "156051492730": "string",
+                  "175112220599": "string",
+                  "183007445147": "string",
+                  "307344038077": "string"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "startTime": "string",
+                  "timeZone": "string"
+                },
+                "splitOn": "string",
+                "type": "string"
+              },
+              "When_a_file_is_created_in_a_folder": {
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string",
+                  "queries": {
+                    "folderId": "string",
+                    "inferContentType": "boolean",
+                    "queryParametersSingleEncoded": "boolean"
+                  }
+                },
+                "metadata": {
+                  "%252fShared%2bDocuments%252fTest%2bFolder": "string"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "type": "string"
+              },
+              "When_a_file_is_created_or_modified_(properties_only)": {
+                "conditions": {
+                  "expression": "string"
+                },
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "startTime": "string",
+                  "timeZone": "string"
+                },
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string",
+                  "queries": {
+                    "folderPath": "string",
+                    "view": "string"
+                  }
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "startTime": "string",
+                  "timeZone": "string"
+                },
+                "runtimeConfiguration": {
+                  "concurrency": {
+                    "runs": "integer"
+                  }
+                },
+                "splitOn": "string",
+                "type": "string"
+              },
+              "When_a_file_is_created_or_modified_in_a_folder_(deprecated)": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string",
+                  "queries": {
+                    "folderId": "string",
+                    "includeFileContent": "boolean",
+                    "inferContentType": "boolean",
+                    "queryParametersSingleEncoded": "boolean"
+                  }
+                },
+                "metadata": {
+                  "%252fShared%2bDocuments%252fGeneral%252fOpportunities%252fSpaceX%252fEmails%252femail-deis": "string",
+                  "%252fShared%2bDocuments%252fGeneral%252fOpportunities%252fSpaceX%252fEmails%252femail-deis-attachments": "string"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "type": "string"
+              },
+              "When_a_file_or_folder_is_deleted": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string",
+                  "queries": {
+                    "folderPath": "string"
+                  }
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "splitOn": "string",
+                "type": "string"
+              },
+              "When_a_form_response_is_submitted": {
+                "inputs": {
+                  "body": {
+                    "active": "boolean",
+                    "event": "string",
+                    "type": "string",
+                    "url": "string"
+                  },
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "path": "string"
+                },
+                "type": "string"
+              },
+              "When_a_message_is_received_in_a_queue_(auto-complete)": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string",
+                  "queries": {
+                    "queueType": "string"
+                  }
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "type": "string"
+              },
+              "When_a_message_is_received_in_a_topic_subscription_(auto-complete)": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string",
+                  "queries": {
+                    "subscriptionType": "string"
+                  }
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "type": "string"
+              },
+              "When_a_message_is_received_in_entrata-silver_queue_(auto-complete)": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string",
+                  "queries": {
+                    "queueType": "string"
+                  }
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "type": "string"
+              },
+              "When_a_message_is_received_in_floorplan-queue_queue_(auto-complete)": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string",
+                  "queries": {
+                    "queueType": "string"
+                  }
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "type": "string"
+              },
+              "When_a_message_is_received_in_opiniion-queue_queue_(auto-complete)": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string",
+                  "queries": {
+                    "queueType": "string"
+                  }
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "type": "string"
+              },
+              "When_a_message_is_received_in_property-queue_queue_(auto-complete)": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string",
+                  "queries": {
+                    "queueType": "string"
+                  }
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "type": "string"
+              },
+              "When_a_message_is_received_in_raw-entrata-survey-queue_queue_(auto-complete)": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string",
+                  "queries": {
+                    "queueType": "string"
+                  }
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "type": "string"
+              },
+              "When_a_message_is_received_in_raw-survey-queue_queue_(auto-complete)": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string",
+                  "queries": {
+                    "queueType": "string"
+                  }
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "type": "string"
+              },
+              "When_a_message_is_received_in_silverdeltapricingqueue_queue_(auto-complete)": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string",
+                  "queries": {
+                    "queueType": "string"
+                  }
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "type": "string"
+              },
+              "When_a_new_OT_Remote_Access_has_been_submitted": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "splitOn": "string",
+                "type": "string"
+              },
+              "When_a_new_chat_message_is_added": {
+                "inputs": {
+                  "body": {
+                    "notificationUrl": "string"
+                  },
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "path": "string"
+                },
+                "type": "string"
+              },
+              "When_a_new_email_arrives": {
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string",
+                  "queries": {
+                    "fetchOnlyWithAttachments": "boolean",
+                    "importance": "string",
+                    "includeAttachments": "boolean",
+                    "label": "string",
+                    "starred": "string"
+                  }
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "type": "string"
+              },
+              "When_a_new_email_arrives_(V3)": {
+                "conditions": {
+                  "expression": "string"
+                },
+                "inputs": {
+                  "fetch": {
+                    "method": "string",
+                    "pathTemplate": {
+                      "template": "string"
+                    },
+                    "queries": {
+                      "fetchOnlyWithAttachment": "boolean",
+                      "folderPath": "string",
+                      "from": "string",
+                      "importance": "string",
+                      "includeAttachments": "boolean",
+                      "subjectFilter": "string",
+                      "to": "string"
+                    }
+                  },
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "subscribe": {
+                    "body": {
+                      "NotificationUrl": "string"
+                    },
+                    "method": "string",
+                    "pathTemplate": {
+                      "template": "string"
+                    },
+                    "queries": {
+                      "fetchOnlyWithAttachment": "boolean",
+                      "folderPath": "string",
+                      "importance": "string"
+                    }
+                  }
+                },
+                "metadata": {
+                  "Id::AAMkADdiYTBkYzliLWIzYzYtNDE1ZS04Y2MzLWE1M2JiYTFjNDk1ZAAuAAAAAABSkM5QWWwtRIRPFw3S-_F6AQByIApunxaJRprJhq33gMkEAAEvsdKZAAA=": "string",
+                  "Id::AAMkADllZTZlODFjLTFkYWQtNDk5OS04NDMwLTBlYTQ3NDRkMjBlOQAuAAAAAACU3geqHYJjQpGHmHTh2PEHAQBYqqB9todJSZOfu2K_z8llAAASMthxAAA=": "string"
+                },
+                "splitOn": "string",
+                "type": "string"
+              },
+              "When_a_new_email_arrives_in_a_shared_mailbox": {
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string",
+                  "queries": {
+                    "folderId": "string",
+                    "from": "string",
+                    "hasAttachments": "boolean",
+                    "importance": "string",
+                    "includeAttachments": "boolean",
+                    "mailboxAddress": "string",
+                    "subjectFilter": "string"
+                  }
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "splitOn": "string",
+                "type": "string"
+              },
+              "When_a_new_email_arrives_in_a_shared_mailbox_(V2)": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "timeZone": "string"
+                },
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string",
+                  "queries": {
+                    "folderId": "string",
+                    "from": "string",
+                    "hasAttachments": "boolean",
+                    "importance": "string",
+                    "includeAttachments": "boolean",
+                    "mailboxAddress": "string",
+                    "subjectFilter": "string"
+                  }
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "timeZone": "string"
+                },
+                "runtimeConfiguration": {
+                  "concurrency": {
+                    "runs": "integer"
+                  }
+                },
+                "splitOn": "string",
+                "type": "string"
+              },
+              "When_a_new_email_arrives_in_data_service_mailbox": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string",
+                  "queries": {
+                    "folderId": "string",
+                    "from": "string",
+                    "hasAttachments": "boolean",
+                    "importance": "string",
+                    "includeAttachments": "boolean",
+                    "mailboxAddress": "string",
+                    "subjectFilter": "string"
+                  }
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "string"
+                },
+                "splitOn": "string",
+                "type": "string"
+              },
+              "When_a_new_email_arrives_in_evidence_service_mailbox": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string",
+                  "queries": {
+                    "folderId": "string",
+                    "hasAttachments": "boolean",
+                    "importance": "string",
+                    "includeAttachments": "boolean",
+                    "mailboxAddress": "string",
+                    "subjectFilter": "string"
+                  }
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "splitOn": "string",
+                "type": "string"
+              },
+              "When_a_new_form_response_is_submitted": {
+                "inputs": {
+                  "body": {
+                    "webHookUrl": "string"
+                  },
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "path": "string",
+                  "queries": {
+                    "environment": "string",
+                    "formId": "string",
+                    "groupId": "string",
+                    "triggers": "string"
+                  }
+                },
+                "type": "string"
+              },
+              "When_a_new_item_is_created": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "splitOn": "string",
+                "type": "string"
+              },
+              "When_a_new_response_is_submitted": {
+                "inputs": {
+                  "body": {
+                    "eventType": "string",
+                    "notificationUrl": "string",
+                    "source": "string"
+                  },
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "path": "string"
+                },
+                "splitOn": "string",
+                "type": "string"
+              },
+              "When_a_resource_event_occurs": {
+                "inputs": {
+                  "body": {
+                    "properties": {
+                      "destination": {
+                        "endpointType": "string",
+                        "properties": {
+                          "endpointUrl": "string"
+                        }
+                      },
+                      "filter": {
+                        "includedEventTypes": "string"
+                      },
+                      "topic": "string"
+                    }
+                  },
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "path": "string",
+                  "queries": {
+                    "x-ms-api-version": "string"
+                  }
+                },
+                "splitOn": "string",
+                "type": "string"
+              },
+              "When_a_response_to_an_Azure_Sentinel_alert_is_triggered": {
+                "inputs": {
+                  "body": {
+                    "callback_url": "string"
+                  },
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "path": "string"
+                },
+                "type": "string"
+              },
+              "When_a_rule_is_fired": {
+                "description": "string",
+                "inputs": {
+                  "body": {
+                    "rule": "string",
+                    "url": "string"
+                  },
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "path": "string",
+                  "queries": {
+                    "application": "string"
+                  }
+                },
+                "type": "string"
+              },
+              "When_a_work_item_is_closed": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "startTime": "string",
+                  "timeZone": "string"
+                },
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string",
+                  "queries": {
+                    "account": "string",
+                    "areaPathComparison": "string",
+                    "closedState": "string",
+                    "iterationPathComparison": "string",
+                    "team": "string",
+                    "wiql__System_WorkItemType": "string"
+                  }
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "startTime": "string",
+                  "timeZone": "string"
+                },
+                "splitOn": "string",
+                "type": "string"
+              },
+              "When_an_Azure_Security_Center_Alert_is_created_or_triggered": {
+                "inputs": {
+                  "body": {
+                    "callback_url": "string"
+                  },
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "path": "string"
+                },
+                "type": "string"
+              },
+              "When_an_email_is_flagged_(V3)": {
+                "inputs": {
+                  "fetch": {
+                    "method": "string",
+                    "pathTemplate": {
+                      "template": "string"
+                    },
+                    "queries": {
+                      "fetchOnlyWithAttachment": "boolean",
+                      "folderPath": "string",
+                      "importance": "string",
+                      "includeAttachments": "boolean"
+                    }
+                  },
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "subscribe": {
+                    "body": {
+                      "NotificationUrl": "string"
+                    },
+                    "method": "string",
+                    "pathTemplate": {
+                      "template": "string"
+                    },
+                    "queries": {
+                      "fetchOnlyWithAttachment": "boolean",
+                      "folderPath": "string",
+                      "importance": "string"
+                    }
+                  }
+                },
+                "metadata": {
+                  "Id::AAMkADE5NDQ1ZmIxLTJjYWQtNGE1NS04NDcxLTc4MzE0ZWQ1MTkyYwAuAAAAAAD1yBnT9kjVEYMCAAD4fhmdAQDUtEPeVhckRaoHgDIrVtneAAGHBcEBAAA=": "string"
+                },
+                "splitOn": "string",
+                "type": "string"
+              },
+              "When_an_existing_item_is_modified": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "splitOn": "string",
+                "type": "string"
+              },
+              "When_an_item_is_created": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "splitOn": "string",
+                "type": "string"
+              },
+              "When_an_item_is_created_(V2)": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "splitOn": "string",
+                "type": "string"
+              },
+              "When_an_item_is_created_or_modified": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string"
+                },
+                "metadata": {
+                  "flowSystemMetadata": {
+                    "swaggerOperationId": "string"
+                  }
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "splitOn": "string",
+                "type": "string"
+              },
+              "When_an_item_is_deleted": {
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string"
+                },
+                "metadata": {
+                  "flowSystemMetadata": {
+                    "swaggerOperationId": "string"
+                  }
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "splitOn": "string",
+                "type": "string"
+              },
+              "When_an_item_or_a_file_is_modified": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "splitOn": "string",
+                "type": "string"
+              },
+              "http-trigger": {
+                "inputs": {
+                  "method": "string",
+                  "schema": "object"
+                },
+                "kind": "string",
+                "type": "string"
+              },
+              "manual": {
+                "description": "string",
+                "inputs": {
+                  "method": "string",
+                  "schema": {
+                    "Status": "string",
+                    "additionalProperties": "boolean",
+                    "items": {
+                      "properties": {
+                        "DisplayName": "object",
+                        "DviceID": {
+                          "type": "string"
+                        },
+                        "Host": {
+                          "type": "string"
+                        },
+                        "ImpossibleCheck": {
+                          "type": "string"
+                        },
+                        "UserID": "object",
+                        "UserPrincipalName": "object",
+                        "data": {
+                          "properties": {
+                            "api": {
+                              "type": "string"
+                            },
+                            "authorization": {
+                              "properties": {
+                                "action": {
+                                  "type": "string"
+                                },
+                                "evidence": {
+                                  "properties": {
+                                    "principalId": {
+                                      "type": "string"
+                                    },
+                                    "principalType": {
+                                      "type": "string"
+                                    },
+                                    "role": {
+                                      "type": "string"
+                                    },
+                                    "roleAssignmentId": {
+                                      "type": "string"
+                                    },
+                                    "roleAssignmentScope": {
+                                      "type": "string"
+                                    },
+                                    "roleDefinitionId": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "type": "string"
+                                },
+                                "scope": {
+                                  "type": "string"
+                                }
+                              },
+                              "type": "string"
+                            },
+                            "blobType": {
+                              "type": "string"
+                            },
+                            "claims": {
+                              "properties": {
+                                "aio": {
+                                  "type": "string"
+                                },
+                                "appid": {
+                                  "type": "string"
+                                },
+                                "appidacr": {
+                                  "type": "string"
+                                },
+                                "aud": {
+                                  "type": "string"
+                                },
+                                "exp": {
+                                  "type": "string"
+                                },
+                                "groups": {
+                                  "type": "string"
+                                },
+                                "http://schemas": {
+                                  "microsoft": {
+                                    "com/claims/authnclassreference": {
+                                      "type": "string"
+                                    },
+                                    "com/claims/authnmethodsreferences": {
+                                      "type": "string"
+                                    },
+                                    "com/identity/claims/objectidentifier": {
+                                      "type": "string"
+                                    },
+                                    "com/identity/claims/scope": {
+                                      "type": "string"
+                                    },
+                                    "com/identity/claims/tenantid": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "xmlsoap": {
+                                    "org/ws/2005/05/identity/claims/name": {
+                                      "type": "string"
+                                    },
+                                    "org/ws/2005/05/identity/claims/nameidentifier": {
+                                      "type": "string"
+                                    },
+                                    "org/ws/2005/05/identity/claims/upn": {
+                                      "type": "string"
+                                    }
+                                  }
+                                },
+                                "iat": {
+                                  "type": "string"
+                                },
+                                "ipaddr": {
+                                  "type": "string"
+                                },
+                                "iss": {
+                                  "type": "string"
+                                },
+                                "name": {
+                                  "type": "string"
+                                },
+                                "nbf": {
+                                  "type": "string"
+                                },
+                                "onprem_sid": {
+                                  "type": "string"
+                                },
+                                "puid": {
+                                  "type": "string"
+                                },
+                                "uti": {
+                                  "type": "string"
+                                },
+                                "ver": {
+                                  "type": "string"
+                                }
+                              },
+                              "type": "string"
+                            },
+                            "clientRequestId": {
+                              "type": "string"
+                            },
+                            "contentLength": {
+                              "type": "string"
+                            },
+                            "contentType": {
+                              "type": "string"
+                            },
+                            "correlationId": {
+                              "type": "string"
+                            },
+                            "eTag": {
+                              "type": "string"
+                            },
+                            "httpRequest": {
+                              "properties": {
+                                "clientIpAddress": {
+                                  "type": "string"
+                                },
+                                "clientRequestId": {
+                                  "type": "string"
+                                },
+                                "method": {
+                                  "type": "string"
+                                },
+                                "url": {
+                                  "type": "string"
+                                }
+                              },
+                              "type": "string"
+                            },
+                            "operationName": {
+                              "type": "string"
+                            },
+                            "requestId": {
+                              "type": "string"
+                            },
+                            "resourceProvider": {
+                              "type": "string"
+                            },
+                            "resourceUri": {
+                              "type": "string"
+                            },
+                            "sequencer": {
+                              "type": "string"
+                            },
+                            "status": {
+                              "type": "string"
+                            },
+                            "storageDiagnostics": {
+                              "properties": {
+                                "batchId": {
+                                  "type": "string"
+                                }
+                              },
+                              "type": "string"
+                            },
+                            "subscriptionId": {
+                              "type": "string"
+                            },
+                            "tenantId": {
+                              "type": "string"
+                            },
+                            "url": {
+                              "type": "string"
+                            }
+                          },
+                          "type": "string"
+                        },
+                        "dataVersion": {
+                          "type": "string"
+                        },
+                        "eventTime": {
+                          "type": "string"
+                        },
+                        "eventType": {
+                          "type": "string"
+                        },
+                        "id": {
+                          "type": "string"
+                        },
+                        "key": {
+                          "type": "string"
+                        },
+                        "metadataVersion": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "objectTypeId": {
+                          "type": "string"
+                        },
+                        "subject": {
+                          "type": "string"
+                        },
+                        "topic": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "string"
+                        },
+                        "watchlistitem": {
+                          "type": "string"
+                        }
+                      },
+                      "required": "string",
+                      "type": "string"
+                    },
+                    "list": "string",
+                    "properties": "object",
+                    "required": "string",
+                    "token": "string",
+                    "type": "string"
+                  }
+                },
+                "kind": "string",
+                "operationOptions": "string",
+                "runtimeConfiguration": {
+                  "concurrency": {
+                    "runs": "integer"
+                  },
+                  "secureData": {
+                    "properties": "string"
+                  }
+                },
+                "type": "string"
+              },
+              "recurrence": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "startTime": "string",
+                  "timeZone": "string"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "startTime": "string",
+                  "timeZone": "string"
+                },
+                "type": "string"
+              },
+              "request": {
+                "inputs": {
+                  "method": "string",
+                  "schema": {
+                    "properties": {
+                      "ASAP": {
+                        "type": "string"
+                      },
+                      "Assets": {
+                        "type": "string"
+                      },
+                      "Data_factory_name": {
+                        "type": "string"
+                      },
+                      "Email": {
+                        "type": "string"
+                      },
+                      "Initiator": {
+                        "type": "string"
+                      },
+                      "JiraTicket": {
+                        "type": "string"
+                      },
+                      "LastDay": {
+                        "type": "string"
+                      },
+                      "Username": {
+                        "type": "string"
+                      },
+                      "body": {
+                        "type": "string"
+                      },
+                      "callbackId": {
+                        "type": "string"
+                      },
+                      "callbackParameters": {
+                        "properties": {
+                          "communicationId": {
+                            "type": "string"
+                          }
+                        },
+                        "type": "string"
+                      },
+                      "date": {
+                        "type": "string"
+                      },
+                      "email": {
+                        "type": "string"
+                      },
+                      "features": {
+                        "properties": {
+                          "aliasOption": {
+                            "properties": {
+                              "aliasName": "object"
+                            },
+                            "type": "string"
+                          }
+                        },
+                        "type": "string"
+                      },
+                      "id": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "subject": {
+                        "type": "string"
+                      },
+                      "to": {
+                        "type": "string"
+                      }
+                    },
+                    "type": "string"
+                  }
+                },
+                "kind": "string",
+                "type": "string"
+              },
+              "run_every_10_minutes": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "type": "string"
+              },
+              "\u30ad\u30e5\u30fc\u306b\u30e1\u30c3\u30bb\u30fc\u30b8\u304c\u542b\u307e\u308c\u308b\u3068\u304d_(V2)": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "startTime": "string",
+                  "timeZone": "string"
+                },
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "startTime": "string",
+                  "timeZone": "string"
+                },
+                "splitOn": "string",
+                "type": "string"
+              },
+              "\u30d5\u30a3\u30fc\u30c9\u9805\u76ee\u304c\u767a\u884c\u3055\u308c\u308b\u5834\u5408": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "timeZone": "string"
+                },
+                "inputs": {
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "method": "string",
+                  "path": "string",
+                  "queries": {
+                    "feedUrl": "string",
+                    "sinceProperty": "string"
+                  }
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer",
+                  "timeZone": "string"
+                },
+                "splitOn": "string",
+                "type": "string"
+              },
+              "\u65b0\u3057\u3044\u30e1\u30fc\u30eb\u304c\u5c4a\u3044\u305f\u3068\u304d_(V3)": {
+                "inputs": {
+                  "fetch": {
+                    "method": "string",
+                    "pathTemplate": {
+                      "template": "string"
+                    },
+                    "queries": {
+                      "folderPath": "string",
+                      "from": "string"
+                    }
+                  },
+                  "host": {
+                    "connection": {
+                      "name": "string"
+                    }
+                  },
+                  "subscribe": {
+                    "body": {
+                      "NotificationUrl": "string"
+                    },
+                    "method": "string",
+                    "pathTemplate": {
+                      "template": "string"
+                    },
+                    "queries": {
+                      "folderPath": "string"
+                    }
+                  }
+                },
+                "metadata": {
+                  "Id::AAMkAGExY2IzNGFkLTdmNjAtNDM2MS1hZGQ3LWVlMTA3OThiMDJlNQAuAAAAAABO1MSi-RYQTJEU6-vYu7T3AQCvKNmcU3lXSLxBFV_cj_r-AAAAAAEMAAA=": "string"
+                },
+                "splitOn": "string",
+                "type": "string"
+              },
+              "\u7e70\u308a\u8fd4\u3057": {
+                "evaluatedRecurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "recurrence": {
+                  "frequency": "string",
+                  "interval": "integer"
+                },
+                "type": "string"
+              }
+            }
+          },
+          "endpointsConfiguration": {
+            "connector": {
+              "outgoingIpAddresses": {
+                "address": "string"
+              }
+            },
+            "workflow": {
+              "accessEndpointIpAddresses": {
+                "address": "string"
+              },
+              "outgoingIpAddresses": {
+                "address": "string"
+              }
+            }
+          },
+          "integrationAccount": {
+            "id": "string",
+            "name": "string",
+            "type": "string"
+          },
+          "managedNetwork": "object",
+          "osProfile": "object",
+          "parameters": {
+            "$clientWorkspaceID": {
+              "type": "string",
+              "value": "string"
+            },
+            "$connections": {
+              "type": "string",
+              "value": "object"
+            },
+            "$logAnalyticsResourceGroupName": {
+              "type": "string",
+              "value": "string"
+            },
+            "$managedIdentityId": {
+              "value": {
+                "managedIdentityId": "string"
+              }
+            },
+            "$p_claim_tracking_purge_records_older_than_days": {
+              "value": "integer"
+            },
+            "$p_orchestrator_api_key": {
+              "value": "string"
+            },
+            "$p_orchestrator_api_uri": {
+              "value": "string"
+            },
+            "$p_telerikReportUrl": {
+              "value": "string"
+            },
+            "$subscriptionId": {
+              "type": "string",
+              "value": "string"
+            },
+            "$workspaceName": {
+              "type": "string",
+              "value": "string"
+            },
+            "DeallocateTime": {
+              "value": "string"
+            },
+            "EmailID": {
+              "value": "string"
+            },
+            "Frequency": {
+              "value": "string"
+            },
+            "Interval": {
+              "value": "integer"
+            },
+            "Notify": {
+              "value": "boolean"
+            },
+            "ResourceGroup": {
+              "value": "string"
+            },
+            "ResourceVM": {
+              "value": "string"
+            },
+            "StartTime": {
+              "value": "string"
+            },
+            "StopTime": {
+              "value": "string"
+            },
+            "SubscriptionId": {
+              "value": "string"
+            },
+            "TimeZone": {
+              "value": "string"
+            },
+            "alertEmail": {
+              "value": "string"
+            },
+            "emailRecipient": {
+              "value": "string"
+            },
+            "email_to": {
+              "value": "string"
+            },
+            "lakeAccountName": {
+              "value": "string"
+            },
+            "pollTime": {
+              "value": "string"
+            },
+            "secret": "object",
+            "uri": {
+              "value": "string"
+            }
+          },
+          "provisioningState": "string",
+          "state": "string",
+          "storageProfile": "object",
+          "version": "string",
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          }
+        },
+        "resources": "object",
+        "tags": "object",
+        "type": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "configurations": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

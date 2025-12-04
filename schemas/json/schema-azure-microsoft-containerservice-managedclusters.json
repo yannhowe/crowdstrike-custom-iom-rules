@@ -1,0 +1,449 @@
+[
+  {
+    "Microsoft.ContainerService/managedClusters": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "id": "string",
+        "identity": {
+          "principalId": "string",
+          "tenantId": "string",
+          "type": "string",
+          "userAssignedIdentities": "object"
+        },
+        "location": "string",
+        "name": "string",
+        "properties": {
+          "aadProfile": {
+            "adminGroupObjectIDs": "string",
+            "clientAppID": "string",
+            "enableAzureRBAC": "boolean",
+            "managed": "boolean",
+            "serverAppID": "string",
+            "tenantID": "string"
+          },
+          "addonProfiles": {
+            "ACCSGXDevicePlugin": {
+              "config": {
+                "ACCSGXQuoteHelperEnabled": "string"
+              },
+              "enabled": "boolean"
+            },
+            "KubeDashboard": {
+              "enabled": "boolean",
+              "identity": {
+                "clientId": "string",
+                "objectId": "string",
+                "resourceId": "string"
+              }
+            },
+            "aciConnectorLinux": {
+              "config": {
+                "SubnetName": "string",
+                "subnetName": "string"
+              },
+              "enabled": "boolean",
+              "identity": {
+                "clientId": "string",
+                "objectId": "string",
+                "resourceId": "string"
+              }
+            },
+            "aciconnectorlinux": {
+              "config": {
+                "subnetname": "string"
+              },
+              "enabled": "boolean"
+            },
+            "azureKeyVaultSecretsProvider": {
+              "config": {
+                "enableSecretRotation": "string"
+              },
+              "enabled": "boolean",
+              "identity": {
+                "clientId": "string",
+                "objectId": "string",
+                "resourceId": "string"
+              }
+            },
+            "azureKeyvaultSecretsProvider": {
+              "config": {
+                "enableSecretRotation": "string",
+                "keyVaultResourceId": "string",
+                "rotationPollInterval": "string",
+                "tenantId": "string",
+                "usePodIdentity": "string",
+                "useVMManagedIdentity": "string",
+                "userAssignedIdentityID": "string"
+              },
+              "enabled": "boolean",
+              "identity": {
+                "clientId": "string",
+                "objectId": "string",
+                "resourceId": "string"
+              }
+            },
+            "azurePolicy": {
+              "enabled": "boolean",
+              "identity": {
+                "clientId": "string",
+                "objectId": "string",
+                "resourceId": "string"
+              }
+            },
+            "azurepolicy": {
+              "config": {
+                "version": "string"
+              },
+              "enabled": "boolean",
+              "identity": {
+                "clientId": "string",
+                "objectId": "string",
+                "resourceId": "string"
+              }
+            },
+            "extensionManager": {
+              "enabled": "boolean",
+              "identity": {
+                "clientId": "string",
+                "objectId": "string",
+                "resourceId": "string"
+              }
+            },
+            "httpApplicationRouting": {
+              "config": {
+                "HTTPApplicationRoutingZoneName": "string"
+              },
+              "enabled": "boolean",
+              "identity": {
+                "clientId": "string",
+                "objectId": "string",
+                "resourceId": "string"
+              }
+            },
+            "httpapplicationrouting": {
+              "config": {
+                "HTTPApplicationRoutingZoneName": "string",
+                "httpapplicationroutingzonename": "string"
+              },
+              "enabled": "boolean"
+            },
+            "ingressApplicationGateway": {
+              "config": {
+                "applicationGatewayId": "string",
+                "applicationGatewayName": "string",
+                "effectiveApplicationGatewayId": "string",
+                "subnetCIDR": "string",
+                "subnetId": "string",
+                "subnetPrefix": "string",
+                "watchNamespace": "string"
+              },
+              "enabled": "boolean",
+              "identity": {
+                "clientId": "string",
+                "objectId": "string",
+                "resourceId": "string"
+              }
+            },
+            "kubeDashboard": {
+              "enabled": "boolean"
+            },
+            "kubedashboard": {
+              "enabled": "boolean"
+            },
+            "omsAgent": {
+              "config": {
+                "logAnalyticsWorkspaceResourceID": "string",
+                "useAADAuth": "string"
+              },
+              "enabled": "boolean",
+              "identity": {
+                "clientId": "string",
+                "objectId": "string",
+                "resourceId": "string"
+              }
+            },
+            "omsagent": {
+              "config": {
+                "LogAnalyticsWorkspaceResourceID": "string",
+                "logAnalyticsWorkspaceResourceID": "string",
+                "logAnalyticsWorkspaceResourceId": "string",
+                "loganalyticsworkspaceresourceid": "string",
+                "useAADAuth": "string"
+              },
+              "enabled": "boolean",
+              "identity": {
+                "clientId": "string",
+                "objectId": "string",
+                "resourceId": "string"
+              }
+            },
+            "openServiceMesh": {
+              "config": {
+                "podAntiAffinity": {
+                  "preferredDuringSchedulingIgnoredDuringExecution": "string"
+                }
+              },
+              "enabled": "boolean",
+              "identity": {
+                "clientId": "string",
+                "objectId": "string",
+                "resourceId": "string"
+              }
+            }
+          },
+          "agentPoolProfiles": "object",
+          "apiServerAccessProfile": {
+            "authorizedIPRanges": "string",
+            "disableRunCommand": "boolean",
+            "enablePrivateCluster": "boolean",
+            "enablePrivateClusterPublicFQDN": "boolean",
+            "privateDNSZone": "string"
+          },
+          "autoScalerProfile": {
+            "balance-similar-node-groups": "string",
+            "expander": "string",
+            "max-empty-bulk-delete": "string",
+            "max-graceful-termination-sec": "string",
+            "max-node-provision-time": "string",
+            "max-total-unready-percentage": "string",
+            "new-pod-scale-up-delay": "string",
+            "ok-total-unready-count": "string",
+            "scale-down-delay-after-add": "string",
+            "scale-down-delay-after-delete": "string",
+            "scale-down-delay-after-failure": "string",
+            "scale-down-unneeded-time": "string",
+            "scale-down-unready-time": "string",
+            "scale-down-utilization-threshold": "string",
+            "scan-interval": "string",
+            "skip-nodes-with-local-storage": "string",
+            "skip-nodes-with-system-pods": "string"
+          },
+          "autoUpgradeProfile": {
+            "upgradeChannel": "string"
+          },
+          "azurePortalFQDN": "string",
+          "currentKubernetesVersion": "string",
+          "definition": {
+            "actions": "object"
+          },
+          "disableLocalAccounts": "boolean",
+          "diskEncryptionSetID": "string",
+          "dnsPrefix": "string",
+          "enablePodSecurityPolicy": "boolean",
+          "enableRBAC": "boolean",
+          "fqdn": "string",
+          "fqdnSubdomain": "string",
+          "httpProxyConfig": {
+            "httpProxy": "string",
+            "httpsProxy": "string",
+            "noProxy": "string",
+            "trustedCa": "string"
+          },
+          "identityProfile": {
+            "kubeletidentity": {
+              "clientId": "string",
+              "objectId": "string",
+              "resourceId": "string"
+            }
+          },
+          "kubernetesVersion": "string",
+          "linuxProfile": {
+            "adminUsername": "string",
+            "ssh": {
+              "publicKeys": {
+                "keyData": "string"
+              }
+            }
+          },
+          "managedNetwork": "object",
+          "maxAgentPools": "integer",
+          "networkProfile": {
+            "dnsServiceIP": "string",
+            "ipFamilies": "string",
+            "loadBalancerProfile": {
+              "allocatedOutboundPorts": "integer",
+              "effectiveOutboundIPs": {
+                "id": "string"
+              },
+              "idleTimeoutInMinutes": "integer",
+              "managedOutboundIPs": {
+                "count": "integer",
+                "countIPv6": "integer"
+              },
+              "outboundIPPrefixes": {
+                "publicIPPrefixes": {
+                  "id": "string"
+                }
+              },
+              "outboundIPs": {
+                "publicIPs": {
+                  "id": "string"
+                }
+              }
+            },
+            "loadBalancerSku": "string",
+            "natGatewayProfile": {
+              "effectiveOutboundIPs": {
+                "id": "string"
+              },
+              "idleTimeoutInMinutes": "integer",
+              "managedOutboundIPProfile": {
+                "count": "integer"
+              }
+            },
+            "networkMode": "string",
+            "networkPlugin": "string",
+            "networkPolicy": "string",
+            "outboundType": "string",
+            "podCidr": "string",
+            "podCidrs": "string",
+            "serviceCidr": "string",
+            "serviceCidrs": "string"
+          },
+          "nodeResourceGroup": "string",
+          "oidcIssuerProfile": {
+            "enabled": "boolean",
+            "issuerURL": "string"
+          },
+          "osProfile": "object",
+          "podIdentityProfile": {
+            "allowNetworkPluginKubenet": "boolean",
+            "enabled": "boolean",
+            "userAssignedIdentities": {
+              "bindingSelector": "string",
+              "identity": {
+                "clientId": "string",
+                "objectId": "string",
+                "resourceId": "string"
+              },
+              "name": "string",
+              "namespace": "string",
+              "provisioningState": "string"
+            },
+            "userAssignedIdentityExceptions": {
+              "name": "string",
+              "namespace": "string",
+              "podLabels": {
+                "app": {
+                  "kubernetes": {
+                    "io/name": "string"
+                  }
+                }
+              }
+            }
+          },
+          "powerState": {
+            "code": "string"
+          },
+          "privateFQDN": "string",
+          "privateLinkResources": {
+            "groupId": "string",
+            "id": "string",
+            "name": "string",
+            "requiredMembers": "string",
+            "type": "string"
+          },
+          "provisioningState": "string",
+          "publicNetworkAccess": "string",
+          "securityProfile": {
+            "azureKeyVaultKms": {
+              "enabled": "boolean",
+              "keyId": "string",
+              "keyVaultNetworkAccess": "string"
+            },
+            "defender": {
+              "logAnalyticsWorkspaceResourceId": "string",
+              "securityMonitoring": {
+                "enabled": "boolean"
+              }
+            }
+          },
+          "servicePrincipalProfile": {
+            "clientId": "string"
+          },
+          "storageProfile": "object",
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          },
+          "windowsProfile": {
+            "adminUsername": "string",
+            "enableCSIProxy": "boolean",
+            "gmsaProfile": {
+              "dnsServer": "string",
+              "enabled": "boolean",
+              "rootDomainName": "string"
+            },
+            "licenseType": "string"
+          }
+        },
+        "resources": "object",
+        "sku": {
+          "name": "string",
+          "tier": "string"
+        },
+        "tags": "object",
+        "type": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "configurations": "object",
+        "diagnosticSettings": {
+          "id": "string",
+          "name": "string",
+          "properties": {
+            "eventHubAuthorizationRuleId": "string",
+            "eventHubName": "string",
+            "logAnalyticsDestinationType": "string",
+            "logs": {
+              "category": "string",
+              "categoryGroup": "string",
+              "enabled": "boolean",
+              "retentionPolicy": {
+                "days": "integer",
+                "enabled": "boolean"
+              }
+            },
+            "marketplacePartnerId": "string",
+            "metrics": {
+              "category": "string",
+              "enabled": "boolean",
+              "retentionPolicy": {
+                "days": "integer",
+                "enabled": "boolean"
+              }
+            },
+            "storageAccountId": "string",
+            "workspaceId": "string"
+          },
+          "type": "string"
+        }
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

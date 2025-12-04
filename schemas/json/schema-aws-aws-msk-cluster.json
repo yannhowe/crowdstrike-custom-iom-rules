@@ -1,0 +1,197 @@
+[
+  {
+    "AWS::MSK::Cluster": {
+      "configuration": {
+        "certificatePem": "string",
+        "clusterInfo": {
+          "activeOperationArn": "string",
+          "clusterArn": "string",
+          "clusterName": "string",
+          "clusterType": "string",
+          "creationTime": "string",
+          "currentVersion": "string",
+          "provisioned": {
+            "brokerNodeGroupInfo": {
+              "brokerAZDistribution": "string",
+              "clientSubnets": "string",
+              "connectivityInfo": {
+                "publicAccess": {
+                  "type": "string"
+                },
+                "vpcConnectivity": {
+                  "clientAuthentication": {
+                    "sasl": {
+                      "iam": {
+                        "enabled": "boolean"
+                      },
+                      "scram": {
+                        "enabled": "boolean"
+                      }
+                    },
+                    "tls": {
+                      "enabled": "boolean"
+                    }
+                  }
+                }
+              },
+              "instanceType": "string",
+              "securityGroups": "string",
+              "storageInfo": {
+                "ebsStorageInfo": {
+                  "provisionedThroughput": {
+                    "enabled": "boolean",
+                    "volumeThroughput": "integer"
+                  },
+                  "volumeSize": "integer"
+                }
+              },
+              "zoneIds": "string"
+            },
+            "clientAuthentication": {
+              "sasl": {
+                "iam": {
+                  "enabled": "boolean"
+                },
+                "scram": {
+                  "enabled": "boolean"
+                }
+              },
+              "tls": {
+                "certificateAuthorityArnList": "string",
+                "enabled": "boolean"
+              },
+              "unauthenticated": {
+                "enabled": "boolean"
+              }
+            },
+            "currentBrokerSoftwareInfo": {
+              "configurationArn": "string",
+              "configurationRevision": "integer",
+              "kafkaVersion": "string"
+            },
+            "customerActionStatus": "string",
+            "encryptionInfo": {
+              "encryptionAtRest": {
+                "dataVolumeKMSKeyId": "string"
+              },
+              "encryptionInTransit": {
+                "clientBroker": "string",
+                "inCluster": "boolean"
+              }
+            },
+            "enhancedMonitoring": "string",
+            "loggingInfo": {
+              "brokerLogs": {
+                "cloudWatchLogs": {
+                  "enabled": "boolean",
+                  "logGroup": "string"
+                },
+                "firehose": {
+                  "deliveryStream": "string",
+                  "enabled": "boolean"
+                },
+                "s3": {
+                  "bucket": "string",
+                  "enabled": "boolean",
+                  "prefix": "string"
+                }
+              }
+            },
+            "numberOfBrokerNodes": "integer",
+            "openMonitoring": {
+              "prometheus": {
+                "jmxExporter": {
+                  "enabledInBroker": "boolean"
+                },
+                "nodeExporter": {
+                  "enabledInBroker": "boolean"
+                }
+              }
+            },
+            "storageMode": "string",
+            "zookeeperConnectString": "string",
+            "zookeeperConnectStringTls": "string"
+          },
+          "serverless": {
+            "clientAuthentication": {
+              "sasl": {
+                "iam": {
+                  "enabled": "boolean"
+                }
+              }
+            },
+            "vpcConfigs": {
+              "securityGroupIds": "string",
+              "subnetIds": "string"
+            }
+          },
+          "state": "string",
+          "stateInfo": {
+            "code": "string",
+            "message": "string"
+          },
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "labels": "object",
+        "methodSettings": "object",
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "tags": "object",
+        "variables": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

@@ -1,0 +1,180 @@
+[
+  {
+    "aiplatform.googleapis.com/NotebookExecutionJob": {
+      "configuration": {
+        "EnvironmentSpec": {
+          "CustomEnvironmentSpec": {
+            "machine_spec": {
+              "machine_type": "string"
+            },
+            "network_spec": {
+              "enable_internet_access": "boolean"
+            },
+            "persistent_disk_spec": {
+              "disk_size_gb": "integer",
+              "disk_type": "string"
+            }
+          },
+          "NotebookRuntimeTemplateResourceName": "string"
+        },
+        "ExecutionIdentity": {
+          "ServiceAccount": "string"
+        },
+        "ExecutionSink": {
+          "GcsOutputUri": "string"
+        },
+        "NotebookSource": {
+          "DirectNotebookSource": "object"
+        },
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "createTime": "string",
+        "create_time": {
+          "nanos": "integer",
+          "seconds": "integer"
+        },
+        "customEnvironmentSpec": {
+          "machineSpec": {
+            "machineType": "string"
+          },
+          "networkSpec": {
+            "enableInternetAccess": "boolean",
+            "network": "string"
+          },
+          "persistentDiskSpec": {
+            "diskSizeGb": "string",
+            "diskType": "string"
+          }
+        },
+        "dataformRepositorySource": {
+          "dataformRepositoryResourceName": "string"
+        },
+        "deployment": {
+          "files": "object"
+        },
+        "directNotebookSource": "object",
+        "displayName": "string",
+        "display_name": "string",
+        "envVariables": "object",
+        "executionTimeout": "string",
+        "executionUser": "string",
+        "gcsNotebookSource": {
+          "uri": "string"
+        },
+        "gcsOutputUri": "string",
+        "jobState": "string",
+        "job_state": "integer",
+        "kernelName": "string",
+        "labelExtractors": "object",
+        "labels": "object",
+        "maintenancePolicy": "object",
+        "metadata": {
+          "annotations": "object"
+        },
+        "name": "string",
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "notebookRuntimeTemplateResourceName": "string",
+        "resourceLabels": "object",
+        "scheduleResourceName": "string",
+        "schema": "object",
+        "selectors": "object",
+        "serviceAccount": "string",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "status": {
+          "code": "integer",
+          "message": "string"
+        },
+        "updateTime": "string",
+        "update_time": {
+          "nanos": "integer",
+          "seconds": "integer"
+        },
+        "view": {
+          "query": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "schedule": {
+          "TimeSpecification": {
+            "Cron": "string"
+          },
+          "create_time": {
+            "nanos": "integer",
+            "seconds": "integer"
+          },
+          "display_name": "string",
+          "end_time": {
+            "seconds": "integer"
+          },
+          "last_pause_time": {
+            "nanos": "integer",
+            "seconds": "integer"
+          },
+          "last_resume_time": {
+            "nanos": "integer",
+            "seconds": "integer"
+          },
+          "last_scheduled_run_response": {
+            "run_response": "string",
+            "scheduled_run_time": {
+              "seconds": "integer"
+            }
+          },
+          "max_concurrent_run_count": "integer",
+          "max_run_count": "integer",
+          "name": "string",
+          "next_run_time": {
+            "seconds": "integer"
+          },
+          "start_time": {
+            "nanos": "integer",
+            "seconds": "integer"
+          },
+          "started_run_count": "integer",
+          "state": "integer",
+          "update_time": {
+            "nanos": "integer",
+            "seconds": "integer"
+          }
+        }
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

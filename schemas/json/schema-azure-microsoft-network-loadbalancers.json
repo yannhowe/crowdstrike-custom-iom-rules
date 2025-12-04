@@ -1,0 +1,301 @@
+[
+  {
+    "Microsoft.Network/loadBalancers": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "extendedLocation": {
+          "name": "string",
+          "type": "string"
+        },
+        "id": "string",
+        "identity": {
+          "userAssignedIdentities": "object"
+        },
+        "location": "string",
+        "name": "string",
+        "properties": {
+          "agentPoolProfiles": "object",
+          "backendAddressPools": {
+            "etag": "string",
+            "id": "string",
+            "name": "string",
+            "properties": {
+              "backendIPConfigurations": {
+                "id": "string"
+              },
+              "inboundNatRules": {
+                "id": "string"
+              },
+              "loadBalancerBackendAddresses": {
+                "name": "string",
+                "properties": {
+                  "adminState": "string",
+                  "inboundNatRulesPortMapping": {
+                    "backendPort": "integer",
+                    "frontendPort": "integer",
+                    "inboundNatRuleName": "string"
+                  },
+                  "ipAddress": "string",
+                  "loadBalancerFrontendIPConfiguration": {
+                    "id": "string"
+                  },
+                  "networkInterfaceIPConfiguration": {
+                    "id": "string"
+                  },
+                  "subnet": {
+                    "id": "string"
+                  },
+                  "virtualNetwork": {
+                    "id": "string"
+                  }
+                }
+              },
+              "loadBalancingRules": {
+                "id": "string"
+              },
+              "outboundRules": {
+                "id": "string"
+              },
+              "provisioningState": "string",
+              "tunnelInterfaces": {
+                "identifier": "integer",
+                "port": "integer",
+                "protocol": "string",
+                "type": "string"
+              },
+              "virtualNetwork": {
+                "id": "string"
+              }
+            },
+            "type": "string"
+          },
+          "definition": {
+            "actions": "object"
+          },
+          "frontendIPConfigurations": {
+            "etag": "string",
+            "id": "string",
+            "name": "string",
+            "properties": {
+              "gatewayLoadBalancer": {
+                "id": "string"
+              },
+              "inboundNatPools": {
+                "id": "string"
+              },
+              "inboundNatRules": {
+                "id": "string"
+              },
+              "loadBalancingRules": {
+                "id": "string"
+              },
+              "outboundRules": {
+                "id": "string"
+              },
+              "privateIPAddress": "string",
+              "privateIPAddressVersion": "string",
+              "privateIPAllocationMethod": "string",
+              "provisioningState": "string",
+              "publicIPAddress": {
+                "id": "string"
+              },
+              "publicIPPrefix": {
+                "id": "string"
+              },
+              "subnet": {
+                "id": "string"
+              }
+            },
+            "type": "string",
+            "zones": "string"
+          },
+          "inboundNatPools": {
+            "etag": "string",
+            "id": "string",
+            "name": "string",
+            "properties": {
+              "backendPort": "integer",
+              "enableFloatingIP": "boolean",
+              "enableTcpReset": "boolean",
+              "frontendIPConfiguration": {
+                "id": "string"
+              },
+              "frontendPortRangeEnd": "integer",
+              "frontendPortRangeStart": "integer",
+              "idleTimeoutInMinutes": "integer",
+              "protocol": "string",
+              "provisioningState": "string"
+            },
+            "type": "string"
+          },
+          "inboundNatRules": {
+            "etag": "string",
+            "id": "string",
+            "name": "string",
+            "properties": {
+              "backendAddressPool": {
+                "id": "string"
+              },
+              "backendIPConfiguration": {
+                "id": "string"
+              },
+              "backendPort": "integer",
+              "enableFloatingIP": "boolean",
+              "enableTcpReset": "boolean",
+              "frontendIPConfiguration": {
+                "id": "string"
+              },
+              "frontendPort": "integer",
+              "frontendPortRangeEnd": "integer",
+              "frontendPortRangeStart": "integer",
+              "idleTimeoutInMinutes": "integer",
+              "protocol": "string",
+              "provisioningState": "string"
+            },
+            "type": "string"
+          },
+          "loadBalancingRules": {
+            "etag": "string",
+            "id": "string",
+            "name": "string",
+            "properties": {
+              "backendAddressPool": {
+                "id": "string"
+              },
+              "backendAddressPools": {
+                "id": "string"
+              },
+              "backendPort": "integer",
+              "disableOutboundSnat": "boolean",
+              "enableFloatingIP": "boolean",
+              "enableTcpReset": "boolean",
+              "frontendIPConfiguration": {
+                "id": "string"
+              },
+              "frontendPort": "integer",
+              "idleTimeoutInMinutes": "integer",
+              "loadDistribution": "string",
+              "probe": {
+                "id": "string"
+              },
+              "protocol": "string",
+              "provisioningState": "string"
+            },
+            "type": "string"
+          },
+          "managedNetwork": "object",
+          "osProfile": "object",
+          "outboundRules": {
+            "etag": "string",
+            "id": "string",
+            "name": "string",
+            "properties": {
+              "allocatedOutboundPorts": "integer",
+              "backendAddressPool": {
+                "id": "string"
+              },
+              "enableTcpReset": "boolean",
+              "frontendIPConfigurations": {
+                "id": "string"
+              },
+              "idleTimeoutInMinutes": "integer",
+              "protocol": "string",
+              "provisioningState": "string"
+            },
+            "type": "string"
+          },
+          "probes": {
+            "etag": "string",
+            "id": "string",
+            "name": "string",
+            "properties": {
+              "intervalInSeconds": "integer",
+              "loadBalancingRules": {
+                "id": "string"
+              },
+              "numberOfProbes": "integer",
+              "port": "integer",
+              "probeThreshold": "integer",
+              "protocol": "string",
+              "provisioningState": "string",
+              "requestPath": "string"
+            },
+            "type": "string"
+          },
+          "provisioningState": "string",
+          "resourceGuid": "string",
+          "storageProfile": "object",
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          }
+        },
+        "resources": "object",
+        "sku": {
+          "name": "string",
+          "tier": "string"
+        },
+        "tags": "object",
+        "type": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "configurations": "object",
+        "diagnosticSettings": {
+          "id": "string",
+          "name": "string",
+          "properties": {
+            "eventHubAuthorizationRuleId": "string",
+            "eventHubName": "string",
+            "logs": {
+              "category": "string",
+              "categoryGroup": "string",
+              "enabled": "boolean",
+              "retentionPolicy": {
+                "days": "integer",
+                "enabled": "boolean"
+              }
+            },
+            "marketplacePartnerId": "string",
+            "metrics": {
+              "category": "string",
+              "enabled": "boolean",
+              "retentionPolicy": {
+                "days": "integer",
+                "enabled": "boolean"
+              }
+            },
+            "storageAccountId": "string",
+            "workspaceId": "string"
+          },
+          "type": "string"
+        }
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

@@ -1,0 +1,104 @@
+[
+  {
+    "apikeys.googleapis.com/Key": {
+      "configuration": {
+        "annotations": {
+          "BS": "string",
+          "Entity": "string",
+          "PDG": "string",
+          "client": "string",
+          "cloned_from_key_id": "string",
+          "env": "string",
+          "generative-language": "string",
+          "rotated_from_key_id": "string"
+        },
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "createTime": "string",
+        "deleteTime": "string",
+        "deployment": {
+          "files": "object"
+        },
+        "displayName": "string",
+        "envVariables": "object",
+        "etag": "string",
+        "labelExtractors": "object",
+        "labels": "object",
+        "maintenancePolicy": "object",
+        "metadata": {
+          "annotations": "object"
+        },
+        "name": "string",
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "resourceLabels": "object",
+        "restrictions": {
+          "androidKeyRestrictions": {
+            "allowedApplications": {
+              "packageName": "string",
+              "sha1Fingerprint": "string"
+            }
+          },
+          "apiTargets": {
+            "methods": "string",
+            "service": "string"
+          },
+          "browserKeyRestrictions": {
+            "allowedReferrers": "string"
+          },
+          "iosKeyRestrictions": {
+            "allowedBundleIds": "string"
+          },
+          "serverKeyRestrictions": {
+            "allowedIps": "string"
+          }
+        },
+        "schema": "object",
+        "selectors": "object",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "uid": "string",
+        "updateTime": "string",
+        "view": {
+          "query": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": "object",
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

@@ -1,0 +1,124 @@
+[
+  {
+    "AWS::CloudWatch::Alarm": {
+      "configuration": {
+        "actionsEnabled": "boolean",
+        "actionsSuppressedBy": "string",
+        "actionsSuppressedReason": "string",
+        "actionsSuppressor": "string",
+        "actionsSuppressorExtensionPeriod": "integer",
+        "actionsSuppressorWaitPeriod": "integer",
+        "alarmActions": "string",
+        "alarmArn": "string",
+        "alarmConfigurationUpdatedTimestamp": "string",
+        "alarmDescription": "string",
+        "alarmName": "string",
+        "alarmRule": "string",
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "comparisonOperator": "string",
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "datapointsToAlarm": "integer",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "dimensions": {
+          "name": "string",
+          "value": "string"
+        },
+        "environment": {
+          "variables": "object"
+        },
+        "evaluateLowSampleCountPercentile": "string",
+        "evaluationPeriods": "integer",
+        "extendedStatistic": "string",
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "insufficientDataActions": "string",
+        "labels": "object",
+        "methodSettings": "object",
+        "metricName": "string",
+        "metrics": {
+          "accountId": "string",
+          "expression": "string",
+          "id": "string",
+          "label": "string",
+          "metricStat": {
+            "metric": {
+              "dimensions": {
+                "name": "string",
+                "value": "string"
+              },
+              "metricName": "string",
+              "namespace": "string"
+            },
+            "period": "integer",
+            "stat": "string",
+            "unit": "string"
+          },
+          "period": "integer",
+          "returnData": "boolean"
+        },
+        "namespace": "string",
+        "okActions": "string",
+        "period": "integer",
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "stateValue": "string",
+        "statistic": "string",
+        "tags": "object",
+        "threshold": "integer",
+        "thresholdMetricId": "string",
+        "treatMissingData": "string",
+        "unit": "string",
+        "variables": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "AWS::EC2::VPCEndpoint": {
+      "configuration": {
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "creationTimestamp": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "dnsEntries": {
+          "dnsName": "string",
+          "hostedZoneId": "string"
+        },
+        "dnsOptions": {
+          "dnsRecordIpType": "string",
+          "privateDnsOnlyForInboundResolverEndpoint": "boolean"
+        },
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "groups": {
+          "groupId": "string",
+          "groupName": "string"
+        },
+        "ipAddressType": "string",
+        "labels": "object",
+        "lastError": {
+          "code": "string",
+          "message": "string"
+        },
+        "methodSettings": "object",
+        "networkInterfaceIds": "string",
+        "ownerId": "string",
+        "policy": "object",
+        "policyDocument": "string",
+        "privateDnsEnabled": "boolean",
+        "requesterManaged": "boolean",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "routeTableIds": "string",
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "serviceName": "string",
+        "state": "string",
+        "subnetIds": "string",
+        "tags": "object",
+        "variables": "object",
+        "vpcEndpointId": "string",
+        "vpcEndpointType": "string",
+        "vpcId": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

@@ -1,0 +1,260 @@
+[
+  {
+    "Microsoft.AppPlatform/Spring/apps": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "id": "string",
+        "identity": {
+          "principalId": "string",
+          "tenantId": "string",
+          "type": "string",
+          "userAssignedIdentities": "object"
+        },
+        "location": "string",
+        "name": "string",
+        "properties": {
+          "addonConfigs": {
+            "applicationConfigurationService": {
+              "resourceId": "string"
+            },
+            "serviceRegistry": {
+              "resourceId": "string"
+            }
+          },
+          "agentPoolProfiles": "object",
+          "customPersistentDisks": {
+            "customPersistentDiskProperties": {
+              "mountPath": "string",
+              "readOnly": "boolean",
+              "shareName": "string",
+              "type": "string"
+            },
+            "storageId": "string"
+          },
+          "definition": {
+            "actions": "object"
+          },
+          "fqdn": "string",
+          "httpsOnly": "boolean",
+          "ingressSettings": {
+            "backendProtocol": "string",
+            "clientAuth": "object",
+            "readTimeoutInSeconds": "integer",
+            "sendTimeoutInSeconds": "integer",
+            "sessionAffinity": "string"
+          },
+          "managedNetwork": "object",
+          "osProfile": "object",
+          "persistentDisk": {
+            "mountPath": "string"
+          },
+          "provisioningState": "string",
+          "public": "boolean",
+          "storageProfile": "object",
+          "temporaryDisk": {
+            "mountPath": "string",
+            "sizeInGB": "integer"
+          },
+          "url": "string",
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          },
+          "vnetAddons": {
+            "publicEndpoint": "boolean",
+            "publicEndpointUrl": "string"
+          }
+        },
+        "resources": "object",
+        "systemData": {
+          "createdAt": "string",
+          "createdBy": "string",
+          "createdByType": "string",
+          "lastModifiedAt": "string",
+          "lastModifiedBy": "string",
+          "lastModifiedByType": "string"
+        },
+        "tags": "object",
+        "type": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "configurations": "object",
+        "deployments": {
+          "id": "string",
+          "name": "string",
+          "properties": {
+            "active": "boolean",
+            "deploymentSettings": {
+              "addonConfigs": {
+                "applicationConfigurationService": {
+                  "configFilePatterns": "string"
+                }
+              },
+              "containerProbeSettings": {
+                "disableProbe": "boolean"
+              },
+              "environmentVariables": {
+                "API_TOKEN": "string",
+                "APPLICATIONINSIGHTS_INSTRUMENTATION_REDIS_ENABLED": "string",
+                "APPLICATIONINSIGHTS_PREVIEW_INSTRUMENTATION_AZURE_SDK_ENABLED": "string",
+                "APPLICATIONINSIGHTS_SAMPLING_PERCENTAGE": "string",
+                "AZ_DATABASE_NAME": "string",
+                "AZ_DATABASE_SERVER_NAME": "string",
+                "AZ_LOCATION": "string",
+                "AZ_MYSQL_PASSWORD": "string",
+                "AZ_MYSQL_USERNAME": "string",
+                "AZ_RESOURCE_GROUP": "string",
+                "CMP_ACCOUNT_PASSWORD": "string",
+                "CTP_API_URL": "string",
+                "CTP_AUTH_URL": "string",
+                "CTP_IMPORT_URL": "string",
+                "DD_API_KEY": "string",
+                "DD_APM_RECEIVER_PORT": "string",
+                "DD_APPSEC_ENABLED": "string",
+                "DD_ENV": "string",
+                "DD_SERVICE": "string",
+                "DD_SITE": "string",
+                "DD_TRACE_AGENT_URL": "string",
+                "DD_TRACE_PROPAGATION_STYLE": "string",
+                "DD_VERSION": "string",
+                "ELASTIC_PASSWORD": "string",
+                "ES_PATH_CONF": "string",
+                "ES_PATH_DATA": "string",
+                "ES_PORT": "string",
+                "JAVA_OPTS": "string",
+                "LOGGING_LEVEL_ROOT": "string",
+                "MEM_LIMIT": "string",
+                "OKTA_URL": "string",
+                "QUEUE_NAME": "string",
+                "SERVER_PORT": "string",
+                "SPRING_PROFILES_ACTIVE": "string",
+                "SPRING_SECURITY_OAUTH2_CLIENT_PROVIDER_OIDC_ISSUER_URI": "string",
+                "SPRING_SECURITY_OAUTH2_CLIENT_REGISTRATION_OIDC_CLIENT_ID": "string",
+                "SPRING_SECURITY_OAUTH2_CLIENT_REGISTRATION_OIDC_CLIENT_SECRET": "string",
+                "STORAGE_CONNECTION_STRING": "string",
+                "URL": "string",
+                "aspAdminpass": "string",
+                "aspuserpass": "string",
+                "cc": "string",
+                "dbpassword": "string",
+                "esbsuserpass": "string",
+                "irservicepass": "string",
+                "irserviceuser": "string",
+                "server": {
+                  "max-http-request-header-size": "string"
+                },
+                "smbpassword": "string",
+                "smbusername": "string",
+                "spring": {
+                  "datasource": {
+                    "password": "string"
+                  },
+                  "profiles": {
+                    "active": "string"
+                  }
+                }
+              },
+              "livenessProbe": {
+                "disableProbe": "boolean",
+                "failureThreshold": "integer",
+                "initialDelaySeconds": "integer",
+                "periodSeconds": "integer",
+                "probeAction": {
+                  "path": "string",
+                  "scheme": "string",
+                  "type": "string"
+                },
+                "successThreshold": "integer",
+                "timeoutSeconds": "integer"
+              },
+              "readinessProbe": {
+                "disableProbe": "boolean",
+                "failureThreshold": "integer",
+                "initialDelaySeconds": "integer",
+                "periodSeconds": "integer",
+                "probeAction": {
+                  "type": "string"
+                },
+                "successThreshold": "integer",
+                "timeoutSeconds": "integer"
+              },
+              "resourceRequests": {
+                "cpu": "string",
+                "memory": "string"
+              },
+              "startupProbe": {
+                "disableProbe": "boolean"
+              },
+              "terminationGracePeriodSeconds": "integer"
+            },
+            "instances": {
+              "discoveryStatus": "string",
+              "name": "string",
+              "reason": "string",
+              "startTime": "string",
+              "status": "string"
+            },
+            "provisioningState": "string",
+            "source": {
+              "buildResultId": "string",
+              "customContainer": {
+                "containerImage": "string",
+                "imageRegistryCredential": {
+                  "username": "string"
+                },
+                "languageFramework": "string",
+                "server": "string"
+              },
+              "jvmOptions": "string",
+              "relativePath": "string",
+              "runtimeVersion": "string",
+              "type": "string",
+              "version": "string"
+            },
+            "status": "string"
+          },
+          "sku": {
+            "capacity": "integer",
+            "name": "string",
+            "tier": "string"
+          },
+          "systemData": {
+            "createdAt": "string",
+            "createdBy": "string",
+            "createdByType": "string",
+            "lastModifiedAt": "string",
+            "lastModifiedBy": "string",
+            "lastModifiedByType": "string"
+          },
+          "type": "string"
+        }
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

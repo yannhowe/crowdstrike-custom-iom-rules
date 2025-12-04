@@ -1,0 +1,196 @@
+[
+  {
+    "bigquery.googleapis.com/Dataset": {
+      "configuration": {
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "creationTime": "string",
+        "datasetReference": {
+          "datasetId": "string",
+          "projectId": "string"
+        },
+        "defaultCollation": "string",
+        "defaultEncryptionConfiguration": {
+          "kmsKeyName": "string"
+        },
+        "defaultPartitionExpirationMs": "string",
+        "defaultRoundingMode": "string",
+        "defaultTableExpirationMs": "string",
+        "deployment": {
+          "files": "object"
+        },
+        "description": "string",
+        "envVariables": "object",
+        "etag": "string",
+        "externalCatalogDatasetOptions": {
+          "defaultStorageLocationUri": "string",
+          "parameters": {
+            "bigquery_location": "string",
+            "dataset": {
+              "location": "string",
+              "name": "string"
+            },
+            "gcp-region": "string",
+            "hive": {
+              "dbparam": {
+                "Description": "string",
+                "iceberg": {
+                  "enabled": "string"
+                }
+              }
+            },
+            "location": "string",
+            "owner": "string"
+          }
+        },
+        "externalDatasetReference": {
+          "connection": "string",
+          "externalSource": "string"
+        },
+        "friendlyName": "string",
+        "id": "string",
+        "isCaseInsensitive": "boolean",
+        "kind": "string",
+        "labelExtractors": "object",
+        "labels": "object",
+        "lastModifiedTime": "string",
+        "linkedDatasetMetadata": {
+          "linkState": "string"
+        },
+        "linkedDatasetSource": {
+          "sourceDataset": {
+            "datasetId": "string",
+            "projectId": "string"
+          }
+        },
+        "location": "string",
+        "maintenancePolicy": "object",
+        "maxTimeTravelHours": "string",
+        "metadata": {
+          "annotations": "object"
+        },
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "resourceLabels": "object",
+        "resourceTags": {
+          "1090299993982/dataset-access": "string",
+          "1090299993982/env": "string",
+          "117697270761/swarovski:data_access_allow": "string",
+          "117697270761/swarovski:data_access_deny": "string",
+          "117697270761/swarovski:environment": "string",
+          "123982859450/data-layer": "string",
+          "123982859450/dp_environment": "string",
+          "123982859450/dp_instance": "string",
+          "123982859450/flx-188-category": "string",
+          "123982859450/flx-188-data-layer": "string",
+          "123982859450/flx-188-environment": "string",
+          "123982859450/product": "string",
+          "207556311490/org_policy_v2": "string",
+          "216860450108/pii": "string",
+          "300137183026/costcenter": "string",
+          "300137183026/env": "string",
+          "300137183026/geo": "string",
+          "660825140170/External Users - Zeotap": "string",
+          "693526135041/Data Security": "string",
+          "791125513360/datatype": "string",
+          "791125513360/domain_l1": "string",
+          "946990995015/DATA_CLASS": "string",
+          "985654808871/dataset_type": "string",
+          "985654808871/is_walmart_data": "string",
+          "985654808871/testpoctag": "string",
+          "analytics4-api-448405/databricks": "string",
+          "atus-a4ops-dev/DATA_SENSITIVITY": "string",
+          "btprodtest-152719/Billing": "string",
+          "cgw-experimental/environment": "string",
+          "cgw-experimental/team": "string",
+          "data-prod-292614/dataset_protected_from_deletion": "string",
+          "data-prod-292614/table_protected_from_deletion": "string",
+          "data-qa-292614/dataset_protected_from_deletion": "string",
+          "data-qa-292614/protected_from_deletion": "string",
+          "data-qa-292614/table_protected_from_deletion": "string",
+          "data-qa-292614/test": "string",
+          "dodo-red-test/team": "string",
+          "dola-doh-edw-test/env": "string",
+          "dola-doh-edw-test/layer": "string",
+          "dola-doh-edw-test/project": "string",
+          "dola-doh-edw-test/user": "string",
+          "fsd-fisg-tech-verification/consumer": "string",
+          "geotab-restricted-gbq-poc-test/gbq-sec-poc": "string",
+          "geotab-restricted-gbq-test/gbq-sec": "string",
+          "ipsos-gdmt-data-hub-dev/test-project-client": "string",
+          "john-jiang/env": "string",
+          "levi-analytics-p/security_datatype": "string",
+          "levi-analytics-pp/security_datatype": "string",
+          "levi-dataocean-pp/security_datatype": "string",
+          "levi-modules-pp/bq_data_sensitivity": "string",
+          "ls-infra-is-ai-prd/IS-Rate-Analysis": "string",
+          "mxs-coi-poc/businessservice": "string",
+          "parental-control-app-fc671/environment": "string",
+          "prj-d-apps-d7a9/apps-data-access-mode": "string",
+          "prj-d-data-d7a9/rt-data-access-mode": "string",
+          "prj-jb-d-infosec/test_tag_has_pii": "string",
+          "prj-n-apps-e0b2/apps-data-access-mode": "string",
+          "prj-n-data-e0b2/rt-data-access-mode": "string",
+          "prj-p-apps-72aa/apps-data-access-mode": "string",
+          "prj-p-data-72aa/rt-data-access-mode": "string",
+          "security-integration/security-dataclearance": "string",
+          "seg-data-insight-dev/bucket_access": "string",
+          "ttc-scm-chatpoc-all-s-a001/datatype": "string",
+          "ua-web-analytics/QM_Dataset": "string",
+          "uk-dta-cloud-arch-sand/environment": "string"
+        },
+        "restrictions": {
+          "type": "string"
+        },
+        "satisfiesPzs": "boolean",
+        "schema": "object",
+        "selectors": "object",
+        "selfLink": "string",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "storageBillingModel": "string",
+        "tags": "object",
+        "type": "string",
+        "view": {
+          "query": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": "object",
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

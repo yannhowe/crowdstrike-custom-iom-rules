@@ -1,0 +1,202 @@
+[
+  {
+    "AWS::AppRunner::Service": {
+      "configuration": {
+        "autoScalingConfigurationSummary": {
+          "autoScalingConfigurationArn": "string",
+          "autoScalingConfigurationName": "string",
+          "autoScalingConfigurationRevision": "integer"
+        },
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "createdAt": "string",
+        "deletedAt": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "encryptionConfiguration": {
+          "kmsKey": "string"
+        },
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "healthCheckConfiguration": {
+          "healthyThreshold": "integer",
+          "interval": "integer",
+          "path": "string",
+          "protocol": "string",
+          "timeout": "integer",
+          "unhealthyThreshold": "integer"
+        },
+        "instanceConfiguration": {
+          "cpu": "string",
+          "instanceRoleArn": "string",
+          "memory": "string"
+        },
+        "labels": "object",
+        "methodSettings": "object",
+        "networkConfiguration": {
+          "egressConfiguration": {
+            "egressType": "string",
+            "vpcConnectorArn": "string"
+          },
+          "ingressConfiguration": {
+            "isPubliclyAccessible": "boolean"
+          },
+          "ipAddressType": "string"
+        },
+        "observabilityConfiguration": {
+          "observabilityConfigurationArn": "string",
+          "observabilityEnabled": "boolean"
+        },
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "serviceArn": "string",
+        "serviceId": "string",
+        "serviceName": "string",
+        "serviceUrl": "string",
+        "sourceConfiguration": {
+          "authenticationConfiguration": {
+            "accessRoleArn": "string",
+            "connectionArn": "string"
+          },
+          "autoDeploymentsEnabled": "boolean",
+          "codeRepository": {
+            "codeConfiguration": {
+              "codeConfigurationValues": {
+                "buildCommand": "string",
+                "port": "string",
+                "runtime": "string",
+                "runtimeEnvironmentSecrets": {
+                  "ACCESS_TOKEN": "string",
+                  "CI_URL": "string",
+                  "CONTINUEJOB": "string",
+                  "CUTTYHUNK": "string",
+                  "HADbConnection": "string",
+                  "MongoDBConnection": "string",
+                  "PGPASSWORD": "string",
+                  "PIPELINE": "string",
+                  "SECRET": "string",
+                  "SNAPSHOT": "string",
+                  "WHITE_LIST": "string",
+                  "accessKeyId": "string",
+                  "secretAccessKey": "string"
+                },
+                "runtimeEnvironmentVariables": {
+                  "ASPNETCORE_ENVIRONMENT": "string",
+                  "ASPNETCORE_URLS": "string",
+                  "AWS_ACCESS_KEY_ID": "string",
+                  "AWS_DEFAULT_OUTPU": "string",
+                  "AWS_DEFAULT_OUTPUT": "string",
+                  "AWS_DEFAULT_REGION": "string",
+                  "AWS_REGION": "string",
+                  "AWS_SECRET_ACCESS_KEY": "string",
+                  "CORS_ORIGIN": "string",
+                  "ENVIRONMENT": "string",
+                  "Environment": "string",
+                  "GITHUB_SERVER_TOKEN": "string",
+                  "HADbConnection": "string",
+                  "MCP_API_KEY": "string",
+                  "MODEL": "string",
+                  "NAME": "string",
+                  "NODE_ENV": "string",
+                  "NODE_EXTRA_CA_CERTS": "string",
+                  "OPENAI_API_KEY": "string",
+                  "PGDATABASE": "string",
+                  "PGHOST": "string",
+                  "PGPORT": "string",
+                  "PGUSER": "string",
+                  "PORT": "string",
+                  "PUBLIC_URL": "string",
+                  "REPO_HOST": "string",
+                  "REPO_PORT": "string",
+                  "S3_ACCESS_KEY_ID": "string",
+                  "S3_BUCKET_NAME": "string",
+                  "S3_PREFIX": "string",
+                  "S3_SECRET_ACCESS_KEY": "string",
+                  "SERPLY_API_KEY": "string",
+                  "STREAMLIT_SERVER_ADDRESS": "string",
+                  "STREAMLIT_SERVER_HEADLESS": "string",
+                  "STREAMLIT_SERVER_PORT": "string",
+                  "lmsKey": "string",
+                  "lmsUser": "string"
+                },
+                "startCommand": "string"
+              },
+              "configurationSource": "string"
+            },
+            "repositoryUrl": "string",
+            "sourceCodeVersion": {
+              "type": "string",
+              "value": "string"
+            },
+            "sourceDirectory": "string"
+          },
+          "imageRepository": {
+            "imageConfiguration": {
+              "port": "string",
+              "runtimeEnvironmentSecrets": "object",
+              "runtimeEnvironmentVariables": "object",
+              "startCommand": "string"
+            },
+            "imageIdentifier": "string",
+            "imageRepositoryType": "string"
+          }
+        },
+        "status": "string",
+        "tags": "object",
+        "updatedAt": "string",
+        "variables": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "AWS::EC2::FlowLog": {
+      "configuration": {
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "creationTime": "string",
+        "deliverCrossAccountRole": "string",
+        "deliverLogsErrorMessage": "string",
+        "deliverLogsPermissionArn": "string",
+        "deliverLogsStatus": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "destinationOptions": {
+          "fileFormat": "string",
+          "hiveCompatiblePartitions": "boolean",
+          "perHourPartition": "boolean"
+        },
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "flowLogId": "string",
+        "flowLogStatus": "string",
+        "labels": "object",
+        "logDestination": "string",
+        "logDestinationType": "string",
+        "logFormat": "string",
+        "logGroupName": "string",
+        "maxAggregationInterval": "integer",
+        "methodSettings": "object",
+        "policy": "object",
+        "resourceId": "string",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "tags": "object",
+        "trafficType": "string",
+        "variables": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

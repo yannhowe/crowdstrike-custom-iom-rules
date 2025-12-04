@@ -1,0 +1,148 @@
+[
+  {
+    "AWS::EC2::VPNConnection": {
+      "configuration": {
+        "category": "string",
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "coreNetworkArn": "string",
+        "coreNetworkAttachmentArn": "string",
+        "customerGatewayConfiguration": "string",
+        "customerGatewayId": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "gatewayAssociationState": "string",
+        "labels": "object",
+        "methodSettings": "object",
+        "options": {
+          "enableAcceleration": "boolean",
+          "localIpv4NetworkCidr": "string",
+          "localIpv6NetworkCidr": "string",
+          "outsideIpAddressType": "string",
+          "remoteIpv4NetworkCidr": "string",
+          "remoteIpv6NetworkCidr": "string",
+          "staticRoutesOnly": "boolean",
+          "transportTransitGatewayAttachmentId": "string",
+          "tunnelInsideIpVersion": "string",
+          "tunnelOptions": {
+            "dpdTimeoutAction": "string",
+            "dpdTimeoutSeconds": "integer",
+            "enableTunnelLifecycleControl": "boolean",
+            "ikeVersions": {
+              "value": "string"
+            },
+            "logOptions": {
+              "cloudWatchLogOptions": {
+                "logEnabled": "boolean",
+                "logGroupArn": "string",
+                "logOutputFormat": "string"
+              }
+            },
+            "outsideIpAddress": "string",
+            "phase1DHGroupNumbers": {
+              "value": "integer"
+            },
+            "phase1EncryptionAlgorithms": {
+              "value": "string"
+            },
+            "phase1IntegrityAlgorithms": {
+              "value": "string"
+            },
+            "phase1LifetimeSeconds": "integer",
+            "phase2DHGroupNumbers": {
+              "value": "integer"
+            },
+            "phase2EncryptionAlgorithms": {
+              "value": "string"
+            },
+            "phase2IntegrityAlgorithms": {
+              "value": "string"
+            },
+            "phase2LifetimeSeconds": "integer",
+            "preSharedKey": "string",
+            "rekeyFuzzPercentage": "integer",
+            "rekeyMarginTimeSeconds": "integer",
+            "replayWindowSize": "integer",
+            "startupAction": "string",
+            "tunnelInsideCidr": "string",
+            "tunnelInsideIpv6Cidr": "string"
+          }
+        },
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "routes": {
+          "destinationCidrBlock": "string",
+          "state": "string"
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "state": "string",
+        "tags": "object",
+        "transitGatewayId": "string",
+        "type": "string",
+        "variables": "object",
+        "vgwTelemetry": {
+          "acceptedRouteCount": "integer",
+          "certificateArn": "string",
+          "lastStatusChange": "string",
+          "outsideIpAddress": "string",
+          "status": "string",
+          "statusMessage": "string"
+        },
+        "vpnConnectionId": "string",
+        "vpnGatewayId": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

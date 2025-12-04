@@ -1,0 +1,110 @@
+[
+  {
+    "Microsoft.ServiceBus/namespaces": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "id": "string",
+        "identity": {
+          "principalId": "string",
+          "tenantId": "string",
+          "type": "string",
+          "userAssignedIdentities": "object"
+        },
+        "location": "string",
+        "name": "string",
+        "properties": {
+          "agentPoolProfiles": "object",
+          "alternateName": "string",
+          "createdAt": "string",
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "disableLocalAuth": "boolean",
+          "encryption": {
+            "keySource": "string",
+            "keyVaultProperties": {
+              "identity": {
+                "userAssignedIdentity": "string"
+              },
+              "keyName": "string",
+              "keyVaultUri": "string",
+              "keyVersion": "string"
+            },
+            "requireInfrastructureEncryption": "boolean"
+          },
+          "managedNetwork": "object",
+          "metadata": "object",
+          "metricId": "string",
+          "osProfile": "object",
+          "parameters": "object",
+          "policyRule": "object",
+          "privateEndpointConnections": {
+            "id": "string",
+            "location": "string",
+            "name": "string",
+            "properties": {
+              "privateEndpoint": {
+                "id": "string"
+              },
+              "privateLinkServiceConnectionState": {
+                "description": "string",
+                "status": "string"
+              },
+              "provisioningState": "string"
+            },
+            "type": "string"
+          },
+          "provisioningState": "string",
+          "serviceBusEndpoint": "string",
+          "status": "string",
+          "storageProfile": "object",
+          "updatedAt": "string",
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          },
+          "zoneRedundant": "boolean"
+        },
+        "resources": "object",
+        "sku": {
+          "capacity": "integer",
+          "name": "string",
+          "tier": "string"
+        },
+        "tags": "object",
+        "type": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "configurations": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

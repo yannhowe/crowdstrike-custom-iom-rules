@@ -1,0 +1,414 @@
+[
+  {
+    "datastream.googleapis.com/Stream": {
+      "configuration": {
+        "BackfillStrategy": {
+          "BackfillAll": {
+            "ExcludedObjects": {
+              "MysqlExcludedObjects": "object",
+              "OracleExcludedObjects": "object",
+              "PostgresqlExcludedObjects": {
+                "postgresql_schemas": {
+                  "schema": "string"
+                }
+              }
+            }
+          },
+          "BackfillNone": "object"
+        },
+        "backfillAll": {
+          "mysqlExcludedObjects": "object",
+          "oracleExcludedObjects": "object",
+          "postgresqlExcludedObjects": {
+            "postgresqlSchemas": {
+              "postgresqlTables": {
+                "table": "string"
+              },
+              "schema": "string"
+            }
+          },
+          "sqlServerExcludedObjects": {
+            "schemas": {
+              "schema": "string",
+              "tables": {
+                "table": "string"
+              }
+            }
+          }
+        },
+        "backfillNone": "object",
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "createTime": "string",
+        "create_time": {
+          "nanos": "integer",
+          "seconds": "integer"
+        },
+        "deployment": {
+          "files": "object"
+        },
+        "destinationConfig": {
+          "bigqueryDestinationConfig": {
+            "appendOnly": "object",
+            "dataFreshness": "string",
+            "merge": "object",
+            "singleTargetDataset": {
+              "datasetId": "string"
+            },
+            "sourceHierarchyDatasets": {
+              "datasetTemplate": {
+                "datasetIdPrefix": "string",
+                "kmsKeyName": "string",
+                "location": "string"
+              }
+            }
+          },
+          "destinationConnectionProfile": "string",
+          "gcsDestinationConfig": {
+            "avroFileFormat": "object",
+            "fileRotationInterval": "string",
+            "fileRotationMb": "integer",
+            "jsonFileFormat": {
+              "compression": "string",
+              "schemaFileFormat": "string"
+            },
+            "path": "string"
+          }
+        },
+        "destination_config": {
+          "DestinationStreamConfig": {
+            "BigqueryDestinationConfig": {
+              "DatasetConfig": {
+                "SingleTargetDataset": {
+                  "dataset_id": "string"
+                },
+                "SourceHierarchyDatasets": {
+                  "dataset_template": {
+                    "dataset_id_prefix": "string",
+                    "location": "string"
+                  }
+                }
+              },
+              "WriteMode": {
+                "AppendOnly": "object",
+                "Merge": "object"
+              },
+              "data_freshness": {
+                "seconds": "integer"
+              }
+            },
+            "GcsDestinationConfig": {
+              "FileFormat": {
+                "AvroFileFormat": "object",
+                "JsonFileFormat": {
+                  "compression": "integer",
+                  "schema_file_format": "integer"
+                }
+              },
+              "file_rotation_interval": {
+                "seconds": "integer"
+              },
+              "file_rotation_mb": "integer",
+              "path": "string"
+            }
+          },
+          "destination_connection_profile": "string"
+        },
+        "displayName": "string",
+        "display_name": "string",
+        "envVariables": "object",
+        "errors": {
+          "details": {
+            "capture_instance": "string",
+            "database_name": "string",
+            "log_file": "string",
+            "log_position": "string",
+            "lsn": "string",
+            "originalMessage": "string",
+            "position": "string",
+            "scn": "string",
+            "slot_name": "string",
+            "tunnel_host": "string",
+            "tunnel_port": "string",
+            "username": "string"
+          },
+          "errorTime": "string",
+          "errorUuid": "string",
+          "error_time": {
+            "nanos": "integer",
+            "seconds": "integer"
+          },
+          "error_uuid": "string",
+          "message": "string",
+          "reason": "string"
+        },
+        "labelExtractors": "object",
+        "labels": "object",
+        "lastRecoveryTime": "string",
+        "last_recovery_time": {
+          "nanos": "integer",
+          "seconds": "integer"
+        },
+        "maintenancePolicy": "object",
+        "metadata": {
+          "annotations": "object"
+        },
+        "name": "string",
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "resourceLabels": "object",
+        "satisfiesPzi": "boolean",
+        "satisfiesPzs": "boolean",
+        "schema": "object",
+        "selectors": "object",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "sourceConfig": {
+          "mysqlSourceConfig": {
+            "binaryLogPosition": "object",
+            "excludeObjects": {
+              "mysqlDatabases": {
+                "database": "string",
+                "mysqlTables": {
+                  "mysqlColumns": {
+                    "column": "string"
+                  },
+                  "table": "string"
+                }
+              }
+            },
+            "gtid": "object",
+            "includeObjects": {
+              "mysqlDatabases": {
+                "database": "string",
+                "mysqlTables": {
+                  "table": "string"
+                }
+              }
+            },
+            "maxConcurrentBackfillTasks": "integer",
+            "maxConcurrentCdcTasks": "integer"
+          },
+          "oracleSourceConfig": {
+            "binaryLogParser": {
+              "logFileDirectories": {
+                "archivedLogDirectory": "string",
+                "onlineLogDirectory": "string"
+              },
+              "oracleAsmLogFileAccess": "object"
+            },
+            "dropLargeObjects": "object",
+            "excludeObjects": {
+              "oracleSchemas": {
+                "oracleTables": {
+                  "oracleColumns": {
+                    "column": "string"
+                  },
+                  "table": "string"
+                },
+                "schema": "string"
+              }
+            },
+            "includeObjects": {
+              "oracleSchemas": {
+                "oracleTables": {
+                  "table": "string"
+                },
+                "schema": "string"
+              }
+            },
+            "logMiner": "object",
+            "maxConcurrentBackfillTasks": "integer",
+            "maxConcurrentCdcTasks": "integer",
+            "streamLargeObjects": "object"
+          },
+          "postgresqlSourceConfig": {
+            "excludeObjects": {
+              "postgresqlSchemas": {
+                "postgresqlTables": {
+                  "postgresqlColumns": {
+                    "column": "string"
+                  },
+                  "table": "string"
+                },
+                "schema": "string"
+              }
+            },
+            "includeObjects": {
+              "postgresqlSchemas": {
+                "postgresqlTables": {
+                  "postgresqlColumns": {
+                    "column": "string"
+                  },
+                  "table": "string"
+                },
+                "schema": "string"
+              }
+            },
+            "maxConcurrentBackfillTasks": "integer",
+            "publication": "string",
+            "replicationSlot": "string"
+          },
+          "sourceConnectionProfile": "string",
+          "sqlServerSourceConfig": {
+            "changeTables": "object",
+            "excludeObjects": {
+              "schemas": {
+                "schema": "string",
+                "tables": {
+                  "table": "string"
+                }
+              }
+            },
+            "includeObjects": {
+              "schemas": {
+                "schema": "string",
+                "tables": {
+                  "table": "string"
+                }
+              }
+            },
+            "maxConcurrentBackfillTasks": "integer",
+            "maxConcurrentCdcTasks": "integer",
+            "transactionLogs": "object"
+          }
+        },
+        "source_config": {
+          "SourceStreamConfig": {
+            "MysqlSourceConfig": {
+              "CdcMethod": {
+                "Gtid": "object"
+              },
+              "exclude_objects": {
+                "mysql_databases": {
+                  "database": "string",
+                  "mysql_tables": {
+                    "table": "string"
+                  }
+                }
+              },
+              "include_objects": {
+                "mysql_databases": {
+                  "database": "string",
+                  "mysql_tables": {
+                    "table": "string"
+                  }
+                }
+              },
+              "max_concurrent_backfill_tasks": "integer"
+            },
+            "OracleSourceConfig": {
+              "LargeObjectsHandling": {
+                "DropLargeObjects": "object"
+              },
+              "exclude_objects": {
+                "oracle_schemas": {
+                  "oracle_tables": {
+                    "table": "string"
+                  },
+                  "schema": "string"
+                }
+              },
+              "include_objects": {
+                "oracle_schemas": {
+                  "oracle_tables": {
+                    "table": "string"
+                  },
+                  "schema": "string"
+                }
+              },
+              "max_concurrent_backfill_tasks": "integer",
+              "max_concurrent_cdc_tasks": "integer"
+            },
+            "PostgresqlSourceConfig": {
+              "exclude_objects": {
+                "postgresql_schemas": {
+                  "postgresql_tables": {
+                    "postgresql_columns": {
+                      "column": "string"
+                    },
+                    "table": "string"
+                  },
+                  "schema": "string"
+                }
+              },
+              "include_objects": {
+                "postgresql_schemas": {
+                  "postgresql_tables": {
+                    "postgresql_columns": {
+                      "column": "string"
+                    },
+                    "table": "string"
+                  },
+                  "schema": "string"
+                }
+              },
+              "max_concurrent_backfill_tasks": "integer",
+              "publication": "string",
+              "replication_slot": "string"
+            },
+            "SqlServerSourceConfig": {
+              "CdcMethod": {
+                "ChangeTables": "object"
+              },
+              "include_objects": {
+                "schemas": {
+                  "schema": "string",
+                  "tables": {
+                    "table": "string"
+                  }
+                }
+              }
+            }
+          },
+          "source_connection_profile": "string"
+        },
+        "state": "integer",
+        "updateTime": "string",
+        "update_time": {
+          "nanos": "integer",
+          "seconds": "integer"
+        },
+        "view": {
+          "query": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": "object",
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

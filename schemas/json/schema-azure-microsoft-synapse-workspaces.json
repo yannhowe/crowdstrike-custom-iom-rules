@@ -1,0 +1,339 @@
+[
+  {
+    "Microsoft.Synapse/workspaces": {
+      "configuration": {
+        "ID": "string",
+        "Identity": {
+          "principalId": "string",
+          "tenantId": "string",
+          "type": "string"
+        },
+        "Location": "string",
+        "Name": "string",
+        "Properties": {
+          "azureADOnlyAuthentication": "boolean",
+          "connectivityEndpoints": {
+            "dev": "string",
+            "sql": "string",
+            "sqlOnDemand": "string",
+            "web": "string"
+          },
+          "cspWorkspaceAdminProperties": {
+            "initialWorkspaceAdminObjectId": "string"
+          },
+          "defaultDataLakeStorage": {
+            "accountUrl": "string",
+            "createManagedPrivateEndpoint": "boolean",
+            "filesystem": "string",
+            "resourceId": "string"
+          },
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "encryption": {
+            "doubleEncryptionEnabled": "boolean"
+          },
+          "extraProperties": {
+            "IsScopeEnabled": "boolean",
+            "WorkspaceType": "string"
+          },
+          "managedResourceGroupName": "string",
+          "managedVirtualNetwork": "string",
+          "managedVirtualNetworkSettings": {
+            "preventDataExfiltration": "boolean"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object",
+          "provisioningState": "string",
+          "publicNetworkAccess": "string",
+          "settings": {
+            "azureADOnlyAuthentication": {
+              "state": "string",
+              "value": "boolean"
+            }
+          },
+          "sqlAdministratorLogin": "string",
+          "trustedServiceBypassEnabled": "boolean",
+          "workspaceUID": "string"
+        },
+        "Type": "string",
+        "certificatePem": "string",
+        "id": "string",
+        "identity": {
+          "principalId": "string",
+          "tenantId": "string",
+          "type": "string",
+          "userAssignedIdentities": "object"
+        },
+        "location": "string",
+        "name": "string",
+        "properties": {
+          "agentPoolProfiles": "object",
+          "azureADOnlyAuthentication": "boolean",
+          "connectivityEndpoints": {
+            "dev": "string",
+            "sql": "string",
+            "sqlOnDemand": "string",
+            "web": "string"
+          },
+          "cspWorkspaceAdminProperties": {
+            "initialWorkspaceAdminObjectId": "string"
+          },
+          "defaultDataLakeStorage": {
+            "accountUrl": "string",
+            "createManagedPrivateEndpoint": "boolean",
+            "filesystem": "string",
+            "resourceId": "string"
+          },
+          "definition": {
+            "actions": "object"
+          },
+          "encryption": {
+            "cmk": {
+              "kekIdentity": {
+                "useSystemAssignedIdentity": "boolean",
+                "userAssignedIdentity": "string"
+              },
+              "key": {
+                "keyVaultUrl": "string",
+                "name": "string"
+              },
+              "status": "string"
+            },
+            "doubleEncryptionEnabled": "boolean"
+          },
+          "extraProperties": {
+            "IsScopeEnabled": "boolean",
+            "WorkspaceType": "string"
+          },
+          "managedNetwork": "object",
+          "managedResourceGroupName": "string",
+          "managedVirtualNetwork": "string",
+          "managedVirtualNetworkSettings": {
+            "allowedAadTenantIdsForLinking": "string",
+            "preventDataExfiltration": "boolean"
+          },
+          "osProfile": "object",
+          "privateEndpointConnections": {
+            "id": "string",
+            "properties": {
+              "privateEndpoint": {
+                "id": "string"
+              },
+              "privateLinkServiceConnectionState": {
+                "description": "string",
+                "status": "string"
+              }
+            }
+          },
+          "provisioningState": "string",
+          "publicNetworkAccess": "string",
+          "purviewConfiguration": {
+            "purviewResourceId": "string"
+          },
+          "settings": {
+            "azureADOnlyAuthentication": {
+              "state": "string",
+              "value": "boolean"
+            }
+          },
+          "sqlAdministratorLogin": "string",
+          "storageProfile": "object",
+          "trustedServiceBypassEnabled": "boolean",
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          },
+          "virtualNetworkProfile": {
+            "computeSubnetId": "string"
+          },
+          "workspaceRepositoryConfiguration": {
+            "accountName": "string",
+            "collaborationBranch": "string",
+            "hostName": "string",
+            "lastCommitId": "string",
+            "projectName": "string",
+            "repositoryName": "string",
+            "rootFolder": "string",
+            "tenantId": "string",
+            "type": "string"
+          },
+          "workspaceUID": "string"
+        },
+        "resources": "object",
+        "tags": "object",
+        "type": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "bigDataPools": {
+          "id": "string",
+          "location": "string",
+          "name": "string",
+          "properties": {
+            "autoPause": {
+              "delayInMinutes": "integer",
+              "enabled": "boolean"
+            },
+            "autoScale": {
+              "enabled": "boolean",
+              "maxNodeCount": "integer",
+              "minNodeCount": "integer"
+            },
+            "cacheSize": "integer",
+            "creationDate": "string",
+            "customLibraries": {
+              "containerName": "string",
+              "name": "string",
+              "path": "string",
+              "type": "string",
+              "uploadedTimestamp": "string"
+            },
+            "dynamicExecutorAllocation": {
+              "enabled": "boolean",
+              "maxExecutors": "integer",
+              "minExecutors": "integer"
+            },
+            "isAutotuneEnabled": "boolean",
+            "isComputeIsolationEnabled": "boolean",
+            "lastSucceededTimestamp": "string",
+            "libraryRequirements": {
+              "content": "string",
+              "filename": "string",
+              "time": "string"
+            },
+            "nodeCount": "integer",
+            "nodeSize": "string",
+            "nodeSizeFamily": "string",
+            "provisioningState": "string",
+            "sessionLevelPackagesEnabled": "boolean",
+            "sparkConfigProperties": {
+              "configurationType": "string",
+              "content": "string",
+              "filename": "string",
+              "time": "string"
+            },
+            "sparkVersion": "string"
+          },
+          "tags": "object",
+          "type": "string"
+        },
+        "configurations": "object",
+        "diagnosticSettings": {
+          "id": "string",
+          "name": "string",
+          "properties": {
+            "eventHubAuthorizationRuleId": "string",
+            "eventHubName": "string",
+            "logs": {
+              "category": "string",
+              "categoryGroup": "string",
+              "enabled": "boolean",
+              "retentionPolicy": {
+                "days": "integer",
+                "enabled": "boolean"
+              }
+            },
+            "marketplacePartnerId": "string",
+            "metrics": {
+              "category": "string",
+              "enabled": "boolean",
+              "retentionPolicy": {
+                "days": "integer",
+                "enabled": "boolean"
+              }
+            },
+            "storageAccountId": "string",
+            "workspaceId": "string"
+          },
+          "type": "string"
+        },
+        "firewallRules": {
+          "id": "string",
+          "name": "string",
+          "properties": {
+            "endIpAddress": "string",
+            "provisioningState": "string",
+            "startIpAddress": "string"
+          },
+          "type": "string"
+        },
+        "sqlPoolAuditingPolicies": {
+          "id": "string",
+          "name": "string",
+          "properties": {
+            "auditActionsAndGroups": "string",
+            "isAzureMonitorTargetEnabled": "boolean",
+            "isStorageSecondaryKeyInUse": "boolean",
+            "retentionDays": "integer",
+            "state": "string",
+            "storageAccountSubscriptionId": "string",
+            "storageEndpoint": "string"
+          },
+          "type": "string"
+        },
+        "sqlPoolSecurityAlertPolicies": {
+          "id": "string",
+          "name": "string",
+          "properties": {
+            "creationTime": "string",
+            "disabledAlerts": "string",
+            "emailAccountAdmins": "boolean",
+            "emailAddresses": "string",
+            "retentionDays": "integer",
+            "state": "string",
+            "storageAccountAccessKey": "string",
+            "storageEndpoint": "string"
+          },
+          "type": "string"
+        },
+        "sqlPoolTransparentDataEncryption": {
+          "id": "string",
+          "location": "string",
+          "name": "string",
+          "properties": {
+            "status": "string"
+          },
+          "type": "string"
+        },
+        "sqlPools": {
+          "id": "string",
+          "location": "string",
+          "name": "string",
+          "properties": {
+            "collation": "string",
+            "creationDate": "string",
+            "maxSizeBytes": "integer",
+            "provisioningState": "string",
+            "status": "string",
+            "storageAccountType": "string"
+          },
+          "sku": {
+            "capacity": "integer",
+            "name": "string"
+          },
+          "tags": "object",
+          "type": "string"
+        }
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

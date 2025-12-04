@@ -1,0 +1,150 @@
+[
+  {
+    "AWS::EC2::SecurityGroup": {
+      "configuration": {
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "description": "string",
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "groupId": "string",
+        "groupName": "string",
+        "ipPermissions": {
+          "fromPort": "integer",
+          "ipProtocol": "string",
+          "ipRanges": {
+            "cidrIp": "string",
+            "description": "string"
+          },
+          "ipv6Ranges": {
+            "cidrIpv6": "string",
+            "description": "string"
+          },
+          "prefixListIds": {
+            "description": "string",
+            "prefixListId": "string"
+          },
+          "toPort": "integer",
+          "userIdGroupPairs": {
+            "description": "string",
+            "groupId": "string",
+            "peeringStatus": "string",
+            "userId": "string",
+            "vpcId": "string",
+            "vpcPeeringConnectionId": "string"
+          }
+        },
+        "ipPermissionsEgress": {
+          "fromPort": "integer",
+          "ipProtocol": "string",
+          "ipRanges": {
+            "cidrIp": "string",
+            "description": "string"
+          },
+          "ipv6Ranges": {
+            "cidrIpv6": "string",
+            "description": "string"
+          },
+          "prefixListIds": {
+            "description": "string",
+            "prefixListId": "string"
+          },
+          "toPort": "integer",
+          "userIdGroupPairs": {
+            "description": "string",
+            "groupId": "string",
+            "peeringStatus": "string",
+            "userId": "string",
+            "vpcId": "string",
+            "vpcPeeringConnectionId": "string"
+          }
+        },
+        "labels": "object",
+        "methodSettings": "object",
+        "ownerId": "string",
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "tags": "object",
+        "variables": "object",
+        "vpcId": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "SecurityGroupRules": {
+          "cidrIpv4": "string",
+          "cidrIpv6": "string",
+          "description": "string",
+          "fromPort": "integer",
+          "groupId": "string",
+          "groupOwnerId": "string",
+          "ipProtocol": "string",
+          "isEgress": "boolean",
+          "prefixListId": "string",
+          "referencedGroupInfo": {
+            "groupId": "string",
+            "peeringStatus": "string",
+            "userId": "string",
+            "vpcId": "string",
+            "vpcPeeringConnectionId": "string"
+          },
+          "securityGroupRuleId": "string",
+          "tags": {
+            "key": "string",
+            "value": "string"
+          },
+          "toPort": "integer"
+        },
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

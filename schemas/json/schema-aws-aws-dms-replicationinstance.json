@@ -1,0 +1,116 @@
+[
+  {
+    "AWS::DMS::ReplicationInstance": {
+      "configuration": {
+        "allocatedStorage": "integer",
+        "autoMinorVersionUpgrade": "boolean",
+        "availabilityZone": "string",
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "dnsNameServers": "string",
+        "engineVersion": "string",
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "freeUntil": "string",
+        "instanceCreateTime": "string",
+        "kmsKeyId": "string",
+        "labels": "object",
+        "methodSettings": "object",
+        "multiAZ": "boolean",
+        "networkType": "string",
+        "pendingModifiedValues": {
+          "allocatedStorage": "integer",
+          "engineVersion": "string",
+          "multiAZ": "boolean",
+          "replicationInstanceClass": "string"
+        },
+        "policy": "object",
+        "preferredMaintenanceWindow": "string",
+        "publiclyAccessible": "boolean",
+        "replicationInstanceArn": "string",
+        "replicationInstanceClass": "string",
+        "replicationInstanceIdentifier": "string",
+        "replicationInstanceIpv6Addresses": "string",
+        "replicationInstancePrivateIpAddress": "string",
+        "replicationInstancePrivateIpAddresses": "string",
+        "replicationInstancePublicIpAddress": "string",
+        "replicationInstancePublicIpAddresses": "string",
+        "replicationInstanceStatus": "string",
+        "replicationSubnetGroup": {
+          "replicationSubnetGroupDescription": "string",
+          "replicationSubnetGroupIdentifier": "string",
+          "subnetGroupStatus": "string",
+          "subnets": {
+            "subnetAvailabilityZone": {
+              "name": "string"
+            },
+            "subnetIdentifier": "string",
+            "subnetStatus": "string"
+          },
+          "vpcId": "string"
+        },
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secondaryAvailabilityZone": "string",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "tags": "object",
+        "variables": "object",
+        "vpcSecurityGroups": {
+          "status": "string",
+          "vpcSecurityGroupId": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

@@ -1,0 +1,154 @@
+[
+  {
+    "Microsoft.Compute/disks": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "extendedLocation": {
+          "name": "string",
+          "type": "string"
+        },
+        "id": "string",
+        "identity": {
+          "userAssignedIdentities": "object"
+        },
+        "location": "string",
+        "managedBy": "string",
+        "managedByExtended": "string",
+        "name": "string",
+        "properties": {
+          "agentPoolProfiles": "object",
+          "burstingEnabled": "boolean",
+          "burstingEnabledTime": "string",
+          "completionPercent": "integer",
+          "creationData": {
+            "createOption": "string",
+            "galleryImageReference": {
+              "communityGalleryImageId": "string",
+              "id": "string",
+              "lun": "integer",
+              "sharedGalleryImageId": "string"
+            },
+            "imageReference": {
+              "id": "string",
+              "lun": "integer"
+            },
+            "logicalSectorSize": "integer",
+            "performancePlus": "boolean",
+            "securityDataUri": "string",
+            "sourceResourceId": "string",
+            "sourceUniqueId": "string",
+            "sourceUri": "string",
+            "storageAccountId": "string",
+            "uploadSizeBytes": "integer"
+          },
+          "dataAccessAuthMode": "string",
+          "definition": {
+            "actions": "object"
+          },
+          "diskAccessId": "string",
+          "diskIOPSReadOnly": "integer",
+          "diskIOPSReadWrite": "integer",
+          "diskMBpsReadOnly": "integer",
+          "diskMBpsReadWrite": "integer",
+          "diskSizeBytes": "integer",
+          "diskSizeGB": "integer",
+          "diskState": "string",
+          "encryption": {
+            "diskEncryptionSetId": "string",
+            "type": "string"
+          },
+          "encryptionSettingsCollection": {
+            "enabled": "boolean",
+            "encryptionSettings": {
+              "diskEncryptionKey": {
+                "secretUrl": "string",
+                "sourceVault": {
+                  "id": "string"
+                }
+              },
+              "keyEncryptionKey": {
+                "keyUrl": "string",
+                "sourceVault": {
+                  "id": "string"
+                }
+              }
+            },
+            "encryptionSettingsVersion": "string"
+          },
+          "hyperVGeneration": "string",
+          "managedNetwork": "object",
+          "maxShares": "integer",
+          "networkAccessPolicy": "string",
+          "optimizedForFrequentAttach": "boolean",
+          "osProfile": "object",
+          "osType": "string",
+          "propertyUpdatesInProgress": {
+            "targetTier": "string"
+          },
+          "provisioningState": "string",
+          "publicNetworkAccess": "string",
+          "purchasePlan": {
+            "name": "string",
+            "product": "string",
+            "publisher": "string"
+          },
+          "securityProfile": {
+            "secureVMDiskEncryptionSetId": "string",
+            "securityType": "string"
+          },
+          "storageProfile": "object",
+          "supportedCapabilities": {
+            "acceleratedNetwork": "boolean",
+            "architecture": "string",
+            "diskControllerTypes": "string"
+          },
+          "supportsHibernation": "boolean",
+          "tier": "string",
+          "timeCreated": "string",
+          "uniqueId": "string",
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          }
+        },
+        "resources": "object",
+        "sku": {
+          "name": "string",
+          "tier": "string"
+        },
+        "tags": "object",
+        "type": "string",
+        "zones": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "configurations": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

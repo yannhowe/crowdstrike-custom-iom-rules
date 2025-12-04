@@ -1,0 +1,338 @@
+[
+  {
+    "AWS::CloudFront::Distribution": {
+      "configuration": {
+        "activeTrustedKeyGroups": {
+          "enabled": "boolean",
+          "items": {
+            "keyGroupId": "string",
+            "keyPairIds": {
+              "items": "string",
+              "quantity": "integer"
+            }
+          },
+          "quantity": "integer"
+        },
+        "activeTrustedSigners": {
+          "enabled": "boolean",
+          "items": {
+            "awsAccountNumber": "string",
+            "keyPairIds": {
+              "items": "string",
+              "quantity": "integer"
+            }
+          },
+          "quantity": "integer"
+        },
+        "aliasICPRecordals": {
+          "cname": "string",
+          "icpRecordalStatus": "string"
+        },
+        "arn": "string",
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "distributionConfig": {
+          "aliases": {
+            "items": "string",
+            "quantity": "integer"
+          },
+          "cacheBehaviors": {
+            "items": {
+              "allowedMethods": {
+                "cachedMethods": {
+                  "items": "string",
+                  "quantity": "integer"
+                },
+                "items": "string",
+                "quantity": "integer"
+              },
+              "cachePolicyId": "string",
+              "compress": "boolean",
+              "defaultTTL": "integer",
+              "fieldLevelEncryptionId": "string",
+              "forwardedValues": {
+                "cookies": {
+                  "forward": "string",
+                  "whitelistedNames": {
+                    "items": "string",
+                    "quantity": "integer"
+                  }
+                },
+                "headers": {
+                  "items": "string",
+                  "quantity": "integer"
+                },
+                "queryString": "boolean",
+                "queryStringCacheKeys": {
+                  "items": "string",
+                  "quantity": "integer"
+                }
+              },
+              "functionAssociations": {
+                "items": {
+                  "eventType": "string",
+                  "functionARN": "string"
+                },
+                "quantity": "integer"
+              },
+              "lambdaFunctionAssociations": {
+                "items": {
+                  "eventType": "string",
+                  "includeBody": "boolean",
+                  "lambdaFunctionARN": "string"
+                },
+                "quantity": "integer"
+              },
+              "maxTTL": "integer",
+              "minTTL": "integer",
+              "originRequestPolicyId": "string",
+              "pathPattern": "string",
+              "realtimeLogConfigArn": "string",
+              "responseHeadersPolicyId": "string",
+              "smoothStreaming": "boolean",
+              "targetOriginId": "string",
+              "trustedKeyGroups": {
+                "enabled": "boolean",
+                "items": "string",
+                "quantity": "integer"
+              },
+              "trustedSigners": {
+                "enabled": "boolean",
+                "items": "string",
+                "quantity": "integer"
+              },
+              "viewerProtocolPolicy": "string"
+            },
+            "quantity": "integer"
+          },
+          "callerReference": "string",
+          "comment": "string",
+          "continuousDeploymentPolicyId": "string",
+          "customErrorResponses": {
+            "items": {
+              "errorCachingMinTTL": "integer",
+              "errorCode": "integer",
+              "responseCode": "string",
+              "responsePagePath": "string"
+            },
+            "quantity": "integer"
+          },
+          "defaultCacheBehavior": {
+            "allowedMethods": {
+              "cachedMethods": {
+                "items": "string",
+                "quantity": "integer"
+              },
+              "items": "string",
+              "quantity": "integer"
+            },
+            "cachePolicyId": "string",
+            "compress": "boolean",
+            "defaultTTL": "integer",
+            "fieldLevelEncryptionId": "string",
+            "forwardedValues": {
+              "cookies": {
+                "forward": "string",
+                "whitelistedNames": {
+                  "items": "string",
+                  "quantity": "integer"
+                }
+              },
+              "headers": {
+                "items": "string",
+                "quantity": "integer"
+              },
+              "queryString": "boolean",
+              "queryStringCacheKeys": {
+                "items": "string",
+                "quantity": "integer"
+              }
+            },
+            "functionAssociations": {
+              "items": {
+                "eventType": "string",
+                "functionARN": "string"
+              },
+              "quantity": "integer"
+            },
+            "lambdaFunctionAssociations": {
+              "items": {
+                "eventType": "string",
+                "includeBody": "boolean",
+                "lambdaFunctionARN": "string"
+              },
+              "quantity": "integer"
+            },
+            "maxTTL": "integer",
+            "minTTL": "integer",
+            "originRequestPolicyId": "string",
+            "realtimeLogConfigArn": "string",
+            "responseHeadersPolicyId": "string",
+            "smoothStreaming": "boolean",
+            "targetOriginId": "string",
+            "trustedKeyGroups": {
+              "enabled": "boolean",
+              "items": "string",
+              "quantity": "integer"
+            },
+            "trustedSigners": {
+              "enabled": "boolean",
+              "items": "string",
+              "quantity": "integer"
+            },
+            "viewerProtocolPolicy": "string"
+          },
+          "defaultRootObject": "string",
+          "enabled": "boolean",
+          "httpVersion": "string",
+          "isIPV6Enabled": "boolean",
+          "logging": {
+            "bucket": "string",
+            "enabled": "boolean",
+            "includeCookies": "boolean",
+            "prefix": "string"
+          },
+          "originGroups": {
+            "items": {
+              "failoverCriteria": {
+                "statusCodes": {
+                  "items": "integer",
+                  "quantity": "integer"
+                }
+              },
+              "id": "string",
+              "members": {
+                "items": {
+                  "originId": "string"
+                },
+                "quantity": "integer"
+              }
+            },
+            "quantity": "integer"
+          },
+          "origins": {
+            "items": {
+              "connectionAttempts": "integer",
+              "connectionTimeout": "integer",
+              "customHeaders": {
+                "items": {
+                  "headerName": "string",
+                  "headerValue": "string"
+                },
+                "quantity": "integer"
+              },
+              "customOriginConfig": {
+                "httpPort": "integer",
+                "httpsPort": "integer",
+                "originKeepaliveTimeout": "integer",
+                "originProtocolPolicy": "string",
+                "originReadTimeout": "integer",
+                "originSslProtocols": {
+                  "items": "string",
+                  "quantity": "integer"
+                }
+              },
+              "domainName": "string",
+              "id": "string",
+              "originAccessControlId": "string",
+              "originPath": "string",
+              "originShield": {
+                "enabled": "boolean",
+                "originShieldRegion": "string"
+              },
+              "s3OriginConfig": {
+                "originAccessIdentity": "string"
+              }
+            },
+            "quantity": "integer"
+          },
+          "priceClass": "string",
+          "restrictions": {
+            "geoRestriction": {
+              "items": "string",
+              "quantity": "integer",
+              "restrictionType": "string"
+            }
+          },
+          "staging": "boolean",
+          "viewerCertificate": {
+            "acmCertificateArn": "string",
+            "certificate": "string",
+            "certificateSource": "string",
+            "cloudFrontDefaultCertificate": "boolean",
+            "iamCertificateId": "string",
+            "minimumProtocolVersion": "string",
+            "sslSupportMethod": "string"
+          },
+          "webACLId": "string"
+        },
+        "domainName": "string",
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "id": "string",
+        "inProgressInvalidationBatches": "integer",
+        "labels": "object",
+        "lastModifiedTime": "string",
+        "methodSettings": "object",
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "status": "string",
+        "tags": "object",
+        "variables": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

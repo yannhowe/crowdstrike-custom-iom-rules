@@ -1,0 +1,328 @@
+[
+  {
+    "AWS::S3::Bucket": {
+      "configuration": {
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "creationDate": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "labels": "object",
+        "methodSettings": "object",
+        "name": "string",
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "tags": "object",
+        "variables": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "AccessControlList": {
+          "grants": {
+            "grantee": {
+              "displayName": "string",
+              "id": "string",
+              "type": "string",
+              "uri": "string"
+            },
+            "permission": "string"
+          },
+          "owner": {
+            "displayName": "string",
+            "id": "string"
+          }
+        },
+        "BucketAccelerateConfiguration": {
+          "status": "string"
+        },
+        "BucketCrossOriginConfiguration": {
+          "corsRules": {
+            "allowedHeaders": "string",
+            "allowedMethods": "string",
+            "allowedOrigins": "string",
+            "exposeHeaders": "string",
+            "id": "string",
+            "maxAgeSeconds": "integer"
+          }
+        },
+        "BucketEncryptionConfiguration": {
+          "rules": {
+            "applyServerSideEncryptionByDefault": {
+              "kmsMasterKeyID": "string",
+              "sseAlgorithm": "string"
+            },
+            "bucketKeyEnabled": "boolean"
+          }
+        },
+        "BucketLifecycleConfiguration": {
+          "rules": {
+            "abortIncompleteMultipartUpload": {
+              "daysAfterInitiation": "integer"
+            },
+            "expiration": {
+              "date": "string",
+              "days": "integer",
+              "expiredObjectDeleteMarker": "boolean"
+            },
+            "filter": {
+              "and": {
+                "objectSizeGreaterThan": "integer",
+                "objectSizeLessThan": "integer",
+                "prefix": "string",
+                "tags": {
+                  "key": "string",
+                  "value": "string"
+                }
+              },
+              "objectSizeGreaterThan": "integer",
+              "objectSizeLessThan": "integer",
+              "prefix": "string",
+              "tag": {
+                "key": "string",
+                "value": "string"
+              }
+            },
+            "id": "string",
+            "noncurrentVersionExpiration": {
+              "newerNoncurrentVersions": "integer",
+              "noncurrentDays": "integer"
+            },
+            "noncurrentVersionTransitions": {
+              "newerNoncurrentVersions": "integer",
+              "noncurrentDays": "integer",
+              "storageClass": "string"
+            },
+            "prefix": "string",
+            "status": "string",
+            "transitions": {
+              "date": "string",
+              "days": "integer",
+              "storageClass": "string"
+            }
+          }
+        },
+        "BucketLoggingConfiguration": {
+          "loggingEnabled": {
+            "targetBucket": "string",
+            "targetGrants": {
+              "grantee": {
+                "displayName": "string",
+                "id": "string",
+                "type": "string",
+                "uri": "string"
+              },
+              "permission": "string"
+            },
+            "targetObjectKeyFormat": {
+              "partitionedPrefix": {
+                "partitionDateSource": "string"
+              },
+              "simplePrefix": "object"
+            },
+            "targetPrefix": "string"
+          }
+        },
+        "BucketNotificationConfiguration": {
+          "eventBridgeConfiguration": "object",
+          "lambdaFunctionConfigurations": {
+            "events": "string",
+            "filter": {
+              "key": {
+                "filterRules": {
+                  "name": "string",
+                  "value": "string"
+                }
+              }
+            },
+            "id": "string",
+            "lambdaFunctionArn": "string"
+          },
+          "queueConfigurations": {
+            "events": "string",
+            "filter": {
+              "key": {
+                "filterRules": {
+                  "name": "string",
+                  "value": "string"
+                }
+              }
+            },
+            "id": "string",
+            "queueArn": "string"
+          },
+          "topicConfigurations": {
+            "events": "string",
+            "filter": {
+              "key": {
+                "filterRules": {
+                  "name": "string",
+                  "value": "string"
+                }
+              }
+            },
+            "id": "string",
+            "topicArn": "string"
+          }
+        },
+        "BucketOwnershipControl": {
+          "rules": {
+            "objectOwnership": "string"
+          }
+        },
+        "BucketPolicy": "object",
+        "BucketPolicyStatus": {
+          "isPublic": "boolean"
+        },
+        "BucketPublicAccessBlockConfiguration": {
+          "blockPublicAcls": "boolean",
+          "blockPublicPolicy": "boolean",
+          "ignorePublicAcls": "boolean",
+          "restrictPublicBuckets": "boolean"
+        },
+        "BucketReplicationConfiguration": {
+          "role": "string",
+          "rules": {
+            "deleteMarkerReplication": {
+              "status": "string"
+            },
+            "destination": {
+              "accessControlTranslation": {
+                "owner": "string"
+              },
+              "account": "string",
+              "bucket": "string",
+              "encryptionConfiguration": {
+                "replicaKmsKeyID": "string"
+              },
+              "metrics": {
+                "eventThreshold": {
+                  "minutes": "integer"
+                },
+                "status": "string"
+              },
+              "replicationTime": {
+                "status": "string",
+                "time": {
+                  "minutes": "integer"
+                }
+              },
+              "storageClass": "string"
+            },
+            "existingObjectReplication": {
+              "status": "string"
+            },
+            "filter": {
+              "and": {
+                "prefix": "string",
+                "tags": {
+                  "key": "string",
+                  "value": "string"
+                }
+              },
+              "prefix": "string",
+              "tag": {
+                "key": "string",
+                "value": "string"
+              }
+            },
+            "id": "string",
+            "prefix": "string",
+            "priority": "integer",
+            "sourceSelectionCriteria": {
+              "replicaModifications": {
+                "status": "string"
+              },
+              "sseKmsEncryptedObjects": {
+                "status": "string"
+              }
+            },
+            "status": "string"
+          }
+        },
+        "BucketTaggingConfiguration": {
+          "key": "string",
+          "value": "string"
+        },
+        "BucketVersioningConfiguration": {
+          "mfaDelete": "string",
+          "status": "string"
+        },
+        "BucketWebsiteConfiguration": {
+          "errorDocument": {
+            "key": "string"
+          },
+          "indexDocument": {
+            "suffix": "string"
+          },
+          "redirectAllRequestsTo": {
+            "hostName": "string",
+            "protocol": "string"
+          },
+          "routingRules": {
+            "condition": {
+              "httpErrorCodeReturnedEquals": "string",
+              "keyPrefixEquals": "string"
+            },
+            "redirect": {
+              "hostName": "string",
+              "httpRedirectCode": "string",
+              "protocol": "string",
+              "replaceKeyPrefixWith": "string",
+              "replaceKeyWith": "string"
+            }
+          }
+        },
+        "InstanceAttributeUserData": "object",
+        "IsRequesterPaysEnabled": "boolean",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

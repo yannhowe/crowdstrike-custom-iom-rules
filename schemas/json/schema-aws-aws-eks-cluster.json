@@ -1,0 +1,131 @@
+[
+  {
+    "AWS::EKS::Cluster": {
+      "configuration": {
+        "accessConfig": {
+          "authenticationMode": "string"
+        },
+        "arn": "string",
+        "certificateAuthority": {
+          "data": "string"
+        },
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "createdAt": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "encryptionConfig": {
+          "provider": {
+            "keyArn": "string"
+          },
+          "resources": "string"
+        },
+        "endpoint": "string",
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "health": {
+          "issues": {
+            "code": "string",
+            "message": "string",
+            "resourceIds": "string"
+          }
+        },
+        "id": "string",
+        "identity": {
+          "oidc": {
+            "issuer": "string"
+          }
+        },
+        "kubernetesNetworkConfig": {
+          "ipFamily": "string",
+          "serviceIpv4Cidr": "string",
+          "serviceIpv6Cidr": "string"
+        },
+        "labels": "object",
+        "logging": {
+          "clusterLogging": {
+            "enabled": "boolean",
+            "types": "string"
+          }
+        },
+        "methodSettings": "object",
+        "name": "string",
+        "outpostConfig": {
+          "controlPlaneInstanceType": "string",
+          "outpostArns": "string"
+        },
+        "platformVersion": "string",
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "resourcesVpcConfig": {
+          "clusterSecurityGroupId": "string",
+          "endpointPrivateAccess": "boolean",
+          "endpointPublicAccess": "boolean",
+          "publicAccessCidrs": "string",
+          "securityGroupIds": "string",
+          "subnetIds": "string",
+          "vpcId": "string"
+        },
+        "roleArn": "string",
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "status": "string",
+        "tags": "object",
+        "upgradePolicy": {
+          "supportType": "string"
+        },
+        "variables": "object",
+        "version": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

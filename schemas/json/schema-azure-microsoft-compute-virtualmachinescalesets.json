@@ -1,0 +1,357 @@
+[
+  {
+    "Microsoft.Compute/virtualMachineScaleSets": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "id": "string",
+        "identity": {
+          "principalId": "string",
+          "tenantId": "string",
+          "type": "string",
+          "userAssignedIdentities": "object"
+        },
+        "location": "string",
+        "name": "string",
+        "plan": {
+          "name": "string",
+          "product": "string",
+          "publisher": "string"
+        },
+        "properties": {
+          "additionalCapabilities": {
+            "hibernationEnabled": "boolean",
+            "ultraSSDEnabled": "boolean"
+          },
+          "agentPoolProfiles": "object",
+          "automaticRepairsPolicy": {
+            "enabled": "boolean",
+            "gracePeriod": "string",
+            "repairAction": "string"
+          },
+          "definition": {
+            "actions": "object"
+          },
+          "doNotRunExtensionsOnOverprovisionedVMs": "boolean",
+          "managedNetwork": "object",
+          "orchestrationMode": "string",
+          "osProfile": "object",
+          "overprovision": "boolean",
+          "platformFaultDomainCount": "integer",
+          "priorityMixPolicy": {
+            "baseRegularPriorityCount": "integer",
+            "regularPriorityPercentageAboveBase": "integer"
+          },
+          "provisioningState": "string",
+          "proximityPlacementGroup": {
+            "id": "string"
+          },
+          "scaleInPolicy": {
+            "forceDeletion": "boolean",
+            "rules": "string"
+          },
+          "singlePlacementGroup": "boolean",
+          "spotRestorePolicy": {
+            "enabled": "boolean",
+            "restoreTimeout": "string"
+          },
+          "storageProfile": "object",
+          "timeCreated": "string",
+          "uniqueId": "string",
+          "upgradePolicy": {
+            "automaticOSUpgradePolicy": {
+              "disableAutomaticRollback": "boolean",
+              "enableAutomaticOSUpgrade": "boolean",
+              "useRollingUpgradePolicy": "boolean"
+            },
+            "mode": "string",
+            "rollingUpgradePolicy": {
+              "enableCrossZoneUpgrade": "boolean",
+              "maxBatchInstancePercent": "integer",
+              "maxUnhealthyInstancePercent": "integer",
+              "maxUnhealthyUpgradedInstancePercent": "integer",
+              "pauseTimeBetweenBatches": "string",
+              "prioritizeUnhealthyInstances": "boolean"
+            }
+          },
+          "virtualMachineProfile": {
+            "applicationProfile": {
+              "galleryApplications": {
+                "enableAutomaticUpgrade": "boolean",
+                "order": "integer",
+                "packageReferenceId": "string",
+                "treatFailureAsDeploymentFailure": "boolean"
+              }
+            },
+            "billingProfile": {
+              "maxPrice": "integer"
+            },
+            "capacityReservation": {
+              "capacityReservationGroup": {
+                "id": "string"
+              }
+            },
+            "diagnosticsProfile": {
+              "bootDiagnostics": {
+                "enabled": "boolean",
+                "storageUri": "string"
+              }
+            },
+            "evictionPolicy": "string",
+            "extensionProfile": {
+              "extensions": {
+                "name": "string",
+                "properties": {
+                  "autoUpgradeMinorVersion": "boolean",
+                  "enableAutomaticUpgrade": "boolean",
+                  "forceUpdateTag": "string",
+                  "protectedSettingsFromKeyVault": {
+                    "secretUrl": "string",
+                    "sourceVault": {
+                      "id": "string"
+                    }
+                  },
+                  "provisionAfterExtensions": "string",
+                  "publisher": "string",
+                  "settings": "object",
+                  "suppressFailures": "boolean",
+                  "type": "string",
+                  "typeHandlerVersion": "string"
+                }
+              },
+              "extensionsTimeBudget": "string",
+              "properties": {
+                "settings": "object"
+              }
+            },
+            "licenseType": "string",
+            "networkProfile": {
+              "healthProbe": {
+                "id": "string"
+              },
+              "networkApiVersion": "string",
+              "networkInterfaceConfigurations": {
+                "name": "string",
+                "properties": {
+                  "deleteOption": "string",
+                  "disableTcpStateTracking": "boolean",
+                  "dnsSettings": {
+                    "dnsServers": "string"
+                  },
+                  "enableAcceleratedNetworking": "boolean",
+                  "enableFpga": "boolean",
+                  "enableIPForwarding": "boolean",
+                  "ipConfigurations": {
+                    "name": "string",
+                    "properties": {
+                      "applicationGatewayBackendAddressPools": {
+                        "id": "string"
+                      },
+                      "applicationSecurityGroups": {
+                        "id": "string"
+                      },
+                      "loadBalancerBackendAddressPools": {
+                        "id": "string"
+                      },
+                      "loadBalancerInboundNatPools": {
+                        "id": "string"
+                      },
+                      "primary": "boolean",
+                      "privateIPAddressVersion": "string",
+                      "publicIPAddressConfiguration": {
+                        "name": "string",
+                        "properties": {
+                          "deleteOption": "string",
+                          "dnsSettings": {
+                            "domainNameLabel": "string"
+                          },
+                          "idleTimeoutInMinutes": "integer",
+                          "publicIPAddressVersion": "string",
+                          "publicIPPrefix": {
+                            "id": "string"
+                          }
+                        },
+                        "sku": {
+                          "name": "string",
+                          "tier": "string"
+                        }
+                      },
+                      "subnet": {
+                        "id": "string"
+                      }
+                    }
+                  },
+                  "networkSecurityGroup": {
+                    "id": "string"
+                  },
+                  "primary": "boolean"
+                }
+              }
+            },
+            "osProfile": {
+              "adminUsername": "string",
+              "allowExtensionOperations": "boolean",
+              "computerNamePrefix": "string",
+              "linuxConfiguration": {
+                "disablePasswordAuthentication": "boolean",
+                "enableVMAgentPlatformUpdates": "boolean",
+                "patchSettings": {
+                  "assessmentMode": "string",
+                  "automaticByPlatformSettings": {
+                    "rebootSetting": "string"
+                  },
+                  "patchMode": "string"
+                },
+                "provisionVMAgent": "boolean",
+                "ssh": {
+                  "publicKeys": {
+                    "keyData": "string",
+                    "path": "string"
+                  }
+                }
+              },
+              "secrets": {
+                "sourceVault": {
+                  "id": "string"
+                },
+                "vaultCertificates": {
+                  "certificateStore": "string",
+                  "certificateUrl": "string"
+                }
+              },
+              "windowsConfiguration": {
+                "additionalUnattendContent": {
+                  "componentName": "string",
+                  "passName": "string",
+                  "settingName": "string"
+                },
+                "enableAutomaticUpdates": "boolean",
+                "enableVMAgentPlatformUpdates": "boolean",
+                "patchSettings": {
+                  "assessmentMode": "string",
+                  "automaticByPlatformSettings": {
+                    "rebootSetting": "string"
+                  },
+                  "enableHotpatching": "boolean",
+                  "patchMode": "string"
+                },
+                "provisionVMAgent": "boolean",
+                "timeZone": "string",
+                "winRM": {
+                  "listeners": {
+                    "certificateUrl": "string",
+                    "protocol": "string"
+                  }
+                }
+              }
+            },
+            "priority": "string",
+            "scheduledEventsProfile": {
+              "terminateNotificationProfile": {
+                "enable": "boolean",
+                "notBeforeTimeout": "string"
+              }
+            },
+            "securityProfile": {
+              "encryptionAtHost": "boolean",
+              "securityType": "string",
+              "uefiSettings": {
+                "secureBootEnabled": "boolean",
+                "vTpmEnabled": "boolean"
+              }
+            },
+            "storageProfile": {
+              "dataDisks": {
+                "caching": "string",
+                "createOption": "string",
+                "deleteOption": "string",
+                "diskIOPSReadWrite": "integer",
+                "diskMBpsReadWrite": "integer",
+                "diskSizeGB": "integer",
+                "lun": "integer",
+                "managedDisk": {
+                  "diskEncryptionSet": {
+                    "id": "string"
+                  },
+                  "storageAccountType": "string"
+                },
+                "writeAcceleratorEnabled": "boolean"
+              },
+              "diskControllerType": "string",
+              "imageReference": {
+                "communityGalleryImageId": "string",
+                "id": "string",
+                "offer": "string",
+                "publisher": "string",
+                "sharedGalleryImageId": "string",
+                "sku": "string",
+                "version": "string"
+              },
+              "osDisk": {
+                "caching": "string",
+                "createOption": "string",
+                "deleteOption": "string",
+                "diffDiskSettings": {
+                  "option": "string",
+                  "placement": "string"
+                },
+                "diskSizeGB": "integer",
+                "image": {
+                  "uri": "string"
+                },
+                "managedDisk": {
+                  "diskEncryptionSet": {
+                    "id": "string"
+                  },
+                  "securityProfile": {
+                    "securityEncryptionType": "string"
+                  },
+                  "storageAccountType": "string"
+                },
+                "name": "string",
+                "osType": "string",
+                "vhdContainers": "string",
+                "writeAcceleratorEnabled": "boolean"
+              }
+            }
+          },
+          "zoneBalance": "boolean"
+        },
+        "resources": "object",
+        "sku": {
+          "capacity": "integer",
+          "name": "string",
+          "tier": "string"
+        },
+        "tags": "object",
+        "type": "string",
+        "zones": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "configurations": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

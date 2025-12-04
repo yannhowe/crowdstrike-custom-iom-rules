@@ -1,0 +1,104 @@
+[
+  {
+    "AWS::Backup::BackupSelection": {
+      "configuration": {
+        "backupPlanId": "string",
+        "backupSelection": {
+          "conditions": {
+            "stringEquals": {
+              "conditionKey": "string",
+              "conditionValue": "string"
+            },
+            "stringLike": {
+              "conditionKey": "string",
+              "conditionValue": "string"
+            },
+            "stringNotEquals": {
+              "conditionKey": "string",
+              "conditionValue": "string"
+            },
+            "stringNotLike": {
+              "conditionKey": "string",
+              "conditionValue": "string"
+            }
+          },
+          "iamRoleArn": "string",
+          "listOfTags": {
+            "conditionKey": "string",
+            "conditionType": "string",
+            "conditionValue": "string"
+          },
+          "notResources": "string",
+          "resources": "string",
+          "selectionName": "string"
+        },
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "creationDate": "string",
+        "creatorRequestId": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "labels": "object",
+        "methodSettings": "object",
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectionId": "string",
+        "selectors": {
+          "labels": "object"
+        },
+        "tags": "object",
+        "variables": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

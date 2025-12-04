@@ -1,0 +1,108 @@
+[
+  {
+    "AWS::ImageBuilder::ImageRecipe": {
+      "configuration": {
+        "additionalInstanceConfiguration": {
+          "systemsManagerAgent": {
+            "uninstallAfterBuild": "boolean"
+          },
+          "userDataOverride": "string"
+        },
+        "arn": "string",
+        "blockDeviceMappings": {
+          "deviceName": "string",
+          "ebs": {
+            "deleteOnTermination": "boolean",
+            "encrypted": "boolean",
+            "iops": "integer",
+            "kmsKeyId": "string",
+            "snapshotId": "string",
+            "throughput": "integer",
+            "volumeSize": "integer",
+            "volumeType": "string"
+          },
+          "noDevice": "string",
+          "virtualName": "string"
+        },
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "components": {
+          "componentArn": "string",
+          "parameters": {
+            "name": "string",
+            "value": "string"
+          }
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "dateCreated": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "description": "string",
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "labels": "object",
+        "methodSettings": "object",
+        "name": "string",
+        "owner": "string",
+        "parentImage": "string",
+        "platform": "string",
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "tags": "object",
+        "variables": "object",
+        "version": "string",
+        "workingDirectory": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

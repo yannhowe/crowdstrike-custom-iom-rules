@@ -1,0 +1,86 @@
+[
+  {
+    "Microsoft.Network/publicIPPrefixes": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "id": "string",
+        "identity": {
+          "userAssignedIdentities": "object"
+        },
+        "location": "string",
+        "name": "string",
+        "properties": {
+          "agentPoolProfiles": "object",
+          "customIPPrefix": {
+            "id": "string"
+          },
+          "definition": {
+            "actions": "object"
+          },
+          "ipPrefix": "string",
+          "ipTags": {
+            "ipTagType": "string",
+            "tag": "string"
+          },
+          "loadBalancerFrontendIpConfiguration": {
+            "id": "string"
+          },
+          "managedNetwork": "object",
+          "natGateway": {
+            "id": "string"
+          },
+          "osProfile": "object",
+          "prefixLength": "integer",
+          "provisioningState": "string",
+          "publicIPAddressVersion": "string",
+          "publicIPAddresses": {
+            "id": "string"
+          },
+          "resourceGuid": "string",
+          "storageProfile": "object",
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          }
+        },
+        "resources": "object",
+        "sku": {
+          "name": "string",
+          "tier": "string"
+        },
+        "tags": "object",
+        "type": "string",
+        "zones": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "configurations": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

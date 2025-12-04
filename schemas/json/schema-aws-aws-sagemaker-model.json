@@ -1,0 +1,151 @@
+[
+  {
+    "AWS::SageMaker::Model": {
+      "configuration": {
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "containers": {
+          "containerHostname": "string",
+          "environment": "object",
+          "image": "string",
+          "imageConfig": {
+            "repositoryAccessMode": "string",
+            "repositoryAuthConfig": "object"
+          },
+          "inferenceSpecificationName": "string",
+          "mode": "string",
+          "modelDataSource": {
+            "s3DataSource": {
+              "compressionType": "string",
+              "s3DataType": "string",
+              "s3Uri": "string"
+            }
+          },
+          "modelDataUrl": "string",
+          "modelPackageName": "string",
+          "multiModelConfig": {
+            "modelCacheSetting": "string"
+          }
+        },
+        "creationTime": "string",
+        "deploymentRecommendation": {
+          "realTimeInferenceRecommendations": {
+            "instanceType": "string",
+            "recommendationId": "string"
+          },
+          "recommendationStatus": "string"
+        },
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "enableNetworkIsolation": "boolean",
+        "environment": {
+          "variables": "object"
+        },
+        "executionRoleArn": "string",
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "inferenceExecutionConfig": {
+          "mode": "string"
+        },
+        "labels": "object",
+        "methodSettings": "object",
+        "modelArn": "string",
+        "modelName": "string",
+        "policy": "object",
+        "primaryContainer": {
+          "additionalModelDataSources": {
+            "channelName": "string",
+            "s3DataSource": {
+              "compressionType": "string",
+              "modelAccessConfig": {
+                "acceptEula": "boolean"
+              },
+              "s3DataType": "string",
+              "s3Uri": "string"
+            }
+          },
+          "containerHostname": "string",
+          "environment": "object",
+          "image": "string",
+          "imageConfig": {
+            "repositoryAccessMode": "string",
+            "repositoryAuthConfig": {
+              "repositoryCredentialsProviderArn": "string"
+            }
+          },
+          "mode": "string",
+          "modelDataSource": {
+            "s3DataSource": {
+              "compressionType": "string",
+              "modelAccessConfig": {
+                "acceptEula": "boolean"
+              },
+              "s3DataType": "string",
+              "s3Uri": "string"
+            }
+          },
+          "modelDataUrl": "string",
+          "modelPackageName": "string",
+          "multiModelConfig": {
+            "modelCacheSetting": "string"
+          }
+        },
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "tags": "object",
+        "variables": "object",
+        "vpcConfig": {
+          "securityGroupIds": "string",
+          "subnets": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

@@ -1,0 +1,377 @@
+[
+  {
+    "Microsoft.Storage/storageAccounts": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "extendedLocation": {
+          "name": "string",
+          "type": "string"
+        },
+        "id": "string",
+        "identity": {
+          "principalId": "string",
+          "tenantId": "string",
+          "type": "string",
+          "userAssignedIdentities": "object"
+        },
+        "kind": "string",
+        "location": "string",
+        "name": "string",
+        "properties": {
+          "accessTier": "string",
+          "accountMigrationInProgress": "boolean",
+          "agentPoolProfiles": "object",
+          "allowBlobPublicAccess": "boolean",
+          "allowCrossTenantReplication": "boolean",
+          "allowSharedKeyAccess": "boolean",
+          "allowedCopyScope": "string",
+          "azureFilesIdentityBasedAuthentication": {
+            "activeDirectoryProperties": {
+              "accountType": "string",
+              "azureStorageSid": "string",
+              "domainGuid": "string",
+              "domainName": "string",
+              "domainSid": "string",
+              "forestName": "string",
+              "netBiosDomainName": "string",
+              "samAccountName": "string"
+            },
+            "defaultSharePermission": "string",
+            "directoryServiceOptions": "string"
+          },
+          "creationTime": "string",
+          "customDomain": {
+            "name": "string"
+          },
+          "defaultToOAuthAuthentication": "boolean",
+          "definition": {
+            "actions": "object"
+          },
+          "dnsEndpointType": "string",
+          "encryption": {
+            "identity": {
+              "federatedIdentityClientId": "string",
+              "userAssignedIdentity": "string"
+            },
+            "keySource": "string",
+            "keyvaultproperties": {
+              "currentVersionedKeyExpirationTimestamp": "string",
+              "currentVersionedKeyIdentifier": "string",
+              "keyname": "string",
+              "keyvaulturi": "string",
+              "keyversion": "string",
+              "lastKeyRotationTimestamp": "string"
+            },
+            "requireInfrastructureEncryption": "boolean",
+            "services": {
+              "blob": {
+                "enabled": "boolean",
+                "keyType": "string",
+                "lastEnabledTime": "string"
+              },
+              "file": {
+                "enabled": "boolean",
+                "keyType": "string",
+                "lastEnabledTime": "string"
+              },
+              "queue": {
+                "enabled": "boolean",
+                "keyType": "string",
+                "lastEnabledTime": "string"
+              },
+              "table": {
+                "enabled": "boolean",
+                "keyType": "string",
+                "lastEnabledTime": "string"
+              }
+            }
+          },
+          "immutableStorageWithVersioning": {
+            "enabled": "boolean",
+            "immutabilityPolicy": {
+              "allowProtectedAppendWrites": "boolean",
+              "immutabilityPeriodSinceCreationInDays": "integer",
+              "state": "string"
+            }
+          },
+          "isHnsEnabled": "boolean",
+          "isLocalUserEnabled": "boolean",
+          "isNfsV3Enabled": "boolean",
+          "isSftpEnabled": "boolean",
+          "isSkuConversionBlocked": "boolean",
+          "keyCreationTime": {
+            "key1": "string",
+            "key2": "string"
+          },
+          "keyPolicy": {
+            "keyExpirationPeriodInDays": "integer"
+          },
+          "largeFileSharesState": "string",
+          "lastGeoFailoverTime": "string",
+          "managedNetwork": "object",
+          "minimumTlsVersion": "string",
+          "networkAcls": {
+            "bypass": "string",
+            "defaultAction": "string",
+            "ipRules": {
+              "action": "string",
+              "value": "string"
+            },
+            "resourceAccessRules": {
+              "resourceId": "string",
+              "tenantId": "string"
+            },
+            "virtualNetworkRules": {
+              "action": "string",
+              "id": "string",
+              "state": "string"
+            }
+          },
+          "osProfile": "object",
+          "primaryEndpoints": {
+            "blob": "string",
+            "dfs": "string",
+            "file": "string",
+            "internetEndpoints": {
+              "blob": "string",
+              "dfs": "string",
+              "file": "string",
+              "web": "string"
+            },
+            "microsoftEndpoints": {
+              "blob": "string",
+              "dfs": "string",
+              "file": "string",
+              "queue": "string",
+              "table": "string",
+              "web": "string"
+            },
+            "queue": "string",
+            "table": "string",
+            "web": "string"
+          },
+          "primaryLocation": "string",
+          "privateEndpointConnections": {
+            "id": "string",
+            "name": "string",
+            "properties": {
+              "privateEndpoint": {
+                "id": "string"
+              },
+              "privateLinkServiceConnectionState": {
+                "actionRequired": "string",
+                "description": "string",
+                "status": "string"
+              },
+              "provisioningState": "string"
+            },
+            "type": "string"
+          },
+          "provisioningState": "string",
+          "publicNetworkAccess": "string",
+          "routingPreference": {
+            "publishInternetEndpoints": "boolean",
+            "publishMicrosoftEndpoints": "boolean",
+            "routingChoice": "string"
+          },
+          "sasPolicy": {
+            "expirationAction": "string",
+            "sasExpirationPeriod": "string"
+          },
+          "secondaryEndpoints": {
+            "blob": "string",
+            "dfs": "string",
+            "internetEndpoints": {
+              "blob": "string",
+              "dfs": "string",
+              "web": "string"
+            },
+            "microsoftEndpoints": {
+              "blob": "string",
+              "dfs": "string",
+              "queue": "string",
+              "table": "string",
+              "web": "string"
+            },
+            "queue": "string",
+            "table": "string",
+            "web": "string"
+          },
+          "secondaryLocation": "string",
+          "statusOfPrimary": "string",
+          "statusOfSecondary": "string",
+          "storageAccountSkuConversionStatus": {
+            "endTime": "string",
+            "skuConversionStatus": "string",
+            "startTime": "string",
+            "targetSkuName": "string"
+          },
+          "storageProfile": "object",
+          "supportsHttpsTrafficOnly": "boolean",
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          }
+        },
+        "resources": "object",
+        "sku": {
+          "name": "string",
+          "tier": "string"
+        },
+        "tags": "object",
+        "type": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "blobLogging": {
+          "CORS": {
+            "AllowedHeaders": "string",
+            "AllowedMethods": "string",
+            "AllowedOrigins": "string",
+            "ExposedHeaders": "string",
+            "MaxAgeInSeconds": "integer"
+          },
+          "DefaultServiceVersion": "string",
+          "DeleteRetentionPolicy": {
+            "AllowPermanentDelete": "boolean",
+            "Days": "integer",
+            "Enabled": "boolean"
+          },
+          "HourMetrics": {
+            "Enabled": "boolean",
+            "IncludeAPIs": "boolean",
+            "RetentionPolicy": {
+              "Days": "integer",
+              "Enabled": "boolean"
+            },
+            "Version": "string"
+          },
+          "Logging": {
+            "Delete": "boolean",
+            "Read": "boolean",
+            "RetentionPolicy": {
+              "Days": "integer",
+              "Enabled": "boolean"
+            },
+            "Version": "string",
+            "Write": "boolean"
+          },
+          "MinuteMetrics": {
+            "Enabled": "boolean",
+            "IncludeAPIs": "boolean",
+            "RetentionPolicy": {
+              "Days": "integer",
+              "Enabled": "boolean"
+            },
+            "Version": "string"
+          },
+          "StaticWebsite": {
+            "Enabled": "boolean",
+            "ErrorDocument404Path": "string",
+            "IndexDocument": "string"
+          }
+        },
+        "configurations": "object",
+        "queueLogging": {
+          "CORS": {
+            "AllowedHeaders": "string",
+            "AllowedMethods": "string",
+            "AllowedOrigins": "string",
+            "ExposedHeaders": "string",
+            "MaxAgeInSeconds": "integer"
+          },
+          "HourMetrics": {
+            "Enabled": "boolean",
+            "IncludeAPIs": "boolean",
+            "RetentionPolicy": {
+              "Days": "integer",
+              "Enabled": "boolean"
+            },
+            "Version": "string"
+          },
+          "Logging": {
+            "Delete": "boolean",
+            "Read": "boolean",
+            "RetentionPolicy": {
+              "Days": "integer",
+              "Enabled": "boolean"
+            },
+            "Version": "string",
+            "Write": "boolean"
+          },
+          "MinuteMetrics": {
+            "Enabled": "boolean",
+            "IncludeAPIs": "boolean",
+            "RetentionPolicy": {
+              "Days": "integer",
+              "Enabled": "boolean"
+            },
+            "Version": "string"
+          }
+        },
+        "tableLogging": {
+          "CORS": {
+            "AllowedHeaders": "string",
+            "AllowedMethods": "string",
+            "AllowedOrigins": "string",
+            "ExposedHeaders": "string",
+            "MaxAgeInSeconds": "integer"
+          },
+          "HourMetrics": {
+            "Enabled": "boolean",
+            "IncludeAPIs": "boolean",
+            "RetentionPolicy": {
+              "Days": "integer",
+              "Enabled": "boolean"
+            },
+            "Version": "string"
+          },
+          "Logging": {
+            "Delete": "boolean",
+            "Read": "boolean",
+            "RetentionPolicy": {
+              "Days": "integer",
+              "Enabled": "boolean"
+            },
+            "Version": "string",
+            "Write": "boolean"
+          },
+          "MinuteMetrics": {
+            "Enabled": "boolean",
+            "IncludeAPIs": "boolean",
+            "RetentionPolicy": {
+              "Days": "integer",
+              "Enabled": "boolean"
+            },
+            "Version": "string"
+          }
+        }
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

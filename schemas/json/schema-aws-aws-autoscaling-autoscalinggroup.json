@@ -1,0 +1,227 @@
+[
+  {
+    "AWS::AutoScaling::AutoScalingGroup": {
+      "configuration": {
+        "autoScalingGroupARN": "string",
+        "autoScalingGroupName": "string",
+        "availabilityZones": "string",
+        "capacityRebalance": "boolean",
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "context": "string",
+        "createdTime": "string",
+        "defaultCooldown": "integer",
+        "defaultInstanceWarmup": "integer",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "desiredCapacityType": "string",
+        "enabledMetrics": {
+          "granularity": "string",
+          "metric": "string"
+        },
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "healthCheckGracePeriod": "integer",
+        "healthCheckType": "string",
+        "instanceMaintenancePolicy": {
+          "maxHealthyPercentage": "integer",
+          "minHealthyPercentage": "integer"
+        },
+        "instances": {
+          "availabilityZone": "string",
+          "healthStatus": "string",
+          "instanceId": "string",
+          "instanceType": "string",
+          "launchConfigurationName": "string",
+          "launchTemplate": {
+            "launchTemplateId": "string",
+            "launchTemplateName": "string",
+            "version": "string"
+          },
+          "lifecycleState": "string",
+          "protectedFromScaleIn": "boolean",
+          "weightedCapacity": "string"
+        },
+        "labels": "object",
+        "launchConfigurationName": "string",
+        "launchTemplate": {
+          "launchTemplateId": "string",
+          "launchTemplateName": "string",
+          "version": "string"
+        },
+        "loadBalancerNames": "string",
+        "maxInstanceLifetime": "integer",
+        "maxSize": "integer",
+        "methodSettings": "object",
+        "minSize": "integer",
+        "mixedInstancesPolicy": {
+          "instancesDistribution": {
+            "onDemandAllocationStrategy": "string",
+            "onDemandBaseCapacity": "integer",
+            "onDemandPercentageAboveBaseCapacity": "integer",
+            "spotAllocationStrategy": "string",
+            "spotInstancePools": "integer",
+            "spotMaxPrice": "string"
+          },
+          "launchTemplate": {
+            "launchTemplateSpecification": {
+              "launchTemplateId": "string",
+              "launchTemplateName": "string",
+              "version": "string"
+            },
+            "overrides": {
+              "instanceRequirements": {
+                "acceleratorCount": {
+                  "max": "integer",
+                  "min": "integer"
+                },
+                "acceleratorManufacturers": "string",
+                "acceleratorNames": "string",
+                "allowedInstanceTypes": "string",
+                "burstablePerformance": "string",
+                "cpuManufacturers": "string",
+                "excludedInstanceTypes": "string",
+                "instanceGenerations": "string",
+                "localStorage": "string",
+                "localStorageTypes": "string",
+                "maxSpotPriceAsPercentageOfOptimalOnDemandPrice": "integer",
+                "memoryGiBPerVCpu": {
+                  "max": "integer",
+                  "min": "integer"
+                },
+                "memoryMiB": {
+                  "max": "integer",
+                  "min": "integer"
+                },
+                "networkBandwidthGbps": {
+                  "min": "integer"
+                },
+                "networkInterfaceCount": {
+                  "max": "integer",
+                  "min": "integer"
+                },
+                "onDemandMaxPricePercentageOverLowestPrice": "integer",
+                "requireHibernateSupport": "boolean",
+                "spotMaxPricePercentageOverLowestPrice": "integer",
+                "totalLocalStorageGB": {
+                  "max": "integer",
+                  "min": "integer"
+                },
+                "vCpuCount": {
+                  "max": "integer",
+                  "min": "integer"
+                }
+              },
+              "instanceType": "string",
+              "launchTemplateSpecification": {
+                "launchTemplateId": "string",
+                "launchTemplateName": "string",
+                "version": "string"
+              },
+              "weightedCapacity": "string"
+            }
+          }
+        },
+        "newInstancesProtectedFromScaleIn": "boolean",
+        "placementGroup": "string",
+        "policy": "object",
+        "predictedCapacity": "integer",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "serviceLinkedRoleARN": "string",
+        "status": "string",
+        "suspendedProcesses": {
+          "processName": "string",
+          "suspensionReason": "string"
+        },
+        "tags": "object",
+        "targetGroupARNs": "string",
+        "terminationPolicies": "string",
+        "trafficSources": {
+          "identifier": "string",
+          "type": "string"
+        },
+        "variables": "object",
+        "vpcZoneIdentifier": "string",
+        "warmPoolConfiguration": {
+          "instanceReusePolicy": {
+            "reuseOnScaleIn": "boolean"
+          },
+          "maxGroupPreparedCapacity": "integer",
+          "minSize": "integer",
+          "poolState": "string",
+          "status": "string"
+        },
+        "warmPoolSize": "integer"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "activities": {
+          "activityId": "string",
+          "autoScalingGroupARN": "string",
+          "autoScalingGroupName": "string",
+          "cause": "string",
+          "description": "string",
+          "details": "string",
+          "endTime": "string",
+          "progress": "integer",
+          "startTime": "string",
+          "statusCode": "string",
+          "statusMessage": "string"
+        },
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "notificationConfigurations": {
+          "autoScalingGroupName": "string",
+          "notificationType": "string",
+          "topicARN": "string"
+        },
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

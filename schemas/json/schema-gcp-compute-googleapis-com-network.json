@@ -1,0 +1,99 @@
+[
+  {
+    "compute.googleapis.com/Network": {
+      "configuration": {
+        "IPv4Range": "string",
+        "autoCreateSubnetworks": "boolean",
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "creationTimestamp": "string",
+        "deployment": {
+          "files": "object"
+        },
+        "description": "string",
+        "enableUlaInternalIpv6": "boolean",
+        "envVariables": "object",
+        "firewallPolicy": "string",
+        "gatewayIPv4": "string",
+        "id": "string",
+        "internalIpv6Range": "string",
+        "labelExtractors": "object",
+        "labels": "object",
+        "maintenancePolicy": "object",
+        "metadata": {
+          "annotations": "object"
+        },
+        "mtu": "integer",
+        "name": "string",
+        "networkFirewallPolicyEnforcementOrder": "string",
+        "networkProfile": "string",
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "peerings": {
+          "autoCreateRoutes": "boolean",
+          "exchangeSubnetRoutes": "boolean",
+          "exportCustomRoutes": "boolean",
+          "exportSubnetRoutesWithPublicIp": "boolean",
+          "importCustomRoutes": "boolean",
+          "importSubnetRoutesWithPublicIp": "boolean",
+          "name": "string",
+          "network": "string",
+          "peerMtu": "integer",
+          "stackType": "string",
+          "state": "string",
+          "stateDetails": "string"
+        },
+        "resourceLabels": "object",
+        "routingConfig": {
+          "routingMode": "string"
+        },
+        "schema": "object",
+        "selectors": "object",
+        "selfLink": "string",
+        "selfLinkWithId": "string",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "subnetworks": "string",
+        "view": {
+          "query": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": "object",
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

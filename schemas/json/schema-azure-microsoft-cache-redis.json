@@ -1,0 +1,130 @@
+[
+  {
+    "Microsoft.Cache/Redis": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "id": "string",
+        "identity": {
+          "principalId": "string",
+          "tenantId": "string",
+          "type": "string",
+          "userAssignedIdentities": "object"
+        },
+        "location": "string",
+        "name": "string",
+        "properties": {
+          "agentPoolProfiles": "object",
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "enableNonSslPort": "boolean",
+          "hostName": "string",
+          "instances": {
+            "isMaster": "boolean",
+            "isPrimary": "boolean",
+            "nonSslPort": "integer",
+            "shardId": "integer",
+            "sslPort": "integer",
+            "zone": "string"
+          },
+          "linkedServers": {
+            "id": "string"
+          },
+          "managedNetwork": "object",
+          "metadata": "object",
+          "minimumTlsVersion": "string",
+          "osProfile": "object",
+          "parameters": "object",
+          "policyRule": "object",
+          "port": "integer",
+          "privateEndpointConnections": {
+            "id": "string",
+            "properties": {
+              "privateEndpoint": {
+                "id": "string"
+              },
+              "privateLinkServiceConnectionState": {
+                "actionsRequired": "string",
+                "description": "string",
+                "status": "string"
+              }
+            }
+          },
+          "provisioningState": "string",
+          "publicNetworkAccess": "string",
+          "redisConfiguration": {
+            "aof-backup-enabled": "string",
+            "aof-storage-connection-string-0": "string",
+            "aof-storage-connection-string-1": "string",
+            "authnotrequired": "string",
+            "maxclients": "string",
+            "maxfragmentationmemory-reserved": "string",
+            "maxmemory-delta": "string",
+            "maxmemory-policy": "string",
+            "maxmemory-reserved": "string",
+            "notify-keyspace-events": "string",
+            "preferred-data-persistence-auth-method": "string",
+            "rdb-backup-enabled": "string",
+            "rdb-backup-frequency": "string",
+            "rdb-backup-max-snapshot-count": "string",
+            "rdb-storage-connection-string": "string",
+            "zonal-configuration": "string"
+          },
+          "redisVersion": "string",
+          "replicasPerMaster": "integer",
+          "replicasPerPrimary": "integer",
+          "shardCount": "integer",
+          "sku": {
+            "capacity": "integer",
+            "family": "string",
+            "name": "string"
+          },
+          "sslPort": "integer",
+          "staticIP": "string",
+          "storageProfile": "object",
+          "subnetId": "string",
+          "tenantSettings": "object",
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          }
+        },
+        "resources": "object",
+        "tags": "object",
+        "type": "string",
+        "zones": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "configurations": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

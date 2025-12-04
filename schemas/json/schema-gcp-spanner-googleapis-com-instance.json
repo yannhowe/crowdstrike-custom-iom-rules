@@ -1,0 +1,58 @@
+[
+  {
+    "spanner.googleapis.com/Instance": {
+      "configuration": {
+        "autoscalingConfig": {
+          "autoscalingLimits": {
+            "maxNodes": "integer",
+            "maxProcessingUnits": "integer",
+            "minNodes": "integer",
+            "minProcessingUnits": "integer"
+          },
+          "autoscalingTargets": {
+            "highPriorityCpuUtilizationPercent": "integer",
+            "storageUtilizationPercent": "integer"
+          }
+        },
+        "certificatePem": "string",
+        "config": "string",
+        "createTime": "string",
+        "defaultBackupScheduleType": "string",
+        "displayName": "string",
+        "edition": "string",
+        "freeInstanceMetadata": {
+          "expireBehavior": "string",
+          "expireTime": "string",
+          "upgradeTime": "string"
+        },
+        "instanceType": "string",
+        "labels": "object",
+        "name": "string",
+        "nodeCount": "integer",
+        "processingUnits": "integer",
+        "replicaComputeCapacity": {
+          "nodeCount": "integer",
+          "processingUnits": "integer",
+          "replicaSelection": {
+            "location": "string"
+          }
+        },
+        "state": "string",
+        "updateTime": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": "object",
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

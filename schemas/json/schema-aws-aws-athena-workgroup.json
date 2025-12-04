@@ -1,0 +1,111 @@
+[
+  {
+    "AWS::Athena::WorkGroup": {
+      "configuration": {
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configuration": {
+          "bytesScannedCutoffPerQuery": "integer",
+          "customerContentEncryptionConfiguration": {
+            "kmsKey": "string"
+          },
+          "enableMinimumEncryptionConfiguration": "boolean",
+          "enforceWorkGroupConfiguration": "boolean",
+          "engineVersion": {
+            "effectiveEngineVersion": "string",
+            "selectedEngineVersion": "string"
+          },
+          "executionRole": "string",
+          "identityCenterConfiguration": {
+            "enableIdentityCenter": "boolean",
+            "identityCenterInstanceArn": "string"
+          },
+          "publishCloudWatchMetricsEnabled": "boolean",
+          "queryResultsS3AccessGrantsConfiguration": {
+            "authenticationType": "string",
+            "createUserLevelPrefix": "boolean",
+            "enableS3AccessGrants": "boolean"
+          },
+          "requesterPaysEnabled": "boolean",
+          "resultConfiguration": {
+            "aclConfiguration": {
+              "s3AclOption": "string"
+            },
+            "encryptionConfiguration": {
+              "encryptionOption": "string",
+              "kmsKey": "string"
+            },
+            "expectedBucketOwner": "string",
+            "outputLocation": "string"
+          }
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "creationTime": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "description": "string",
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "identityCenterApplicationArn": "string",
+        "labels": "object",
+        "methodSettings": "object",
+        "name": "string",
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "state": "string",
+        "tags": "object",
+        "variables": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

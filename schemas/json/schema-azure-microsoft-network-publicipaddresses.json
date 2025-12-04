@@ -1,0 +1,96 @@
+[
+  {
+    "Microsoft.Network/publicIPAddresses": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "id": "string",
+        "identity": {
+          "userAssignedIdentities": "object"
+        },
+        "location": "string",
+        "name": "string",
+        "properties": {
+          "agentPoolProfiles": "object",
+          "ddosSettings": {
+            "ddosProtectionPlan": {
+              "id": "string"
+            },
+            "protectionMode": "string"
+          },
+          "definition": {
+            "actions": "object"
+          },
+          "dnsSettings": {
+            "domainNameLabel": "string",
+            "fqdn": "string",
+            "reverseFqdn": "string"
+          },
+          "idleTimeoutInMinutes": "integer",
+          "ipAddress": "string",
+          "ipConfiguration": {
+            "id": "string"
+          },
+          "ipTags": {
+            "ipTagType": "string",
+            "tag": "string"
+          },
+          "managedNetwork": "object",
+          "migrationPhase": "string",
+          "natGateway": {
+            "id": "string"
+          },
+          "osProfile": "object",
+          "provisioningState": "string",
+          "publicIPAddressVersion": "string",
+          "publicIPAllocationMethod": "string",
+          "publicIPPrefix": {
+            "id": "string"
+          },
+          "resourceGuid": "string",
+          "storageProfile": "object",
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          }
+        },
+        "resources": "object",
+        "sku": {
+          "name": "string",
+          "tier": "string"
+        },
+        "tags": "object",
+        "type": "string",
+        "zones": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "configurations": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

@@ -1,0 +1,130 @@
+[
+  {
+    "AWS::Events::Connection": {
+      "configuration": {
+        "authParameters": {
+          "apiKeyAuthParameters": {
+            "apiKeyName": "string"
+          },
+          "basicAuthParameters": {
+            "username": "string"
+          },
+          "invocationHttpParameters": {
+            "bodyParameters": {
+              "isValueSecret": "boolean",
+              "key": "string",
+              "value": "string"
+            },
+            "headerParameters": {
+              "isValueSecret": "boolean",
+              "key": "string",
+              "value": "string"
+            },
+            "queryStringParameters": {
+              "isValueSecret": "boolean",
+              "key": "string",
+              "value": "string"
+            }
+          },
+          "oAuthParameters": {
+            "authorizationEndpoint": "string",
+            "clientParameters": {
+              "clientID": "string"
+            },
+            "httpMethod": "string",
+            "oAuthHttpParameters": {
+              "bodyParameters": {
+                "isValueSecret": "boolean",
+                "key": "string",
+                "value": "string"
+              },
+              "headerParameters": {
+                "isValueSecret": "boolean",
+                "key": "string",
+                "value": "string"
+              },
+              "queryStringParameters": {
+                "isValueSecret": "boolean",
+                "key": "string",
+                "value": "string"
+              }
+            }
+          }
+        },
+        "authorizationType": "string",
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "connectionArn": "string",
+        "connectionState": "string",
+        "containerDefinitions": "object",
+        "creationTime": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "description": "string",
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "labels": "object",
+        "lastAuthorizedTime": "string",
+        "lastModifiedTime": "string",
+        "methodSettings": "object",
+        "name": "string",
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretArn": "string",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "stateReason": "string",
+        "tags": "object",
+        "variables": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

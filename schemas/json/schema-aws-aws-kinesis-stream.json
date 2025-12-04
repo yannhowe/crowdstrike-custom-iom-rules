@@ -1,0 +1,98 @@
+[
+  {
+    "AWS::Kinesis::Stream": {
+      "configuration": {
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "encryptionType": "string",
+        "enhancedMonitoring": {
+          "shardLevelMetrics": "string"
+        },
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "hasMoreShards": "boolean",
+        "keyId": "string",
+        "labels": "object",
+        "methodSettings": "object",
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "retentionPeriodHours": "integer",
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "shards": {
+          "adjacentParentShardId": "string",
+          "hashKeyRange": {
+            "endingHashKey": "string",
+            "startingHashKey": "string"
+          },
+          "parentShardId": "string",
+          "sequenceNumberRange": {
+            "endingSequenceNumber": "string",
+            "startingSequenceNumber": "string"
+          },
+          "shardId": "string"
+        },
+        "streamARN": "string",
+        "streamCreationTimestamp": "string",
+        "streamModeDetails": {
+          "streamMode": "string"
+        },
+        "streamName": "string",
+        "streamStatus": "string",
+        "tags": "object",
+        "variables": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

@@ -1,0 +1,142 @@
+[
+  {
+    "Microsoft.KeyVault/vaults": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "id": "string",
+        "identity": {
+          "userAssignedIdentities": "object"
+        },
+        "location": "string",
+        "name": "string",
+        "properties": {
+          "accessPolicies": {
+            "applicationId": "string",
+            "objectId": "string",
+            "permissions": {
+              "certificates": "string",
+              "keys": "string",
+              "secrets": "string",
+              "storage": "string"
+            },
+            "tenantId": "string"
+          },
+          "agentPoolProfiles": "object",
+          "definition": {
+            "actions": "object"
+          },
+          "enablePurgeProtection": "boolean",
+          "enableRbacAuthorization": "boolean",
+          "enableSoftDelete": "boolean",
+          "enabledForDeployment": "boolean",
+          "enabledForDiskEncryption": "boolean",
+          "enabledForTemplateDeployment": "boolean",
+          "managedNetwork": "object",
+          "networkAcls": {
+            "bypass": "string",
+            "defaultAction": "string",
+            "ipRules": {
+              "value": "string"
+            },
+            "virtualNetworkRules": {
+              "id": "string",
+              "ignoreMissingVnetServiceEndpoint": "boolean"
+            }
+          },
+          "osProfile": "object",
+          "privateEndpointConnections": {
+            "etag": "string",
+            "id": "string",
+            "properties": {
+              "privateEndpoint": {
+                "id": "string"
+              },
+              "privateLinkServiceConnectionState": {
+                "actionsRequired": "string",
+                "description": "string",
+                "status": "string"
+              },
+              "provisioningState": "string"
+            }
+          },
+          "provisioningState": "string",
+          "publicNetworkAccess": "string",
+          "sku": {
+            "family": "string",
+            "name": "string"
+          },
+          "softDeleteRetentionInDays": "integer",
+          "storageProfile": "object",
+          "tenantId": "string",
+          "vaultUri": "string",
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          }
+        },
+        "resources": "object",
+        "tags": "object",
+        "type": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "configurations": "object",
+        "diagnosticSettings": {
+          "id": "string",
+          "name": "string",
+          "properties": {
+            "eventHubAuthorizationRuleId": "string",
+            "eventHubName": "string",
+            "logAnalyticsDestinationType": "string",
+            "logs": {
+              "category": "string",
+              "categoryGroup": "string",
+              "enabled": "boolean",
+              "retentionPolicy": {
+                "days": "integer",
+                "enabled": "boolean"
+              }
+            },
+            "marketplacePartnerId": "string",
+            "metrics": {
+              "category": "string",
+              "enabled": "boolean",
+              "retentionPolicy": {
+                "days": "integer",
+                "enabled": "boolean"
+              }
+            },
+            "storageAccountId": "string",
+            "workspaceId": "string"
+          },
+          "type": "string"
+        }
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

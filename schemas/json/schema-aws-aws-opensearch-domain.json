@@ -1,0 +1,252 @@
+[
+  {
+    "AWS::OpenSearch::Domain": {
+      "configuration": {
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "domainStatus": {
+          "accessPolicies": "string",
+          "advancedOptions": {
+            "indices": {
+              "fielddata": {
+                "cache": {
+                  "size": "string"
+                }
+              },
+              "query": {
+                "bool": {
+                  "max_clause_count": "string"
+                }
+              }
+            },
+            "override_main_response_version": "string",
+            "rest": {
+              "action": {
+                "multi": {
+                  "allow_explicit_index": "string"
+                }
+              }
+            }
+          },
+          "advancedSecurityOptions": {
+            "anonymousAuthDisableDate": "string",
+            "anonymousAuthEnabled": "boolean",
+            "enabled": "boolean",
+            "internalUserDatabaseEnabled": "boolean",
+            "jwtOptions": {
+              "enabled": "boolean",
+              "publicKey": "string",
+              "rolesKey": "string",
+              "subjectKey": "string"
+            },
+            "samlOptions": {
+              "enabled": "boolean",
+              "idp": {
+                "entityId": "string",
+                "metadataContent": "string"
+              },
+              "rolesKey": "string",
+              "sessionTimeoutMinutes": "integer",
+              "subjectKey": "string"
+            }
+          },
+          "aimlOptions": {
+            "naturalLanguageQueryGenerationOptions": {
+              "currentState": "string",
+              "desiredState": "string"
+            }
+          },
+          "arn": "string",
+          "autoTuneOptions": {
+            "state": "string",
+            "useOffPeakWindow": "boolean"
+          },
+          "changeProgressDetails": {
+            "changeId": "string",
+            "configChangeStatus": "string",
+            "initiatedBy": "string",
+            "lastUpdatedTime": "string",
+            "startTime": "string"
+          },
+          "clusterConfig": {
+            "coldStorageOptions": {
+              "enabled": "boolean"
+            },
+            "dedicatedMasterCount": "integer",
+            "dedicatedMasterEnabled": "boolean",
+            "dedicatedMasterType": "string",
+            "instanceCount": "integer",
+            "instanceType": "string",
+            "multiAZWithStandbyEnabled": "boolean",
+            "warmCount": "integer",
+            "warmEnabled": "boolean",
+            "warmType": "string",
+            "zoneAwarenessConfig": {
+              "availabilityZoneCount": "integer"
+            },
+            "zoneAwarenessEnabled": "boolean"
+          },
+          "cognitoOptions": {
+            "enabled": "boolean",
+            "identityPoolId": "string",
+            "roleArn": "string",
+            "userPoolId": "string"
+          },
+          "created": "boolean",
+          "deleted": "boolean",
+          "domainEndpointOptions": {
+            "customEndpoint": "string",
+            "customEndpointCertificateArn": "string",
+            "customEndpointEnabled": "boolean",
+            "enforceHTTPS": "boolean",
+            "tlsSecurityPolicy": "string"
+          },
+          "domainEndpointV2HostedZoneId": "string",
+          "domainId": "string",
+          "domainName": "string",
+          "domainProcessingStatus": "string",
+          "ebsOptions": {
+            "ebsEnabled": "boolean",
+            "iops": "integer",
+            "throughput": "integer",
+            "volumeSize": "integer",
+            "volumeType": "string"
+          },
+          "encryptionAtRestOptions": {
+            "enabled": "boolean",
+            "kmsKeyId": "string"
+          },
+          "endpoint": "string",
+          "endpointV2": "string",
+          "endpoints": {
+            "vpc": "string",
+            "vpcv2": "string"
+          },
+          "engineVersion": "string",
+          "ipAddressType": "string",
+          "logPublishingOptions": {
+            "AUDIT_LOGS": {
+              "cloudWatchLogsLogGroupArn": "string",
+              "enabled": "boolean"
+            },
+            "ES_APPLICATION_LOGS": {
+              "cloudWatchLogsLogGroupArn": "string",
+              "enabled": "boolean"
+            },
+            "INDEX_SLOW_LOGS": {
+              "cloudWatchLogsLogGroupArn": "string",
+              "enabled": "boolean"
+            },
+            "SEARCH_SLOW_LOGS": {
+              "cloudWatchLogsLogGroupArn": "string",
+              "enabled": "boolean"
+            }
+          },
+          "modifyingProperties": {
+            "activeValue": "string",
+            "name": "string",
+            "pendingValue": "string",
+            "valueType": "string"
+          },
+          "nodeToNodeEncryptionOptions": {
+            "enabled": "boolean"
+          },
+          "offPeakWindowOptions": {
+            "enabled": "boolean",
+            "offPeakWindow": {
+              "windowStartTime": {
+                "hours": "integer",
+                "minutes": "integer"
+              }
+            }
+          },
+          "processing": "boolean",
+          "serviceSoftwareOptions": {
+            "automatedUpdateDate": "string",
+            "cancellable": "boolean",
+            "currentVersion": "string",
+            "description": "string",
+            "newVersion": "string",
+            "optionalDeployment": "boolean",
+            "updateAvailable": "boolean",
+            "updateStatus": "string"
+          },
+          "snapshotOptions": {
+            "automatedSnapshotStartHour": "integer"
+          },
+          "softwareUpdateOptions": {
+            "autoSoftwareUpdateEnabled": "boolean"
+          },
+          "upgradeProcessing": "boolean",
+          "vpcOptions": {
+            "availabilityZones": "string",
+            "securityGroupIds": "string",
+            "subnetIds": "string",
+            "vpcId": "string"
+          }
+        },
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "labels": "object",
+        "methodSettings": "object",
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "tags": "object",
+        "variables": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

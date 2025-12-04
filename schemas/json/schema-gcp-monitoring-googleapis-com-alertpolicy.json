@@ -1,0 +1,198 @@
+[
+  {
+    "monitoring.googleapis.com/AlertPolicy": {
+      "configuration": {
+        "alertStrategy": {
+          "autoClose": "string",
+          "notificationChannelStrategy": {
+            "notificationChannelNames": "string",
+            "renotifyInterval": "string"
+          },
+          "notificationPrompts": "string",
+          "notificationRateLimit": {
+            "period": "string"
+          }
+        },
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "combiner": "string",
+        "conditions": {
+          "conditionAbsent": {
+            "aggregations": {
+              "alignmentPeriod": "string",
+              "crossSeriesReducer": "string",
+              "groupByFields": "string",
+              "perSeriesAligner": "string"
+            },
+            "duration": "string",
+            "filter": "string",
+            "trigger": {
+              "count": "integer",
+              "percent": "integer"
+            }
+          },
+          "conditionMatchedLog": {
+            "filter": "string",
+            "labelExtractors": "object"
+          },
+          "conditionMonitoringQueryLanguage": {
+            "duration": "string",
+            "evaluationMissingData": "string",
+            "query": "string",
+            "trigger": {
+              "count": "integer",
+              "percent": "integer"
+            }
+          },
+          "conditionPrometheusQueryLanguage": {
+            "alertRule": "string",
+            "disableMetricValidation": "boolean",
+            "duration": "string",
+            "evaluationInterval": "string",
+            "labels": {
+              "service": "string"
+            },
+            "query": "string",
+            "ruleGroup": "string"
+          },
+          "conditionSql": {
+            "booleanTest": {
+              "column": "string"
+            },
+            "daily": {
+              "executionTime": {
+                "hours": "integer",
+                "minutes": "integer"
+              },
+              "periodicity": "integer"
+            },
+            "hourly": {
+              "minuteOffset": "integer",
+              "periodicity": "integer"
+            },
+            "minutes": {
+              "periodicity": "integer"
+            },
+            "query": "string",
+            "rowCountTest": {
+              "comparison": "string",
+              "threshold": "string"
+            }
+          },
+          "conditionThreshold": {
+            "aggregations": {
+              "alignmentPeriod": "string",
+              "crossSeriesReducer": "string",
+              "groupByFields": "string",
+              "perSeriesAligner": "string"
+            },
+            "comparison": "string",
+            "denominatorAggregations": {
+              "alignmentPeriod": "string",
+              "crossSeriesReducer": "string",
+              "groupByFields": "string",
+              "perSeriesAligner": "string"
+            },
+            "denominatorFilter": "string",
+            "duration": "string",
+            "evaluationMissingData": "string",
+            "filter": "string",
+            "forecastOptions": {
+              "forecastHorizon": "string"
+            },
+            "thresholdValue": "integer",
+            "trigger": {
+              "count": "integer",
+              "percent": "integer"
+            }
+          },
+          "displayName": "string",
+          "name": "string"
+        },
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "creationRecord": {
+          "mutateTime": "string",
+          "mutatedBy": "string"
+        },
+        "deployment": {
+          "files": "object"
+        },
+        "displayName": "string",
+        "documentation": {
+          "content": "string",
+          "links": {
+            "displayName": "string",
+            "url": "string"
+          },
+          "mimeType": "string",
+          "subject": "string"
+        },
+        "enabled": "boolean",
+        "envVariables": "object",
+        "labelExtractors": "object",
+        "labels": "object",
+        "maintenancePolicy": "object",
+        "metadata": {
+          "annotations": "object"
+        },
+        "mutationRecord": {
+          "mutateTime": "string",
+          "mutatedBy": "string"
+        },
+        "name": "string",
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "notificationChannels": "string",
+        "resourceLabels": "object",
+        "schema": "object",
+        "selectors": "object",
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "severity": "string",
+        "userLabels": "object",
+        "validity": {
+          "code": "integer",
+          "message": "string"
+        },
+        "view": {
+          "query": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": "object",
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

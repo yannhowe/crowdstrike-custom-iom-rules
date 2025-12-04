@@ -1,0 +1,151 @@
+[
+  {
+    "AWS::ElasticLoadBalancingV2::Listener": {
+      "configuration": {
+        "alpnPolicy": "string",
+        "certificatePem": "string",
+        "certificates": {
+          "certificateArn": "string"
+        },
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "defaultActions": {
+          "authenticateCognitoConfig": {
+            "authenticationRequestExtraParams": {
+              "display": "string",
+              "identity_provider": "string",
+              "prompt": "string"
+            },
+            "onUnauthenticatedRequest": "string",
+            "scope": "string",
+            "sessionCookieName": "string",
+            "sessionTimeout": "integer",
+            "userPoolArn": "string",
+            "userPoolClientId": "string",
+            "userPoolDomain": "string"
+          },
+          "authenticateOidcConfig": {
+            "authenticationRequestExtraParams": {
+              "audience": "string",
+              "client_id": "string",
+              "client_secret": "string",
+              "display": "string",
+              "platSite": "string",
+              "prompt": "string",
+              "redirect_uri": "string",
+              "response_type": "string",
+              "scope": "string"
+            },
+            "authorizationEndpoint": "string",
+            "clientId": "string",
+            "issuer": "string",
+            "onUnauthenticatedRequest": "string",
+            "scope": "string",
+            "sessionCookieName": "string",
+            "sessionTimeout": "integer",
+            "tokenEndpoint": "string",
+            "userInfoEndpoint": "string"
+          },
+          "fixedResponseConfig": {
+            "contentType": "string",
+            "messageBody": "string",
+            "statusCode": "string"
+          },
+          "forwardConfig": {
+            "targetGroupStickinessConfig": {
+              "durationSeconds": "integer",
+              "enabled": "boolean"
+            },
+            "targetGroups": {
+              "targetGroupArn": "string",
+              "weight": "integer"
+            }
+          },
+          "order": "integer",
+          "redirectConfig": {
+            "host": "string",
+            "path": "string",
+            "port": "string",
+            "protocol": "string",
+            "query": "string",
+            "statusCode": "string"
+          },
+          "targetGroupArn": "string",
+          "type": "string"
+        },
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "labels": "object",
+        "listenerArn": "string",
+        "loadBalancerArn": "string",
+        "methodSettings": "object",
+        "mutualAuthentication": {
+          "advertiseTrustStoreCaNames": "string",
+          "ignoreClientCertificateExpiry": "boolean",
+          "mode": "string",
+          "trustStoreArn": "string",
+          "trustStoreAssociationStatus": "string"
+        },
+        "policy": "object",
+        "port": "integer",
+        "protocol": "string",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "sslPolicy": "string",
+        "tags": "object",
+        "variables": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

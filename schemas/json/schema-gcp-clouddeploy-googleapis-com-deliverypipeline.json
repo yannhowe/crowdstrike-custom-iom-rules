@@ -1,0 +1,158 @@
+[
+  {
+    "clouddeploy.googleapis.com/DeliveryPipeline": {
+      "configuration": {
+        "annotations": {
+          "Testing": "string",
+          "deploy": {
+            "cloud": {
+              "google": {
+                "com/delivery-pipeline-source": "string",
+                "com/location": "string"
+              }
+            }
+          },
+          "ppap-chart-name": "string",
+          "ppap-image-path": "string"
+        },
+        "buildConfig": {
+          "environmentVariables": "object"
+        },
+        "buildEnvVariables": "object",
+        "certificatePem": "string",
+        "condition": {
+          "pipelineReadyCondition": {
+            "status": "boolean"
+          },
+          "targetsPresentCondition": {
+            "missingTargets": "string",
+            "status": "boolean"
+          },
+          "targetsTypeCondition": {
+            "status": "boolean"
+          }
+        },
+        "config": {
+          "endpointConfig": {
+            "httpPorts": "object"
+          },
+          "labels": "object",
+          "softwareConfig": {
+            "properties": "object"
+          }
+        },
+        "createTime": "string",
+        "deployment": {
+          "files": "object"
+        },
+        "description": "string",
+        "envVariables": "object",
+        "etag": "string",
+        "labelExtractors": "object",
+        "labels": "object",
+        "maintenancePolicy": "object",
+        "metadata": {
+          "annotations": "object"
+        },
+        "name": "string",
+        "nodeConfig": {
+          "labels": "object",
+          "metadata": "object",
+          "resourceLabels": "object"
+        },
+        "nodePools": {
+          "config": {
+            "labels": "object",
+            "metadata": "object",
+            "resourceLabels": "object"
+          }
+        },
+        "resourceLabels": "object",
+        "schema": "object",
+        "selectors": "object",
+        "serialPipeline": {
+          "stages": {
+            "deployParameters": {
+              "matchTargetLabels": {
+                "label": "string"
+              },
+              "values": {
+                "azureApiKey": "string",
+                "azureApiKeysJsonSecret": "string",
+                "cloudSqlInstance": "string",
+                "customTarget/BASE_REPOSITORY": "string",
+                "customTarget/CLOUD_RUN_JOBS": "string",
+                "customTarget/CLOUD_RUN_JOBS_POST": "string",
+                "customTarget/CLOUD_RUN_JOB_OPTIONAL": "string",
+                "customTarget/IMAGE_NAME": "string",
+                "customTarget/IMAGE_SECRET_NAME": "string",
+                "customTarget/IMAGE_SECRET_NAME_SECONDARY": "string",
+                "customTarget/LOCATION": "string",
+                "customTarget/MANUAL_PROD_DEPLOYMENT": "string",
+                "customTarget/NUMERIC_PROJECT_ID": "string",
+                "customTarget/PROJECT_ID": "string",
+                "dbPass": "string",
+                "dbPassSecret": "string",
+                "env": "string",
+                "instanceConnectionName": "string",
+                "instanceUnixSocket": "string",
+                "metadataName": "string",
+                "riidCipherKey": "string",
+                "serviceAccountName": "string",
+                "springProfile": "string"
+              }
+            },
+            "profiles": "string",
+            "strategy": {
+              "canary": {
+                "canaryDeployment": {
+                  "percentages": "integer",
+                  "verify": "boolean"
+                },
+                "runtimeConfig": {
+                  "kubernetes": {
+                    "serviceNetworking": {
+                      "deployment": "string",
+                      "service": "string"
+                    }
+                  }
+                }
+              },
+              "standard": {
+                "postdeploy": {
+                  "actions": "string"
+                },
+                "predeploy": {
+                  "actions": "string"
+                },
+                "verify": "boolean"
+              }
+            },
+            "targetId": "string"
+          }
+        },
+        "serviceConfig": {
+          "environmentVariables": "object"
+        },
+        "uid": "string",
+        "updateTime": "string",
+        "view": {
+          "query": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": "object",
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

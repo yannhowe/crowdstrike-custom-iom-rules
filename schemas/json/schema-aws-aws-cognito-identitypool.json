@@ -1,0 +1,117 @@
+[
+  {
+    "AWS::Cognito::IdentityPool": {
+      "configuration": {
+        "allowClassicFlow": "boolean",
+        "allowUnauthenticatedIdentities": "boolean",
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "cognitoIdentityProviders": {
+          "clientId": "string",
+          "providerName": "string",
+          "serverSideTokenCheck": "boolean"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "creationDate": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "developerProviderName": "string",
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "identityPoolId": "string",
+        "identityPoolName": "string",
+        "labels": "object",
+        "methodSettings": "object",
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "rules": "object",
+        "samlProviderARNs": "string",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "supportedLoginProviders": {
+          "accounts": {
+            "google": {
+              "com": "string"
+            }
+          },
+          "api": {
+            "twitter": {
+              "com": "string"
+            }
+          },
+          "cognito-idp": {
+            "eu-central-1": {
+              "amazonaws": {
+                "com": "string"
+              }
+            }
+          },
+          "developer_provider_name": "string",
+          "graph": {
+            "facebook": {
+              "com": "string"
+            }
+          },
+          "www": {
+            "amazon": {
+              "com": "string"
+            }
+          }
+        },
+        "tags": "object",
+        "variables": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "roles": {
+          "authenticated": "string",
+          "unauthenticated": "string"
+        },
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

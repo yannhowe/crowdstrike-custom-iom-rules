@@ -1,0 +1,140 @@
+[
+  {
+    "AWS::Route53::HostedZone": {
+      "configuration": {
+        "callerReference": "string",
+        "certificatePem": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "config": {
+          "comment": "string",
+          "privateZone": "boolean"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "delegationSet": {
+          "callerReference": "string",
+          "id": "string",
+          "nameServers": "string"
+        },
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "hostedZone": {
+          "callerReference": "string",
+          "config": {
+            "comment": "string",
+            "privateZone": "boolean"
+          },
+          "id": "string",
+          "linkedService": {
+            "description": "string",
+            "servicePrincipal": "string"
+          },
+          "name": "string",
+          "resourceRecordSetCount": "integer"
+        },
+        "id": "string",
+        "labels": "object",
+        "linkedService": {
+          "description": "string",
+          "servicePrincipal": "string"
+        },
+        "methodSettings": "object",
+        "name": "string",
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "resourceRecordSetCount": "integer",
+        "resultMetadata": "object",
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "tags": "object",
+        "variables": "object",
+        "vpCs": {
+          "vpcId": "string",
+          "vpcRegion": "string"
+        }
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "ec2InstanceComplianceItems": "object",
+        "hostedZoneLimit": {
+          "count": "integer",
+          "limit": {
+            "type": "string",
+            "value": "integer"
+          },
+          "resultMetadata": "object"
+        },
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "queryLoggingConfigs": {
+          "cloudWatchLogsLogGroupArn": "string",
+          "hostedZoneId": "string",
+          "id": "string"
+        },
+        "resourceRecordSets": {
+          "aliasTarget": {
+            "dnsName": "string",
+            "evaluateTargetHealth": "boolean",
+            "hostedZoneId": "string"
+          },
+          "failover": "string",
+          "healthCheckId": "string",
+          "multiValueAnswer": "boolean",
+          "name": "string",
+          "region": "string",
+          "resourceRecords": {
+            "value": "string"
+          },
+          "setIdentifier": "string",
+          "trafficPolicyInstanceId": "string",
+          "ttl": "integer",
+          "type": "string",
+          "weight": "integer"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "targets": "object"
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

@@ -1,0 +1,222 @@
+[
+  {
+    "Microsoft.Network/virtualNetworks": {
+      "configuration": {
+        "Properties": {
+          "definition": {
+            "actions": "object",
+            "parameters": "object",
+            "triggers": "object"
+          },
+          "metadata": "object",
+          "parameters": "object",
+          "policyRule": "object"
+        },
+        "certificatePem": "string",
+        "extendedLocation": {
+          "name": "string",
+          "type": "string"
+        },
+        "id": "string",
+        "identity": {
+          "userAssignedIdentities": "object"
+        },
+        "location": "string",
+        "name": "string",
+        "properties": {
+          "addressSpace": {
+            "addressPrefixes": "string"
+          },
+          "agentPoolProfiles": "object",
+          "bgpCommunities": {
+            "regionalCommunity": "string",
+            "virtualNetworkCommunity": "string"
+          },
+          "ddosProtectionPlan": {
+            "id": "string"
+          },
+          "definition": {
+            "actions": "object"
+          },
+          "dhcpOptions": {
+            "dnsServers": "string"
+          },
+          "enableDdosProtection": "boolean",
+          "encryption": {
+            "enabled": "boolean",
+            "enforcement": "string"
+          },
+          "flowTimeoutInMinutes": "integer",
+          "managedNetwork": "object",
+          "osProfile": "object",
+          "provisioningState": "string",
+          "resourceGuid": "string",
+          "storageProfile": "object",
+          "subnets": {
+            "id": "string",
+            "name": "string",
+            "properties": {
+              "addressPrefix": "string",
+              "addressPrefixes": "string",
+              "delegations": {
+                "etag": "string",
+                "id": "string",
+                "name": "string",
+                "properties": {
+                  "actions": "string",
+                  "provisioningState": "string",
+                  "serviceName": "string"
+                },
+                "type": "string"
+              },
+              "ipConfigurationProfiles": {
+                "id": "string"
+              },
+              "ipConfigurations": {
+                "id": "string"
+              },
+              "natGateway": {
+                "id": "string"
+              },
+              "networkSecurityGroup": {
+                "id": "string"
+              },
+              "privateEndpointNetworkPolicies": "string",
+              "privateEndpoints": {
+                "id": "string"
+              },
+              "privateLinkServiceNetworkPolicies": "string",
+              "provisioningState": "string",
+              "purpose": "string",
+              "resourceNavigationLinks": {
+                "etag": "string",
+                "id": "string",
+                "name": "string",
+                "properties": {
+                  "link": "string",
+                  "linkedResourceType": "string",
+                  "provisioningState": "string"
+                },
+                "type": "string"
+              },
+              "routeTable": {
+                "id": "string"
+              },
+              "serviceAssociationLinks": {
+                "etag": "string",
+                "id": "string",
+                "name": "string",
+                "properties": {
+                  "allowDelete": "boolean",
+                  "link": "string",
+                  "linkedResourceType": "string",
+                  "locations": "string",
+                  "provisioningState": "string"
+                },
+                "type": "string"
+              },
+              "serviceEndpointPolicies": {
+                "id": "string"
+              },
+              "serviceEndpoints": {
+                "locations": "string",
+                "provisioningState": "string",
+                "service": "string"
+              }
+            },
+            "type": "string"
+          },
+          "virtualMachineProfile": {
+            "extensionProfile": {
+              "properties": {
+                "settings": "object"
+              }
+            }
+          },
+          "virtualNetworkPeerings": {
+            "etag": "string",
+            "id": "string",
+            "name": "string",
+            "properties": {
+              "allowForwardedTraffic": "boolean",
+              "allowGatewayTransit": "boolean",
+              "allowVirtualNetworkAccess": "boolean",
+              "doNotVerifyRemoteGateways": "boolean",
+              "peeringState": "string",
+              "peeringSyncLevel": "string",
+              "provisioningState": "string",
+              "remoteAddressSpace": {
+                "addressPrefixes": "string"
+              },
+              "remoteBgpCommunities": {
+                "regionalCommunity": "string",
+                "virtualNetworkCommunity": "string"
+              },
+              "remoteVirtualNetwork": {
+                "id": "string"
+              },
+              "remoteVirtualNetworkAddressSpace": {
+                "addressPrefixes": "string"
+              },
+              "remoteVirtualNetworkEncryption": {
+                "enabled": "boolean",
+                "enforcement": "string"
+              },
+              "resourceGuid": "string",
+              "useRemoteGateways": "boolean"
+            },
+            "type": "string"
+          }
+        },
+        "resources": "object",
+        "tags": "object",
+        "type": "string"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "appSettings": "object",
+        "configurations": "object",
+        "diagnosticSettings": {
+          "id": "string",
+          "name": "string",
+          "properties": {
+            "eventHubAuthorizationRuleId": "string",
+            "eventHubName": "string",
+            "logs": {
+              "category": "string",
+              "categoryGroup": "string",
+              "enabled": "boolean",
+              "retentionPolicy": {
+                "days": "integer",
+                "enabled": "boolean"
+              }
+            },
+            "marketplacePartnerId": "string",
+            "metrics": {
+              "category": "string",
+              "enabled": "boolean",
+              "retentionPolicy": {
+                "days": "integer",
+                "enabled": "boolean"
+              }
+            },
+            "storageAccountId": "string",
+            "workspaceId": "string"
+          },
+          "type": "string"
+        }
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]

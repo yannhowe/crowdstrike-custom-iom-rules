@@ -1,0 +1,168 @@
+[
+  {
+    "AWS::CloudFormation::Stack": {
+      "configuration": {
+        "capabilities": "string",
+        "certificatePem": "string",
+        "changeSetId": "string",
+        "clusterInfo": {
+          "tags": "object"
+        },
+        "configurations": {
+          "configurations": "object",
+          "properties": "object"
+        },
+        "containerDefinitions": "object",
+        "creationTime": "string",
+        "deletionTime": "string",
+        "deployments": {
+          "serviceConnectConfiguration": "object"
+        },
+        "description": "string",
+        "detailedStatus": "string",
+        "disableRollback": "boolean",
+        "driftInformation": {
+          "lastCheckTimestamp": "string",
+          "stackDriftStatus": "string"
+        },
+        "enableTerminationProtection": "boolean",
+        "environment": {
+          "variables": "object"
+        },
+        "externalTableDefinition": "object",
+        "firewallStatus": "object",
+        "labels": "object",
+        "lastUpdatedTime": "string",
+        "methodSettings": "object",
+        "notificationARNs": "string",
+        "outputs": {
+          "description": "string",
+          "exportName": "string",
+          "outputKey": "string",
+          "outputValue": "string"
+        },
+        "parameters": {
+          "parameterKey": "string",
+          "parameterValue": "string",
+          "resolvedValue": "string"
+        },
+        "parentId": "string",
+        "policy": "object",
+        "resourceMetadata": {
+          "ec2": {
+            "tags": "object"
+          },
+          "ecrImage": {
+            "tags": "object"
+          },
+          "lambdaFunction": {
+            "functionTags": "object"
+          }
+        },
+        "roleARN": "string",
+        "rollbackConfiguration": {
+          "monitoringTimeInMinutes": "integer",
+          "rollbackTriggers": {
+            "arn": "string",
+            "type": "string"
+          }
+        },
+        "rootId": "string",
+        "rules": "object",
+        "secretVersionsToStages": "object",
+        "selectors": {
+          "labels": "object"
+        },
+        "stackId": "string",
+        "stackName": "string",
+        "stackStatus": "string",
+        "stackStatusReason": "string",
+        "tags": "object",
+        "timeoutInMinutes": "integer",
+        "variables": "object"
+      },
+      "relationships": {
+        "crn": "string",
+        "relationshipName": "string",
+        "resourceId": "string",
+        "resourceType": "string"
+      },
+      "resourceId": "string",
+      "resourceName": "string",
+      "supplementaryConfiguration": {
+        "BucketPolicy": "object",
+        "InstanceAttributeUserData": "object",
+        "StackResourceSummaries": {
+          "driftInformation": {
+            "stackResourceDriftStatus": "string"
+          },
+          "lastUpdatedTimestamp": "string",
+          "logicalResourceId": "string",
+          "moduleInfo": {
+            "logicalIdHierarchy": "string",
+            "typeHierarchy": "string"
+          },
+          "physicalResourceId": "string",
+          "resourceStatus": "string",
+          "resourceStatusReason": "string",
+          "resourceType": "string"
+        },
+        "ec2InstanceComplianceItems": "object",
+        "instanceAttributeUserData": "object",
+        "policy": "object",
+        "policyVersion": {
+          "document": "object"
+        },
+        "resources": "object",
+        "roleMappings": "object",
+        "stack_policy": {
+          "stackPolicyBody": "string"
+        },
+        "stack_resources": {
+          "driftInformation": {
+            "stackResourceDriftStatus": "string"
+          },
+          "lastUpdatedTimestamp": "string",
+          "logicalResourceId": "string",
+          "moduleInfo": {
+            "logicalIdHierarchy": "string",
+            "typeHierarchy": "string"
+          },
+          "physicalResourceId": "string",
+          "resourceStatus": "string",
+          "resourceStatusReason": "string",
+          "resourceType": "string"
+        },
+        "targets": "object",
+        "template_body_present": "boolean",
+        "template_summary": {
+          "capabilities": "string",
+          "capabilitiesReason": "string",
+          "description": "string",
+          "metadata": "string",
+          "parameters": {
+            "defaultValue": "string",
+            "description": "string",
+            "noEcho": "boolean",
+            "parameterConstraints": {
+              "allowedValues": "string"
+            },
+            "parameterKey": "string",
+            "parameterType": "string"
+          },
+          "resourceIdentifierSummaries": {
+            "logicalResourceIds": "string",
+            "resourceIdentifiers": "string",
+            "resourceType": "string"
+          },
+          "resourceTypes": "string",
+          "version": "string"
+        }
+      },
+      "tags": {
+        "key": "string",
+        "value": "string"
+      }
+    }
+  }
+]
